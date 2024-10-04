@@ -1,1 +1,4 @@
-
+---
+permalink: /research/
+title: "Research"
+---
