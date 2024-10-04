@@ -1,1 +1,4 @@
-
+---
+permalink: /publications/
+title: "Publications"
+---
