@@ -70,14 +70,10 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/probstrodolfo"
     - label: "ResearchGate"
-      icon: "fab fa-fw fa-researchgate-square"
-      url: "https://www.researchgate.net/profile/Rodolfo-Probst"
+      icon: "fab fa-fw fa-orcid-square"
+      url: "https://orcid.org/0000-0002-5885-5701"
 
 footer:
- links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/probstrodolfo"
