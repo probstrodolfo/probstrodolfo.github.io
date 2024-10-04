@@ -10,7 +10,7 @@ header:
 #    - label: "Download"
 #      url: "https://github.com/mmistakes/minimal-mistakes/"
 #  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-excerpt: "I am an evolutionary biologist using phylogenetics to study ant ecology evolution."
+excerpt: "I am an evolutionary biologist using phylogenetics to study ant ecology & evolution."
 intro: 
 #  - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
 feature_row:
