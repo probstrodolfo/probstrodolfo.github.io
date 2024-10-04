@@ -77,15 +77,15 @@ author:
       url: "https://github.com/probstrodolfo"
    
 footer:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://x.com/probstrodolfo"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/probstrodolfo"
+    - label: "ORCID"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0002-5885-5701"
     - label: "Google Scholar"
       icon: "fab fa-fw fa-google-scholar"
       url: "https://scholar.google.com.au/citations?user=S8om22EAAAAJ&hl=en"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/probstrodolfo"
       
 defaults:
   # _posts
