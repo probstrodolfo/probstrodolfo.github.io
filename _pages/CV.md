@@ -13,16 +13,16 @@ Science Research Iniative (SRI) Program\
 Salt Lake City, UT 84112
 
 ## Education
-University of Utah, Salt Lake City, Utah, USA      2022-present\
+University of Utah, USA      2022-present\
 Postdoctoral Fellow at Science Research Initiative (SRI), College of Science	     
 
-University of Utah, Salt Lake City, Utah, USA      2022\
+University of Utah, USA      2022\
 Ph.D. in Ecology, Evolution and Organismal Biology, School of Biological Sciences	      
 
-Universidade de São Paulo, Museu de Zoologia, São Paulo, Brazil       2015\
+Universidade de São Paulo, Museu de Zoologia (MZSP), Brazil       2015\
 M.Sc. in Systematics, Animal Taxonomy and Biodiversity					      
 
-Universidade Estadual Paulista (UNESP-CLP), São Vicente, São Paulo, Brazil      2012\
+Universidade Estadual Paulista (UNESP-CLP), Brazil      2012\
 B.S. in Biology, minor in Marine Biology							      
 
 
@@ -158,7 +158,7 @@ College of Science, Science Research Initiative (SRI) Program
 &nbsp;&nbsp;&nbsp;Invited Seminar; EcoEncontros, Universidade de São Paulo, São Paulo, Brazil
 
 * Mais que açúcar: as múltiplas dietas das formigas”. (In English: “More than sugar: the multiple diets of ants”)      2012\
-&nbsp;&nbsp;&nbsp;Invited Seminar; Lecture's Cycle of the Museu de Zoologia da Universidade de São Paulo
+&nbsp;&nbsp;&nbsp;Invited Seminar; MZSP Lecture's Cycle
 
 * Uma introdução à eussocialidade: contribuições genéticas e ecológicas (In English: An introduction to eusociality: ecological and genetic contributions)      2012\
 &nbsp;&nbsp;&nbsp;Invited Seminar; UNESP-CLP
