@@ -231,4 +231,4 @@ SBS, University of Utah, Graduate Student Handbook Committee      2017-2018\
 SBS, University of Utah, Graduate Entertainment Committee      2016-2017\
 Museu de Zoologia da Universidade de São Paulo, Graduate Committee      2013-2015\
 UNESP-CLP Undergraduate Committee, Campus Library      2009-2012\
-UNESP-CLP Undergraduate Committee for the Academic Center      2008-2009\
+UNESP-CLP Undergraduate Committee for the Academic Center      2008-2009
