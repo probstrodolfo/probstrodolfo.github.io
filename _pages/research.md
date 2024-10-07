@@ -2,7 +2,6 @@
 permalink: /research/
 title: "Research"
 ---
-
 ### Research Overview
 
 My research focuses on the evolutionary ecology and molecular phylogenetics of ants, with a particular emphasis on ant-plant symbioses. Ants are key ecosystem engineers, and understanding their evolutionary and ecological roles sheds light on biodiversity and ecosystem dynamics. My work has explored these relationships through a combination of **natural history**, **systematics**, and **cutting-edge molecular tools**.
