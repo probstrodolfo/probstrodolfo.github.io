@@ -121,16 +121,16 @@ College of Science, Science Research Initiative (SRI) Program
 * Replaying life's tape: determinism in Pantropical ant-plant mutualisms      2021\
 &nbsp;&nbsp;&nbsp;Invited Talk; Scientific Communication Seminar, University of Utah.
 
-* Un enfoque filogenómico a la dinámica del mirmecofitismo: hormigas Myrmelachista y sus asociaciones de plantas en la Centroamérica      2020\
+* Un enfoque filogenómico a la dinámica del mirmecofitismo: hormigas _Myrmelachista_ y sus asociaciones de plantas en la Centroamérica      2020\
 &nbsp;&nbsp;&nbsp;Invited Seminar; Universidad de Costa Rica, San Jose, Costa Rica
 
 * Filling in the Gaps: employing UCEs alongside COI to reconstruct the evolutionary history of ant-plant symbioses      2020\
 &nbsp;&nbsp;&nbsp;Invited Talk; Scientific Communication Seminar, University of Utah
 
-* A phylogenomic approach to myrmecophytism dynamics: Myrmelachista ants and their plant associations      2019\
+* A phylogenomic approach to myrmecophytism dynamics: _Myrmelachista_ ants and their plant associations      2019\
 &nbsp;&nbsp;&nbsp;Invited Seminar (In Spanish); Universidad Nacional de Comahue, Laboratorio Ecotono, Bariloche, Río Negro, Argentina
 
-* Déjà vu all over again: the evolution of ant-plant associations in Myrmelachista      2019\
+* Déjà vu all over again: the evolution of ant-plant associations in _Myrmelachista_      2019\
 &nbsp;&nbsp;&nbsp;3 Minute Thesis (3MT) Competition, University of Utah
 
 * Déjà vu all over again: the evolution of ant-plant associations in Myrmelachista      2019\
@@ -142,7 +142,7 @@ College of Science, Science Research Initiative (SRI) Program
 * UCE phylogenomics and species delimitation in the evolution of ant-plant associations      2018\
 &nbsp;&nbsp;&nbsp;Invited Talk; Scientific Communication Seminar, University of Utah
 
-* Un enfoque filogenómico a la dinámica del mirmecofitismo: hormigas Myrmelachista y sus asociaciones de plantas en la Centroamérica      2018\
+* Un enfoque filogenómico a la dinámica del mirmecofitismo: hormigas _Myrmelachista_ y sus asociaciones de plantas en la Centroamérica      2018\
 &nbsp;&nbsp;&nbsp;Invited Seminar; Universidad del Magdalena, Santa Marta, Colombia.
 
 * Why ant morphology matters?      2017\
@@ -226,9 +226,9 @@ College of Science, Science Research Initiative (SRI) Program
 Sociobiology (ISSN 0361-6525), Applied Soil Ecology (ISSN 0929-1393), Biodiversity Data Journal (ISSN 1314-2828), CheckList (ISSN 1809-127X), Zookeys (ISSN 1313-297), Insectes Sociaux (ISSN 1420-9098), Zootaxa (ISSN 1175-5334), Insect Systematics and Diversity (ISSN 2399-3421), Neotropical Entomology (ISSN 1678-8052), Journal of Biogeography (ISSN 1365-2699), Arthropods Systematics and Phylogeny (ISSN 1864-8312), Zoological Journal of the Linnean Society (ISSN 1096-3642), Journal of Hymenoptera Research (ISSN 1070-9428).
 
 ### 4. Departmental Service
-School of Biol. Sci. University of Utah, Invited Speaker Committee      2019-2022\
-School of Biol. Sci. University of Utah, Graduate Student Handbook Committee      2017-2018\
-School of Biol. Sci. University of Utah, Graduate Entertainment Committee      2016-2017\
+SBS, University of Utah, Invited Speaker Committee      2019-2022\
+SBS, University of Utah, Graduate Student Handbook Committee      2017-2018\
+SBS, University of Utah, Graduate Entertainment Committee      2016-2017\
 Museu de Zoologia da Universidade de São Paulo, Graduate Committee      2013-2015\
-UNESP-CLP Undergraduate Committee, Campus Library      2009-2012
+UNESP-CLP Undergraduate Committee, Campus Library      2009-2012\
 UNESP-CLP Undergraduate Committee for the Academic Center      2008-2009\
