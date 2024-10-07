@@ -229,6 +229,6 @@ Sociobiology (ISSN 0361-6525), Applied Soil Ecology (ISSN 0929-1393), Biodiversi
 SBS, University of Utah, Invited Speaker Committee      2019-2022\
 SBS, University of Utah, Graduate Student Handbook Committee      2017-2018\
 SBS, University of Utah, Graduate Entertainment Committee      2016-2017\
-Museu de Zoologia da Universidade de São Paulo, Graduate Committee      2013-2015\
+MZSP, Graduate Committee      2013-2015\
 UNESP-CLP Undergraduate Committee, Campus Library      2009-2012\
 UNESP-CLP Undergraduate Committee for the Academic Center      2008-2009
