@@ -7,7 +7,7 @@ title: "Research"
 
 My research focuses on the evolutionary ecology and molecular phylogenetics of ants, with a particular emphasis on ant-plant symbioses. Ants are key ecosystem engineers, and understanding their evolutionary and ecological roles sheds light on biodiversity and ecosystem dynamics. My work has explored these relationships through a combination of **natural history**, **systematics**, and **cutting-edge molecular tools**.
 
-A major focus of my research has been on the ***Myrmelachista*** system, a group of Neotropical ants involved in complex mutualisms with plants. My recent study, published in *Proceedings of the Royal Society B*, revealed convergent evolution within ant-plant mutualisms, showing how independent ant lineages evolved symbiotic relationships under similar environmental pressures. I am currently expanding this , including **whole-genome sequencing** to investigate the genomic foundations of these symbiotic systems. .
+A major focus of my research has been on the ***Myrmelachista*** system, a group of Neotropical ants involved in complex mutualisms with plants. My recent study, published in *Proceedings of the Royal Society B*, revealed convergent evolution within ant-plant mutualisms, showing how independent ant lineages evolved symbiotic relationships under similar environmental pressures. I am currently expanding this , including **whole-genome sequencing** to investigate the genomic foundations of these symbiotic systems.
 
 ---
 
