@@ -216,10 +216,10 @@ College of Science, Science Research Initiative (SRI) Program
     * Presenter; Shared with the visiting public pieces of the research we conducted with ants
 
 ### 2. Conference Organization
-* Back to basics in the era of -omics: A reappraisal of ant natural history      2023
+* Back to basics in the era of -omics: A reappraisal of ant natural history      2023\
 &nbsp;&nbsp;&nbsp;Organizer; Roundtable Symposium at the XXVI International Ant Meeting, Manaus, Amazonas, Brazil
 
-* Adapt, Advance, Coevolve: Exploring convergent evolution in ants and their partners      2021
+* Adapt, Advance, Coevolve: Exploring convergent evolution in ants and their partners      2021\
 &nbsp;&nbsp;&nbsp;Organizer; Section Symposium at the Entomological Society of America Annual Meeting, Denver, Colorado
 
 ### 3. Peer Reviewer
