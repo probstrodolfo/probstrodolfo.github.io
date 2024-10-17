@@ -5,7 +5,7 @@ permalink: /
 header:
   overlay_color: "#000"
   overlay_filter: "0.1"
-  overlay_image: /assets/images/DSC_0050_cropped.jpg
+  overlay_image: /assets/images/for_Git.mov
   actions:
 #    - label: "Download"
 #      url: "https://github.com/mmistakes/minimal-mistakes/"
@@ -14,7 +14,7 @@ excerpt: "I am an evolutionary biologist using phylogenetics to study ant ecolog
 intro: 
 #  - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
 feature_row:
-  - image_path: assets/images/27371866.jpeg
+#  - image_path: assets/images/27371866.jpeg
 #    alt: "placeholder image 1"
 #    title: "About"
     actions:
