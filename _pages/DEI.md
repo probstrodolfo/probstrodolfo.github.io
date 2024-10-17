@@ -5,13 +5,13 @@ title: "DEI Commitment"
 
 **Statement on Commitment to Inclusive Excellence**
 
-My commitment to Diversity, Equity, and Inclusion (DEI) is shaped by my experiences in STEM and my dedication to making science accessible to underrepresented communities. Throughout my career, I have actively promoted inclusive learning environments, mentored underrepresented students, and engaged in outreach that brings science to diverse audiences.
+My commitment to Diversity, Equity, and Inclusion (DEI) is shaped by my experiences in STEM and my dedication to making science accessible to underrepresented communities. Throughout my career, I have actively promoted inclusive learning environments, mentored underrepresented students, and engaged in outreach bringing science - and my passion about bugs! - to diverse audiences.
 
 ---
 
 **Engaging Underrepresented Communities through Outreach**
 
-A key part of my work has been outreach. As an organizer of public science events like BugFest at the NHMU, I help connect people with science through hands-on activities and educational talks. I’ve also led community science programs like BioBlitz, where participants learn about insect ecology, and DNA barcoding workshops that introduce scientific tools to the public. These efforts reflect my passion for making science accessible to all, particularly those from underrepresented backgrounds.
+A key part of my work has been outreach. I have been involved in public science events connecting people with science through hands-on activities and educational talks. I’ve also led community science programs and introduce molecular tools to all kinds of public. These efforts reflect my passion for making science accessible to all, particularly those from underrepresented backgrounds.
 
 ---
 
