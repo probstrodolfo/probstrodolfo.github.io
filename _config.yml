@@ -1,4 +1,4 @@
-# Site settings
+m# Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
@@ -6,7 +6,7 @@
 
 title: Rodolfo Probst
 email: probstrodolfo [at] gmail.com
-description: I am a Postdoctoral Fellow at the Science Research Initiative program interested in phylogenetics, symbioses, insects, and science communication.
+description: I am a Postdoctoral Fellow at the Science Research Initiative program interested in phylogenetics, symbioses, entomology, and science communication.
 twitter_username: probstrodolfo
 github_username: probstrodolfo
 minimal_mistakes_skin: sunset
