@@ -186,6 +186,7 @@ prose:
     - /_includes
     - /css
     - /images
+    - /js
   
   metadata:
     _posts:
