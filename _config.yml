@@ -30,14 +30,14 @@ navbar-links:
    Publications: "publications"
    Research: 
      - Ant-plant Mutualisms: "research"
-     - NGS Barcoding with Nanopore Sequencing: "nanopore-barcoding"
-     - Ant Functional and Morphological Diversity: "functional-diversity"
-     - Cone Snail Evolution: "cone-snail-evolution"
+     - NGS Barcoding with Nanopore Sequencing: ""
+     - Ant Functional and Morphological Diversity: ""
+     - Cone Snail Evolution: ""
    Phylogenetics: "phylogenetics"
-   Teaching: "Teaching and JEDI"
-     - Teaching: "Teaching"
-     - Mentoring: "Mentoring"
-     - Outreach: "Outreach"
+   Teaching: ""
+     - Teaching: "teaching"
+     - Mentoring: ""
+     - Outreach: ""
      - JEDI: "DEI"
   
 # Image to show in the navigation bar - image must be a square (width = height)
