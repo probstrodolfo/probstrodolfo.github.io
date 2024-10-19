@@ -1,6 +1,6 @@
 ---
-permalink: /CV/
-title: "Curriculum Vitae"
+layout: page
+title: ""
 ---
 
 ## Contact Information
