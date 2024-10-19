@@ -10,6 +10,14 @@
     margin-bottom: 0;
   }
 }
+.background-video {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Set a specific height */
+  object-fit: cover;
+  z-index: -1; /* Ensures it stays behind the text */
+  margin-bottom: 20px; /* Space between video and the next section */
+}
 
 .list-filters {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
