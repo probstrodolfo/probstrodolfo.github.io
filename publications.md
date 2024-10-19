@@ -1,6 +1,6 @@
 ---
-permalink: /publications/
-title: "Publications"
+layout: page
+title: ""
 ---
 
 1. DuVal, M.*, **Probst, R.S.**, Branstetter, M. & Longino, J.T. Untangling the ant claws: the army ant (Formicidae: Dorylinae) _Labidus mars_ is a _Neivamyrmex_. _Submitted to Insect Systematics and Diversity_.\
