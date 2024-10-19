@@ -30,9 +30,9 @@ navbar-links:
    Publications: "publications"
    Research: 
      - Ant-plant Mutualisms: "research"
-     - NGS Barcoding with Nanopore Sequencing:
-     - Ant Functional and Morphological Diversity:
-     - Cone Snail Evolution:
+     - NGS Barcoding with Nanopore Sequencing: "nanopore-barcoding"
+     - Ant Functional and Morphological Diversity: "functional-diversity"
+     - Cone Snail Evolution: "cone-snail-evolution"
    Phylogenetics: "phylogenetics"
    Teaching: "Teaching and JEDI"
      - Teaching: "Teaching"
