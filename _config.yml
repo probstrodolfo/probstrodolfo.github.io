@@ -34,7 +34,6 @@ navbar-links:
      - NGS Barcoding with Nanopore Sequencing:
      - Ant Functional and Morphological Diversity:
      - Cone Snail Evolution:
-     
    Phylogenetics: "Phylogenetics"
    Teaching: "Teaching and JEDI"
      - Teaching: "Teaching"
@@ -83,7 +82,7 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-   rss: true
+  rss: true
   email: "probstrodolfo[at]gmail.com"
   github: probstrodolfo
   orcid: "https://orcid.org/0000-0002-5885-5701"
@@ -95,7 +94,6 @@ share-links-active:
   twitter: true
   github: true
   google: true
-  email:  true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
@@ -176,7 +174,7 @@ exclude:
 # prose.io config
 prose:
   rooturl: '_posts'
-  media: 'img'
+  media: 'images'
   ignore:
     - 404.html
     - LICENSE
