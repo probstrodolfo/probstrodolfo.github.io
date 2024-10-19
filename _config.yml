@@ -84,9 +84,9 @@ social-network-links:
   rss: true
   email: "probstrodolfo[at]gmail.com"
   github: probstrodolfo
-  orcid: "https://orcid.org/0000-0002-5885-5701"
+  orcid:  "https://orcid.org/0000-0002-5885-5701"
   twitter: probstrodolfo
-  google: "https://scholar.google.com.au/citations?user=S8om22EAAAAJ&hl=en"
+  scholar: "https://scholar.google.com.au/citations?user=S8om22EAAAAJ&hl=en"
 
 # Select which share links to show in posts
 share-links-active:
