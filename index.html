@@ -5,11 +5,9 @@ subtitle: Postdoctoral Fellow in the Science Research Initiative at the Universi
 use-site-title: true
 css: "/css/index.css"
 bigimg:
-  - "/images/for_Git.mp4: "_Myrmelachista_ foragers (2020)"
- # - "/images/CRica.jpeg" : "Costa Rica (2023)"
-  
-
+  # Original bigimg has been replaced with a video
 ---
+
 <!-- Typed.js --> 
 <script src="/js/jquery-1.11.2.min.js"></script>
 <script src="/js/typed.js" type="text/javascript"></script>
@@ -31,6 +29,24 @@ bigimg:
   });
 </script>
 
+<!-- Background Video Section -->
+<video class="background-video" autoplay loop muted playsinline>
+  <source src="/images/for_Git.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<style>
+  .background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+</style>
+
 <div class="typed-js-hide">
   <div class="row">
     <div class="col-sm-12">
@@ -40,7 +56,6 @@ bigimg:
     </div>
   </div>
 </div>
-
 
 <div class="posts-list">
   {% for post in paginator.posts %}
