@@ -100,3 +100,12 @@ yelp:
   name: "Yelp"
   baseURL: "https://{{ site.author.yelp }}.yelp.com"
   icon: "fa-yelp"
+
+ORCID:
+  name: "ORCID"
+  icon: "fab fa-fw fa-orcid"
+
+Google:
+  name: "google"
+  icon: "fab fa-fw fa-google-scholar"
+  
