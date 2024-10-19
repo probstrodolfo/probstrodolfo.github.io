@@ -1,6 +1,6 @@
 ---
-permalink: /DEI/
-title: "DEI Commitment"
+layot: page
+title: ""
 ---
 
 **Statement on Commitment to Inclusive Excellence**
