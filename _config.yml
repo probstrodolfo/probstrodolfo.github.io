@@ -26,9 +26,8 @@ description: "Postdoctoral Fellow at the Science Research Initiative program int
 navbar-links:
    # Bio: "bio"
    # Bio: "aboutme"
-   Resume: "CV"
+   CV: "CV"
    Publications: "Publications"
-   Talks: "talks"
    Research: 
      - Ant-plant Mutualisms:
      - NGS Barcoding with Nanopore Sequencing:
