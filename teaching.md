@@ -13,7 +13,7 @@ I have designed and taught various courses across the U.S. and internationally, 
 
 ### Teaching Experience (also see CV)
 
-***SCI2715: Science Research Initiative Undergraduate Research***    Spring & Fall 2023 & 2024\
+***SCI2715: SRI Undergraduate Research***    Spring & Fall 2023 & 2024\
 Instructor; University of Utah
 
 ***SCI3900/HONOR3990: HSTEM: Being Human in STEM***    Spring 2024\
@@ -22,7 +22,7 @@ Co-Instructor with Dr. Claudia De Grandi; University of Utah
 ***Examining and Addressing Climate Change in Costa Rica***      Spring 2024 & Spring 2023\
 Organizer, Coordinator, and Instructor; University of Utah
 
-***SCI1500: Principles of Scientific Inquiry***				             Falls 2024, 2023, 2022\
+***SCI1500: Principles of Scientific Inquiry***				             Falls 2024 (2x), 2023 (2x), 2022\
 Instructor; University of Utah
 
 ***BIOL3960: Tree Thinking: Introduction to Phylogenetics***	          Spring 2022 & Fall 2021\
@@ -34,7 +34,7 @@ Teaching Assistant; University of Utah
 ***BIOL3450: Rainforest Ecology & Conservation***			    Springs 2019 & 2017\
 Teaching Assistant; University of Utah
 
-***BIOL3450: Rainforest Ecology and Conservation (Spanish section)***	    Springs 2019 & 2017\
+***BIOL3450: Rainforest Ecology and Conservation (in Spanish)***	    Springs 2019 & 2017\
 Instructor; Cultures and Languages Across the Curriculum Program at University of Utah
 
 ***BIOL5445: Entomology***								           Fall 2019\
