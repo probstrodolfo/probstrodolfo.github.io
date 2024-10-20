@@ -8,7 +8,7 @@
 
 google-scholar:
   name: "google-scholar"
-  base-URL: "scholar.google.co.in/"
+  base-URL: "https://scholar.google.com/citations?user=S8om22EAAAAJ&hl=en"
   icon: "fa-google-scholar"
 
 facebook:
@@ -104,5 +104,5 @@ yelp:
 ORCID:
   name: "ORCID"
   icon: "fa-orcid"
-  baseURL: "https://orcid.org/"
+  baseURL: "https://orcid.org/0000-0002-5885-5701"
   
