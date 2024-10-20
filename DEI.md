@@ -1,9 +1,9 @@
 ---
-layot: page
-title: ""
+permalink: /DEI/
+title: "JEDI"
 ---
 
-**Statement on Commitment to Inclusive Excellence**
+### Statement on Commitment to Inclusive Excellence
 
 My commitment to Justice, Equity, Diversity, and Inclusion (JEDI) is shaped by my experiences in STEM and my dedication to making science accessible to underrepresented communities. Throughout my career, I have actively promoted inclusive learning environments, mentored underrepresented students, and engaged in outreach bringing science - and my passion about bugs! - to diverse audiences.
 
