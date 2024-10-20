@@ -1,6 +1,6 @@
 ---
 permalink: /teaching/
-title: "Teaching & Mentorship"
+title: "Teaching"
 ---
 
 ### Teaching Philosophy
