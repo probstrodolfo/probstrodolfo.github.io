@@ -5,7 +5,7 @@ title: ""
 
 **Statement on Commitment to Inclusive Excellence**
 
-My commitment to Diversity, Equity, and Inclusion (DEI) is shaped by my experiences in STEM and my dedication to making science accessible to underrepresented communities. Throughout my career, I have actively promoted inclusive learning environments, mentored underrepresented students, and engaged in outreach bringing science - and my passion about bugs! - to diverse audiences.
+My commitment to Justice, Equity, Diversity, and Inclusion (JEDI) is shaped by my experiences in STEM and my dedication to making science accessible to underrepresented communities. Throughout my career, I have actively promoted inclusive learning environments, mentored underrepresented students, and engaged in outreach bringing science - and my passion about bugs! - to diverse audiences.
 
 ---
 
@@ -23,4 +23,4 @@ In my teaching, I prioritize creating spaces where students from all backgrounds
 
 **Mentoring and Empowering Underrepresented Students**
 
-Mentorship is central to my work in DEI. I’ve mentored underrepresented students, helping them navigate academia and build confidence. I encourage students to take ownership of their learning and provide opportunities for them to present their research at diversity-focused conferences. My goal is to continue mentoring the next generation of scientists, offering research opportunities and fostering a culture of inclusivity and empowerment.
+Mentorship is central to my work in JEDI. I’ve mentored underrepresented students, helping them navigate academia and build confidence. I encourage students to take ownership of their learning and provide opportunities for them to present their research at diversity-focused conferences. My goal is to continue mentoring the next generation of scientists, offering research opportunities and fostering a culture of inclusivity and empowerment.
