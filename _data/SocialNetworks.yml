@@ -6,8 +6,8 @@
 #            site.social-network-links.<key>
 #   icon: Specify a valid fontawesome icon class
 
-scholar:
-  name: "Google-Scholar"
+google-scholar:
+  name: "google-scholar"
   base-URL: "scholar.google.co.in/"
   icon: "fab fa-fw fa-google-scholar"
 
