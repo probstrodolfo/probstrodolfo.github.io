@@ -1,6 +1,6 @@
 ---
 permalink: /research/
-title: "Research"
+title: "Ant-plant Mutualisms"
 ---
 ### Research Overview
 
