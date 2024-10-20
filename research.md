@@ -4,18 +4,10 @@ title: "Research"
 ---
 ### Research Overview
 
-My research focuses on the evolutionary ecology and molecular phylogenetics of ants, with a particular emphasis on ant-plant symbioses. Ants are key ecosystem engineers, and understanding their evolutionary and ecological roles sheds light on biodiversity and ecosystem dynamics. My work has explored these relationships through a combination of **natural history**, **systematics**, and **cutting-edge molecular tools**.
+One of my research interests focuses on the evolutionary ecology and molecular phylogenetics of ants, with a particular emphasis on ant-plant symbioses. Ants are key ecosystem players, and understanding their evolutionary and ecological roles sheds light on major topics of biology and evolution. My work has explored ant-plant relationships through a combination of **natural history**, **systematics**, and **cutting-edge molecular tools**.
 
-A major focus of my research has been on the ***Myrmelachista*** system, a group of Neotropical ants involved in complex mutualisms with plants. My recent study, published in *Proceedings of the Royal Society B*, revealed convergent evolution within ant-plant mutualisms, showing how independent ant lineages evolved symbiotic relationships under similar environmental pressures. I am currently expanding this project and including **whole-genome sequencing** to investigate the genomic foundations/signatures for this symbiotic system.
-
----
-
-### Research Goals
-
-In the short term, I aim to continue my work on ***Myrmelachista*** ant-plant mutualisms, utilizing **genomic tools** to uncover the genetic mechanisms underlying these complex interactions. I will also explore how ant species adapt to environmental pressures, using **functional trait analyses** and **phylogenomic methods**.
-
-Long-term, my goal is to develop a comprehensive **phylogenetic framework** for ants and other insects, contributing to broader ecological and evolutionary studies. This research will also inform conservation strategies for tropical ecosystems under threat from climate change and urbanization.
+I am studying ant-plant symbioses using the [***Myrmelachista***](https://www.antweb.org/images.do?genus=Myrmelachista) system as a model. This group of Neotropical ants involved in complex mutualisms with understory plants (mainly nesting inside species from the avocado family). My recent study, published in *Proceedings of the Royal Society B*, [revealed convergent evolution within ant-plant mutualisms, showing how independent ant lineages evolved symbiotic relationships under similar environmental pressures](https://royalsocietypublishing.org/doi/10.1098/rspb.2024.1214). I am currently expanding this project and including **whole-genome sequencing** to uncover the genomic foundations/signatures underlying convergent/parallel mechanisms of mutualisms in this group. I am also starting to explore how _Myrmelachista_ ant species adapt to environmental pressures, using **functional trait analyses** and long-term monitoring of their plant hosts.
 
 ---
 
-At my future academic institution, I plan on combining evolutionary biology with cutting-edge molecular approaches, creating a vibrant research program that fosters student involvement and advances our understanding of biodiversity.
+
