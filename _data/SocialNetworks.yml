@@ -8,7 +8,7 @@
 
 google-scholar:
   name: "google-scholar"
-  base-URL: "https://scholar.google.com/citations?user=S8om22EAAAAJ&hl=en"
+  baseURL: "https://scholar.google.com/citations?user=S8om22EAAAAJ&hl=en"
   icon: "fa-google-scholar"
 
 facebook:
