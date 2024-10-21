@@ -22,6 +22,19 @@ p {
   line-height: 1.5;
   margin: 30px 0;
 }
+
+h1, h2 {
+  font-family: 'Lora', 'Times New Roman', serif;
+  color: #651882; /* Keeping purple */
+  
+  /* Adding black outline */
+  text-shadow: 
+    -1px -1px 0 #FFFF,  
+    1px -1px 0 #FFFF,  
+    -1px 1px 0 #FFFF,  
+    1px 1px 0 #FFFF;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
