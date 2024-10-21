@@ -14,7 +14,7 @@ google-scholar:
 orcid:
   name: "orcid"
   baseURL: "https://orcid.org/"
-  icon: "fa-orcid"
+  icon: "images/ORCID.png"
    
 facebook:
   name: "Facebook"
