@@ -219,7 +219,7 @@ College of Science, Science Research Initiative (SRI) Program
 * Meet the Scientist at the Field Museum of Natural History      2015-2016
     * Presenter; Shared with the visiting public pieces of the research we conducted with ants
 
-
+--
 #### 2. Conference Organization
 
 * Back to basics in the era of -omics: A reappraisal of ant natural history      2023\
