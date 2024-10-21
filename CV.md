@@ -2,7 +2,6 @@
 layout: page
 title: ""
 ---
-
 ### Contact Information
 [probstrodolfo[at]gmail.com](mailto:probstrodolfo@gmail.com)
 
@@ -11,6 +10,8 @@ College of Science\
 Science Research Iniative (SRI) Program\
 257 S 1400 E\
 Salt Lake City, UT 84112
+
+--- 
 
 ### Education
 University of Utah, USA      2022-present\
@@ -25,9 +26,9 @@ M.Sc. in Systematics, Animal Taxonomy and Biodiversity
 Universidade Estadual Paulista (UNESP-CLP), Brazil      2012\
 B.S. in Biology, minor in Marine Biology							      
 
+--- 
 
 ### Awards
-
 * Outstanding Postdoctoral Researcher Award ($1,000; University of Utah)      2024
 * Faculty Seed Grant ($55,000; Wilkes Center for Climate Science and Policy)      2024
 * Field Exploration Grant ($4,000; American Society of Naturalists)      2023
@@ -58,6 +59,7 @@ College of Science, Science Research Initiative (SRI) Program
 * Conference Travel Award (R$900; Programa de Apoio à Pós-Graduação)      2014
 * Undergraduate Fellowship (R$8,840; FAPESP - São Paulo Research Foundation)      2010-2012
 
+--- 
 
 ### Teaching Experience
 
@@ -106,6 +108,7 @@ College of Science, Science Research Initiative (SRI) Program
 * Invertebrate Zoology II (in Portuguese)      Fall 2009-2011\
 &nbsp;&nbsp;&nbsp;Teaching assistant; UNESP-CLP
 
+--- 
 
 ### Selected Invited Talks & Seminars
 
@@ -163,6 +166,7 @@ College of Science, Science Research Initiative (SRI) Program
 * Uma introdução à eussocialidade: contribuições genéticas e ecológicas (In English: An introduction to eusociality: ecological and genetic contributions)      2012\
 &nbsp;&nbsp;&nbsp;Invited Seminar; UNESP-CLP
 
+--- 
 
 ### Outreach & Service
 #### 1. Selected Outreach
