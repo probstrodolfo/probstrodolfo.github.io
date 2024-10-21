@@ -7,69 +7,52 @@
 {% endfor %}
 
 {% if any-share-links %}
-<section id = "social-share-section">
+<section id="social-share-section">
   <span class="sr-only">Share: </span>
+  <ul class="list-inline">
+    {% if site.share-links-active.twitter %}
+    <li class="list-inline-item">
+      <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ site.url }}{{ page.url }}"
+        class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+        <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
+        <span class="sr-only">Twitter</span>
+      </a>
+    </li>
+    {% endif %}
 
-  {% if site.share-links-active.twitter %}
-  <!--- Share on Twitter -->
-    <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ site.url }}{{ page.url }}"
-      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
-      <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
-      <span class="sr-only">Twitter</span>
-    </a>
-  {% endif %}
+    {% if site.share-links-active.facebook %}
+    <li class="list-inline-item">
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
+        class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+        <span class="fa fa-fw fa-facebook" aria-hidden="true"></span>
+        <span class="sr-only">Facebook</span>
+      </a>
+    </li>
+    {% endif %}
 
-  {% if site.share-links-active.facebook %}
-  <!--- Share on Facebook -->
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
-      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
-      <span class="fa fa-fw fa-facebook" aria-hidden="true"></span>
-      <span class="sr-only">Facebook</span>
-    </a>
-  {% endif %}
+    {%- if network[0] == "google-scholar" -%}
+    <li class="list-inline-item">
+      <a href="https://scholar.google.com/citations?user={{ network[1] }}" title="Google Scholar">
+        <span class="fa-stack fa-lg" aria-hidden="true">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+        </span>
+        <span class="sr-only">Google Scholar</span>
+      </a>
+    </li>
+    {%- endif -%}
 
-  {% if site.share-links-active.google %}
-  <!--- Share on Google Plus -->
-    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"
-      class="btn btn-social-icon btn-google" title="Share on Google+">
-      <span class="fa fa-fw fa-google-plus" aria-hidden="true"></span>
-      <span class="sr-only">Google+</span>
-    </a>
-  {% endif %}
-
-  {% if site.share-links-active.linkedin %}
-  <!--- Share on LinkedIn -->
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}"
-      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
-      <span class="fa fa-fw fa-linkedin" aria-hidden="true"></span>
-      <span class="sr-only">LinkedIn</span>
-    </a>
-  {% endif %}
-
-  {%- if network[0] == "ORCID" -%}
- <li class="list-inline-item">
-   <a href="https://orcid.org/{{ network[1] }}" title="ORCID">
-     <span class="fa-stack fa-lg" aria-hidden="true">
-       <i class="fas fa-circle fa-stack-2x"></i>
-       <i class="fab fa-orcid fa-stack-1x fa-inverse"></i>
-     </span>
-     <span class="sr-only">ORCID</span>
-   </a>
- </li>
-  {%- endif -%}
-
-  {%- if network[0] == "google-scholar" -%}
-  <li class="list-inline-item">
-    <a href="https://scholar.google.com/citations?user={{ network[1] }}" title="Google Scholar">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
-      </span>
-      <span class="sr-only">Google Scholar</span>
-    </a>
-  </li>
-  {%- endif -%}
-
+    {%- if network[0] == "ORCID" -%}
+    <li class="list-inline-item">
+      <a href="https://orcid.org/{{ network[1] }}" title="ORCID">
+        <span class="fa-stack fa-lg" aria-hidden="true">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-orcid fa-stack-1x fa-inverse"></i>
+        </span>
+        <span class="sr-only">ORCID</span>
+      </a>
+    </li>
+    {%- endif -%}
+  </ul>
 </section>
-
 {% endif %}
