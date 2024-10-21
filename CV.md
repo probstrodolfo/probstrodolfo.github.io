@@ -3,7 +3,7 @@ layout: page
 title: ""
 ---
 
-## Contact Information
+### Contact Information
 [probstrodolfo[at]gmail.com](mailto:probstrodolfo@gmail.com)
 
 University of Utah\
@@ -12,7 +12,7 @@ Science Research Iniative (SRI) Program\
 257 S 1400 E\
 Salt Lake City, UT 84112
 
-## Education
+### Education
 University of Utah, USA      2022-present\
 Postdoctoral Fellow at Science Research Initiative (SRI), College of Science	     
 
@@ -26,7 +26,7 @@ Universidade Estadual Paulista (UNESP-CLP), Brazil      2012\
 B.S. in Biology, minor in Marine Biology							      
 
 
-## Awards
+### Awards
 
 * Outstanding Postdoctoral Researcher Award ($1,000; University of Utah)      2024
 * Faculty Seed Grant ($55,000; Wilkes Center for Climate Science and Policy)      2024
@@ -59,7 +59,7 @@ College of Science, Science Research Initiative (SRI) Program
 * Undergraduate Fellowship (R$8,840; FAPESP - São Paulo Research Foundation)      2010-2012
 
 
-## Teaching Experience
+### Teaching Experience
 
 * SCI2715: SRI Undergraduate Research      Spring & Fall 2023 & 2024\
 &nbsp;&nbsp;&nbsp;Instructor; University of Utah
@@ -107,7 +107,7 @@ College of Science, Science Research Initiative (SRI) Program
 &nbsp;&nbsp;&nbsp;Teaching assistant; UNESP-CLP
 
 
-## Selected Invited Talks & Seminars
+### Selected Invited Talks & Seminars
 
 * Integrating Past, Present, and Future in Species Discovery      2024\
 &nbsp;&nbsp;&nbsp;Invited Seminar; Summer Seminar Series at the Natural History Museum of Utah
@@ -164,8 +164,8 @@ College of Science, Science Research Initiative (SRI) Program
 &nbsp;&nbsp;&nbsp;Invited Seminar; UNESP-CLP
 
 
-## Outreach & Service
-### 1. Selected Outreach
+### Outreach & Service
+#### 1. Selected Outreach
 
 * Member’s Day at the National Audubon Society Utah Chapter      Since 2023
     * Organizer; Developed several outreach activities with a focus on insect conservation
@@ -215,17 +215,17 @@ College of Science, Science Research Initiative (SRI) Program
 * Meet the Scientist at the Field Museum of Natural History      2015-2016
     * Presenter; Shared with the visiting public pieces of the research we conducted with ants
 
-### 2. Conference Organization
+#### 2. Conference Organization
 * Back to basics in the era of -omics: A reappraisal of ant natural history      2023\
 &nbsp;&nbsp;&nbsp;Organizer; Roundtable Symposium at the XXVI International Ant Meeting, Manaus, Amazonas, Brazil
 
 * Adapt, Advance, Coevolve: Exploring convergent evolution in ants and their partners      2021\
 &nbsp;&nbsp;&nbsp;Organizer; Section Symposium at the Entomological Society of America Annual Meeting, Denver, Colorado
 
-### 3. Peer Reviewer
+#### 3. Peer Reviewer
 Sociobiology (ISSN 0361-6525), Applied Soil Ecology (ISSN 0929-1393), Biodiversity Data Journal (ISSN 1314-2828), CheckList (ISSN 1809-127X), Zookeys (ISSN 1313-297), Insectes Sociaux (ISSN 1420-9098), Zootaxa (ISSN 1175-5334), Insect Systematics and Diversity (ISSN 2399-3421), Neotropical Entomology (ISSN 1678-8052), Journal of Biogeography (ISSN 1365-2699), Arthropods Systematics and Phylogeny (ISSN 1864-8312), Zoological Journal of the Linnean Society (ISSN 1096-3642), Journal of Hymenoptera Research (ISSN 1070-9428).
 
-### 4. Departmental Service
+#### 4. Departmental Service
 SBS, University of Utah, Invited Speaker Committee      2019-2022\
 SBS, University of Utah, Graduate Student Handbook Committee      2017-2018\
 SBS, University of Utah, Graduate Entertainment Committee      2016-2017\
