@@ -11,6 +11,11 @@ google-scholar:
   baseURL: "https://scholar.google.com/citations?user="
   icon: "fa-graduation-cap"
 
+ORCID:
+  name: "ORCID"
+  baseURL: "https://orcid.org/"
+  icon: "fa-orcid"
+   
 facebook:
   name: "Facebook"
   baseURL: "https://www.facebook.com/"
@@ -100,9 +105,4 @@ yelp:
   name: "Yelp"
   baseURL: "https://{{ site.author.yelp }}.yelp.com"
   icon: "fa-yelp"
-
-ORCID:
-  name: "ORCID"
-  icon: "fa-orcid"
-  baseURL: "https://orcid.org/"
   
