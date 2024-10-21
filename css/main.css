@@ -9,7 +9,7 @@ layout: null
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
-  color: #b8860b; /* Rusty yellow color */
+  color: #651882; 
   position: relative;
   background-color: {{ site.page-col }};
   
@@ -17,13 +17,6 @@ body {
   background-image: url({{ site.page-img }});
   background-attachment: fixed;
   {% endif %}
-  
-  /* Adding black outline effect */
-  text-shadow: 
-    -1px -1px 0 #000,  
-    1px -1px 0 #000,  
-    -1px 1px 0 #000,  
-    1px 1px 0 #000;
 }
 p {
   line-height: 1.5;
