@@ -83,10 +83,10 @@ author:
 social-network-links:
   rss: true
   email: "probstrodolfo[at]gmail.com"
-  github: probstrodolfo
   orcid:  "https://orcid.org/0000-0002-5885-5701"
-  twitter: probstrodolfo
   google-scholar: "S8om22EAAAAJ&hl"
+  twitter: probstrodolfo
+  github: probstrodolfo
 
 # Select which share links to show in posts
 share-links-active:
