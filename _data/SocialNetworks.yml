@@ -11,8 +11,8 @@ google-scholar:
   baseURL: "https://scholar.google.com/citations?user="
   icon: "fa-graduation-cap"
 
-ORCID:
-  name: "ORCID"
+orcid:
+  name: "orcid"
   baseURL: "https://orcid.org/"
   icon: "fa-orcid"
    
