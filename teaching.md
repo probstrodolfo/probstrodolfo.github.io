@@ -47,7 +47,7 @@ Teacher and Camp Counselor; Cultures and Languages Across the Curriculum Program
 Instructor; Facultad de Ciencias, Universidad del Magdalena, Santa Marta, Colombia. Short-term course for the Graduate Program in Biology
 
 ***Hexapoda General Course (in Portuguese)***				           Fall 2015\
-Lecturer; Short-term course for Biology program at UNESP-CLP 
+Lecturer; Short-term course for Biology program at UNESP-CLP (State University of São Paulo, Campus of Litoral Paulista, Brazil)
 
 ***II Curso de Formigas do Brasil (in English: II Brazilian Ant Course)***		      2013\
 Instructor; Short-term course at UFMG (Universidade Federal de Minas Gerais, Belo Horizonte, Brazil)
