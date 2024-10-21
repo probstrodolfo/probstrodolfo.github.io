@@ -23,7 +23,7 @@ p {
   margin: 30px 0;
 }
 
-h1, h2 {
+h1, p {
   font-family: 'Lora', 'Times New Roman', serif;
   color: #651882; /* Keeping purple */
   
@@ -34,6 +34,19 @@ h1, h2 {
     -1px 1px 0 #FFFF,  
     1px 1px 0 #FFFF;
 }
+
+h2 {
+  font-family: 'Lora', 'Times New Roman', serif;
+  color: #FFFF; /* Keeping white */
+  
+  /* Adding black outline */
+  text-shadow: 
+    -1px -1px 0 #0000,  
+    1px -1px 0 #0000,  
+    -1px 1px 0 #0000,  
+    1px 1px 0 #0000;
+}
+
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
