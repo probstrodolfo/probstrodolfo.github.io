@@ -104,5 +104,5 @@ yelp:
 ORCID:
   name: "ORCID"
   icon: "fa-orcid"
-  baseURL: "https://orcid.org"
+  baseURL: "https://orcid.org/"
   
