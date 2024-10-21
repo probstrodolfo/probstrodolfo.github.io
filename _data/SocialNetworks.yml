@@ -9,7 +9,7 @@
 google-scholar:
   name: "google-scholar"
   baseURL: "https://scholar.google.com/citations?user=S8om22EAAAAJ&hl=en"
-  icon: "fa-google-scholar"
+  icon: "fab fa-google-scholar"
 
 facebook:
   name: "Facebook"
@@ -103,6 +103,6 @@ yelp:
 
 ORCID:
   name: "ORCID"
-  icon: "fa-orcid"
+  icon: "fab fa-orcid"
   baseURL: "https://orcid.org/0000-0002-5885-5701"
   
