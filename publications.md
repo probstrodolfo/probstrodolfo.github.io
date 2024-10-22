@@ -3,7 +3,7 @@ layout: page
 title: ""
 ---
 
-1. DuVal, M.*, **Probst, R.S.**, Branstetter, M. & Longino, J.T. Untangling the ant claws: the army ant (Formicidae: Dorylinae) _Labidus mars_ is a _Neivamyrmex_. _Submitted to Insect Systematics and Diversity_. *undergraduate mentee
+1. DuVal, M.*, **Probst, R.S.**, Branstetter, M. & Longino, J.T. Untangling the ant claws: the army ant (Formicidae: Dorylinae) _Labidus mars_ is a _Neivamyrmex_. _In review at Insect Systematics and Diversity_. *undergraduate mentee
    
 2. Fiorentino, G., **Probst, R.S.**, Richter, A., Economo, E. & Barden, P. A fossil-informed pattern of embiggening and local extinction in _Basiceros_ dirt ants (Hymenoptera: Formicidae). _In review at Proceedings of the Royal Society B: Biological Sciences_.
  
