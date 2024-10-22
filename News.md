@@ -8,6 +8,7 @@ title: ""
 ### Congratulations to Our 2024 UROP and Wilkes Scholar Awardees!
 
 
+
 #### Sylvia Lee
 *Project*: **Unraveling the Identities of Associated Insects in Ant-Plant Symbioses with Nanopore DNA Sequencing**  
 Sylvia was awarded a UROP grant to explore insect diversity within ant-plant symbioses using cutting-edge nanopore sequencing technology. Way to go, Sylvia!
