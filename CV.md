@@ -29,6 +29,7 @@ B.S. in Biology, minor in Marine Biology
 --- 
 
 ### Awards
+* Collection Study Grant ($961; American Museum of Natural History)      2024 
 * Outstanding Postdoctoral Researcher Award ($1,000; University of Utah)      2024
 * Faculty Seed Grant ($55,000; Wilkes Center for Climate Science and Policy)      2024
 * Field Exploration Grant ($4,000; American Society of Naturalists)      2023
