@@ -15,6 +15,6 @@ In addition to our work on Conidae evolution, also along with the Olivera Group,
 ### Stay tuned for incoming news on these projects!
 
 ![Diversification of Cone Snails](images/conidae.jpg)  
-*Figure 1. Phylogenetic tree of some cone snails showing the rapid diversification of these beautiful (and sometimes deadly!) mollusks.
+Phylogenetic tree of some cone snails showing the rapid diversification of these beautiful (and sometimes deadly!) mollusks.
 
 ---
