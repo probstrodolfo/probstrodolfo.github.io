@@ -11,7 +11,7 @@ I am studying ant-plant symbioses using the [***Myrmelachista***](https://www.an
 ### Stay tuned for incoming news on these projects!
 
 ![Myrmelachista](images/Myrmelachista.jpg)  
-Busy, busy __Myrmelachista_ workers cleaning the surfaces of their understory plant host. Tidy little cuties!
+Busy, busy _Myrmelachista_ workers cleaning the surfaces of their understory plant host. Tidy little cuties!
 
 ---
 
