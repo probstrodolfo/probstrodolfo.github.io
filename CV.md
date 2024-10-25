@@ -65,8 +65,11 @@ College of Science, Science Research Initiative (SRI) Program
 ### Collaboration in Grants
 
 * Ant Diversity of the MesoAmerican Corridor (ADMAC) (NSF DEB-1254739)
+  
 * Ants of the World (NSF DEB-1932405)
+  
 * Developing Foundations for Nanopore DNA Sequencing Course-based Undergraduate Research Experiences at Minority-Serving Institutions (NSF DUE-2216349)
+  
 * ANTDIV: Characterziing Diversity and Community Assembly Rules in Amazonian Ants (Amazonian Research Foundation (FAPESPA) (Nº 029/2020))
   
 --- 
