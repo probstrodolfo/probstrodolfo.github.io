@@ -7,7 +7,7 @@ title: ""
 
 University of Utah\
 College of Science\
-Science Research Iniative (SRI) Program\
+[Science Research Iniative (SRI) Program](https://science.utah.edu/sri/)\
 257 S 1400 E\
 Salt Lake City, UT 84112
 
@@ -76,13 +76,13 @@ College of Science, Science Research Initiative (SRI) Program
 
 ### Teaching Experience
 
-* SCI2715: SRI Undergraduate Research      Spring & Fall 2023 & 2024\
+* SCI2715: SRI Undergraduate Research      Spring & Fall 2024 & 2023\
 &nbsp;&nbsp;&nbsp;Instructor; University of Utah
 
 * SCI3900/HONOR3990: HSTEM: Being Human in STEM      Spring 2024\
 &nbsp;&nbsp;&nbsp;Co-Instructor with Dr. Claudia De Grandi; University of Utah
 
-* Examining and Addressing Climate Change in Costa Rica      Spring 2024 & Spring 2023\
+* Examining and Addressing Climate Change in Costa Rica      Spring 2024 & 2023\
 &nbsp;&nbsp;&nbsp;Organizer, Coordinator, and Instructor; University of Utah
 
 * SCI1500: Principles of Scientific Inquiry      Falls 2024 (2x), 2023 (2x), 2022\
