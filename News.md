@@ -14,7 +14,7 @@ title: ""
 Sylvia was awarded a UROP grant to explore insect diversity within ant-plant symbioses using cutting-edge nanopore sequencing technology. Way to go, Sylvia!
 
 #### Will Pearce
-*Project*: **DNA Barcoding to Solve Species Boundaries: Discovering Endemic Ocotea (Lauraceae) in Costa Rica**  
+*Project*: **DNA Barcoding to Solve Species Boundaries: Discovering Endemic _Ocotea_ (Lauraceae) in Costa Rica**  
 Will received a UROP award for his project researching how DNA barcoding can help us uncover species boundaries within the aguacatillo genus _Ocotea_ in Costa Rica. Great job, Will!
 
 #### Alexander Rich
