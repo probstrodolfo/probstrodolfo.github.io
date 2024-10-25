@@ -32,9 +32,9 @@ title: ""
 **In preparation**
 1. **Probst, R.S.** & Longino, J.T. To be submitted to Systematic Biology. Title: The phylogenomic landscape of understory ant-plant symbioses in the Neotropics.
 2. **Probst, R.S.** & Longino, J.T.  To be submitted to Zootaxa. Title: A taxonomic revision of the arboreal ant genus _Myrmelachista_ (Formicinae: Myrmelachistini).
-3. Buxton, A., **Probst, R.S.**, Kittelberger, K., Blair, H.* & Sekercioğlu, Ç. To be submitted to PloS One. Title: Catching flycatchers: morphology vs. genetics in unraveling _Empidonax_ (Passeriformes: Tyrannidae) identity. *master’s student
+3. Buxton, A., **Probst, R.S.**, Kittelberger, K., Blair, H.* & Şekercioğlu, Ç. To be submitted to PloS One. Title: Catching flycatchers: morphology vs. genetics in unraveling _Empidonax_ (Passeriformes: Tyrannidae) identity. *master’s student
 4. Lee, S.* & **Probst, R.S.** To be submitted to Ecological Entomology. Title: Unraveling the identities of associated insects (Coccoidea) in ant-plant symbioses with nanopore DNA sequencing. *undergraduate mentee
-5. Parkins, A.*, **Probst, R.S.**, Kittelberger, K. & Sekercioğlu, Ç. To be submitted to Journal of Avian Biology. Title: Nanopore sequencing as a tool to identify cryptic evolution of reed buntings (Emberizidae: _Emberiza_). *undergraduate mentee
+5. Parkins, A.*, **Probst, R.S.**, Kittelberger, K. & Şekercioğlu, Ç. To be submitted to Journal of Avian Biology. Title: Nanopore sequencing as a tool to identify cryptic evolution of reed buntings (Emberizidae: _Emberiza_). *undergraduate mentee
 6. Wiese, C.*, Briggs, H., Steffens, J. & **Probst, R.S.** To be submitted to Metabarcoding & Metagenomics. Title: Evaluating the effect of formic acid treatment on foraging behaviors of _Apis mellifera_ through pollen DNA metabarcoding. *undergraduate mentee
 7. Silva, R.R., **Probst, R.S.**, Orivel, J. Baccaro, F.B. & Barro, L.C. To be submitted to Global Ecology and Biogeography. Tentative title: Functional trait variation and redundancy across ant communities in the Neotropical and Nearctic regions: linking guilds to ecosystem resilience.
 
