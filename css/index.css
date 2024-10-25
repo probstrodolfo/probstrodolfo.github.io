@@ -126,3 +126,7 @@
 .post-preview .post-entry {
   display: none;
 }
+
+.highlighted-text {
+    color: #651882;; /* Replacing with the exact color of "Hi, I'm Rodolfo" - maybe? */
+}
