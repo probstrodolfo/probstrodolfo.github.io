@@ -19,7 +19,7 @@ Instructor; University of Utah
 ***SCI3900/HONOR3990: HSTEM: Being Human in STEM***    Spring 2024\
 Co-Instructor with Dr. Claudia De Grandi; University of Utah
 
-***Examining and Addressing Climate Change in Costa Rica***      Spring 2024 & Spring 2023\
+***Examining and Addressing Climate Change in Costa Rica***      Springs 2023 & 2024\
 Organizer, Coordinator, and Instructor; University of Utah
 
 ***SCI1500: Principles of Scientific Inquiry***				             Falls 2024 (2x), 2023 (2x), 2022\
@@ -38,7 +38,7 @@ Teaching Assistant; University of Utah
 Instructor; Cultures and Languages Across the Curriculum Program at University of Utah
 
 ***BIOL5445: Entomology***								           Fall 2019\
-Teaching Assistant; University of Utah. In addition to regular TA activities, designed and conducted the lab section of the course
+Teaching Assistant and Instructor; University of Utah. In addition to TA activities, designed and conducted the lab section
 
 ***Summer Camp “Exploring the Amazon”***				Summer 2019 & Summer 2018\
 Teacher and Camp Counselor; Cultures and Languages Across the Curriculum Program at University of Utah. Week-long immersion camp in Portuguese for K-12 students
