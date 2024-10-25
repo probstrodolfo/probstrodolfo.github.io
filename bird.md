@@ -11,6 +11,6 @@ Through DNA barcoding, using markers such as the COI gene, we have been able to 
 Along with my students, we have been incorporating next-generation sequencing (NGS) in real-time with portable Oxford Nanopore Technologies (ONT) instruments, further refinining species delimitation processes. Coupling these methods with niche modeling will enable predictions about the future distributions of these cryptic species under various climate change scenarios, thus enhancing conservation strategies by pinpointing regions of high cryptic avian diversity that may be at risk.
 
 ![Aras](images/emberiza.jpg)  
-**Left:** Female reed bunting (_Emberiza shoeniclus_) and **Center:** Details of feather morphology and coloration. **Right:** View from the Aras Bird Research Program Station in Eastern Türkiye where reed buntings have been sampled.
+**Left:** Female reed bunting (_Emberiza shoeniclus_) and **Center:** Details of feather morphology and coloration. **Right:** View from the Aras Bird Research Program Station in Eastern Türkiye where reed buntings have been sampled. (Credits: Kyle Kittelberger).
 
 ---
