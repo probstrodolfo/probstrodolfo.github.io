@@ -3,7 +3,14 @@ layout: page
 title: ""
 ---
 
-## Lab News
+### Lab News
+---
+### Successful presentations at the SACNAS NDiSTEM Conference in Phoenix!
+Congratulations to Sara, Ainsley, Alex, Kyle, Megan, and Sylvia on presenting their posters at the [SACNAS NDiSTEM](https://www.sacnas.org/conference) conference in Phoenix! What a great opportunity for each of them to share their work with a broader audience, engage in discussions, and gain valuable feedback. I’m proud of their hard work and dedication - exciting to see them represent our research so well!
+
+
+
+
 
 ### Congratulations to Our 2024 UROP and Wilkes Scholar Awardees!
 
