@@ -7,7 +7,7 @@ title: ""
    
 2. Fiorentino, G., **Probst, R.S.**, Richter, A., Economo, E. & Barden, P. A fossil-informed pattern of embiggening and local extinction in _Basiceros_ dirt ants (Hymenoptera: Formicidae). _In review at Proceedings of the Royal Society B: Biological Sciences_.
  
-3. Espino, S., Watkins, M., **Probst, R.S.**, Chase, K., Imperial, J. Koch, T.L., Robinson, S.D., Salcedo, P.F., Taylor, D., Gajewiak, J., Yandell, M. Safavi-Hemami, H. & Olivera, B.M. χ-Conotoxins are an evolutionary innovation in mollusk-hunting cone snails as a counter-adaptation to prey defense. _Accepted in Molecular Biology and Evolution_. [https://academic.oup.com/mbe/advance-article/doi/10.1093/molbev/msae226/7848657](https://academic.oup.com/mbe/advance-article/doi/10.1093/molbev/msae226/7848657).
+3. Espino, S., Watkins, M., **Probst, R.S.**, Chase, K., Imperial, J. Koch, T.L., Robinson, S.D., Salcedo, P.F., Taylor, D., Gajewiak, J., Yandell, M. Safavi-Hemami, H. & Olivera, B.M. (2024) χ-Conotoxins are an evolutionary innovation in mollusk-hunting cone snails as a counter-adaptation to prey defense. _Molecular Biology and Evolution_. [https://academic.oup.com/mbe/advance-article/doi/10.1093/molbev/msae226/7848657](https://academic.oup.com/mbe/advance-article/doi/10.1093/molbev/msae226/7848657).
 
 4. **Probst, R.S.**, Longino, J.T. & Branstetter, M.G. (2024) Evolutionary déjà vu: extreme convergence in an ant-plant association. _Proceedings of the Royal Society B: Biological Sciences_. [http://doi.org/10.1098/rspb.2024.1214](http://doi.org/10.1098/rspb.2024.1214).
  
