@@ -10,9 +10,9 @@ Congratulations to Sara, Ainsley, Alex, Kyle, Megan, and Sylvia on presenting th
 
 
 ![Posters](images/SACNAS2024.jpg)  
-In order (from top row and left to right): Sara England, Megan DuVal, Sylvia Lee, Kyle Cink, Alex Rich, and Ainsley Parkins presenting their research at the SACNAS NDiSTEM. Woot!
+In clockwise order (from top row): Sara England, Megan DuVal, Sylvia Lee, Kyle Cink, Alex Rich, and Ainsley Parkins presenting their research at the SACNAS NDiSTEM. Woot!
 
-
+---
 
 ### Congratulations to Our 2024 UROP and Wilkes Scholar Awardees!
 
