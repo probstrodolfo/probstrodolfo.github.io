@@ -36,5 +36,5 @@ Ainsley, a Wilkes Scholar, is investigating cryptic bird diversity using nanopor
 
 #### Megan Duval (Co-Mentor: Dr. Rodolfo Probst, Mentor: Dr. Jack Longino)
 *Project*: **Exploring Species Boundaries in *Labidus*, a Widespread Army Ant Genus**  
-Megan, with guidance from both Jack Longino and myself, was awarded a renewal for her UROP project investigating species boundaries within the army ant genus _Labidus_. Megan just submitted a paper to _Insect Diversity & Systematics_ (what!) product of her research! Hooray! 
+Megan, with guidance from both Jack Longino and myself, was awarded a renewal for her UROP project investigating species boundaries within the army ant genus _Labidus_. Megan just submitted a paper to _Insect Systematics & Diversity_ (what!) product of her research! Hooray! 
 
