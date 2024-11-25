@@ -5,7 +5,7 @@ title: ""
 
 ### Lab News
 ---
-Megan DuVal just won **first place** in the Student Competition for President's Prize for her oral talk at the 2024 Annual Meeting of the [Entomological Society of America[(https://www.entsoc.org/events/annual-meeting)! And Alex Rich just got selected by the University of Utah Office of Undergraduate Research to present his research on spider venoms this coming February at Research on Capitol Hill (ROCH)! Awesome news this month of November!
+Megan DuVal just won **first place** in the Student Competition for President's Prize for her oral talk at the 2024 Annual Meeting of the [Entomological Society of America](https://www.entsoc.org/events/annual-meeting)! And Alex Rich just got selected by the University of Utah Office of Undergraduate Research to present his research on spider venoms this coming February at Research on Capitol Hill (ROCH)! Awesome news this month of November!
 
 ---
 ### Successful presentations at the 2024 SACNAS NDiSTEM Conference!
