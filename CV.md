@@ -127,6 +127,9 @@ College of Science, Science Research Initiative (SRI) Program
 
 ### Selected Invited Talks & Seminars
 
+* Learning from Ant-Plant Mutualisms: How Field Research Lays the Groundwork for Scientific Breakthroughs									      2024\
+&nbsp;&nbsp;&nbsp;Keynote Speaker; International & Area Studies Symposium, University of Utah.
+
 * Integrating Past, Present, and Future in Species Discovery      2024\
 &nbsp;&nbsp;&nbsp;Invited Seminar; Summer Seminar Series at the Natural History Museum of Utah
 
@@ -186,6 +189,9 @@ College of Science, Science Research Initiative (SRI) Program
 ### Outreach & Service
 
 #### 1. Selected Outreach
+* Great Salt Lake Audubon Chapter _Birds 'n Bites Seminar Series_ “Light Pollution and the Insectageddon: How Artificial Lighting is Fueling Insect Decline"			      2024
+   * Speaker; Talked to public about impacts of light pollution on insect populations
+
 * Member’s Day at the National Audubon Society Utah Chapter      Since 2023
     * Organizer; Developed several outreach activities with a focus on insect conservation
  
