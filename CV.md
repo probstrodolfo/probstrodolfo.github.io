@@ -71,6 +71,8 @@ College of Science, Science Research Initiative (SRI) Program
 * Developing Foundations for Nanopore DNA Sequencing Course-based Undergraduate Research Experiences at Minority-Serving Institutions (NSF DUE-2216349)
   
 * ANTDIV: Characterziing Diversity and Community Assembly Rules in Amazonian Ants (Amazonian Research Foundation (FAPESPA) (Nº 029/2020))
+
+* Ampliando Conexões: Novos Arranjos para Monitoramento e Manutenção de Serviços Ecossistêmicos em Territórios Sociobiodiversos da Amazônia Oriental (National Council for Scientific and Technological Development (CNPq)) (Nº 022/2024)
   
 --- 
 
