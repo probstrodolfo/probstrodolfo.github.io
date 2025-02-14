@@ -6,7 +6,7 @@ title: ""
 
 1. Oberski, J., Griebenow, Z., Camacho, G.P., Boudinot, B.... **Probst, R.S.**, et al. Ant systematics: Past, present, and future. _In review._ 
  
-2. Fiorentino, G., **Probst, R.S.**, Richter, A., Economo, E. & Barden, P. A fossil-informed pattern of embiggening and local extinction in _Basiceros_ dirt ants (Hymenoptera: Formicidae). _Accepted at Proceedings of the Royal Society B: Biological Sciences_.
+2. Fiorentino, G., **Probst, R.S.**, Richter, A., Economo, E. & Barden, P. A fossil-informed pattern of body size increase and local extinction in _Basiceros_ dirt ants (Hymenoptera: Formicidae). _Accepted at Proceedings of the Royal Society B: Biological Sciences_.
    
 3. DuVal, M.*, **Probst, R.S.**, Branstetter, M. & Longino, J.T. Untangling the ant claws: the army ant (Formicidae: Dorylinae) _Labidus mars_ is a _Neivamyrmex_. _In press at Insect Systematics and Diversity_. *undergraduate mentee_.
  
@@ -20,7 +20,7 @@ title: ""
 
 8. **Probst, R. S.**, Silva, R. R., & Brandão, C. R. F. (2023) Sampling local ant diversities and the importance of trait analyses. _Biotropica_, 55: 944–953. [https://doi.org/10.1111/btp.13244](https://doi.org/10.1111/btp.13244).
 
-9. **Probst R.S.** & Brandão C.R.F. (2022) A taxonomic revision of the dirt ants, _Basiceros_ Schulz 1906 (Hymenoptera, Formicidae). _Zootaxa_, 5149(1): 1–75. [https://doi.org/10.11646/zootaxa.5149.1.1](https://doi.org/10.11646/zootaxa.5149.1.1).
+9. **Probst, R.S.** & Brandão, C.R.F. (2022) A taxonomic revision of the dirt ants, _Basiceros_ Schulz 1906 (Hymenoptera, Formicidae). _Zootaxa_, 5149(1): 1–75. [https://doi.org/10.11646/zootaxa.5149.1.1](https://doi.org/10.11646/zootaxa.5149.1.1).
 
 10. Silva, R.R.,…**Probst, R.S.**, et al. (2021) Atlantic Ants: a dataset of ants in Atlantic Forests of South America. _Ecology_, 103: e03580. [https://doi.org/10.1002/ecy.3580](https://doi.org/10.1002/ecy.3580).
 
