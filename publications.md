@@ -10,7 +10,7 @@ title: ""
    
 3. DuVal, M.*, **Probst, R.S.**, Branstetter, M. & Longino, J.T. Untangling the ant claws: the army ant (Formicidae: Dorylinae) _Labidus mars_ is a _Neivamyrmex_. _In press at Insect Systematics and Diversity_. *undergraduate mentee_.
  
-4. Boudinot, B., Casadei-Ferreira, A., Wöhrl, T.A., Jesse Czekanski-Moir, J., **Probst, R.S.** & Richter, A. Ant Ecomorphology. _In press_ (in _Insect Ecomorphology - Linking Functional Insect Morphology to Ecology and Evolution_, Elsevier Eds. Book chapter).
+4. Boudinot, B., Casadei-Ferreira, A., Wöhrl, T.A., **Probst, R.S.**, Lieberman, Z.E., Jesse Czekanski-Moir, J. & Richter, A. Ant Ecomorphology. _In press_ (in _Insect Ecomorphology - Linking Functional Insect Morphology to Ecology and Evolution_, Elsevier Eds. Book chapter).
 
 5. **Probst, R.S.**, Longino, J.T. & Branstetter, M.G. (2024) Evolutionary déjà vu: extreme convergence in an ant-plant association. _Proceedings of the Royal Society B: Biological Sciences_. [http://doi.org/10.1098/rspb.2024.1214](http://doi.org/10.1098/rspb.2024.1214).
  
