@@ -67,7 +67,7 @@ Alexander was honored with a UROP award for his groundbreaking research analyzin
 *Project*: **Unveiling Cryptic Avifauna Diversity Using Nanopore DNA Sequencing: A Case Study in the Passerine Genus *Emberiza* (Passeriformes: Emberizidae)**  
 Ainsley, a Wilkes Scholar, is investigating cryptic bird diversity using nanopore sequencing, with a focus on the *Emberiza* genus. Congratulations, Ainsley!
 
-#### Megan Duval (Co-Mentor: Dr. Rodolfo Probst, Mentor: Dr. Jack Longino)
+#### Megan Duval (Shared Mentorship with Dr. Jack Longino)
 *Project*: **Exploring Species Boundaries in *Labidus*, a Widespread Army Ant Genus**  
 Megan, with guidance from both Jack Longino and myself, was awarded a renewal for her UROP project investigating species boundaries within the army ant genus _Labidus_. Megan just submitted a paper (what!) product of her research! Hooray! 
 
