@@ -73,12 +73,14 @@ College of Science, Science Research Initiative (SRI) Program
 * ANTDIV: Characterziing Diversity and Community Assembly Rules in Amazonian Ants (Amazonian Research Foundation (FAPESPA) (Nº 029/2020))
 
 * Ampliando Conexões: Novos Arranjos para Monitoramento e Manutenção de Serviços Ecossistêmicos em Territórios Sociobiodiversos da Amazônia Oriental (National Council for Scientific and Technological Development (CNPq)) (Nº 022/2024)
+
+* Cerrados do Planalto Central: Estrutura, Dinâmica e Processos Ecológicos Fase 5 – Programa de Pesquisa Ecológica de Longa Duração (PELD) (National Council for Scientific and Technological Development (CNPq)) (Nº 023/2024)
   
 --- 
 
 ### Teaching Experience
 
-* SCI2715: SRI Undergraduate Research      Spring & Fall 2024 & 2023\
+* SCI2715: SRI Undergraduate Research      Spring & Fall 2024 & 2023, Spring 2025\
 &nbsp;&nbsp;&nbsp;Instructor; University of Utah
 
 * SCI3900/HONOR3990: HSTEM: Being Human in STEM      Spring 2024\
@@ -126,6 +128,9 @@ College of Science, Science Research Initiative (SRI) Program
 --- 
 
 ### Selected Invited Talks & Seminars
+
+* Empowering Student Research with Nanopore Sequencing: A Journey in Phylogenomics, Biodiversity, and Beyond									      2025\
+&nbsp;&nbsp;&nbsp;Invited Seminar; Bellevue College, Seattle
 
 * Learning from Ant-Plant Mutualisms: How Field Research Lays the Groundwork for Scientific Breakthroughs									      2024\
 &nbsp;&nbsp;&nbsp;Keynote Speaker; International & Area Studies Symposium, University of Utah.
