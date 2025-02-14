@@ -12,7 +12,7 @@ title: ""
 #### _More presentations from our group!_
 Kyle Cink got selected to present his research on nanopore sequencing of SE Asian micromollusks at the National Conference of Undergraduate Research (NCUR) this April in Pittsburgh! Hooray! And Megan DuVal and Sylvia Lee were both selected to present oral talks at the Pacific Branch of the Entomological Society of America this coming March in Salt Lake City! 
 
-Our lab were a full steam during the [STEMFEST at Eastwood Elementary](https://schools.graniteschools.org/eastwood/2025/01/15/stemfest/). What a great time interacting with students and their families while talking bugs, mollusks, birds, and DNA! 
+Our lab were at full steam during the [STEMFEST at Eastwood Elementary](https://schools.graniteschools.org/eastwood/2025/01/15/stemfest/). What a great time interacting with students and their families while talking bugs, mollusks, birds, and DNA! 
 
 
 ![stemfest](images/STEMFEST.jpg)
