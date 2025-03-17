@@ -6,6 +6,12 @@ title: ""
 ## Lab News
 ---
 ### February 2025
+#### _Our lab had a strong presence at the 2025 Utah Conference of Undergraduate Research!_
+Five oral talks, what?! Kyle, Megan, Alex, Sylvia, and Will all traveled to SUU in Cedar City to present their research! Some highlights below! Hooray!
+
+![ucur](images/UCUR2025.jpg)
+From top to bottom, left to right: Kyle, Sylvia, Alex, Will, and Megan at the stage! - and practicing :)
+
 #### _Alex shined at the ROCH event!_
 The University of Utah selects a group of amazing students each year to exhibit their work to Utah State legislators at an event called Research on Capitol Hill (ROCH). Alex was selected to present his work on our RNA to DNA barcoding pipeline utilizing spider venoms! Check it out his poster [here](https://our.utah.edu/wp-content/uploads/sites/35/2025/02/Rich-scaled.jpg).
 ![roch](images/ROCH1.jpg)
