@@ -7,7 +7,7 @@ title: ""
 ---
 ### February 2025
 #### _Our lab had a strong presence at the 2025 Utah Conference of Undergraduate Research!_
-Five oral talks, what?! Kyle, Megan, Alex, Sylvia, and Will all traveled to SUU in Cedar City to present their research! Some highlights below! Hooray!
+Five oral talks, what?! Kyle, Megan, Alex, Sylvia, and Will all traveled to SUU in Cedar City to present their research at the [2025 UCUR](https://www.suu.edu/ucur/program.html)! Some highlights below! Hooray!
 
 ![ucur](images/UCUR2025.jpg)
 From top to bottom, left to right: Kyle, Sylvia, Alex, Will, and Megan at the stage! - and practicing :)
