@@ -8,7 +8,7 @@ title: ""
  
 2. DuVal, M.*, **Probst, R.S.**, Branstetter, M. & Longino, J.T. Untangling the ant claws: the army ant (Formicidae: Dorylinae) _Labidus mars_ is a _Neivamyrmex_. _In press at Insect Systematics and Diversity_. *undergraduate mentee 
    
-3. Fiorentino, G., **Probst, R.S.**, Richter, A., Economo, E. & Barden, P. (2025) A fossil-informed pattern of body size increase and local extinction in _Basiceros_ dirt ants (Hymenoptera: Formicidae). Proceedings of the Royal Society B: Biological Sciences. [https://doi.org/10.1098/rspb.2024.2171](https://doi.org/10.1098/rspb.2024.2171).
+3. Fiorentino, G., **Probst, R.S.**, Richter, A., Economo, E. & Barden, P. (2025) A fossil-informed pattern of body size increase and local extinction in _Basiceros_ dirt ants (Hymenoptera: Formicidae). _Proceedings of the Royal Society B: Biological Sciences_. [https://doi.org/10.1098/rspb.2024.2171](https://doi.org/10.1098/rspb.2024.2171).
  
 4. Boudinot, B., Casadei-Ferreira, A., Wöhrl, T.A., **Probst, R.S.**, Lieberman, Z.E., Jesse Czekanski-Moir, J. & Richter, A. (2025) Ant Ecomorphology. In: _Insect Ecomorphology - Linking Functional Insect Morphology to Ecology and Evolution_, Elsevier Eds., p. 469-524. (Book chapter) [https://doi.org/10.1016/B978-0-443-18544-1.00012-0](https://doi.org/10.1016/B978-0-443-18544-1.00012-0).
 
