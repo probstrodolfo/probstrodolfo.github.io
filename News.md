@@ -6,7 +6,7 @@ title: ""
 ## Lab News
 ---
 ### March 2025
-#### _Megan and Sylvia did great on her oral talks at the 2025 Pacific Branch of the Entomological Society of American meeting!_
+#### _Megan and Sylvia did great on their oral talks at the 2025 Pacific Branch of the Entomological Society of American meeting!_
 Megan presented on her current work on the biogeography of army ants and Sylvia on uncovering mealybug identities with Nanopore sequencing! Well done!! 
 
 ![PBESA](images/PBESA.jpg)
