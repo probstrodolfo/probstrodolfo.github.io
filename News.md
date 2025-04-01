@@ -9,7 +9,7 @@ title: ""
 #### _Megan and Sylvia did great on her oral talks at the 2025 Pacific Branch of the Entomological Society of American meeting!_
 Megan presented on her current work on the biogeography of army ants and Sylvia on uncovering mealybug identities with Nanopore sequencing! Well done!! 
 
-![ucur](images/PBESA.jpg)
+![PBESA](images/PBESA.jpg)
 Left to right: Megan and her _Labidus_, Sylvia and her Coccoidea!
 
 ---
