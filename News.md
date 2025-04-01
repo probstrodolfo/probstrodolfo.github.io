@@ -5,6 +5,14 @@ title: ""
 
 ## Lab News
 ---
+### March 2025
+#### _Megan and Sylvia did great on her oral talks at the 2025 Pacific Branch of the Entomological Society of American meeting!_
+Megan presented on her current work on the biogeography of army ants and Sylvia on uncovering mealybug identities with Nanopore sequencing! Well done!! 
+
+![ucur](images/PBESA.jpg)
+Left to right: Megan and her _Labidus_, Sylvia and her Coccoidea!
+
+---
 ### February 2025
 #### _Our lab had a strong presence at the 2025 Utah Conference of Undergraduate Research!_
 Five oral talks, what?! Kyle, Megan, Alex, Sylvia, and Will all traveled to SUU in Cedar City to present their research at the [2025 UCUR](https://www.suu.edu/ucur/program.html)! Some highlights below! Hooray!
