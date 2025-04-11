@@ -4,7 +4,7 @@ title: ""
 ---
 
 
-1. Wiese, C.*, **Probst, R.S.**, Briggs, H. & Steffens, J. _Submitted_. Title: Evaluating the effect of formic acid treatment on foraging behaviors of _Apis mellifera_ through pollen DNA metabarcoding. *undergraduate mentee
+1. Wiese, C.*, **Probst, R.S.**, Briggs, H. & Steffens, J. Evaluating the effect of formic acid treatment on _Apis mellifera_ foraging behavior using nanopore metabarcoding technologies. _Submitted_. *undergraduate mentee
 
 2. Oberski, J., Griebenow, Z., Camacho, G.P., Boudinot, B.... **Probst, R.S.**, et al. Ant systematics: Past, present, and future. _In review._ 
  
