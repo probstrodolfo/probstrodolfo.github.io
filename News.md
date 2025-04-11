@@ -5,9 +5,17 @@ title: ""
 
 ## Lab News
 ---
+### April 2025
+#### _Kyle presented his research on nanopore sequencing for micromollusk identification at the NCUR!_
+Kyle attended the National Conference of Undergraduate in Pittsburgh and gave a great oral talk! Way to go!
+
+#### _Will just won the prestigious BSA Undergraduate Student Research Award!_
+Will was selected among a pool of highly qualified folks for the Botanical Society of America SRA! Funding to support his molecular work on a species-complex within Western US [gooseberries](https://en.wikipedia.org/wiki/Ribes)! Hooray!
+
+---
 ### March 2025
 #### _Megan and Sylvia did great on their oral talks at the 2025 Pacific Branch of the Entomological Society of American meeting!_
-Megan presented on her current work on the biogeography of army ants and Sylvia on uncovering mealybug identities with Nanopore sequencing! Well done!! 
+Megan presented on her current work on the biogeography of army ants and Sylvia on uncovering mealybug identities with Nanopore sequencing! Well done!! Update: Megan WON BEST UNDERGRADUATE ORAL PRESENTATION for her talk on [_Labidus_](https://www.alexanderwild.com/Ants/Taxonomic-List-of-Ant-Genera/Labidus) biogeography! Let's gooo!
 
 ![PBESA](images/PBESA.jpg)
 Left to right: Megan and her _Labidus_, Sylvia and her Coccoidea!
