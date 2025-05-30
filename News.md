@@ -4,6 +4,16 @@ title: ""
 ---
 
 ## Lab News
+### May 2025
+#### _Rocky was selected to preset at the Association of Field Ornithologists’ Annual Meeting in Ogden, Utah, this July!_
+Rocky will be presenting a poster on species boundaries on stonechats! Wait, there is more: he was granted a student travel award to cover his participation! Superb!
+
+#### _Ainsley presented a comprehensive poster on her research using nanopore sequencing for bird taxonomy at the Wilkes Summmit!_
+More than 400 barcodes and a beautiful poster! Well done, Ainsley! Now moving into the manuscript phase!
+
+#### _Megan was granted the University of Utah School of Biological Sciences' Research Award!_
+Megan was granted a full semester of funding to support her research on army ant evolution! Hooray!  
+
 ---
 ### April 2025
 #### _Kyle presented his research on nanopore sequencing for micromollusk identification at the NCUR!_
