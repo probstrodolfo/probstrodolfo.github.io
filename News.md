@@ -11,7 +11,7 @@ Rocky will be presenting a poster on species boundaries on stonechats! Wait, the
 #### _Ainsley presented a comprehensive poster on her research using nanopore sequencing for bird taxonomy at the Wilkes Summmit!_
 More than 400 barcodes and a beautiful poster! Well done, Ainsley! Now moving into the manuscript phase!
 
-#### _Megan was granted the University of Utah School of Biological Sciences' Research Award!_
+#### _Megan was granted the University of Utah School of Biological Sciences' Undergraduate Research Award!_
 Megan was granted a full semester of funding to support her research on army ant evolution! Hooray!  
 
 ---
