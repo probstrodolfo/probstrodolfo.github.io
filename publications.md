@@ -8,7 +8,7 @@ title: ""
 
 3. Oberski, J., Griebenow, Z., Camacho, G.P., Boudinot, B.... **Probst, R.S.**, et al. Ant systematics: Past, present, and future. Accepted at _Insect Systematics and Diversity_.
  
-4. DuVal, M.*, **Probst, R.S.**, Branstetter, M. & Longino, J.T. Untangling the ant claws: the army ant (Formicidae: Dorylinae) _Labidus mars_ is a _Neivamyrmex_. In press at _Insect Systematics and Diversity_. *undergraduate mentee 
+4. DuVal, M.*, **Probst, R.S.**, Branstetter, M. & Longino, J.T. Untangling the ant claws: the army ant (Formicidae: Dorylinae) _Labidus mars_ is a _Neivamyrmex_. In press at _Insect Systematics and Diversity_. [https://doi.org/10.1093/isd/ixaf016](https://doi.org/10.1093/isd/ixaf016). *undergraduate mentee 
    
 5. Fiorentino, G., **Probst, R.S.**, Richter, A., Economo, E. & Barden, P. (2025) A fossil-informed pattern of body size increase and local extinction in _Basiceros_ dirt ants (Hymenoptera: Formicidae). _Proceedings of the Royal Society B: Biological Sciences_. [https://doi.org/10.1098/rspb.2024.2171](https://doi.org/10.1098/rspb.2024.2171).
  
