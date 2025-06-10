@@ -4,6 +4,10 @@ title: ""
 ---
 
 ## Lab News
+#### _Megan's paper is out!! Beautiful combination of genomics and morphological work! Huge congrats of her 1st author publication on ISD!_
+Nice contribution lead by Megan on generic boundaries for army ants - considered solid and stable for nearly 100 years! Big changes! Check it out [here](https://academic.oup.com/isd/article/9/3/6/8155810)! 
+
+---
 ### May 2025
 #### _Rocky was selected to preset at the Association of Field Ornithologists’ Annual Meeting in Ogden, Utah, this July!_
 Rocky will be presenting a poster on species boundaries on stonechats! Wait, there is more: he was granted a student travel award to cover his participation! Superb!
