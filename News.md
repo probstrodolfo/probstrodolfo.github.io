@@ -4,6 +4,8 @@ title: ""
 ---
 
 ## Lab News
+
+### June 2025
 #### _Megan's paper is out!! Beautiful combination of genomics and morphological work! Huge congrats of her 1st author publication on ISD!_
 Nice contribution lead by Megan on generic boundaries for army ants - considered solid and stable for nearly 100 years! Big changes! Check it out [here](https://academic.oup.com/isd/article/9/3/6/8155810)! 
 
