@@ -5,6 +5,12 @@ title: ""
 
 ## Lab News
 
+### July 2025
+#### _Claudia's paper just got submitted to BioRxiv! If you are interested in nanopore sequencing, metabarcoding, and honeybee health, this might be for you! A ton of data to unpack, and huge congrats of her 1st author publication!_
+Claudia worked out new primer combinations for plant metabarcoding with nanopore sequencing to analyze the impact of formic acid on honey bee foraging. Beautifully done! Check it out [here](https://doi.org/10.1101/2025.06.27.662048 ))! 
+
+---
+
 ### June 2025
 #### _Megan's paper is out!! Beautiful combination of genomics and morphological work! Huge congrats of her 1st author publication on ISD!_
 Nice contribution lead by Megan on generic boundaries for army ants - considered solid and stable for nearly 100 years! Big changes! Check it out [here](https://academic.oup.com/isd/article/9/3/6/8155810)! 
