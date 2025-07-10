@@ -6,7 +6,7 @@ title: ""
 
 2. Oberski, J., Griebenow, Z., Camacho, G.P., Boudinot, B.... **Probst, R.S.**, et al. Ant systematics: Past, present, and future. Accepted at _Insect Systematics and Diversity_. 
 
-3. Wiese, C.*, **Probst, R.S.**, Briggs, H. & Steffens, J. (2025) Evaluating the effect of formic acid treatment on _Apis mellifera_ foraging behavior using nanopore metabarcoding technologies. https://doi.org/10.1101/2025.06.27.662048. *undergraduate mentee
+3. Wiese, C.*, **Probst, R.S.**, Briggs, H. & Steffens, J. (2025) Evaluating the effect of formic acid treatment on _Apis mellifera_ foraging behavior using nanopore metabarcoding technologies. [https://doi.org/10.1101/2025.06.27.662048] (https://doi.org/10.1101/2025.06.27.662048). *undergraduate mentee
  
 4. DuVal, M.*, **Probst, R.S.**, Branstetter, M. & Longino, J.T. (2025) Untangling the ant claws: the army ant (Formicidae: Dorylinae) _Labidus mars_ is a _Neivamyrmex_. _Insect Systematics and Diversity_. https://doi.org/10.1093/isd/ixaf016. *undergraduate mentee 
    
