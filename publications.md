@@ -8,7 +8,7 @@ title: ""
 
 3. Wiese, C.*, **Probst, R.S.**, Briggs, H. & Steffens, J. (2025) Evaluating the effect of formic acid treatment on _Apis mellifera_ foraging behavior using nanopore metabarcoding technologies. [https://doi.org/10.1101/2025.06.27.662048] (https://doi.org/10.1101/2025.06.27.662048). *undergraduate mentee
  
-4. DuVal, M.*, **Probst, R.S.**, Branstetter, M. & Longino, J.T. (2025) Untangling the ant claws: the army ant (Formicidae: Dorylinae) _Labidus mars_ is a _Neivamyrmex_. _Insect Systematics and Diversity_. [https://doi.org/10.1093/isd/ixaf016](https://doi.org/10.1093/isd/ixaf016). *undergraduate mentee 
+4. DuVal, M.*, **Probst, R.S.**, Branstetter, M. & Longino, J.T. (2025) Untangling the ant claws: the army ant (Formicidae: Dorylinae) _Labidus mars_ is a _Neivamyrmex_. _Insect Systematics and Diversity_. [https://doi.org/10.1093/isd/ixaf016] (https://doi.org/10.1093/isd/ixaf016). *undergraduate mentee 
    
 5. Fiorentino, G., **Probst, R.S.**, Richter, A., Economo, E. & Barden, P. (2025) A fossil-informed pattern of body size increase and local extinction in _Basiceros_ dirt ants (Hymenoptera: Formicidae). _Proceedings of the Royal Society B: Biological Sciences_. [https://doi.org/10.1098/rspb.2024.2171](https://doi.org/10.1098/rspb.2024.2171).
  
