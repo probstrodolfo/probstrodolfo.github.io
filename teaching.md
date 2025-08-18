@@ -13,7 +13,11 @@ I have designed and taught various courses across the U.S. and internationally, 
 
 ### Teaching Experience (also see CV)
 
-***SCI2715: SRI Undergraduate Research***    Spring & Fall 2023 & 2024, Spring 2025\
+***SCI2715: SRI Undergraduate Research***    Summer 2025\
+Introduction to Comparative Methods for Evolution (in Portuguese)	
+Instructor; Museu Paraense Emílio Goeldi, Belém, Pará, Brazil. Short-term course for the Graduate Program in Biodiversity and Evolution
+
+***SCI2715: SRI Undergraduate Research***    Spring & Fall 2023 & 2024, 2025\
 Instructor; University of Utah
 
 ***SCI3900/HONOR3990: HSTEM: Being Human in STEM***    Spring 2024\
