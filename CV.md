@@ -80,7 +80,7 @@ College of Science, Science Research Initiative (SRI) Program
 
 ### Teaching Experience
 
-* Introduction to Comparative Methods for Evolution (in Portugues)		   Summer 2025\
+* Introduction to Comparative Methods in Evolution (in Portugues)		   Summer 2025\
 &nbsp;&nbsp;&nbsp;Instructor; Museu Paraense Emílio Goeldi, Belém, Pará, Brazil. Short-term course for the Graduate Program in Biodiversity and Evolution
 
 * SCI2715: SRI Undergraduate Research      Spring & Fall 2024 & 2023, Spring 2025\
