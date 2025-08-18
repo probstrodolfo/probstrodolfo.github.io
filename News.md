@@ -6,6 +6,12 @@ title: ""
 ## Lab News
 
 ### July 2025
+#### Rocky presented his research on nanopore sequencing for _Saxicola_ identification and barcoding evolution at the Association of Field Ornithologists (AFO) Meeting\!_
+Rocky attended the AFO in Ogden, Utah and presented a nice poster on his independent research! Hoot!
+
+![AFO](images/AFO.jpg)
+Rocky and his beautiful poster on stonechats genetics!
+
 #### _Claudia's paper just got submitted to BioRxiv! If you are interested in nanopore sequencing, metabarcoding, and honeybee health, this might be for you! A ton of data to unpack, and huge congrats of her 1st author publication!_
 Claudia worked out new primer combinations for plant metabarcoding with nanopore sequencing to analyze the impact of formic acid on honey bee foraging. Beautifully done! Check it out [here](https://doi.org/10.1101/2025.06.27.662048 ))! 
 
