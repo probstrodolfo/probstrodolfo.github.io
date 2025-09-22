@@ -33,7 +33,7 @@ B.S. in Biology, minor in Marine Biology
 * Outstanding Postdoctoral Researcher Award ($1,000; University of Utah)      2024
 * Faculty Seed Grant ($55,000; Wilkes Center for Climate Science and Policy)      2024
 * Field Exploration Grant ($4,000; American Society of Naturalists)      2023
-* Oxford Nanopore Technologies (ONT) Education Beta Program      2023
+* Oxford Nanopore Technologies (ONT) Education Beta Program      2023-current
     * Selected as researcher to be sponsored by ONT, funding varies by projects
 * Faculty Seed Grant ($55,000; Wilkes Center for Climate Science and Policy)      2023
 * Postdoctoral Research Fellowship ($189,000; University of Utah)      2022-2025
