@@ -2,37 +2,39 @@
 layout: page
 title: ""
 ---
-1. Buxton, A., **Probst, R.S.**, Kittelberger, K., Blair, H.* & Şekercioğlu, Ç. _In review_. Title: Catching flycatchers: high congruence of field and molecular identifications of _Empidonax_ (Passeriformes: Tyrannidae) flycatchers highlights the feasibility of accurate in-hand identification. *master’s student
+1. Fiorentino, G., Ladino, N., Mera-Rodríguez, D., Cubillos, D., Cavalcanti, J.P., **Probst, R.S.**, et al. _Submitted_. A hyperdiverse ant fauna from Dominican amber. 
 
-2. Oberski, J., Griebenow, Z., Camacho, G.P., Boudinot, B.... **Probst, R.S.**, et al. Ant systematics: Past, present, and future. In press at _Insect Systematics and Diversity_. 
+2. Buxton, A., **Probst, R.S.**, Kittelberger, K., Blair, H.* & Şekercioğlu, Ç. _Accepted_. Title: Catching flycatchers: high congruence of field and molecular identifications of _Empidonax_ (Passeriformes: Tyrannidae) flycatchers highlights the feasibility of accurate in-hand identification. *master’s student
 
-3. Wiese, C.*, **Probst, R.S.**, Briggs, H. & Steffens, J. (2025) Evaluating the effect of formic acid treatment on _Apis mellifera_ foraging behavior using nanopore metabarcoding technologies. _BioRxiv_. [https://doi.org/10.1101/2025.06.27.662048](https://doi.org/10.1101/2025.06.27.662048). *undergraduate mentee
+3. Oberski, J., Griebenow, Z., Camacho, G.P., Boudinot, B.... **Probst, R.S.**, et al. (2025) Ant systematics: Past, present, and future. _Insect Systematics and Diversity_. [https://doi.org/10.1093/isd/ixaf025](https://doi.org/10.1093/isd/ixaf025).
+
+4. Wiese, C.*, **Probst, R.S.**, Briggs, H. & Steffens, J. (2025) Evaluating the effect of formic acid treatment on _Apis mellifera_ foraging behavior using nanopore metabarcoding technologies. _BioRxiv_. [https://doi.org/10.1101/2025.06.27.662048](https://doi.org/10.1101/2025.06.27.662048). *undergraduate mentee
  
-4. DuVal, M.*, **Probst, R.S.**, Branstetter, M. & Longino, J.T. (2025) Untangling the ant claws: the army ant (Formicidae: Dorylinae) _Labidus mars_ is a _Neivamyrmex_. _Insect Systematics and Diversity_. [https://doi.org/10.1093/isd/ixaf016](https://doi.org/10.1093/isd/ixaf016). *undergraduate mentee 
+5. DuVal, M.*, **Probst, R.S.**, Branstetter, M. & Longino, J.T. (2025) Untangling the ant claws: the army ant (Formicidae: Dorylinae) _Labidus mars_ is a _Neivamyrmex_. _Insect Systematics and Diversity_. [https://doi.org/10.1093/isd/ixaf016](https://doi.org/10.1093/isd/ixaf016). *undergraduate mentee 
    
-5. Fiorentino, G., **Probst, R.S.**, Richter, A., Economo, E. & Barden, P. (2025) A fossil-informed pattern of body size increase and local extinction in _Basiceros_ dirt ants (Hymenoptera: Formicidae). _Proceedings of the Royal Society B: Biological Sciences_. [https://doi.org/10.1098/rspb.2024.2171](https://doi.org/10.1098/rspb.2024.2171).
+6. Fiorentino, G., **Probst, R.S.**, Richter, A., Economo, E. & Barden, P. (2025) A fossil-informed pattern of body size increase and local extinction in _Basiceros_ dirt ants (Hymenoptera: Formicidae). _Proceedings of the Royal Society B: Biological Sciences_. [https://doi.org/10.1098/rspb.2024.2171](https://doi.org/10.1098/rspb.2024.2171).
  
-6. Boudinot, B., Casadei-Ferreira, A., Wöhrl, T.A., **Probst, R.S.**, Lieberman, Z.E., Jesse Czekanski-Moir, J. & Richter, A. (2025) Ant Ecomorphology. In: _Insect Ecomorphology - Linking Functional Insect Morphology to Ecology and Evolution_, Elsevier Eds., p. 469-524. (Book chapter) [https://doi.org/10.1016/B978-0-443-18544-1.00012-0](https://doi.org/10.1016/B978-0-443-18544-1.00012-0).
+7. Boudinot, B., Casadei-Ferreira, A., Wöhrl, T.A., **Probst, R.S.**, Lieberman, Z.E., Jesse Czekanski-Moir, J. & Richter, A. (2025) Ant Ecomorphology. In: _Insect Ecomorphology - Linking Functional Insect Morphology to Ecology and Evolution_, Elsevier Eds., p. 469-524. (Book chapter) [https://doi.org/10.1016/B978-0-443-18544-1.00012-0](https://doi.org/10.1016/B978-0-443-18544-1.00012-0).
 
-7. **Probst, R.S.**, Longino, J.T. & Branstetter, M.G. (2024) Evolutionary déjà vu: extreme convergence in an ant-plant association. _Proceedings of the Royal Society B: Biological Sciences_. [http://doi.org/10.1098/rspb.2024.1214](http://doi.org/10.1098/rspb.2024.1214).
+8. **Probst, R.S.**, Longino, J.T. & Branstetter, M.G. (2024) Evolutionary déjà vu: extreme convergence in an ant-plant association. _Proceedings of the Royal Society B: Biological Sciences_. [http://doi.org/10.1098/rspb.2024.1214](http://doi.org/10.1098/rspb.2024.1214).
  
-8. Espino, S., Watkins, M., **Probst, R.S.**, Chase, K., Imperial, J. Koch, T.L., Robinson, S.D., Salcedo, P.F., Taylor, D., Gajewiak, J., Yandell, M. Safavi-Hemami, H. & Olivera, B.M. (2024) χ-Conotoxins are an evolutionary innovation in mollusk-hunting cone snails as a counter-adaptation to prey defense. _Molecular Biology and Evolution_. [https://academic.oup.com/mbe/article/41/11/msae226/7848657](https://academic.oup.com/mbe/article/41/11/msae226/7848657).
+9. Espino, S., Watkins, M., **Probst, R.S.**, Chase, K., Imperial, J. Koch, T.L., Robinson, S.D., Salcedo, P.F., Taylor, D., Gajewiak, J., Yandell, M. Safavi-Hemami, H. & Olivera, B.M. (2024) χ-Conotoxins are an evolutionary innovation in mollusk-hunting cone snails as a counter-adaptation to prey defense. _Molecular Biology and Evolution_. [https://academic.oup.com/mbe/article/41/11/msae226/7848657](https://academic.oup.com/mbe/article/41/11/msae226/7848657).
 
-9. Pereyra, M., **Probst, R.S.***, Cocucci, A.A. (2024) The first record of ants (_Camponotus chilensis_, Hymenoptera: Formicidae) as potential pollinators of a Neotropical tree species (_Lomatia hirsuta_, Proteaceae). _Journal of Applied Entomology_. [https://10.1111/jen.13335](https://10.1111/jen.13335). *co-first author.
+10. Pereyra, M., **Probst, R.S.***, Cocucci, A.A. (2024) The first record of ants (_Camponotus chilensis_, Hymenoptera: Formicidae) as potential pollinators of a Neotropical tree species (_Lomatia hirsuta_, Proteaceae). _Journal of Applied Entomology_. [https://10.1111/jen.13335](https://10.1111/jen.13335). *co-first author.
 
-10. **Probst, R. S.**, Silva, R. R., & Brandão, C. R. F. (2023) Sampling local ant diversities and the importance of trait analyses. _Biotropica_, 55: 944–953. [https://doi.org/10.1111/btp.13244](https://doi.org/10.1111/btp.13244).
+11. **Probst, R. S.**, Silva, R. R., & Brandão, C. R. F. (2023) Sampling local ant diversities and the importance of trait analyses. _Biotropica_, 55: 944–953. [https://doi.org/10.1111/btp.13244](https://doi.org/10.1111/btp.13244).
 
-11. **Probst, R.S.** & Brandão, C.R.F. (2022) A taxonomic revision of the dirt ants, _Basiceros_ Schulz 1906 (Hymenoptera, Formicidae). _Zootaxa_, 5149(1): 1–75. [https://doi.org/10.11646/zootaxa.5149.1.1](https://doi.org/10.11646/zootaxa.5149.1.1).
+12. **Probst, R.S.** & Brandão, C.R.F. (2022) A taxonomic revision of the dirt ants, _Basiceros_ Schulz 1906 (Hymenoptera, Formicidae). _Zootaxa_, 5149(1): 1–75. [https://doi.org/10.11646/zootaxa.5149.1.1](https://doi.org/10.11646/zootaxa.5149.1.1).
 
-12. Silva, R.R.,…**Probst, R.S.**, et al. (2021) Atlantic Ants: a dataset of ants in Atlantic Forests of South America. _Ecology_, 103: e03580. [https://doi.org/10.1002/ecy.3580](https://doi.org/10.1002/ecy.3580).
+13. Silva, R.R.,…**Probst, R.S.**, et al. (2021) Atlantic Ants: a dataset of ants in Atlantic Forests of South America. _Ecology_, 103: e03580. [https://doi.org/10.1002/ecy.3580](https://doi.org/10.1002/ecy.3580).
 
-13. **Probst, R.S.**, Wray, B.D., Moreau, C.S. & Brandão, C.R.F. (2019) A phylogenetic analysis of the dirt ants, _Basiceros_ (Formicidae: Myrmicinae): inferring life histories through morphological convergence. _Insect Systematics and Diversity_, 3(4): [https://doi.org/10.1093/isd/ixz013](https://doi.org/10.1093/isd/ixz013).
+14. **Probst, R.S.**, Wray, B.D., Moreau, C.S. & Brandão, C.R.F. (2019) A phylogenetic analysis of the dirt ants, _Basiceros_ (Formicidae: Myrmicinae): inferring life histories through morphological convergence. _Insect Systematics and Diversity_, 3(4): [https://doi.org/10.1093/isd/ixz013](https://doi.org/10.1093/isd/ixz013).
  
-14. Boudinot, B.E., **Probst, R.S.**, Brandão, C.R.F., Feitosa, R.M.S. & Ward, P.S. (2016) Out of the Neotropics: newly discovered relictual species sheds light on the biogeographical history of spider ants (Leptomyrmex, Dolichoderinae, Formicidae). _Systematic Entomology_, 41(3): 658–671. [https://doi.org/10.1111/syen.12181](https://doi.org/10.1111/syen.12181).
+15. Boudinot, B.E., **Probst, R.S.**, Brandão, C.R.F., Feitosa, R.M.S. & Ward, P.S. (2016) Out of the Neotropics: newly discovered relictual species sheds light on the biogeographical history of spider ants (Leptomyrmex, Dolichoderinae, Formicidae). _Systematic Entomology_, 41(3): 658–671. [https://doi.org/10.1111/syen.12181](https://doi.org/10.1111/syen.12181).
  
-15. **Probst, R.S.**, Boudinot, B.E. & Guénard, B. (2015) Toward understanding the predatory ant genus _Myopias_ (Formicidae: Ponerinae), including a key to global species, male-based diagnosis, and new species description. _Sociobiology_, 62(2): 192–212. [https://doi.org/10.13102/sociobiology.v62i2.192-212](https://doi.org/10.13102/sociobiology.v62i2.192-212).
+16. **Probst, R.S.**, Boudinot, B.E. & Guénard, B. (2015) Toward understanding the predatory ant genus _Myopias_ (Formicidae: Ponerinae), including a key to global species, male-based diagnosis, and new species description. _Sociobiology_, 62(2): 192–212. [https://doi.org/10.13102/sociobiology.v62i2.192-212](https://doi.org/10.13102/sociobiology.v62i2.192-212).
  
-16. Brandão, C.R.F., Prado, L.P., Ulysséa, M.A., **Probst, R.S.** & Alarcon, V. (2015) Dieta das Poneromorfas Neotropicais. In: _Poneromorfas do Brasil_. Ilhéus, p. 137–153. (Book chapter). [https://doi.org/10.7476/9788574554419.0012](https://doi.org/10.7476/9788574554419.0012).
+17. Brandão, C.R.F., Prado, L.P., Ulysséa, M.A., **Probst, R.S.** & Alarcon, V. (2015) Dieta das Poneromorfas Neotropicais. In: _Poneromorfas do Brasil_. Ilhéus, p. 137–153. (Book chapter). [https://doi.org/10.7476/9788574554419.0012](https://doi.org/10.7476/9788574554419.0012).
 
 **In preparation**
 1. **Probst, R.S.**, Branstetter, M.G. & Longino, J.T. To be submitted to Systematic Biology. Title: The phylogenomic landscape of understory ant-plant symbioses in the Neotropics.
