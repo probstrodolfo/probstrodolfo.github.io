@@ -1,0 +1,6 @@
+---
+layout: lab
+title: Research
+permalink: /research-overview/
+---
+<section class="shell section"><p class="eyebrow">OUR RESEARCH</p><h1>Biodiversity, from<br>genomes to ecosystems.</h1><p class="lead narrow">Natural history inspires our questions. Phylogenomics, morphology, and fieldwork help us answer them.</p>{% for item in site.data.research %}<article class="research-row"><img src="{{ item.image | relative_url }}" alt="{{ item.alt }}" width="800" height="600" loading="lazy"><div><p class="eyebrow">{{ item.number }} · {{ item.title }}</p><h2>{{ item.question }}</h2><p>{{ item.text }}</p><a class="text-link" href="{{ item.url | relative_url }}">Explore this research ↗</a></div></article>{% endfor %}<div class="callout"><h2>Questions across the tree of life.</h2><p>Explore related work on <a href="{{ '/Conidae/' | relative_url }}">cone snail evolution</a> and <a href="{{ '/bird/' | relative_url }}">cryptic avian diversity</a>.</p></div></section>

@@ -1,0 +1,5 @@
+<article class="person-card">
+  {% if person.photo %}<img src="{{ person.photo | relative_url }}" alt="{{ person.photo_alt | default: person.name | escape }}" width="640" height="800" loading="lazy">{% endif %}
+  <div><p class="eyebrow">{{ person.role }}</p><h3>{{ person.name }}</h3><p class="interests">{{ person.interests }}</p><p>{{ person.bio }}</p>
+  <div class="person-links">{% if person.website %}<a class="text-link" href="{{ person.website | relative_url }}">{{ person.website_label | default: 'Website' }} <span aria-hidden="true">↗</span></a>{% endif %}{% if person.email %}<a class="text-link" href="mailto:{{ person.email }}">Email <span aria-hidden="true">↗</span></a>{% endif %}</div></div>
+</article>
