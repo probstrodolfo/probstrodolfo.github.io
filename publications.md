@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ""
+title: "Publications"
 ---
 1. Fiorentino, G., Ladino, N., Mera-Rodríguez, D., Cubillos, D., Cavalcanti, J.P., **Probst, R.S.**, et al. _Submitted_. A hyperdiverse ant fauna from Dominican amber. 
 

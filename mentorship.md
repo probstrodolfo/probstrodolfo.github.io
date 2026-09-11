@@ -5,7 +5,7 @@ title: "Mentorship"
 
 ### Mentorship Approach
 
-Mentorship is a cornerstone of my educational philosophy. I have a decade of experience mentoring students in research areas such as phylogenetics, bioinformatics, and species discovery. My approach encourages students to develop their own research questions, take ownership of their learning, and present their work at national conferences. I currently mentor 22 undergraduate students in various projects involving phylogenetics as a postdoctoral fellow in the SRI Program.
+Mentorship is a cornerstone of my educational philosophy. I have a decade of experience mentoring students in research areas such as phylogenetics, bioinformatics, and species discovery. My approach encourages students to develop their own research questions, take ownership of their learning, and present their work at national conferences. At the University of Utah, I mentored undergraduate researchers in the Science Research Initiative. I now bring that experience to the Probst Lab at UC Davis.
 
 I am committed to supporting students from diverse backgrounds, ensuring [they gain the skills and confidence to succeed in STEM](https://science.utah.edu/students/devoted-to-change-sacnas/). I will continue mentoring students by providing them with research opportunities that build both their scientific capabilities and professional skills.
 

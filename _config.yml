@@ -2,11 +2,9 @@
 
 # url is the full website URL
 # baseurl is the website's URL without the hostname
-plugins:
-  - jekyll-seo-tag
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://probstrodolfo.github.io"
+url: "https://probstrodolfo.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -16,8 +14,8 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Rodolfo Probst 
-description: "Postdoctoral Fellow at the Science Research Initiative program interested in phylogenomics, symbioses, entomology, and science communication."
+title: Probst Lab
+description: "The Probst Lab at UC Davis studies evolution, biodiversity, and ant–plant symbioses through natural history, systematics, and phylogenomics."
 # Short description of your site
 
 # --- Navigation bar options --- #
@@ -132,7 +130,7 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Denver"
+timezone: "America/Los_Angeles"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -170,6 +168,8 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - REDESIGN.md
+  - preview
   - Vagrantfile
 
 # prose.io config
@@ -226,6 +226,7 @@ prose:
           help: "Check to publish post, uncheck to hide."
 
 plugins:
+  - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
 

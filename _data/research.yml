@@ -1,0 +1,21 @@
+- number: '01'
+  title: Evolution & symbiosis
+  question: Why does evolution arrive at similar solutions?
+  text: Ant–plant partnerships offer a window into repeated specialization, convergence, and the evolution of intimate ecological relationships.
+  image: /assets/images/symbiosis.webp
+  alt: Myrmelachista ants inside a plant stem
+  url: /research/
+- number: '02'
+  title: Systematics & biodiversity
+  question: How does biodiversity originate and assemble?
+  text: We connect ant natural history, morphology, phylogenomics, and functional traits to understand diversity across environments and through time.
+  image: /assets/images/biodiversity.webp
+  alt: Ants on the underside of a Lauraceae leaf
+  url: /functional/
+- number: '03'
+  title: Genomics & discovery
+  question: How can we reveal overlooked diversity?
+  text: Portable sequencing and DNA barcoding bring new tools to species discovery, biodiversity research, and hands-on science education.
+  image: /assets/images/fieldwork.webp
+  alt: Examining specimens during fieldwork in Costa Rica
+  url: /NGS/

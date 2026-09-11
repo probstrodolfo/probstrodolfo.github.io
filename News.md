@@ -1,9 +1,7 @@
 ---
 layout: page
-title: ""
+title: "Lab news"
 ---
-
-## Lab News
 
 ### July 2025
 #### Rocky presented his research on nanopore sequencing for _Saxicola_ identification and barcoding evolution at the Association of Field Ornithologists (AFO) Meeting\!_

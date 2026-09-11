@@ -1,0 +1,9 @@
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Probst Lab home">PROBST<span>LAB</span><small>UNIVERSITY OF CALIFORNIA, DAVIS</small></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="lab-menu" hidden>Menu <span aria-hidden="true">+</span></button>
+    <nav id="lab-menu" aria-label="Main navigation">
+    {% for item in site.data.lab_navigation %}<a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}{% if forloop.last %} class="nav-join"{% endif %}>{{ item.title }}</a>{% endfor %}
+    </nav>
+  </div>
+</header>

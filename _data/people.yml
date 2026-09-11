@@ -1,0 +1,14 @@
+# Add confirmed members here. Use the same fields as this profile.
+# Optional: photo, photo_alt, email, website. group: PI, Graduate students,
+# Undergraduates, Postdocs, Research staff, or Alumni. featured controls Home.
+- name: Rodolfo S. Probst
+  role: Principal investigator · Assistant Professor
+  group: PI
+  featured: true
+  photo: /assets/images/rodolfo.webp
+  photo_alt: Rodolfo Probst
+  interests: Ant evolution · Symbiosis · Phylogenomics
+  bio: "Rodolfo studies the origins and evolution of biodiversity, combining natural history, systematics, and genomics. He leads the Probst Lab in the Department of Entomology and Nematology at UC Davis."
+  email: rsprobst@ucdavis.edu
+  website: /CV.html
+  website_label: Curriculum vitae
