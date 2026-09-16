@@ -1,0 +1,77 @@
+---
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteLayout from "../layouts/SiteLayout.astro";
+import { peopleContent } from "../data/people";
+
+const { masthead, principalInvestigator, growingLab } = peopleContent;
+---
+
+<SiteLayout
+  title="People | Probst Lab"
+  description="Meet the researchers of the Probst Lab at UC Davis."
+>
+  <SiteHeader variant="internal" />
+
+  <main class="people-page">
+    <section class="page-masthead">
+      <p class="section-label">{masthead.label}</p>
+      <div>
+        <h1>{masthead.title}</h1>
+        <p>{masthead.introduction}</p>
+      </div>
+    </section>
+
+    <section class="pi-profile" aria-labelledby="pi-name">
+      {
+        principalInvestigator.image.show && (
+          <figure class="pi-portrait">
+            <img
+              src={principalInvestigator.image.src}
+              alt={principalInvestigator.image.alt}
+              style={`object-position: ${principalInvestigator.image.objectPosition}`}
+            />
+          </figure>
+        )
+      }
+
+      <div class="pi-copy">
+        <p class="profile-label">{principalInvestigator.label}</p>
+        <h2 id="pi-name">{principalInvestigator.name}</h2>
+        <p class="pi-role">
+          <strong>{principalInvestigator.role}</strong>
+          <span>{principalInvestigator.department}</span>
+          <span>{principalInvestigator.institution}</span>
+        </p>
+
+        <div class="pi-biography">
+          {principalInvestigator.biography.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+
+        <ul class="interest-list" aria-label="Research interests">
+          {principalInvestigator.interests.map((interest) => <li>{interest}</li>)}
+        </ul>
+
+        <nav class="profile-links" aria-label={`${principalInvestigator.name} profiles`}>
+          {
+            principalInvestigator.links.map((link) => (
+              <a href={link.href} target="_blank" rel="noreferrer">
+                {link.label}<span aria-hidden="true">↗</span>
+              </a>
+            ))
+          }
+        </nav>
+      </div>
+    </section>
+
+    <section class="growing-lab">
+      <p class="section-label">{growingLab.label}</p>
+      <div>
+        <h2>{growingLab.title}</h2>
+        <p>{growingLab.body}</p>
+        <a class="button button--primary" href={growingLab.link.href}>
+          {growingLab.link.label}<span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+</SiteLayout>

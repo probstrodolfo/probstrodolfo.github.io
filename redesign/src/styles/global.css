@@ -49,6 +49,11 @@ a {
   z-index: 10;
 }
 
+.site-header--internal {
+  background: var(--paper-bright);
+  position: relative;
+}
+
 .wordmark {
   display: flex;
   flex-direction: column;
@@ -100,7 +105,8 @@ a {
 }
 
 .desktop-nav a:hover::after,
-.desktop-nav a:focus-visible::after {
+.desktop-nav a:focus-visible::after,
+.desktop-nav a.active::after {
   transform: scaleX(1);
 }
 
@@ -402,6 +408,182 @@ h1 {
   max-width: 40rem;
 }
 
+.people-page {
+  background: var(--paper-bright);
+}
+
+.page-masthead {
+  background: var(--paper);
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
+  padding: clamp(5rem, 9vw, 9rem) clamp(2rem, 8vw, 9rem);
+}
+
+.page-masthead h1 {
+  font-family: var(--serif);
+  font-size: clamp(3.6rem, 7vw, 7.5rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 0.95;
+  margin: 0;
+  max-width: 12ch;
+}
+
+.page-masthead > div > p {
+  color: var(--ink-soft);
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+  margin: 2.2rem 0 0;
+  max-width: 43rem;
+}
+
+.pi-profile {
+  display: grid;
+  gap: clamp(3rem, 7vw, 8rem);
+  grid-template-columns: minmax(18rem, 0.8fr) minmax(0, 1.2fr);
+  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+}
+
+.pi-portrait {
+  align-self: start;
+  aspect-ratio: 4 / 5;
+  background: var(--forest-deep);
+  margin: 0;
+  max-width: 37rem;
+  overflow: hidden;
+  position: sticky;
+  top: 2rem;
+}
+
+.pi-portrait img {
+  filter: saturate(0.9) contrast(1.03);
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.pi-copy {
+  align-self: center;
+  max-width: 48rem;
+}
+
+.profile-label {
+  color: var(--moss);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+  margin: 0 0 1.4rem;
+  text-transform: uppercase;
+}
+
+.pi-copy h2 {
+  font-size: clamp(3.2rem, 6vw, 6.5rem);
+}
+
+.pi-role {
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  display: grid;
+  margin: 2.2rem 0 0;
+  padding: 1.3rem 0;
+}
+
+.pi-role strong {
+  font-size: 1.02rem;
+}
+
+.pi-role span {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.pi-biography {
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 1.3vw, 1.18rem);
+  margin-top: 2.3rem;
+}
+
+.pi-biography p {
+  margin: 0;
+}
+
+.pi-biography p + p {
+  margin-top: 1.2rem;
+}
+
+.interest-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  list-style: none;
+  margin: 2.2rem 0 0;
+  padding: 0;
+}
+
+.interest-list li {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  font-weight: 650;
+  padding: 0.48rem 0.78rem;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2.4rem;
+}
+
+.profile-links a {
+  border-bottom: 1px solid var(--ink);
+  font-size: 0.83rem;
+  font-weight: 750;
+  padding-bottom: 0.25rem;
+  text-decoration: none;
+}
+
+.profile-links span {
+  color: var(--gold);
+  margin-left: 0.5rem;
+}
+
+.growing-lab {
+  background: var(--forest-deep);
+  color: var(--paper-bright);
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
+  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+}
+
+.growing-lab .section-label {
+  color: #b7c8a5;
+}
+
+.growing-lab h2 {
+  font-size: clamp(3rem, 6vw, 6.5rem);
+  max-width: 13ch;
+}
+
+.growing-lab > div > p {
+  color: #cad6cf;
+  font-size: clamp(1rem, 1.4vw, 1.22rem);
+  margin: 2rem 0 2.5rem;
+  max-width: 47rem;
+}
+
+.growing-lab .button--primary {
+  background: var(--gold);
+  color: var(--forest-deep);
+}
+
+.growing-lab .button--primary:hover,
+.growing-lab .button--primary:focus-visible {
+  background: #e3b64f;
+}
+
 @media (max-width: 1050px) {
   .site-header {
     height: 5.4rem;
@@ -517,6 +699,22 @@ h1 {
 
   .theme-number {
     margin-bottom: 1.5rem;
+  }
+
+  .page-masthead,
+  .growing-lab {
+    gap: 1.4rem;
+    grid-template-columns: 1fr;
+  }
+
+  .pi-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .pi-portrait {
+    max-width: none;
+    position: relative;
+    top: auto;
   }
 }
 

@@ -1,0 +1,43 @@
+---
+import { siteContent } from "../data/site";
+
+interface Props {
+  variant?: "home" | "internal";
+}
+
+const { variant = "internal" } = Astro.props;
+const { identity, navigation } = siteContent;
+const currentPath = Astro.url.pathname;
+
+const isActive = (href: string) => href !== "/" && currentPath.startsWith(href);
+---
+
+<header class:list={["site-header", `site-header--${variant}`]}>
+  <a class="wordmark" href="/" aria-label="Probst Lab home">
+    <span>{identity.name}</span>
+    <small>{identity.affiliation}</small>
+  </a>
+
+  <nav class="desktop-nav" aria-label="Primary navigation">
+    {
+      navigation.map((item) => (
+        <a href={item.href} class:list={{ active: isActive(item.href) }} aria-current={isActive(item.href) ? "page" : undefined}>
+          {item.label}
+        </a>
+      ))
+    }
+  </nav>
+
+  <details class="mobile-nav">
+    <summary aria-label="Open navigation">Menu</summary>
+    <nav aria-label="Mobile navigation">
+      {
+        navigation.map((item) => (
+          <a href={item.href} class:list={{ active: isActive(item.href) }} aria-current={isActive(item.href) ? "page" : undefined}>
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+  </details>
+</header>

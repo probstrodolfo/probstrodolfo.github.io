@@ -1,31 +1,16 @@
 ---
+import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
 import { siteContent } from "../data/site";
 
-const { identity, navigation, hero, openingQuestion, researchThemes } = siteContent;
+const { identity, hero, openingQuestion, researchThemes } = siteContent;
 ---
 
 <SiteLayout
   title={`${identity.name} | Ant evolution, biodiversity, and symbiosis`}
   description="The Probst Lab at UC Davis studies ant evolution, ant–plant symbioses, phylogenomics, and biodiversity."
 >
-  <header class="site-header">
-    <a class="wordmark" href="/" aria-label="Probst Lab home">
-      <span>{identity.name}</span>
-      <small>{identity.affiliation}</small>
-    </a>
-
-    <nav class="desktop-nav" aria-label="Primary navigation">
-      {navigation.map((item) => <a href={item.href}>{item.label}</a>)}
-    </nav>
-
-    <details class="mobile-nav">
-      <summary aria-label="Open navigation">Menu</summary>
-      <nav aria-label="Mobile navigation">
-        {navigation.map((item) => <a href={item.href}>{item.label}</a>)}
-      </nav>
-    </details>
-  </header>
+  <SiteHeader variant="home" />
 
   <main>
     <section class:list={["hero", { "hero--without-image": !hero.image.show }]}>
