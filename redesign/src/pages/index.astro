@@ -1,0 +1,81 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import { siteContent } from "../data/site";
+
+const { identity, navigation, hero, openingQuestion } = siteContent;
+---
+
+<SiteLayout
+  title={`${identity.name} | Ant evolution, biodiversity, and symbiosis`}
+  description="The Probst Lab at UC Davis studies ant evolution, ant–plant symbioses, phylogenomics, and biodiversity."
+>
+  <header class="site-header">
+    <a class="wordmark" href="/" aria-label="Probst Lab home">
+      <span>{identity.name}</span>
+      <small>{identity.affiliation}</small>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      {navigation.map((item) => <a href={item.href}>{item.label}</a>)}
+    </nav>
+
+    <details class="mobile-nav">
+      <summary aria-label="Open navigation">Menu</summary>
+      <nav aria-label="Mobile navigation">
+        {navigation.map((item) => <a href={item.href}>{item.label}</a>)}
+      </nav>
+    </details>
+  </header>
+
+  <main>
+    <section class:list={["hero", { "hero--without-image": !hero.image.show }]}>
+      <div class="hero-copy">
+        <p class="eyebrow">{hero.eyebrow}</p>
+        <h1>{hero.title}</h1>
+        <p class="hero-summary">{hero.summary}</p>
+
+        <div class="hero-actions">
+          <a class="button button--primary" href={hero.primaryLink.href}>
+            {hero.primaryLink.label}
+            <span aria-hidden="true">↘</span>
+          </a>
+          <a class="button button--text" href={hero.secondaryLink.href}>
+            {hero.secondaryLink.label}
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <p class="hero-fieldnote">
+          <span>Formicidae</span>
+          <span>Phylogenomics</span>
+          <span>Natural history</span>
+        </p>
+      </div>
+
+      {
+        hero.image.show && (
+          <figure class="hero-figure">
+            <img
+              src={hero.image.src}
+              alt={hero.image.alt}
+              style={`object-position: ${hero.image.objectPosition}`}
+            />
+            <figcaption>{hero.image.caption}</figcaption>
+          </figure>
+        )
+      }
+    </section>
+
+    {
+      openingQuestion.show && (
+        <section class="central-question" id="central-question">
+          <p class="section-label">{openingQuestion.label}</p>
+          <div class="question-copy">
+            <h2>{openingQuestion.title}</h2>
+            <p>{openingQuestion.body}</p>
+          </div>
+        </section>
+      )
+    }
+  </main>
+</SiteLayout>
