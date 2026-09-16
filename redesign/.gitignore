@@ -3,3 +3,4 @@ dist/
 .astro/
 *.log
 homepage-*.png
+review/
