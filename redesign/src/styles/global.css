@@ -136,7 +136,8 @@ a {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--serif);
   font-weight: 500;
   letter-spacing: -0.035em;
@@ -278,6 +279,129 @@ h1 {
   max-width: 46rem;
 }
 
+.research-themes {
+  background: var(--paper-bright);
+  padding: clamp(5.5rem, 10vw, 10rem) clamp(2rem, 7vw, 8rem);
+}
+
+.research-intro {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
+  margin-bottom: clamp(4rem, 8vw, 8rem);
+}
+
+.research-intro h2 {
+  font-size: clamp(3.1rem, 6vw, 6.5rem);
+  max-width: 12ch;
+}
+
+.research-intro > div > p {
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  margin: 2rem 0 0;
+  max-width: 48rem;
+}
+
+.theme-list {
+  border-top: 1px solid var(--line);
+}
+
+.theme {
+  align-items: stretch;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: clamp(2.5rem, 6vw, 7rem);
+  grid-template-columns: minmax(20rem, 0.95fr) minmax(0, 1.05fr);
+  padding: clamp(3rem, 6vw, 6.5rem) 0;
+}
+
+.theme:nth-child(even) {
+  grid-template-columns: minmax(0, 1.05fr) minmax(20rem, 0.95fr);
+}
+
+.theme:nth-child(even) .theme-figure {
+  order: 2;
+}
+
+.theme--without-image,
+.theme:nth-child(even).theme--without-image {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.theme-figure {
+  aspect-ratio: 4 / 3;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.theme-figure::after {
+  background: linear-gradient(180deg, transparent 60%, rgba(5, 25, 17, 0.48));
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.theme-figure img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 600ms cubic-bezier(0.2, 0.65, 0.3, 1);
+  width: 100%;
+}
+
+.theme:hover .theme-figure img {
+  transform: scale(1.025);
+}
+
+.theme-figure figcaption {
+  bottom: 1.2rem;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  left: 1.3rem;
+  letter-spacing: 0.055em;
+  position: absolute;
+  right: 1.3rem;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.theme-copy {
+  align-content: center;
+  display: grid;
+}
+
+.theme-number {
+  color: var(--gold);
+  font-family: var(--serif);
+  font-size: 1rem;
+  margin: 0 0 2.5rem;
+}
+
+.theme-question {
+  color: var(--moss);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  margin: 0 0 1.1rem;
+  text-transform: uppercase;
+}
+
+.theme h3 {
+  font-size: clamp(2.3rem, 4vw, 4.5rem);
+  line-height: 1.02;
+  max-width: 13ch;
+}
+
+.theme-summary {
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 1.25vw, 1.15rem);
+  margin: 1.8rem 0 0;
+  max-width: 40rem;
+}
+
 @media (max-width: 1050px) {
   .site-header {
     height: 5.4rem;
@@ -330,6 +454,12 @@ h1 {
     padding-left: clamp(2rem, 5vw, 4rem);
     padding-right: clamp(2rem, 5vw, 4rem);
   }
+
+  .theme,
+  .theme:nth-child(even) {
+    gap: 3.5rem;
+    grid-template-columns: minmax(17rem, 0.9fr) minmax(0, 1.1fr);
+  }
 }
 
 @media (max-width: 760px) {
@@ -364,6 +494,29 @@ h1 {
 
   .central-question {
     grid-template-columns: 1fr;
+  }
+
+  .research-intro {
+    gap: 1.4rem;
+    grid-template-columns: 1fr;
+  }
+
+  .theme,
+  .theme:nth-child(even) {
+    gap: 2.4rem;
+    grid-template-columns: 1fr;
+  }
+
+  .theme:nth-child(even) .theme-figure {
+    order: initial;
+  }
+
+  .theme-copy {
+    padding: 0 0.25rem;
+  }
+
+  .theme-number {
+    margin-bottom: 1.5rem;
   }
 }
 

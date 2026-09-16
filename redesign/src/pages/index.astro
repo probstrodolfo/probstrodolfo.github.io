@@ -2,7 +2,7 @@
 import SiteLayout from "../layouts/SiteLayout.astro";
 import { siteContent } from "../data/site";
 
-const { identity, navigation, hero, openingQuestion } = siteContent;
+const { identity, navigation, hero, openingQuestion, researchThemes } = siteContent;
 ---
 
 <SiteLayout
@@ -73,6 +73,47 @@ const { identity, navigation, hero, openingQuestion } = siteContent;
           <div class="question-copy">
             <h2>{openingQuestion.title}</h2>
             <p>{openingQuestion.body}</p>
+          </div>
+        </section>
+      )
+    }
+
+    {
+      researchThemes.show && (
+        <section class="research-themes" id="research-themes">
+          <header class="research-intro">
+            <p class="section-label">{researchThemes.label}</p>
+            <div>
+              <h2>{researchThemes.title}</h2>
+              <p>{researchThemes.introduction}</p>
+            </div>
+          </header>
+
+          <div class="theme-list">
+            {researchThemes.items
+              .filter((theme) => theme.show)
+              .map((theme) => (
+                <article class:list={["theme", { "theme--without-image": !theme.image.show }]} id={theme.slug}>
+                  {theme.image.show && (
+                    <figure class="theme-figure">
+                      <img
+                        src={theme.image.src}
+                        alt={theme.image.alt}
+                        loading="lazy"
+                        style={`object-position: ${theme.image.objectPosition}`}
+                      />
+                      <figcaption>{theme.image.caption}</figcaption>
+                    </figure>
+                  )}
+
+                  <div class="theme-copy">
+                    <p class="theme-number" aria-hidden="true">{theme.number}</p>
+                    <p class="theme-question">{theme.question}</p>
+                    <h3>{theme.title}</h3>
+                    <p class="theme-summary">{theme.summary}</p>
+                  </div>
+                </article>
+              ))}
           </div>
         </section>
       )
