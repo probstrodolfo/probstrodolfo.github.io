@@ -1,0 +1,155 @@
+---
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteLayout from "../layouts/SiteLayout.astro";
+import { researchContent } from "../data/research";
+
+const { masthead, centralQuestion, strategies, programs, methods, collaborations } = researchContent;
+---
+
+<SiteLayout
+  title="Research | Probst Lab"
+  description="Research in the Probst Lab uses ants to study evolution, symbiosis, systematics, phylogenomics, functional diversity, and environmental change."
+>
+  <SiteHeader variant="internal" />
+
+  <main class="research-page">
+    <section class="page-masthead research-masthead">
+      <p class="section-label">{masthead.label}</p>
+      <div>
+        <h1>{masthead.title}</h1>
+        <p>{masthead.introduction}</p>
+      </div>
+    </section>
+
+    {
+      masthead.image.show && (
+        <figure class="research-hero-figure">
+          <img
+            src={masthead.image.src}
+            alt={masthead.image.alt}
+            style={`object-position: ${masthead.image.objectPosition}`}
+          />
+          <figcaption>{masthead.image.caption}</figcaption>
+        </figure>
+      )
+    }
+
+    <section class="research-question">
+      <p class="section-label">{centralQuestion.label}</p>
+      <div>
+        <h2>{centralQuestion.title}</h2>
+        <div class="research-question-copy">
+          {centralQuestion.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+      </div>
+    </section>
+
+    <section class="strategy-section" aria-labelledby="strategy-title">
+      <h2 id="strategy-title">{strategies.label}</h2>
+      <div class="strategy-grid">
+        {
+          strategies.items.map((strategy) => (
+            <article>
+              <p>{strategy.number}</p>
+              <h3>{strategy.title}</h3>
+              <span>{strategy.description}</span>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="program-section" aria-labelledby="program-title">
+      <header class="program-intro">
+        <p class="section-label">{programs.label}</p>
+        <h2 id="program-title">{programs.title}</h2>
+      </header>
+
+      <div class="program-list">
+        {
+          programs.items.map((program) => (
+            <article class:list={["research-program", { "research-program--without-image": !program.image.show }]} id={program.slug}>
+              {program.image.show && (
+                <figure class="program-figure">
+                  <img
+                    src={program.image.src}
+                    alt={program.image.alt}
+                    loading="lazy"
+                    style={`object-position: ${program.image.objectPosition}`}
+                  />
+                  <figcaption>{program.image.caption}</figcaption>
+                </figure>
+              )}
+
+              <div class="program-copy">
+                <p class="program-number">{program.number}</p>
+                <p class="program-question">{program.question}</p>
+                <h3>{program.title}</h3>
+                <div class="program-description">
+                  {program.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+                </div>
+
+                <ul class="approach-list" aria-label={`${program.title} approaches`}>
+                  {program.approaches.map((approach) => <li>{approach}</li>)}
+                </ul>
+
+                {program.links.length > 0 && (
+                  <nav class="research-links" aria-label={`${program.title} related work`}>
+                    {program.links.map((link) => (
+                      <a href={link.href} target="_blank" rel="noreferrer">
+                        {link.label}<span aria-hidden="true">↗</span>
+                      </a>
+                    ))}
+                  </nav>
+                )}
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="methods-section" aria-labelledby="methods-title">
+      <header>
+        <p class="section-label">{methods.label}</p>
+        <div>
+          <h2 id="methods-title">{methods.title}</h2>
+          <p>{methods.introduction}</p>
+        </div>
+      </header>
+
+      <div class="method-grid">
+        {
+          methods.items.map((method, index) => (
+            <article>
+              <p>{String(index + 1).padStart(2, "0")}</p>
+              <h3>{method.title}</h3>
+              <span>{method.description}</span>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="collaboration-section" aria-labelledby="collaboration-title">
+      <header>
+        <p class="section-label">{collaborations.label}</p>
+        <div>
+          <h2 id="collaboration-title">{collaborations.title}</h2>
+          <p>{collaborations.introduction}</p>
+        </div>
+      </header>
+
+      <div class="collaboration-grid">
+        {
+          collaborations.items.map((item) => (
+            <article>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+</SiteLayout>
