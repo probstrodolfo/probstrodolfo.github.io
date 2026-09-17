@@ -549,6 +549,135 @@ h1 {
   margin-left: 0.5rem;
 }
 
+.student-section {
+  background: var(--paper);
+  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+}
+
+.student-intro {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
+  margin-bottom: clamp(3.5rem, 7vw, 7rem);
+}
+
+.student-intro h2 {
+  font-size: clamp(3rem, 5.5vw, 6rem);
+}
+
+.student-intro > div > p {
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  margin: 1.8rem 0 0;
+  max-width: 47rem;
+}
+
+.member-grid {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 3.5rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.member-card {
+  background: var(--paper-bright);
+  border: 1px solid var(--line);
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.member-visual {
+  aspect-ratio: 4 / 3;
+  margin: 0;
+  overflow: hidden;
+}
+
+.member-visual > img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.member-placeholder {
+  align-content: center;
+  background: var(--forest-deep);
+  color: var(--paper-bright);
+  display: grid;
+  height: 100%;
+  justify-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.member-placeholder::before,
+.member-placeholder::after {
+  border: 1px solid rgba(214, 161, 46, 0.38);
+  border-radius: 50%;
+  content: "";
+  height: 20rem;
+  position: absolute;
+  width: 20rem;
+}
+
+.member-placeholder::before {
+  left: -8rem;
+  top: -11rem;
+}
+
+.member-placeholder::after {
+  bottom: -13rem;
+  right: -7rem;
+}
+
+.member-placeholder span {
+  color: var(--gold);
+  font-family: var(--serif);
+  font-size: clamp(4rem, 9vw, 8rem);
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.member-placeholder small {
+  bottom: 1.3rem;
+  color: #b7c8a5;
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.member-copy {
+  padding: clamp(1.8rem, 3vw, 3rem);
+}
+
+.member-role {
+  color: var(--moss);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  margin: 0 0 0.85rem;
+  text-transform: uppercase;
+}
+
+.member-copy h3 {
+  font-size: clamp(2.4rem, 4vw, 4.2rem);
+  line-height: 1;
+}
+
+.member-biography {
+  color: var(--ink-soft);
+  font-size: 1rem;
+  margin: 1.5rem 0 0;
+}
+
+.member-interests {
+  margin-top: 1.8rem;
+}
+
+.member-links {
+  margin-top: 1.8rem;
+}
+
 .growing-lab {
   background: var(--forest-deep);
   color: var(--paper-bright);
@@ -702,6 +831,7 @@ h1 {
   }
 
   .page-masthead,
+  .student-intro,
   .growing-lab {
     gap: 1.4rem;
     grid-template-columns: 1fr;
@@ -715,6 +845,10 @@ h1 {
     max-width: none;
     position: relative;
     top: auto;
+  }
+
+  .member-grid {
+    grid-template-columns: 1fr;
   }
 }
 

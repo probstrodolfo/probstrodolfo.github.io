@@ -3,7 +3,7 @@ import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
 import { peopleContent } from "../data/people";
 
-const { masthead, principalInvestigator, growingLab } = peopleContent;
+const { masthead, principalInvestigator, graduateStudents, growingLab } = peopleContent;
 ---
 
 <SiteLayout
@@ -60,6 +60,60 @@ const { masthead, principalInvestigator, growingLab } = peopleContent;
             ))
           }
         </nav>
+      </div>
+    </section>
+
+    <section class="student-section" aria-labelledby="graduate-students-title">
+      <header class="student-intro">
+        <p class="section-label">{graduateStudents.label}</p>
+        <div>
+          <h2 id="graduate-students-title">{graduateStudents.title}</h2>
+          <p>{graduateStudents.introduction}</p>
+        </div>
+      </header>
+
+      <div class="member-grid">
+        {
+          graduateStudents.members.map((member) => (
+            <article class="member-card">
+              <figure class="member-visual">
+                {member.image.show ? (
+                  <img
+                    src={member.image.src}
+                    alt={member.image.alt}
+                    loading="lazy"
+                    style={`object-position: ${member.image.objectPosition}`}
+                  />
+                ) : (
+                  <div class="member-placeholder" aria-label={`Photo placeholder for ${member.name}`}>
+                    <span aria-hidden="true">{member.initials}</span>
+                    <small>Portrait coming soon</small>
+                  </div>
+                )}
+              </figure>
+
+              <div class="member-copy">
+                <p class="member-role">{member.role}</p>
+                <h3>{member.name}</h3>
+                <p class="member-biography">{member.biography}</p>
+
+                <ul class="interest-list member-interests" aria-label={`${member.name} research interests`}>
+                  {member.interests.map((interest) => <li>{interest}</li>)}
+                </ul>
+
+                {member.links.length > 0 && (
+                  <nav class="profile-links member-links" aria-label={`${member.name} profiles`}>
+                    {member.links.map((link) => (
+                      <a href={link.href} target="_blank" rel="noreferrer">
+                        {link.label}<span aria-hidden="true">↗</span>
+                      </a>
+                    ))}
+                  </nav>
+                )}
+              </div>
+            </article>
+          ))
+        }
       </div>
     </section>
 
