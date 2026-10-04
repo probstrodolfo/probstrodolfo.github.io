@@ -1,0 +1,172 @@
+---
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteLayout from "../layouts/SiteLayout.astro";
+import { teachingOutreachContent } from "../data/teachingOutreach";
+
+const { masthead, approach, currentTeaching, selectedTeaching, outreach, communication, invitation } = teachingOutreachContent;
+---
+
+<SiteLayout
+  title="Teaching & Outreach | Probst Lab"
+  description="Teaching, mentorship, public science, and community engagement from the Probst Lab at UC Davis."
+>
+  <SiteHeader variant="internal" />
+
+  <main class="teaching-page">
+    <section class="page-masthead teaching-masthead">
+      <p class="section-label">{masthead.label}</p>
+      <div>
+        <h1>{masthead.title}</h1>
+        <p>{masthead.introduction}</p>
+      </div>
+    </section>
+
+    {masthead.image.show && (
+      <figure class="teaching-hero-figure">
+        <img
+          src={masthead.image.src}
+          alt={masthead.image.alt}
+          style={`object-position: ${masthead.image.objectPosition}`}
+        />
+        <figcaption>{masthead.image.caption}</figcaption>
+      </figure>
+    )}
+
+    <section class="teaching-approach" aria-labelledby="teaching-approach-title">
+      <header>
+        <p class="section-label">{approach.label}</p>
+        <div>
+          <h2 id="teaching-approach-title">{approach.title}</h2>
+          <div class="teaching-approach-copy">
+            {approach.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+          </div>
+        </div>
+      </header>
+
+      <div class="learning-cycle">
+        {approach.cycle.map((stage) => (
+          <article>
+            <p>{stage.number}</p>
+            <h3>{stage.title}</h3>
+            <span>{stage.description}</span>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="current-teaching" aria-labelledby="current-teaching-title">
+      <header>
+        <p class="section-label">{currentTeaching.label}</p>
+        <div>
+          <h2 id="current-teaching-title">{currentTeaching.title}</h2>
+          <p>{currentTeaching.introduction}</p>
+        </div>
+      </header>
+
+      <div class="course-grid">
+        {currentTeaching.courses.filter((course) => course.show).map((course) => (
+          <article class="course-card">
+            <div class="course-heading">
+              <p>{course.code}</p>
+              <span>{course.term}</span>
+            </div>
+            <h3>{course.title}</h3>
+            <p class="course-summary">{course.summary}</p>
+            <ul aria-label={`${course.title} topics`}>
+              {course.topics.map((topic) => <li>{topic}</li>)}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    {selectedTeaching.show && (
+      <section class="teaching-history" aria-labelledby="teaching-history-title">
+        <header>
+          <p class="section-label">{selectedTeaching.label}</p>
+          <div>
+            <h2 id="teaching-history-title">{selectedTeaching.title}</h2>
+            <p>{selectedTeaching.introduction}</p>
+          </div>
+        </header>
+
+        <div class="teaching-history-list">
+          {selectedTeaching.items.filter((item) => item.show).map((item) => (
+            <article>
+              <p class="teaching-year">{item.year}</p>
+              <div>
+                <h3>{item.title}</h3>
+                <p>{item.role} · {item.institution}</p>
+              </div>
+              <p class="teaching-note">{item.note}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section class:list={["outreach-section", { "outreach-section--without-image": !outreach.image.show }]} aria-labelledby="outreach-title">
+      {outreach.image.show && (
+        <figure class="outreach-figure">
+          <img
+            src={outreach.image.src}
+            alt={outreach.image.alt}
+            loading="lazy"
+            style={`object-position: ${outreach.image.objectPosition}`}
+          />
+          <figcaption>{outreach.image.caption}</figcaption>
+        </figure>
+      )}
+
+      <div class="outreach-copy">
+        <p class="section-label">{outreach.label}</p>
+        <h2 id="outreach-title">{outreach.title}</h2>
+        <p class="outreach-introduction">{outreach.introduction}</p>
+        <div class="outreach-list">
+          {outreach.items.filter((item) => item.show).map((item, index) => (
+            <article>
+              <p>{String(index + 1).padStart(2, "0")}</p>
+              <div>
+                <h3>{item.title}</h3>
+                <span>{item.description}</span>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class:list={["science-communication", { "science-communication--without-image": !communication.image.show }]} aria-labelledby="communication-title">
+      <div class="communication-copy">
+        <p class="section-label">{communication.label}</p>
+        <h2 id="communication-title">{communication.title}</h2>
+        <p>{communication.body}</p>
+      </div>
+
+      {communication.image.show && (
+        <figure class="communication-figure">
+          <img
+            src={communication.image.src}
+            alt={communication.image.alt}
+            loading="lazy"
+            style={`object-position: ${communication.image.objectPosition}`}
+          />
+          <figcaption>{communication.image.caption}</figcaption>
+        </figure>
+      )}
+    </section>
+
+    {invitation.show && (
+      <section class="teaching-invitation">
+        <p class="section-label">{invitation.label}</p>
+        <div>
+          <h2>{invitation.title}</h2>
+          <p>{invitation.body}</p>
+          <a class="button button--primary" href={`mailto:${invitation.email}`}>
+            {invitation.buttonLabel}<span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+    )}
+  </main>
+</SiteLayout>

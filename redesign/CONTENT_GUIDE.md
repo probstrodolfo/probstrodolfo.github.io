@@ -69,3 +69,17 @@ Each pathway—graduate students, undergraduates, postdoctoral researchers, and 
 The lab-culture photograph has the same `show`, `src`, `alt`, `caption`, and `objectPosition` controls used elsewhere on the site.
 
 Before launch, confirm the email address in `contact.email` and replace it there if a UC Davis address is preferred.
+
+## Edit the Teaching & Outreach page
+
+All course, teaching-history, outreach, and invitation text lives in:
+
+`src/data/teachingOutreach.ts`
+
+Each current course has a `show` control. Change the term, summary, or topic list in the same course record when the teaching schedule changes.
+
+The selected teaching-history section has a main `show` control and is intentionally shorter than a CV. Every history and outreach item also has its own `show` control, so an item can be hidden without deleting it.
+
+The three page images have the same `show`, `src`, `alt`, `caption`, and `objectPosition` controls used across the site.
+
+The final outreach invitation can be hidden with `invitation.show`. Its email currently matches the old website and should be updated alongside the Join page before launch.

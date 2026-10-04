@@ -1638,6 +1638,370 @@ h1 {
   background: #e3b64f;
 }
 
+.teaching-page {
+  background: var(--paper-bright);
+}
+
+.teaching-masthead {
+  min-height: 42rem;
+}
+
+.teaching-hero-figure {
+  aspect-ratio: 16 / 6;
+  background: var(--forest-deep);
+  margin: 0;
+  min-height: 28rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.teaching-hero-figure::after,
+.outreach-figure::after,
+.communication-figure::after {
+  background: linear-gradient(180deg, transparent 58%, rgba(5, 25, 17, 0.52));
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.teaching-hero-figure img,
+.outreach-figure img,
+.communication-figure img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.teaching-hero-figure figcaption,
+.outreach-figure figcaption,
+.communication-figure figcaption {
+  bottom: 1.4rem;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 750;
+  left: clamp(1.4rem, 4vw, 4rem);
+  letter-spacing: 0.08em;
+  position: absolute;
+  right: 1.4rem;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.teaching-approach {
+  background: var(--forest-deep);
+  color: var(--paper-bright);
+  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+}
+
+.teaching-approach > header,
+.current-teaching > header,
+.teaching-history > header {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
+  margin-bottom: clamp(3.5rem, 7vw, 7rem);
+}
+
+.teaching-approach .section-label {
+  color: #b7c8a5;
+}
+
+.teaching-approach h2,
+.current-teaching h2,
+.teaching-history h2 {
+  font-size: clamp(3rem, 6vw, 6.5rem);
+  max-width: 14ch;
+}
+
+.teaching-approach-copy {
+  color: #cad6cf;
+  font-size: clamp(1rem, 1.35vw, 1.18rem);
+  margin-top: 2rem;
+  max-width: 52rem;
+}
+
+.teaching-approach-copy p {
+  margin: 0;
+}
+
+.teaching-approach-copy p + p {
+  margin-top: 1.2rem;
+}
+
+.learning-cycle {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.learning-cycle article {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  min-height: 20rem;
+  padding: clamp(1.4rem, 2.5vw, 2.6rem);
+}
+
+.learning-cycle article > p {
+  color: var(--gold);
+  font-family: var(--serif);
+  margin: 0 0 clamp(2.5rem, 5vw, 5rem);
+}
+
+.learning-cycle h3 {
+  font-size: clamp(1.9rem, 3vw, 3.1rem);
+  line-height: 1.05;
+}
+
+.learning-cycle span {
+  color: #cad6cf;
+  display: block;
+  margin-top: 1rem;
+}
+
+.current-teaching {
+  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+}
+
+.current-teaching header > div > p,
+.teaching-history header > div > p {
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  margin: 1.8rem 0 0;
+  max-width: 49rem;
+}
+
+.course-grid {
+  border-left: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.course-card {
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  min-height: 36rem;
+  padding: clamp(2rem, 4vw, 4.2rem);
+}
+
+.course-heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-heading > p {
+  color: var(--gold);
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.course-heading span {
+  color: var(--moss);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.course-card h3 {
+  font-size: clamp(2.5rem, 4.5vw, 4.8rem);
+  line-height: 1;
+  margin-top: clamp(3rem, 6vw, 6rem);
+  max-width: 11ch;
+}
+
+.course-summary {
+  color: var(--ink-soft);
+  margin: 1.8rem 0 0;
+  max-width: 40rem;
+}
+
+.course-card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  list-style: none;
+  margin: auto 0 0;
+  padding: 2.4rem 0 0;
+}
+
+.course-card li {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+  font-weight: 650;
+  padding: 0.48rem 0.76rem;
+}
+
+.teaching-history {
+  background: var(--paper);
+  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+}
+
+.teaching-history-list {
+  border-top: 1px solid var(--line);
+}
+
+.teaching-history-list article {
+  align-items: start;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 4.5rem);
+  grid-template-columns: minmax(5rem, 0.25fr) minmax(15rem, 1fr) minmax(14rem, 0.85fr);
+  padding: 2rem 0;
+}
+
+.teaching-year {
+  color: var(--moss);
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.teaching-history-list h3 {
+  font-size: clamp(1.55rem, 2.2vw, 2.5rem);
+  line-height: 1.08;
+}
+
+.teaching-history-list article > div > p,
+.teaching-note {
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+  margin: 0.7rem 0 0;
+}
+
+.teaching-note {
+  margin-top: 0.2rem;
+}
+
+.outreach-section {
+  align-items: center;
+  display: grid;
+  gap: clamp(3rem, 7vw, 8rem);
+  grid-template-columns: minmax(18rem, 0.85fr) minmax(0, 1.15fr);
+  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+}
+
+.outreach-section--without-image {
+  grid-template-columns: 1fr;
+}
+
+.outreach-figure,
+.communication-figure {
+  aspect-ratio: 4 / 5;
+  margin: 0;
+  max-height: 52rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.outreach-copy h2,
+.communication-copy h2 {
+  font-size: clamp(3rem, 5.7vw, 6rem);
+  max-width: 12ch;
+}
+
+.outreach-introduction,
+.communication-copy > p:last-child {
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 1.3vw, 1.17rem);
+  margin: 2rem 0 0;
+  max-width: 48rem;
+}
+
+.outreach-list {
+  border-top: 1px solid var(--line);
+  margin-top: 2.8rem;
+}
+
+.outreach-list article {
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: 1.3rem;
+  grid-template-columns: 2.5rem 1fr;
+  padding: 1.5rem 0;
+}
+
+.outreach-list article > p {
+  color: var(--gold);
+  font-family: var(--serif);
+  margin: 0;
+}
+
+.outreach-list h3 {
+  font-family: var(--sans);
+  font-size: 0.96rem;
+  font-weight: 750;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+.outreach-list span {
+  color: var(--ink-soft);
+  display: block;
+  font-size: 0.91rem;
+  margin-top: 0.45rem;
+}
+
+.science-communication {
+  align-items: center;
+  background: var(--paper);
+  display: grid;
+  gap: clamp(3rem, 7vw, 8rem);
+  grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
+  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+}
+
+.science-communication--without-image {
+  grid-template-columns: 1fr;
+}
+
+.communication-copy {
+  max-width: 52rem;
+}
+
+.teaching-invitation {
+  background: var(--forest);
+  color: var(--paper-bright);
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
+  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+}
+
+.teaching-invitation .section-label {
+  color: #b7c8a5;
+}
+
+.teaching-invitation h2 {
+  font-size: clamp(3rem, 6vw, 6.5rem);
+  max-width: 13ch;
+}
+
+.teaching-invitation > div > p {
+  color: #cad6cf;
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  margin: 2rem 0 2.5rem;
+  max-width: 48rem;
+}
+
+.teaching-invitation .button--primary {
+  background: var(--gold);
+  color: var(--forest-deep);
+}
+
+.teaching-invitation .button--primary:hover,
+.teaching-invitation .button--primary:focus-visible {
+  background: #e3b64f;
+}
+
 @media (max-width: 1050px) {
   .site-header {
     height: 5.4rem;
@@ -1719,6 +2083,14 @@ h1 {
   .message-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .learning-cycle {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .teaching-history-list article {
+    grid-template-columns: 5rem minmax(15rem, 1fr) minmax(12rem, 0.8fr);
+  }
 }
 
 @media (max-width: 760px) {
@@ -1791,6 +2163,10 @@ h1 {
   .join-pathways > header,
   .first-message > header,
   .join-contact,
+  .teaching-approach > header,
+  .current-teaching > header,
+  .teaching-history > header,
+  .teaching-invitation,
   .growing-lab {
     gap: 1.4rem;
     grid-template-columns: 1fr;
@@ -1904,6 +2280,48 @@ h1 {
 
   .message-grid article {
     min-height: 17rem;
+  }
+
+  .teaching-masthead {
+    min-height: auto;
+  }
+
+  .teaching-hero-figure {
+    aspect-ratio: 4 / 3;
+    min-height: 0;
+  }
+
+  .learning-cycle,
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-card {
+    min-height: 32rem;
+  }
+
+  .teaching-history-list article {
+    gap: 0.8rem;
+    grid-template-columns: 1fr;
+  }
+
+  .teaching-note {
+    margin-top: 0.5rem;
+  }
+
+  .outreach-section,
+  .science-communication {
+    grid-template-columns: 1fr;
+  }
+
+  .outreach-figure,
+  .communication-figure {
+    aspect-ratio: 4 / 3;
+    max-height: none;
+  }
+
+  .science-communication .communication-figure {
+    order: -1;
   }
 }
 
