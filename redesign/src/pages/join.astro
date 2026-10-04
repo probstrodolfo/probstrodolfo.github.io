@@ -1,0 +1,129 @@
+---
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteLayout from "../layouts/SiteLayout.astro";
+import { joinContent } from "../data/join";
+
+const { masthead, availability, culture, pathways, firstMessage, contact } = joinContent;
+---
+
+<SiteLayout
+  title="Join the Lab | Probst Lab"
+  description="Learn about graduate, undergraduate, postdoctoral, and collaborative opportunities with the Probst Lab at UC Davis."
+>
+  <SiteHeader variant="internal" />
+
+  <main class="join-page">
+    <section class="page-masthead join-masthead">
+      <p class="section-label">{masthead.label}</p>
+      <div>
+        <h1>{masthead.title}</h1>
+        <p>{masthead.introduction}</p>
+      </div>
+    </section>
+
+    {
+      availability.show && (
+        <aside class="availability-note" aria-labelledby="availability-title">
+          <p class="availability-label"><span aria-hidden="true" />{availability.label}</p>
+          <div>
+            <h2 id="availability-title">{availability.title}</h2>
+            <p>{availability.body}</p>
+          </div>
+        </aside>
+      )
+    }
+
+    <section class:list={["lab-culture", { "lab-culture--without-image": !culture.image.show }]} aria-labelledby="culture-title">
+      {culture.image.show && (
+        <figure class="culture-figure">
+          <img
+            src={culture.image.src}
+            alt={culture.image.alt}
+            loading="lazy"
+            style={`object-position: ${culture.image.objectPosition}`}
+          />
+          <figcaption>{culture.image.caption}</figcaption>
+        </figure>
+      )}
+
+      <div class="culture-copy">
+        <p class="section-label">{culture.label}</p>
+        <h2 id="culture-title">{culture.title}</h2>
+        <div class="culture-paragraphs">
+          {culture.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        <ul class="culture-values" aria-label="Lab values">
+          {culture.values.map((value) => <li>{value}</li>)}
+        </ul>
+      </div>
+    </section>
+
+    <section class="join-pathways" aria-labelledby="pathways-title">
+      <header>
+        <p class="section-label">{pathways.label}</p>
+        <div>
+          <h2 id="pathways-title">{pathways.title}</h2>
+          <p>{pathways.introduction}</p>
+        </div>
+      </header>
+
+      <div class="pathway-list">
+        {pathways.items.map((pathway) => (
+          <article class="pathway-card">
+            <p class="pathway-number">{pathway.number}</p>
+            <div class="pathway-copy">
+              <h3>{pathway.title}</h3>
+              <p>{pathway.body}</p>
+            </div>
+            <div class="pathway-details">
+              <p>What to include</p>
+              <ul>
+                {pathway.details.map((detail) => <li>{detail}</li>)}
+              </ul>
+              {pathway.links.length > 0 && (
+                <nav aria-label={`${pathway.title} links`}>
+                  {pathway.links.map((link) => (
+                    <a href={link.href} target="_blank" rel="noreferrer">
+                      {link.label}<span aria-hidden="true">↗</span>
+                    </a>
+                  ))}
+                </nav>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="first-message" aria-labelledby="first-message-title">
+      <header>
+        <p class="section-label">{firstMessage.label}</p>
+        <div>
+          <h2 id="first-message-title">{firstMessage.title}</h2>
+          <p>{firstMessage.introduction}</p>
+        </div>
+      </header>
+
+      <div class="message-grid">
+        {firstMessage.items.map((item, index) => (
+          <article>
+            <p>{String(index + 1).padStart(2, "0")}</p>
+            <h3>{item.title}</h3>
+            <span>{item.description}</span>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="join-contact">
+      <p class="section-label">{contact.label}</p>
+      <div>
+        <h2>{contact.title}</h2>
+        <p>{contact.body}</p>
+        <a class="button button--primary" href={`mailto:${contact.email}`}>
+          {contact.buttonLabel}<span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+</SiteLayout>

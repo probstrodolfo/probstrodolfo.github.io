@@ -55,3 +55,17 @@ Scientific names in titles use simple HTML italics, for example:
 ```
 
 The manuscripts-in-preparation section has its own `show` control, and every manuscript inside it can also be shown or hidden independently.
+
+## Edit the Join the Lab page
+
+All Join page text, contact details, and opportunity pathways live in:
+
+`src/data/join.ts`
+
+The `availability` block is the place to announce a specific funded opening. Its `show` value can also hide the entire status notice.
+
+Each pathway—graduate students, undergraduates, postdoctoral researchers, and collaborators—contains editable introductory text, a checklist, and an optional `links` list. Links can be added later without changing the page layout.
+
+The lab-culture photograph has the same `show`, `src`, `alt`, `caption`, and `objectPosition` controls used elsewhere on the site.
+
+Before launch, confirm the email address in `contact.email` and replace it there if a UC Davis address is preferred.
