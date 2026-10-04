@@ -1058,6 +1058,265 @@ h1 {
   margin: 1rem 0 0;
 }
 
+.publications-page {
+  background: var(--paper-bright);
+}
+
+.publications-masthead {
+  min-height: 42rem;
+}
+
+.publication-scholar-link {
+  border-bottom: 1px solid var(--ink);
+  display: inline-flex;
+  font-size: 0.84rem;
+  font-weight: 750;
+  gap: 0.6rem;
+  margin-top: 2.3rem;
+  padding-bottom: 0.25rem;
+  text-decoration: none;
+}
+
+.publication-scholar-link span,
+.selected-publication-card > a span,
+.publication-action a span {
+  color: var(--gold);
+}
+
+.selected-publications {
+  background: var(--forest-deep);
+  color: var(--paper-bright);
+  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+}
+
+.selected-publications > header,
+.publication-record > header,
+.manuscript-section > header {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
+  margin-bottom: clamp(3.5rem, 7vw, 7rem);
+}
+
+.selected-publications .section-label {
+  color: #b7c8a5;
+}
+
+.selected-publications h2,
+.publication-record h2,
+.manuscript-section h2 {
+  font-size: clamp(3rem, 6vw, 6.5rem);
+  max-width: 13ch;
+}
+
+.selected-publications header > div > p,
+.publication-record header > div > p,
+.manuscript-section header > div > p {
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  margin: 1.8rem 0 0;
+  max-width: 48rem;
+}
+
+.selected-publications header > div > p {
+  color: #cad6cf;
+}
+
+.selected-publication-grid {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.selected-publication-card {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  min-height: 31rem;
+  padding: clamp(1.7rem, 3.5vw, 3.6rem);
+}
+
+.selected-publication-meta {
+  color: #b7c8a5;
+  display: flex;
+  font-family: var(--serif);
+  justify-content: space-between;
+}
+
+.publication-type,
+.publication-entry-type {
+  color: var(--gold);
+  font-size: 0.69rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  margin: clamp(3rem, 6vw, 5.5rem) 0 1rem;
+  text-transform: uppercase;
+}
+
+.selected-publication-card h3 {
+  font-size: clamp(2rem, 3.2vw, 3.5rem);
+  line-height: 1.05;
+  max-width: 18ch;
+}
+
+.selected-publication-venue {
+  color: #cad6cf;
+  margin: 1.5rem 0 0;
+  max-width: 34rem;
+}
+
+.selected-publication-card > a {
+  align-self: flex-start;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+  display: inline-flex;
+  font-size: 0.8rem;
+  font-weight: 750;
+  gap: 0.6rem;
+  margin-top: auto;
+  padding-top: 2.2rem;
+  text-decoration: none;
+}
+
+.publication-record {
+  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+}
+
+.publication-list {
+  border-top: 1px solid var(--line);
+}
+
+.publication-entry {
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 4.5rem);
+  grid-template-columns: minmax(5rem, 0.25fr) minmax(0, 1.65fr) minmax(8rem, 0.35fr);
+  padding: clamp(2.2rem, 4vw, 4rem) 0;
+}
+
+.publication-year {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.publication-year > span {
+  color: var(--moss);
+  font-family: var(--serif);
+  font-size: 1.35rem;
+}
+
+.publication-year small {
+  background: color-mix(in srgb, var(--gold) 16%, transparent);
+  color: var(--ink);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  margin-top: 0.6rem;
+  padding: 0.25rem 0.45rem;
+  text-transform: uppercase;
+}
+
+.publication-entry-type {
+  color: var(--moss);
+  margin: 0 0 0.8rem;
+}
+
+.publication-citation h3 {
+  font-size: clamp(1.65rem, 2.4vw, 2.7rem);
+  line-height: 1.1;
+  max-width: 31ch;
+}
+
+.publication-authors {
+  color: var(--ink-soft);
+  font-size: 0.91rem;
+  margin: 1.15rem 0 0;
+  max-width: 56rem;
+}
+
+.publication-authors strong {
+  color: var(--ink);
+}
+
+.publication-venue {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  margin: 0.45rem 0 0;
+}
+
+.publication-note {
+  color: var(--moss);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  margin: 0.7rem 0 0;
+  text-transform: uppercase;
+}
+
+.publication-action {
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.publication-action a,
+.publication-action > span {
+  font-size: 0.74rem;
+  font-weight: 750;
+  letter-spacing: 0.025em;
+}
+
+.publication-action a {
+  border-bottom: 1px solid var(--ink);
+  display: inline-flex;
+  gap: 0.5rem;
+  padding-bottom: 0.2rem;
+  text-decoration: none;
+}
+
+.publication-action > span {
+  color: var(--moss);
+}
+
+.manuscript-section {
+  background: var(--paper);
+  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+}
+
+.manuscript-grid {
+  border-left: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.manuscript-grid article {
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  min-height: 23rem;
+  padding: clamp(1.7rem, 3.5vw, 3.4rem);
+}
+
+.manuscript-number {
+  color: var(--gold);
+  font-family: var(--serif);
+  margin: 0 0 clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.manuscript-grid h3 {
+  font-size: clamp(1.8rem, 3vw, 3.1rem);
+  line-height: 1.06;
+  max-width: 20ch;
+}
+
+.manuscript-target {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  margin: 1.2rem 0 0;
+}
+
 @media (max-width: 1050px) {
   .site-header {
     height: 5.4rem;
@@ -1121,6 +1380,15 @@ h1 {
   .research-program:nth-child(even) {
     gap: 3.5rem;
     grid-template-columns: minmax(17rem, 0.9fr) minmax(0, 1.1fr);
+  }
+
+  .publication-entry {
+    grid-template-columns: 5rem minmax(0, 1fr);
+  }
+
+  .publication-action {
+    grid-column: 2;
+    justify-content: flex-start;
   }
 }
 
@@ -1187,6 +1455,9 @@ h1 {
   .program-intro,
   .methods-section > header,
   .collaboration-section > header,
+  .selected-publications > header,
+  .publication-record > header,
+  .manuscript-section > header,
   .growing-lab {
     gap: 1.4rem;
     grid-template-columns: 1fr;
@@ -1241,6 +1512,39 @@ h1 {
 
   .program-figure {
     aspect-ratio: 4 / 3;
+  }
+
+  .publications-masthead {
+    min-height: auto;
+  }
+
+  .selected-publication-grid,
+  .manuscript-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .selected-publication-card {
+    min-height: 27rem;
+  }
+
+  .publication-entry {
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .publication-year {
+    align-items: center;
+    flex-direction: row;
+    gap: 0.7rem;
+  }
+
+  .publication-year small {
+    margin-top: 0;
+  }
+
+  .publication-action {
+    grid-column: auto;
+    margin-top: 0.5rem;
   }
 }
 

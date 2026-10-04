@@ -1,0 +1,140 @@
+---
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteLayout from "../layouts/SiteLayout.astro";
+import { publications, publicationsContent } from "../data/publications";
+
+const { masthead, selected, completeRecord, inPreparation } = publicationsContent;
+const visiblePublications = publications.filter((publication) => publication.show);
+const featuredPublications = selected.publicationIds
+  .map((id) => visiblePublications.find((publication) => publication.id === id))
+  .filter((publication) => publication !== undefined);
+
+const formatAuthors = (authors: string) =>
+  authors.replaceAll("Probst, R. S.", "<strong>Probst, R. S.</strong>");
+---
+
+<SiteLayout
+  title="Publications | Probst Lab"
+  description="Publications from the Probst Lab on ant evolution, systematics, symbiosis, biodiversity, morphology, and phylogenomics."
+>
+  <SiteHeader variant="internal" />
+
+  <main class="publications-page">
+    <section class="page-masthead publications-masthead">
+      <p class="section-label">{masthead.label}</p>
+      <div>
+        <h1>{masthead.title}</h1>
+        <p>{masthead.introduction}</p>
+        <a class="publication-scholar-link" href={masthead.scholarLink.href} target="_blank" rel="noreferrer">
+          {masthead.scholarLink.label}<span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    {
+      selected.show && (
+        <section class="selected-publications" aria-labelledby="selected-publications-title">
+          <header>
+            <p class="section-label">{selected.label}</p>
+            <div>
+              <h2 id="selected-publications-title">{selected.title}</h2>
+              <p>{selected.introduction}</p>
+            </div>
+          </header>
+
+          <div class="selected-publication-grid">
+            {featuredPublications.map((publication, index) => (
+              <article class="selected-publication-card">
+                <div class="selected-publication-meta">
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <span>{publication.year}</span>
+                </div>
+                <p class="publication-type">{publication.type}</p>
+                <h3 set:html={publication.titleHtml} />
+                <p class="selected-publication-venue">
+                  {publication.venue}
+                  {publication.details && <span> · {publication.details}</span>}
+                </p>
+                {publication.href && (
+                  <a href={publication.href} target="_blank" rel="noreferrer" aria-label={`Read ${publication.titleHtml.replace(/<[^>]+>/g, "")}`}>
+                    Read publication<span aria-hidden="true">↗</span>
+                  </a>
+                )}
+              </article>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    <section class="publication-record" aria-labelledby="publication-record-title">
+      <header>
+        <p class="section-label">{completeRecord.label}</p>
+        <div>
+          <h2 id="publication-record-title">{completeRecord.title}</h2>
+          <p>{completeRecord.introduction}</p>
+        </div>
+      </header>
+
+      <div class="publication-list">
+        {
+          visiblePublications.map((publication) => (
+            <article class="publication-entry" id={publication.id}>
+              <div class="publication-year">
+                <span>{publication.year}</span>
+                {publication.status && <small>{publication.status}</small>}
+              </div>
+
+              <div class="publication-citation">
+                <p class="publication-entry-type">{publication.type}</p>
+                <h3 set:html={publication.titleHtml} />
+                <p class="publication-authors" set:html={formatAuthors(publication.authors)} />
+                <p class="publication-venue">
+                  <em>{publication.venue}</em>
+                  {publication.details && <span>, {publication.details}</span>}
+                </p>
+                {publication.note && <p class="publication-note">{publication.note}</p>}
+              </div>
+
+              <div class="publication-action">
+                {publication.href ? (
+                  <a href={publication.href} target="_blank" rel="noreferrer">
+                    DOI / article<span aria-hidden="true">↗</span>
+                  </a>
+                ) : (
+                  <span>Link forthcoming</span>
+                )}
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    {
+      inPreparation.show && (
+        <section class="manuscript-section" aria-labelledby="manuscript-title">
+          <header>
+            <p class="section-label">{inPreparation.label}</p>
+            <div>
+              <h2 id="manuscript-title">{inPreparation.title}</h2>
+              <p>{inPreparation.introduction}</p>
+            </div>
+          </header>
+
+          <div class="manuscript-grid">
+            {inPreparation.items.filter((item) => item.show).map((item, index) => (
+              <article>
+                <p class="manuscript-number">{String(index + 1).padStart(2, "0")}</p>
+                <h3 set:html={item.titleHtml} />
+                <p class="publication-authors" set:html={formatAuthors(item.authors)} />
+                <p class="manuscript-target">Planned for <em>{item.target}</em></p>
+                {"note" in item && item.note && <p class="publication-note">{item.note}</p>}
+              </article>
+            ))}
+          </div>
+        </section>
+      )
+    }
+  </main>
+</SiteLayout>

@@ -37,3 +37,21 @@ Find `researchThemes` and change its main `show` value to `true` or `false`.
 Each theme also has its own `show` value. Changing that value hides only that theme. Each theme photograph has a separate `image.show` value, so a theme can remain visible without its photograph.
 
 To replace a research photograph, add the file to `public/images/`, then update the theme's `src`, `alt`, `caption`, and—if needed—`objectPosition` values.
+
+## Edit the publications page
+
+All publication entries live in:
+
+`src/data/publications.ts`
+
+Each publication is one record. Edit its title, authors, venue, year, or link directly in that record. Change `show: true` to `show: false` to temporarily hide an entry without deleting it.
+
+The four papers highlighted at the top are controlled by `selected.publicationIds`. Reorder those IDs or replace one with another publication's `id` to change the selected papers.
+
+Scientific names in titles use simple HTML italics, for example:
+
+```html
+<em>Myrmelachista</em>
+```
+
+The manuscripts-in-preparation section has its own `show` control, and every manuscript inside it can also be shown or hidden independently.
