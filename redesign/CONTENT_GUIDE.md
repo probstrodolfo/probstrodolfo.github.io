@@ -82,4 +82,6 @@ The selected teaching-history section has a main `show` control and is intention
 
 The three page images have the same `show`, `src`, `alt`, `caption`, and `objectPosition` controls used across the site.
 
+The page's main photographs currently show Rodolfo actively doing fieldwork and field teaching. Student-centered photographs are reserved for the clearly labeled mentorship section, so future replacements should preserve that visual hierarchy.
+
 The final outreach invitation can be hidden with `invitation.show`. Its email currently matches the old website and should be updated alongside the Join page before launch.

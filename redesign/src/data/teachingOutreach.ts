@@ -6,10 +6,10 @@ export const teachingOutreachContent = {
       "Ants and other insects make abstract ideas tangible. We use them to connect evolution, biodiversity, organismal biology, genomics, and the practice of asking better scientific questions.",
     image: {
       show: true,
-      src: "/images/student-research-symposium.jpg",
-      alt: "A collage of undergraduate researchers presenting their projects at a scientific symposium.",
-      caption: "Undergraduate researchers sharing their work",
-      objectPosition: "50% 48%",
+      src: "/images/rodolfo-fieldwork.jpg",
+      alt: "Rodolfo Probst collecting ants from vegetation during fieldwork in Costa Rica.",
+      caption: "Rodolfo Probst collecting ants in Costa Rica",
+      objectPosition: "55% 48%",
     },
   },
 
@@ -146,10 +146,10 @@ export const teachingOutreachContent = {
       "Outreach is an extension of the lab's scientific work: an opportunity to share the wonder of insects, make research tools accessible, and invite more people into the process of discovery.",
     image: {
       show: true,
-      src: "/images/outreach-stemfest.jpg",
-      alt: "Children and families examining insects and specimens with microscopes during a public science event.",
-      caption: "Hands-on entomology at a community STEM event",
-      objectPosition: "50% 50%",
+      src: "/images/rodolfo-field-mentoring.jpg",
+      alt: "Rodolfo Probst working with a student as they examine an understory plant during field teaching in Costa Rica.",
+      caption: "Field-based teaching and observation in Costa Rica",
+      objectPosition: "50% 58%",
     },
     items: [
       {
