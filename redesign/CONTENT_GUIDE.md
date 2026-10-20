@@ -85,3 +85,15 @@ The three page images have the same `show`, `src`, `alt`, `caption`, and `object
 The page's main photographs currently show Rodolfo actively doing fieldwork and field teaching. Student-centered photographs are reserved for the clearly labeled mentorship section, so future replacements should preserve that visual hierarchy.
 
 The final outreach invitation can be hidden with `invitation.show`. Its email currently matches the old website and should be updated alongside the Join page before launch.
+
+## Edit the News page
+
+All News page text and stories live in:
+
+`src/data/news.ts`
+
+Each story has a `show` control. Set it to `false` to hide a story without deleting it. Set `featured: true` to place a story in the larger featured area; use `featured: false` for the chronological story grid.
+
+Every story also has its own image controls. An item can be displayed without a photograph by setting `image.show` to `false`. To add or replace a photograph, place it in `public/images/` and update `src`, `alt`, `caption`, and `objectPosition`.
+
+The starter archive is labeled as earlier mentoring and research work so it is not confused with current UC Davis lab membership. New UC Davis stories can be added at the beginning of `newsItems`; the archive introduction can be revised or hidden once the page has enough current news.

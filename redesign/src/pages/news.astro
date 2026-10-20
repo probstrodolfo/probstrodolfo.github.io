@@ -1,0 +1,90 @@
+---
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteLayout from "../layouts/SiteLayout.astro";
+import { newsContent, newsItems } from "../data/news";
+
+const { masthead, current, archive } = newsContent;
+const visibleItems = newsItems.filter((item) => item.show);
+const featuredItems = visibleItems.filter((item) => item.featured);
+const archiveItems = visibleItems.filter((item) => !item.featured);
+---
+
+<SiteLayout
+  title="News | Probst Lab"
+  description="Research, student, fieldwork, and outreach news from the Probst Lab at UC Davis."
+>
+  <SiteHeader variant="internal" />
+
+  <main class="news-page">
+    <section class="page-masthead news-masthead">
+      <p class="section-label">{masthead.label}</p>
+      <div>
+        <h1>{masthead.title}</h1>
+        <p>{masthead.introduction}</p>
+      </div>
+    </section>
+
+    {current.show && (
+      <section class="news-current">
+        <p class="section-label">{current.label}</p>
+        <div>
+          <h2>{current.title}</h2>
+          <p>{current.body}</p>
+          <a class="button button--text" href={current.link.href}>
+            {current.link.label}<span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+    )}
+
+    {featuredItems.length > 0 && (
+      <section class="news-featured" aria-label="Featured earlier highlights">
+        {featuredItems.map((item) => (
+          <article class:list={["news-feature-card", { "news-feature-card--without-image": !item.image.show }]}>
+            {item.image.show && (
+              <figure>
+                <img src={item.image.src} alt={item.image.alt} style={`object-position: ${item.image.objectPosition}`} />
+                <figcaption>{item.image.caption}</figcaption>
+              </figure>
+            )}
+            <div>
+              <p class="news-meta"><span>{item.date}</span><span>{item.category}</span></p>
+              <h2>{item.title}</h2>
+              <p>{item.summary}</p>
+            </div>
+          </article>
+        ))}
+      </section>
+    )}
+
+    {archive.show && archiveItems.length > 0 && (
+      <section class="news-archive" aria-labelledby="news-archive-title">
+        <header>
+          <p class="section-label">{archive.label}</p>
+          <div>
+            <h2 id="news-archive-title">{archive.title}</h2>
+            <p>{archive.introduction}</p>
+          </div>
+        </header>
+
+        <div class="news-grid">
+          {archiveItems.map((item) => (
+            <article class="news-card">
+              {item.image.show && (
+                <figure>
+                  <img src={item.image.src} alt={item.image.alt} loading="lazy" style={`object-position: ${item.image.objectPosition}`} />
+                  <figcaption>{item.image.caption}</figcaption>
+                </figure>
+              )}
+              <div class="news-card-copy">
+                <p class="news-meta"><span>{item.date}</span><span>{item.category}</span></p>
+                <h3>{item.title}</h3>
+                <p>{item.summary}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+  </main>
+</SiteLayout>
