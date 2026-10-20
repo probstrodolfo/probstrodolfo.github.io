@@ -1,9 +1,23 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
-import { publications, publicationsContent } from "../data/publications";
+import { getCollection, getEntry } from "astro:content";
 
+const [publicationsEntry, publicationEntries, manuscriptEntries] = await Promise.all([
+  getEntry("pages", "publications"),
+  getCollection("publications"),
+  getCollection("manuscripts"),
+]);
+if (!publicationsEntry) throw new Error("Missing src/content/pages/publications.md");
+const publicationsContent = publicationsEntry.data as any;
+const publications = publicationEntries
+  .map((entry) => entry.data as any)
+  .sort((a, b) => a.order - b.order);
+const manuscripts = manuscriptEntries
+  .map((entry) => entry.data as any)
+  .sort((a, b) => a.order - b.order);
 const { masthead, selected, completeRecord, inPreparation } = publicationsContent;
+inPreparation.items = manuscripts;
 const visiblePublications = publications.filter((publication) => publication.show);
 const featuredPublications = selected.publicationIds
   .map((id) => visiblePublications.find((publication) => publication.id === id))

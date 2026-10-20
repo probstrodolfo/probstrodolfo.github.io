@@ -1,9 +1,22 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
-import { peopleContent } from "../data/people";
+import { getCollection, getEntry } from "astro:content";
 
-const { masthead, principalInvestigator, graduateStudents, growingLab } = peopleContent;
+const [peopleEntry, memberEntries] = await Promise.all([
+  getEntry("pages", "people"),
+  getCollection("people"),
+]);
+if (!peopleEntry) throw new Error("Missing src/content/pages/people.md");
+const pageContent = peopleEntry.data as any;
+const members = memberEntries.map((entry) => entry.data as any);
+const principalInvestigator = members.find((member) => member.group === "principal-investigator");
+if (!principalInvestigator) throw new Error("Missing principal-investigator profile in src/content/people/");
+const graduateMembers = members
+  .filter((member) => member.group === "graduate-student")
+  .sort((a, b) => a.order - b.order);
+const { masthead, graduateStudents, growingLab } = pageContent;
+graduateStudents.members = graduateMembers;
 ---
 
 <SiteLayout

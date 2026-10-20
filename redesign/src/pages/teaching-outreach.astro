@@ -1,8 +1,11 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
-import { teachingOutreachContent } from "../data/teachingOutreach";
+import { getEntry } from "astro:content";
 
+const teachingEntry = await getEntry("pages", "teaching-outreach");
+if (!teachingEntry) throw new Error("Missing src/content/pages/teaching-outreach.md");
+const teachingOutreachContent = teachingEntry.data as any;
 const { masthead, approach, currentTeaching, selectedTeaching, outreach, communication, invitation } = teachingOutreachContent;
 ---
 

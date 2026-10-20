@@ -1,9 +1,18 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
-import { researchContent } from "../data/research";
+import { getCollection, getEntry } from "astro:content";
 
+const [researchEntry, programEntries] = await Promise.all([
+  getEntry("pages", "research"),
+  getCollection("research"),
+]);
+if (!researchEntry) throw new Error("Missing src/content/pages/research.md");
+const researchContent = researchEntry.data as any;
 const { masthead, centralQuestion, strategies, programs, methods, collaborations } = researchContent;
+programs.items = programEntries
+  .map((entry) => entry.data as any)
+  .sort((a, b) => a.order - b.order);
 ---
 
 <SiteLayout

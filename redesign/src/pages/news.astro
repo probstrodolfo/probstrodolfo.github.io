@@ -1,8 +1,17 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
-import { newsContent, newsItems } from "../data/news";
+import { getCollection, getEntry } from "astro:content";
 
+const [newsEntry, itemEntries] = await Promise.all([
+  getEntry("pages", "news"),
+  getCollection("news"),
+]);
+if (!newsEntry) throw new Error("Missing src/content/pages/news.md");
+const newsContent = newsEntry.data as any;
+const newsItems = itemEntries
+  .map((entry) => entry.data as any)
+  .sort((a, b) => a.order - b.order);
 const { masthead, current, archive } = newsContent;
 const visibleItems = newsItems.filter((item) => item.show);
 const featuredItems = visibleItems.filter((item) => item.featured);

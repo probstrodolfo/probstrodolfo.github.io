@@ -1,12 +1,14 @@
 ---
-import { siteContent } from "../data/site";
+import { getEntry } from "astro:content";
 
 interface Props {
   variant?: "home" | "internal";
 }
 
 const { variant = "internal" } = Astro.props;
-const { identity, navigation } = siteContent;
+const siteEntry = await getEntry("settings", "site");
+if (!siteEntry) throw new Error("Missing src/content/settings/site.md");
+const { identity, navigation } = siteEntry.data as any;
 const currentPath = Astro.url.pathname;
 
 const isActive = (href: string) => href !== "/" && currentPath.startsWith(href);

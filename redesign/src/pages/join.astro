@@ -1,8 +1,11 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
-import { joinContent } from "../data/join";
+import { getEntry } from "astro:content";
 
+const joinEntry = await getEntry("pages", "join");
+if (!joinEntry) throw new Error("Missing src/content/pages/join.md");
+const joinContent = joinEntry.data as any;
 const { masthead, availability, culture, pathways, firstMessage, contact } = joinContent;
 ---
 

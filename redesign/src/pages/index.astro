@@ -1,9 +1,16 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
-import { siteContent } from "../data/site";
+import { getEntry } from "astro:content";
 
-const { identity, hero, openingQuestion, researchThemes } = siteContent;
+const [siteEntry, homeEntry] = await Promise.all([
+  getEntry("settings", "site"),
+  getEntry("pages", "home"),
+]);
+if (!siteEntry) throw new Error("Missing src/content/settings/site.md");
+if (!homeEntry) throw new Error("Missing src/content/pages/home.md");
+const { identity } = siteEntry.data as any;
+const { hero, openingQuestion, researchThemes } = homeEntry.data as any;
 ---
 
 <SiteLayout
