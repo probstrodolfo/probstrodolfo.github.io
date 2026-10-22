@@ -6,7 +6,7 @@ initials: MC
 role: PhD Student
 biography: >-
   Melqui is interested in the taxonomy, systematics, and nesting behaviors of Hymenoptera (wasps, bees, and ants) 
-  and other insects native to Amazonian ecosystems. His research focuses on social wasps—such as _Mischocyttarus_.
+  and other insects native to Amazonian ecosystems. His research focuses on social wasps—such as *Mischocyttarus*.
 interests:
   - Wasp taxonomy
   - Systematics
