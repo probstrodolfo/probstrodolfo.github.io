@@ -33,6 +33,7 @@ Git records every version. A mistaken edit can be inspected or reversed later.
 | Individual News stories | `src/content/news/` |
 | Teaching & Outreach | `src/content/pages/teaching-outreach.md` |
 | Join the Lab | `src/content/pages/join.md` |
+| Page-not-found text | `src/content/pages/not-found.md` |
 
 Files whose names begin with `01-`, `02-`, and so forth are displayed according to their `order` field. The numerical filename prefix also keeps the GitHub folder easy to browse.
 

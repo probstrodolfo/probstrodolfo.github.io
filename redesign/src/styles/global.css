@@ -2168,6 +2168,83 @@ h1 {
   margin: 1.3rem 0 0;
 }
 
+.not-found-page {
+  background: var(--paper-bright);
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(24rem, 0.92fr);
+  min-height: calc(100svh - 6rem);
+}
+
+.not-found-copy {
+  align-content: center;
+  display: grid;
+  overflow: hidden;
+  padding: clamp(4rem, 7vw, 7rem) clamp(2rem, 7vw, 8rem);
+}
+
+.not-found-code {
+  color: color-mix(in srgb, var(--gold) 78%, var(--forest));
+  font-family: var(--serif);
+  font-size: clamp(7rem, 15vw, 13rem);
+  font-weight: 500;
+  letter-spacing: -0.08em;
+  line-height: 0.7;
+  margin: 0 0 clamp(2.8rem, 5vw, 4.5rem);
+}
+
+.not-found-copy .section-label {
+  color: var(--ink-soft);
+  margin-bottom: 1.2rem;
+}
+
+.not-found-copy h1 {
+  font-size: clamp(3rem, 5.4vw, 6rem);
+  line-height: 0.98;
+  max-width: 12ch;
+}
+
+.not-found-summary {
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 1.3vw, 1.18rem);
+  margin: 2rem 0 0;
+  max-width: 38rem;
+}
+
+.not-found-figure {
+  background: var(--forest-deep);
+  margin: 0;
+  min-height: calc(100svh - 6rem);
+  overflow: hidden;
+  position: relative;
+}
+
+.not-found-figure::after {
+  background: linear-gradient(180deg, transparent 56%, rgba(5, 25, 17, 0.48));
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.not-found-figure img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.not-found-figure figcaption {
+  bottom: 1.5rem;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 750;
+  left: 1.6rem;
+  letter-spacing: 0.08em;
+  position: absolute;
+  right: 1.6rem;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
 @media (max-width: 1050px) {
   .site-header {
     height: 5.4rem;
@@ -2516,6 +2593,20 @@ h1 {
 
   .science-communication .communication-figure {
     order: -1;
+  }
+
+  .not-found-page {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .not-found-copy {
+    min-height: calc(100svh - 5.4rem);
+  }
+
+  .not-found-figure {
+    aspect-ratio: 4 / 3;
+    min-height: 0;
   }
 }
 
