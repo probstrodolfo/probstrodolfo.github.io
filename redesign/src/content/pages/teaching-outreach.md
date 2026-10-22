@@ -163,7 +163,7 @@ communication:
     show: true
     src: /images/student-science-communication.jpg
     alt: Alex Rich explaining his work on spider venoms to visitors at the Research On Capitol Hill (ROCH) in Utah.
-    caption: An undergraduate researcher sharing project results
+    caption: Alex Rich explaining his work on spider venoms to visitors at the Research On Capitol Hill (ROCH) in Utah.
     objectPosition: 50% 48%
 invitation:
   show: true
@@ -172,6 +172,6 @@ invitation:
   body: >-
     We welcome conversations with educators, museums, community groups, and colleagues interested in
     public programs, classroom visits, workshops, or collaborative teaching.
-  email: probstrodolfo@gmail.com
+  email: rsprobst@ucdavis.edu
   buttonLabel: Start a conversation
 ---
