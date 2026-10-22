@@ -47,7 +47,7 @@ researchThemes:
         show: true
         src: /images/ant-plant-worker.jpeg
         alt: A Myrmelachista worker moving across the leaf of its host plant.
-        caption: *Myrmelachista* worker on a Lauraceae host plant
+        caption: Myrmelachista worker on a Lauraceae host plant
         objectPosition: 50% 45%
     - show: true
       number: '02'
