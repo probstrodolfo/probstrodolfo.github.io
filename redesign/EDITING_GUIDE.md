@@ -37,6 +37,8 @@ Git records every version. A mistaken edit can be inspected or reversed later.
 
 Files whose names begin with `01-`, `02-`, and so forth are displayed according to their `order` field. The numerical filename prefix also keeps the GitHub folder easy to browse.
 
+The News page is currently hidden from the site navigation while it is being developed. Its Markdown files and page remain available. To restore the navigation link later, change its `show` value in `src/content/settings/site.md` from `false` to `true`.
+
 ## Editing text safely
 
 The section between the two `---` lines at the top of each Markdown file uses YAML. A typical field looks like:

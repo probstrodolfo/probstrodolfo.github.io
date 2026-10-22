@@ -10,6 +10,7 @@ const siteEntry = await getEntry("settings", "site");
 if (!siteEntry) throw new Error("Missing src/content/settings/site.md");
 const { identity, navigation } = siteEntry.data as any;
 const currentPath = Astro.url.pathname;
+const visibleNavigation = navigation.filter((item) => item.show !== false);
 
 const isActive = (href: string) => href !== "/" && currentPath.startsWith(href);
 ---
@@ -22,7 +23,7 @@ const isActive = (href: string) => href !== "/" && currentPath.startsWith(href);
 
   <nav class="desktop-nav" aria-label="Primary navigation">
     {
-      navigation.map((item) => (
+      visibleNavigation.map((item) => (
         <a href={item.href} class:list={{ active: isActive(item.href) }} aria-current={isActive(item.href) ? "page" : undefined}>
           {item.label}
         </a>
@@ -34,7 +35,7 @@ const isActive = (href: string) => href !== "/" && currentPath.startsWith(href);
     <summary aria-label="Open navigation">Menu</summary>
     <nav aria-label="Mobile navigation">
       {
-        navigation.map((item) => (
+        visibleNavigation.map((item) => (
           <a href={item.href} class:list={{ active: isActive(item.href) }} aria-current={isActive(item.href) ? "page" : undefined}>
             {item.label}
           </a>
