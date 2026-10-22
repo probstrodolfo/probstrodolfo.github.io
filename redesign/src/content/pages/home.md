@@ -1,7 +1,7 @@
 ---
 hero:
   eyebrow: Evolutionary biology · UC Davis
-  title: We study ants to understand how evolution builds biodiversity.
+  title: We study ants to understand how evolution shapes biodiversity.
   summary: >-
     The Probst Lab combines phylogenomics, natural history, morphology, and field biology to
     investigate ant evolution, ant–plant symbioses, and the forces that generate biological
