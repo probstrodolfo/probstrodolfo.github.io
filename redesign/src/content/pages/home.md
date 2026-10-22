@@ -36,7 +36,7 @@ researchThemes:
     - show: true
       number: '01'
       slug: ant-plant-symbioses
-      title: Ant–plant symbioses & convergent evolution
+      title: Ant-plant symbioses & convergent evolution
       question: Why do intimate partnerships evolve again and again?
       summary: >-
         Using Myrmelachista and their host plants, we compare repeated transitions from
