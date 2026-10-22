@@ -162,7 +162,7 @@ communication:
   image:
     show: true
     src: /images/student-science-communication.jpg
-    alt: An undergraduate researcher explaining a scientific poster to visitors at a research event.
+    alt: Alex Rich explaining his work on spider venoms to visitors at the Research On Capitol Hill (ROCH) in Utah.
     caption: An undergraduate researcher sharing project results
     objectPosition: 50% 48%
 invitation:
