@@ -60,7 +60,7 @@ researchThemes:
       image:
         show: true
         src: /images/myrmelachista-workers.jpeg
-        alt: A group of *Myrmelachista* workers at openings in a green host-plant stem.
+        alt: A group of Myrmelachista workers at openings in a green host-plant stem.
         caption: *Myrmelachista* workers at their host-plant nest entrance
         objectPosition: 50% 45%
     - show: true
