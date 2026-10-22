@@ -17,7 +17,7 @@ centralQuestion:
   paragraphs:
     - >-
       Evolution is shaped by history, but similar ecological challenges can produce strikingly
-      similar outcomes. We ask when independent ant lineages follow parallel paths—and when their
+      similar outcomes. We ask when independent ant lineages follow parallel paths - and when their
       distinct histories lead them elsewhere.
     - >-
       Repeated origins of plant specialization in Myrmelachista give us unusually well-controlled
@@ -30,7 +30,7 @@ strategies:
     - number: '01'
       title: Opportunistic nesting
       description: >-
-        Colonies occupy pre-existing cavities in plants without depending on one specialized host
+        Colonies occupy preexisting cavities in plants without depending on one specialized host
         relationship.
     - number: '02'
       title: Facultative association
@@ -77,7 +77,7 @@ collaborations:
         difficult-to-identify lineages.
     - title: Venom and prey evolution
       description: >-
-        Comparative work on cone-snail diversification, prey specialization, and the evolution of
+        Comparative work on cone snail diversification, prey specialization, and the evolution of
         venom components.
 programs:
   label: Research programs
