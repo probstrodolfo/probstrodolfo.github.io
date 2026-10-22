@@ -4,7 +4,7 @@ The website's words, links, visibility controls, and image settings are stored i
 
 ## The safe editing rule
 
-While the redesign is under review, always confirm that GitHub shows the branch `probst-lab-redesign` before editing. Do not edit `master`; that branch still powers the current public website.
+Always confirm that GitHub shows the branch `probst-lab-redesign` before editing. Do not edit `master`. I made so that branch still powers our current public website.
 
 For a normal text change:
 
@@ -41,7 +41,7 @@ Files whose names begin with `01-`, `02-`, and so forth are displayed according 
 The section between the two `---` lines at the top of each Markdown file uses YAML. A typical field looks like:
 
 ```yaml
-title: We study ants to understand how evolution builds biodiversity.
+title: Ants are, arguably, the coolest!
 ```
 
 Change the text after `title:` but leave the field name and colon in place.
@@ -82,12 +82,12 @@ featured: true
 
 ## Editing a person
 
-Each lab member has one file in `src/content/people/`. For example, Mandy's profile is `02-mandy-frazer.md`.
+Each lab member has one file in `src/content/people/`. For example, XYZ profile is `02-XYZ.md`.
 
 The most commonly edited fields are:
 
 ```yaml
-name: Mandy Frazer
+name: XYZ
 role: PhD Student
 biography: >-
   Profile text goes here.
@@ -136,7 +136,7 @@ image:
 
 `alt` describes the image for visitors who cannot see it. `caption` is visible beneath the image. `objectPosition` adjusts the crop: the first percentage moves the focal point horizontally and the second moves it vertically.
 
-For web performance, use JPEG or WebP for photographs and avoid uploading the full-resolution camera original. A width of roughly 1600–2400 pixels is usually sufficient.
+For web performance, use JPEG or WebP for photographs. Avoid uploading the full-resolution camera original. A width of roughly 1600-2400 pixels should be sufficient.
 
 ## Publications and scientific names
 
@@ -173,5 +173,3 @@ Check these five things:
 - Every image path begins with `/images/` and matches the uploaded filename exactly.
 - Visibility fields use unquoted lowercase `true` or `false`.
 - Your commit message briefly describes the change.
-
-During the private-review stage, substantive changes will be collected and deployed to the private preview. After launch, the GitHub deployment workflow will rebuild the public site automatically from approved commits.
