@@ -39,7 +39,7 @@ researchThemes:
       title: Ant–plant symbioses & convergent evolution
       question: Why do intimate partnerships evolve again and again?
       summary: >-
-        Using *Myrmelachista* and their host plants, we compare repeated transitions from
+        Using Myrmelachista and their host plants, we compare repeated transitions from
         opportunistic nesting to specialized mutualism. Field collections, genomes, and
         (soon!) transcriptomes let us test whether independent lineages reach similar evolutionary
         solutions.
