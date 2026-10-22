@@ -17,7 +17,7 @@ current:
     label: Meet the lab
     href: /people/
 archive:
-  show: false
+  show: true
   label: Earlier highlights
   title: Research and mentorship before UC Davis.
   introduction: >-

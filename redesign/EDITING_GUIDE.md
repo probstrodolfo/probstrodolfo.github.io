@@ -37,7 +37,7 @@ Git records every version. A mistaken edit can be inspected or reversed later.
 
 Files whose names begin with `01-`, `02-`, and so forth are displayed according to their `order` field. The numerical filename prefix also keeps the GitHub folder easy to browse.
 
-The News tab remains in the site navigation, but its current announcement, archive, and individual stories are presently switched off with `show: false`. You can edit all of them normally and change selected items to `show: true` when they are ready to publish.
+The News tab remains in the site navigation, but its current announcement and all individual stories are presently switched off with `show: false`. You can edit them normally and publish a story by changing the top-level `show` near the beginning of that story's file to `true`. The separate `show` nested under `image` controls only its photograph.
 
 ## Editing text safely
 
