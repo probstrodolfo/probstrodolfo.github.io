@@ -6,7 +6,7 @@ masthead:
     Updates from the Probst Lab: new research, student accomplishments, fieldwork, talks, and the
     everyday work of studying ants and biodiversity.
 current:
-  show: true
+  show: false
   label: The next chapter
   title: The Probst Lab is taking shape at UC Davis.
   body: >-
@@ -17,7 +17,7 @@ current:
     label: Meet the lab
     href: /people/
 archive:
-  show: true
+  show: false
   label: Earlier highlights
   title: Research and mentorship before UC Davis.
   introduction: >-

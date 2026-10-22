@@ -11,7 +11,7 @@ navigation:
     href: /publications/
   - label: News
     href: /news/
-    show: false
+    show: true
   - label: Teaching & Outreach
     href: /teaching-outreach/
   - label: Join

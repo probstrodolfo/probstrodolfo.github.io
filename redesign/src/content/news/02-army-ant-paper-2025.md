@@ -1,7 +1,7 @@
 ---
 order: 2
 id: army-ant-paper-2025
-show: true
+show: false
 featured: true
 date: June 2025
 category: Publication

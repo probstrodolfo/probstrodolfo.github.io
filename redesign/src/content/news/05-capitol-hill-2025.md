@@ -1,7 +1,7 @@
 ---
 order: 5
 id: capitol-hill-2025
-show: true
+show: false
 featured: false
 date: February 2025
 category: Science communication
