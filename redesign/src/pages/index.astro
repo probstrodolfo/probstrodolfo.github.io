@@ -19,7 +19,7 @@ const { hero, openingQuestion, researchThemes } = homeEntry.data as any;
 >
   <SiteHeader variant="home" />
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <section class:list={["hero", { "hero--without-image": !hero.image.show }]}>
       <div class="hero-copy">
         <p class="eyebrow">{hero.eyebrow}</p>

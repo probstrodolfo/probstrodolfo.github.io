@@ -3,8 +3,9 @@
   --ink-soft: #345046;
   --forest: #173f31;
   --forest-deep: #0a241b;
-  --moss: #668565;
+  --moss: #527053;
   --gold: #d6a12e;
+  --gold-text: #876100;
   --paper: #f5f2e9;
   --paper-bright: #fffdf7;
   --line: rgba(16, 39, 31, 0.18);
@@ -32,6 +33,36 @@ body {
 
 a {
   color: inherit;
+}
+
+:focus-visible {
+  box-shadow: 0 0 0 6px var(--forest-deep);
+  outline: 3px solid var(--paper-bright);
+  outline-offset: 3px;
+}
+
+main:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.skip-link {
+  background: var(--paper-bright);
+  color: var(--ink);
+  font-size: 0.88rem;
+  font-weight: 800;
+  left: 1rem;
+  padding: 0.75rem 1rem;
+  position: fixed;
+  text-decoration: none;
+  top: 1rem;
+  transform: translateY(calc(-100% - 2rem));
+  transition: transform 160ms ease;
+  z-index: 100;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
 }
 
 .site-header {
@@ -215,7 +246,7 @@ h1 {
 }
 
 .hero-fieldnote span + span::before {
-  color: var(--gold);
+  color: var(--gold-text);
   content: "•";
   font-style: normal;
   margin-right: 1.5rem;
@@ -380,7 +411,7 @@ h1 {
 }
 
 .theme-number {
-  color: var(--gold);
+  color: var(--gold-text);
   font-family: var(--serif);
   font-size: 1rem;
   margin: 0 0 2.5rem;
@@ -545,7 +576,7 @@ h1 {
 }
 
 .profile-links span {
-  color: var(--gold);
+  color: var(--gold-text);
   margin-left: 0.5rem;
 }
 
@@ -815,9 +846,14 @@ h1 {
   padding-left: clamp(1.2rem, 2.5vw, 2.6rem);
 }
 
-.strategy-grid article > p,
-.method-grid article > p {
+.strategy-grid article > p {
   color: var(--gold);
+  font-family: var(--serif);
+  margin: 0 0 1.7rem;
+}
+
+.method-grid article > p {
+  color: var(--gold-text);
   font-family: var(--serif);
   margin: 0 0 1.7rem;
 }
@@ -907,7 +943,7 @@ h1 {
 }
 
 .program-number {
-  color: var(--gold);
+  color: var(--gold-text);
   font-family: var(--serif);
   margin: 0 0 2rem;
 }
@@ -974,7 +1010,7 @@ h1 {
 }
 
 .research-links span {
-  color: var(--gold);
+  color: var(--gold-text);
   margin-left: 0.5rem;
 }
 
@@ -1078,8 +1114,11 @@ h1 {
 }
 
 .publication-scholar-link span,
-.selected-publication-card > a span,
 .publication-action a span {
+  color: var(--gold-text);
+}
+
+.selected-publication-card > a span {
   color: var(--gold);
 }
 
@@ -1300,7 +1339,7 @@ h1 {
 }
 
 .manuscript-number {
-  color: var(--gold);
+  color: var(--gold-text);
   font-family: var(--serif);
   margin: 0 0 clamp(2.5rem, 5vw, 4.5rem);
 }
@@ -1492,7 +1531,7 @@ h1 {
 }
 
 .pathway-number {
-  color: var(--gold);
+  color: var(--gold-text);
   font-family: var(--serif);
   margin: 0;
 }
@@ -1532,7 +1571,7 @@ h1 {
 }
 
 .pathway-details li::before {
-  color: var(--gold);
+  color: var(--gold-text);
   content: "→";
   left: 0;
   position: absolute;
@@ -1554,7 +1593,7 @@ h1 {
 }
 
 .pathway-details nav span {
-  color: var(--gold);
+  color: var(--gold-text);
   margin-left: 0.5rem;
 }
 
@@ -1795,7 +1834,7 @@ h1 {
 }
 
 .course-heading > p {
-  color: var(--gold);
+  color: var(--gold-text);
   font-family: var(--serif);
   font-size: 1.1rem;
   margin: 0;
@@ -1930,7 +1969,7 @@ h1 {
 }
 
 .outreach-list article > p {
-  color: var(--gold);
+  color: var(--gold-text);
   font-family: var(--serif);
   margin: 0;
 }
@@ -2106,7 +2145,7 @@ h1 {
 }
 
 .news-meta span + span::before {
-  color: var(--gold);
+  color: var(--gold-text);
   content: "•";
   margin-right: 0.7rem;
 }
