@@ -23,14 +23,14 @@ openingQuestion:
   label: A question at the center of our work
   title: When evolution faces similar challenges, does it arrive at the same solution?
   body: >-
-    We use ants—especially repeated origins of plant specialization—as natural experiments for
+    We use ants - especially repeated origins of plant specialization - as natural experiments for
     testing how history, ecology, and environment shape evolutionary outcomes.
 researchThemes:
   show: true
   label: What we study
   title: Ants are our window into evolution.
   introduction: >-
-    Across tropical forests, museum collections, genomes, and ecological datasets, we ask how ant
+    Across tropical forests, museum collections, phylogenomics, and ecological datasets, we ask how ant
     lineages diversify, adapt, and repeatedly form specialized relationships.
   items:
     - show: true
@@ -39,15 +39,15 @@ researchThemes:
       title: Ant–plant symbioses & convergent evolution
       question: Why do intimate partnerships evolve again and again?
       summary: >-
-        Using Myrmelachista and their host plants, we compare repeated transitions from
+        Using *Myrmelachista* and their host plants, we compare repeated transitions from
         opportunistic nesting to specialized mutualism. Field collections, genomes, and
-        transcriptomes let us test whether independent lineages reach similar evolutionary
+        (soon!) transcriptomes let us test whether independent lineages reach similar evolutionary
         solutions.
       image:
         show: true
         src: /images/ant-plant-worker.jpeg
-        alt: A Myrmelachista worker moving across the leaf of its host plant.
-        caption: Myrmelachista worker on a Lauraceae host plant
+        alt: A *Myrmelachista* worker moving across the leaf of its host plant.
+        caption: *Myrmelachista* worker on a Lauraceae host plant
         objectPosition: 50% 45%
     - show: true
       number: '02'
@@ -60,8 +60,8 @@ researchThemes:
       image:
         show: true
         src: /images/myrmelachista-workers.jpeg
-        alt: A group of Myrmelachista workers at openings in a green host-plant stem.
-        caption: Myrmelachista workers at their host-plant nest entrance
+        alt: A group of *Myrmelachista* workers at openings in a green host-plant stem.
+        caption: *Myrmelachista* workers at their host-plant nest entrance
         objectPosition: 50% 45%
     - show: true
       number: '03'
