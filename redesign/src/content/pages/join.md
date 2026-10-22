@@ -108,7 +108,7 @@ firstMessage:
         point.
     - title: What interests you
       description: >-
-        The organisms, questions, or approaches you find compelling—not simply a list of broad
+        The organisms, questions, or approaches you find compelling - not simply a list of broad
         keywords.
     - title: Why this lab
       description: >-
@@ -120,10 +120,10 @@ firstMessage:
         funding deadlines.
 contact:
   label: Start a conversation
-  title: Interested in ants—and in the questions they help us ask?
+  title: Interested in ants - and in the questions they help us ask?
   body: >-
     Send a concise introduction along with your CV or résumé. If there is not an immediate opening,
     a thoughtful message can still begin a useful scientific conversation.
-  email: probstrodolfo@gmail.com
+  email: rsprobst@ucdavis.edu
   buttonLabel: Email Rodolfo
 ---
