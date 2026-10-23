@@ -14,7 +14,7 @@ masthead:
     objectPosition: 55% 48%
 approach:
   label: Teaching approach
-  title: Science is something students do—not simply something they receive.
+  title: Science is something students do - not simply something they receive.
   paragraphs:
     - >-
       Teaching in the Probst Lab combines conceptual foundations with hands-on investigation.
