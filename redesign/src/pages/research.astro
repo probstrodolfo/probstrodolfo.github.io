@@ -1,6 +1,7 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
+import ScientificText from "../components/ScientificText.astro";
 import { getCollection, getEntry } from "astro:content";
 
 const [researchEntry, programEntries] = await Promise.all([
@@ -38,7 +39,7 @@ programs.items = programEntries
             alt={masthead.image.alt}
             style={`object-position: ${masthead.image.objectPosition}`}
           />
-          <figcaption>{masthead.image.caption}</figcaption>
+          <figcaption><ScientificText text={masthead.image.caption} smallCaps={true} /></figcaption>
         </figure>
       )
     }
@@ -48,13 +49,13 @@ programs.items = programEntries
       <div>
         <h2>{centralQuestion.title}</h2>
         <div class="research-question-copy">
-          {centralQuestion.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+          {centralQuestion.paragraphs.map((paragraph) => <p><ScientificText text={paragraph} /></p>)}
         </div>
       </div>
     </section>
 
     <section class="strategy-section" aria-labelledby="strategy-title">
-      <h2 id="strategy-title">{strategies.label}</h2>
+      <h2 id="strategy-title"><ScientificText text={strategies.label} smallCaps={true} /></h2>
       <div class="strategy-grid">
         {
           strategies.items.map((strategy) => (
@@ -86,7 +87,7 @@ programs.items = programEntries
                     loading="lazy"
                     style={`object-position: ${program.image.objectPosition}`}
                   />
-                  <figcaption>{program.image.caption}</figcaption>
+                  <figcaption><ScientificText text={program.image.caption} smallCaps={true} /></figcaption>
                 </figure>
               )}
 
@@ -95,7 +96,7 @@ programs.items = programEntries
                 <p class="program-question">{program.question}</p>
                 <h3>{program.title}</h3>
                 <div class="program-description">
-                  {program.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+                  {program.paragraphs.map((paragraph) => <p><ScientificText text={paragraph} /></p>)}
                 </div>
 
                 <ul class="approach-list" aria-label={`${program.title} approaches`}>

@@ -1,6 +1,7 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
+import ScientificText from "../components/ScientificText.astro";
 import { getCollection, getEntry } from "astro:content";
 
 const [peopleEntry, memberEntries] = await Promise.all([
@@ -57,7 +58,7 @@ graduateStudents.members = graduateMembers;
         </p>
 
         <div class="pi-biography">
-          {principalInvestigator.biography.map((paragraph) => <p>{paragraph}</p>)}
+          {principalInvestigator.biography.map((paragraph) => <p><ScientificText text={paragraph} /></p>)}
         </div>
 
         <ul class="interest-list" aria-label="Research interests">

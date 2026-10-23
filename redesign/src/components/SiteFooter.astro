@@ -1,0 +1,29 @@
+---
+import { getEntry } from "astro:content";
+
+const siteEntry = await getEntry("settings", "site");
+if (!siteEntry) throw new Error("Missing src/content/settings/site.md");
+const { identity, navigation } = siteEntry.data as any;
+const visibleNavigation = navigation.filter((item) => item.show !== false);
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="site-footer__primary">
+    <div class="site-footer__identity">
+      <a href="/" aria-label="Probst Lab home">{identity.name}</a>
+      <p>{identity.affiliation}</p>
+      <span>Ant evolution, biodiversity, and symbiosis.</span>
+    </div>
+
+    <nav class="site-footer__navigation" aria-label="Footer navigation">
+      <a href="/">Home</a>
+      {visibleNavigation.map((item) => <a href={item.href}>{item.label}</a>)}
+    </nav>
+  </div>
+
+  <div class="site-footer__bottom">
+    <span>© {year} {identity.name}</span>
+    <span>{identity.affiliation}</span>
+  </div>
+</footer>

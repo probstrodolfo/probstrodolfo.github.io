@@ -1,6 +1,7 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
+import ScientificText from "../components/ScientificText.astro";
 import { getEntry } from "astro:content";
 
 const [siteEntry, homeEntry] = await Promise.all([
@@ -10,7 +11,8 @@ const [siteEntry, homeEntry] = await Promise.all([
 if (!siteEntry) throw new Error("Missing src/content/settings/site.md");
 if (!homeEntry) throw new Error("Missing src/content/pages/home.md");
 const { identity } = siteEntry.data as any;
-const { hero, openingQuestion, researchThemes } = homeEntry.data as any;
+const { hero, openingQuestion, researchThemes, peopleGateway, contact } = homeEntry.data as any;
+const heroHasMedia = hero.video?.show || hero.image?.show;
 ---
 
 <SiteLayout
@@ -20,9 +22,9 @@ const { hero, openingQuestion, researchThemes } = homeEntry.data as any;
   <SiteHeader variant="home" />
 
   <main id="main-content" tabindex="-1">
-    <section class:list={["hero", { "hero--without-image": !hero.image.show }]}>
+    <section class:list={["hero", { "hero--without-image": !heroHasMedia }]}>
       <div class="hero-copy">
-        <p class="eyebrow">{hero.eyebrow}</p>
+        <p class="eyebrow hero-welcome">{hero.eyebrow}</p>
         <h1>{hero.title}</h1>
         <p class="hero-summary">{hero.summary}</p>
 
@@ -31,30 +33,40 @@ const { hero, openingQuestion, researchThemes } = homeEntry.data as any;
             {hero.primaryLink.label}
             <span aria-hidden="true">↘</span>
           </a>
-          <a class="button button--text" href={hero.secondaryLink.href}>
-            {hero.secondaryLink.label}
-            <span aria-hidden="true">→</span>
-          </a>
         </div>
-
-        <p class="hero-fieldnote">
-          <span>Formicidae</span>
-          <span>Phylogenomics</span>
-          <span>Natural history</span>
-        </p>
       </div>
 
       {
-        hero.image.show && (
+        hero.video?.show ? (
+          <figure class="hero-figure hero-video-figure">
+            <video
+              data-hero-video
+              src={hero.video.src}
+              poster={hero.video.poster}
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-describedby="hero-media-caption"
+            />
+            <figcaption id="hero-media-caption">
+              <ScientificText text={hero.video.caption} smallCaps={true} />
+            </figcaption>
+            <button class="video-control" type="button" data-video-control aria-label="Play ant video">
+              <span aria-hidden="true" data-video-control-icon>▶</span>
+              <span data-video-control-label>Play video</span>
+            </button>
+          </figure>
+        ) : hero.image.show ? (
           <figure class="hero-figure">
             <img
               src={hero.image.src}
               alt={hero.image.alt}
               style={`object-position: ${hero.image.objectPosition}`}
             />
-            <figcaption>{hero.image.caption}</figcaption>
+            <figcaption><ScientificText text={hero.image.caption} smallCaps={true} /></figcaption>
           </figure>
-        )
+        ) : null
       }
     </section>
 
@@ -81,11 +93,11 @@ const { hero, openingQuestion, researchThemes } = homeEntry.data as any;
             </div>
           </header>
 
-          <div class="theme-list">
+          <div class="theme-grid">
             {researchThemes.items
               .filter((theme) => theme.show)
               .map((theme) => (
-                <article class:list={["theme", { "theme--without-image": !theme.image.show }]} id={theme.slug}>
+                <article class:list={["theme-card", { "theme-card--without-image": !theme.image.show }]} id={theme.slug}>
                   {theme.image.show && (
                     <figure class="theme-figure">
                       <img
@@ -94,7 +106,7 @@ const { hero, openingQuestion, researchThemes } = homeEntry.data as any;
                         loading="lazy"
                         style={`object-position: ${theme.image.objectPosition}`}
                       />
-                      <figcaption>{theme.image.caption}</figcaption>
+                      <figcaption><ScientificText text={theme.image.caption} smallCaps={true} /></figcaption>
                     </figure>
                   )}
 
@@ -102,7 +114,10 @@ const { hero, openingQuestion, researchThemes } = homeEntry.data as any;
                     <p class="theme-number" aria-hidden="true">{theme.number}</p>
                     <p class="theme-question">{theme.question}</p>
                     <h3>{theme.title}</h3>
-                    <p class="theme-summary">{theme.summary}</p>
+                    <p class="theme-summary"><ScientificText text={theme.summary} /></p>
+                    <a class="theme-link" href={theme.link.href}>
+                      {theme.link.label}<span aria-hidden="true">→</span>
+                    </a>
                   </div>
                 </article>
               ))}
@@ -110,5 +125,67 @@ const { hero, openingQuestion, researchThemes } = homeEntry.data as any;
         </section>
       )
     }
+
+    {
+      peopleGateway.show && (
+        <section class="people-gateway" aria-label="Meet the Probst Lab">
+          <a class="button button--primary" href={peopleGateway.link.href}>
+            {peopleGateway.link.label}<span aria-hidden="true">→</span>
+          </a>
+        </section>
+      )
+    }
+
+    {
+      contact.show && (
+        <section class="home-contact">
+          <p class="section-label">{contact.label}</p>
+          <div>
+            <h2>{contact.title}</h2>
+            <p>{contact.body}</p>
+            <a class="button button--primary" href={contact.link.href}>
+              {contact.link.label}<span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </section>
+      )
+    }
   </main>
+
+  <script>
+    const video = document.querySelector("[data-hero-video]");
+    const control = document.querySelector("[data-video-control]");
+    const controlLabel = document.querySelector("[data-video-control-label]");
+    const controlIcon = document.querySelector("[data-video-control-icon]");
+
+    if (
+      video instanceof HTMLVideoElement &&
+      control instanceof HTMLButtonElement &&
+      controlLabel instanceof HTMLElement &&
+      controlIcon instanceof HTMLElement
+    ) {
+      const updateControl = () => {
+        const isPaused = video.paused;
+        controlLabel.textContent = isPaused ? "Play video" : "Pause video";
+        controlIcon.textContent = isPaused ? "▶" : "Ⅱ";
+        control.setAttribute("aria-label", isPaused ? "Play ant video" : "Pause ant video");
+      };
+
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        video.play().catch(updateControl);
+      }
+
+      control.addEventListener("click", () => {
+        if (video.paused) {
+          video.play().catch(updateControl);
+        } else {
+          video.pause();
+        }
+      });
+
+      video.addEventListener("play", updateControl);
+      video.addEventListener("pause", updateControl);
+      updateControl();
+    }
+  </script>
 </SiteLayout>

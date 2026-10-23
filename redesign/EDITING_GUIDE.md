@@ -83,6 +83,33 @@ featured: true
 
 `true` places the story in the large featured area. `false` places it in the regular News grid.
 
+## Editing the homepage
+
+Homepage wording and links remain together in `src/content/pages/home.md`. The major blocks are:
+
+- `hero` for the welcome message, main statement, button, and hero media.
+- `openingQuestion` for the dark central-question section.
+- `researchThemes` for the three compact research gateways.
+- `peopleGateway` for the standalone **Meet the lab** button.
+- `contact` for the closing invitation and **Contact us** button.
+
+The homepage video can be switched off without deleting it:
+
+```yaml
+video:
+  show: false
+```
+
+To restore the still ant photograph instead, also change the nearby image setting to:
+
+```yaml
+image:
+  show: true
+```
+
+The three research cards each have a `link` whose `href` points to the corresponding section of the
+Research page. Preserve the section name after `#` when editing those links.
+
 ## Editing a person
 
 Each lab member has one file in `src/content/people/`. For example, XYZ profile is `02-XYZ.md`.
@@ -142,6 +169,10 @@ image:
 For web performance, use JPEG or WebP for photographs. Avoid uploading the full-resolution camera original. A width of roughly 1600-2400 pixels should be sufficient.
 
 ## Publications and scientific names
+
+In ordinary homepage, People, and Research text, the site automatically italicizes
+`Myrmelachista`. Captions displayed in capitals use italic small caps, with the initial **M** slightly
+larger than the remaining letters.
 
 Each publication has one file in `src/content/publications/`. Its `order` determines its position in the complete list. Set `show: false` to retain a record without displaying it.
 

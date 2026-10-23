@@ -1,0 +1,19 @@
+---
+interface Props {
+  text: string;
+  smallCaps?: boolean;
+}
+
+const { text, smallCaps = false } = Astro.props;
+const parts = String(text).split(/(Myrmelachista)/gi);
+---
+
+{
+  parts.map((part) =>
+    /^Myrmelachista$/i.test(part) ? (
+      <em class:list={["taxon-name", { "taxon-name--small-caps": smallCaps }]}>Myrmelachista</em>
+    ) : (
+      part
+    )
+  )
+}

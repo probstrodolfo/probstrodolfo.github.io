@@ -1,6 +1,6 @@
 ---
 hero:
-  eyebrow: Evolutionary biology · UC Davis
+  eyebrow: Welcome to the Probst Lab!
   title: We study ants to understand how evolution shapes biodiversity.
   summary: >-
     The Probst Lab combines phylogenomics, natural history, morphology, and field biology to
@@ -8,12 +8,15 @@ hero:
     diversity.
   primaryLink:
     label: Explore our research
-    href: '#central-question'
-  secondaryLink:
-    label: Meet the lab
-    href: /people/
-  image:
+    href: /research/
+  video:
     show: true
+    src: /images/homepage-ants.mp4
+    poster: /images/myrmelachista-hero.jpeg
+    alt: Myrmelachista ants moving across the stem of their host plant.
+    caption: Myrmelachista · Neotropical ant–plant symbiosis
+  image:
+    show: false
     src: /images/myrmelachista-hero.jpeg
     alt: Myrmelachista ants moving across the stem of their host plant.
     caption: Myrmelachista · Neotropical ant–plant symbiosis
@@ -39,10 +42,11 @@ researchThemes:
       title: Ant-plant symbioses & convergent evolution
       question: Why do intimate partnerships evolve again and again?
       summary: >-
-        Using Myrmelachista and their host plants, we compare repeated transitions from
-        opportunistic nesting to specialized mutualism. Field collections, genomes, and
-        (soon!) transcriptomes let us test whether independent lineages reach similar evolutionary
-        solutions.
+        We use repeated origins of plant specialization in Myrmelachista to test when evolution
+        produces similar solutions.
+      link:
+        label: Explore this research
+        href: /research/#symbioses-convergence
       image:
         show: true
         src: /images/ant-plant-worker.jpeg
@@ -55,8 +59,11 @@ researchThemes:
       title: Ant systematics & evolutionary history
       question: How does history shape the diversity we see today?
       summary: >-
-        We combine morphology, phylogenomics, fossils, natural history, and taxonomy to reconstruct
-        ant relationships and understand the origins of ecological and morphological diversity.
+        We integrate taxonomy, morphology, fossils, natural history, and phylogenomics to
+        reconstruct ant relationships and explain how their diversity arose.
+      link:
+        label: Explore this research
+        href: /research/#systematics-phylogenomics
       image:
         show: true
         src: /images/myrmelachista-workers.jpeg
@@ -69,13 +76,30 @@ researchThemes:
       title: Ant diversity in a changing world
       question: How do communities respond to environmental change?
       summary: >-
-        We integrate functional traits, community data, biodiversity inventories, and portable
-        sequencing to study how ant assemblages vary across regions, habitats, and environmental
-        gradients.
+        We combine functional traits, community data, field surveys, and portable sequencing to
+        understand how ant assemblages vary across places and changing environments.
+      link:
+        label: Explore this research
+        href: /research/#functional-diversity
       image:
         show: true
         src: /images/costa-rica-fieldwork.jpg
         alt: A researcher collecting ants from an understory plant in a tropical forest.
         caption: Collecting ants in Costa Rica
         objectPosition: 57% 50%
+peopleGateway:
+  show: true
+  link:
+    label: Meet the lab
+    href: /people/
+contact:
+  show: true
+  label: Get in touch
+  title: Interested in joining the lab—or just talking ants?
+  body: >-
+    Whether you are a prospective student, a potential collaborator, or simply curious about our
+    work, we would be glad to hear from you.
+  link:
+    label: Contact us
+    href: /join/#contact
 ---

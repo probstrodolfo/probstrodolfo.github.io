@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
+    "prebuild": "node scripts/prepare-homepage-video.mjs",
     "build": "astro build",
     "preview": "astro preview"
   },
