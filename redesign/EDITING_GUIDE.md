@@ -87,24 +87,25 @@ featured: true
 
 Homepage wording and links remain together in `src/content/pages/home.md`. The major blocks are:
 
-- `hero` for the welcome message, main statement, button, and hero media.
+- `hero` for the welcome message, main statement, button, and still photograph.
 - `openingQuestion` for the dark central-question section.
 - `researchThemes` for the three compact research gateways.
 - `peopleGateway` for the standalone **Meet the lab** button.
 - `contact` for the closing invitation and **Contact us** button.
+- `videoFeature` for the full, uncropped ant video beneath the contact section.
 
-The homepage video can be switched off without deleting it:
-
-```yaml
-video:
-  show: false
-```
-
-To restore the still ant photograph instead, also change the nearby image setting to:
+The hero photograph can be switched off without deleting it:
 
 ```yaml
 image:
-  show: true
+  show: false
+```
+
+The closing video has its own independent visibility control:
+
+```yaml
+videoFeature:
+  show: false
 ```
 
 The three research cards each have a `link` whose `href` points to the corresponding section of the

@@ -11,8 +11,8 @@ const [siteEntry, homeEntry] = await Promise.all([
 if (!siteEntry) throw new Error("Missing src/content/settings/site.md");
 if (!homeEntry) throw new Error("Missing src/content/pages/home.md");
 const { identity } = siteEntry.data as any;
-const { hero, openingQuestion, researchThemes, peopleGateway, contact } = homeEntry.data as any;
-const heroHasMedia = hero.video?.show || hero.image?.show;
+const { hero, openingQuestion, researchThemes, peopleGateway, contact, videoFeature } = homeEntry.data as any;
+const heroHasMedia = hero.image?.show;
 ---
 
 <SiteLayout
@@ -36,38 +36,19 @@ const heroHasMedia = hero.video?.show || hero.image?.show;
         </div>
       </div>
 
-      {
-        hero.video?.show ? (
-          <figure class="hero-figure hero-video-figure">
-            <video
-              data-hero-video
-              src={hero.video.src}
-              poster={hero.video.poster}
-              muted
-              loop
-              playsinline
-              preload="metadata"
-              aria-describedby="hero-media-caption"
-            />
-            <figcaption id="hero-media-caption">
-              <ScientificText text={hero.video.caption} smallCaps={true} />
-            </figcaption>
-            <button class="video-control" type="button" data-video-control aria-label="Play ant video">
-              <span aria-hidden="true" data-video-control-icon>▶</span>
-              <span data-video-control-label>Play video</span>
-            </button>
-          </figure>
-        ) : hero.image.show ? (
-          <figure class="hero-figure">
-            <img
-              src={hero.image.src}
-              alt={hero.image.alt}
-              style={`object-position: ${hero.image.objectPosition}`}
-            />
-            <figcaption><ScientificText text={hero.image.caption} smallCaps={true} /></figcaption>
-          </figure>
-        ) : null
-      }
+      {hero.image?.show && (
+        <figure class="hero-figure">
+          <img
+            src={hero.image.src}
+            alt={hero.image.alt}
+            aria-describedby="hero-media-caption"
+            style={`object-position: ${hero.image.objectPosition}`}
+          />
+          <figcaption id="hero-media-caption">
+            <ScientificText text={hero.image.caption} />
+          </figcaption>
+        </figure>
+      )}
     </section>
 
     {
@@ -150,10 +131,39 @@ const heroHasMedia = hero.video?.show || hero.image?.show;
         </section>
       )
     }
+
+    {
+      videoFeature?.show && (
+        <section class="home-video-section" aria-label="Ants on their host plant">
+          <figure class="home-video-figure">
+            <div class="home-video-frame">
+              <video
+                data-feature-video
+                src={videoFeature.src}
+                poster={videoFeature.poster}
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label={videoFeature.alt}
+                aria-describedby="home-video-caption"
+              />
+              <button class="video-control" type="button" data-video-control aria-label="Play ant video">
+                <span aria-hidden="true" data-video-control-icon>▶</span>
+                <span data-video-control-label>Play video</span>
+              </button>
+            </div>
+            <figcaption id="home-video-caption">
+              <ScientificText text={videoFeature.caption} />
+            </figcaption>
+          </figure>
+        </section>
+      )
+    }
   </main>
 
   <script>
-    const video = document.querySelector("[data-hero-video]");
+    const video = document.querySelector("[data-feature-video]");
     const control = document.querySelector("[data-video-control]");
     const controlLabel = document.querySelector("[data-video-control-label]");
     const controlIcon = document.querySelector("[data-video-control-icon]");
@@ -172,7 +182,17 @@ const heroHasMedia = hero.video?.show || hero.image?.show;
       };
 
       if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-        video.play().catch(updateControl);
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting) {
+              video.play().catch(updateControl);
+            } else {
+              video.pause();
+            }
+          },
+          { threshold: 0.4 },
+        );
+        observer.observe(video);
       }
 
       control.addEventListener("click", () => {

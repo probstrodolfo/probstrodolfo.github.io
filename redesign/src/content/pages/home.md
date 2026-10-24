@@ -9,17 +9,11 @@ hero:
   primaryLink:
     label: Explore our research
     href: /research/
-  video:
-    show: true
-    src: /images/homepage-ants.mp4
-    poster: /images/myrmelachista-hero.jpeg
-    alt: Myrmelachista ants moving across the stem of their host plant.
-    caption: Myrmelachista · Neotropical ant–plant symbiosis
   image:
-    show: false
+    show: true
     src: /images/myrmelachista-hero.jpeg
     alt: Myrmelachista ants moving across the stem of their host plant.
-    caption: Myrmelachista · Neotropical ant–plant symbiosis
+    caption: Myrmelachista ants evolved specialized associations with understory Lauraceae.
     objectPosition: 50% 46%
 openingQuestion:
   show: true
@@ -102,4 +96,10 @@ contact:
   link:
     label: Contact us
     href: /join/#contact
+videoFeature:
+  show: true
+  src: /images/homepage-ants.mp4
+  poster: /images/myrmelachista-hero.jpeg
+  alt: Myrmelachista ants moving across the stem of their host plant.
+  caption: Myrmelachista ants moving across the stem of a host plant.
 ---

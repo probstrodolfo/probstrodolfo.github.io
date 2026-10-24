@@ -265,8 +265,7 @@ h1 {
   position: absolute;
 }
 
-.hero-figure img,
-.hero-figure video {
+.hero-figure img {
   height: 100%;
   inset: 0;
   object-fit: cover;
@@ -277,12 +276,14 @@ h1 {
 .hero-figure figcaption {
   bottom: 1.6rem;
   color: white;
-  font-size: 0.72rem;
-  font-weight: 750;
+  font-size: clamp(0.82rem, 0.95vw, 0.95rem);
+  font-weight: 600;
   left: 1.8rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.01em;
+  line-height: 1.45;
+  max-width: min(75%, 34rem);
   position: absolute;
-  text-transform: uppercase;
+  text-transform: none;
   z-index: 1;
 }
 
@@ -520,6 +521,37 @@ h1 {
 .home-contact .button--primary:hover,
 .home-contact .button--primary:focus-visible {
   background: #e3b64f;
+}
+
+.home-video-section {
+  background: var(--forest);
+  padding: 0 clamp(1rem, 8vw, 9rem) clamp(5rem, 9vw, 9rem);
+}
+
+.home-video-figure {
+  margin: 0 auto;
+  max-width: 92rem;
+}
+
+.home-video-frame {
+  aspect-ratio: 16 / 9;
+  background: var(--forest-deep);
+  overflow: hidden;
+  position: relative;
+}
+
+.home-video-frame video {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.home-video-figure figcaption {
+  color: #cad6cf;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-top: 0.9rem;
 }
 
 .site-footer {
