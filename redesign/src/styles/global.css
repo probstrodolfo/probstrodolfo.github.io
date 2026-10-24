@@ -276,14 +276,15 @@ h1 {
 .hero-figure figcaption {
   bottom: 1.6rem;
   color: white;
-  font-size: clamp(0.82rem, 0.95vw, 0.95rem);
+  font-size: clamp(0.76rem, 0.82vw, 0.86rem);
   font-weight: 600;
   left: 1.8rem;
   letter-spacing: 0.01em;
   line-height: 1.45;
-  max-width: min(75%, 34rem);
+  max-width: calc(100% - 3.6rem);
   position: absolute;
   text-transform: none;
+  white-space: nowrap;
   z-index: 1;
 }
 
@@ -518,8 +519,8 @@ h1 {
 
 .home-contact-video-overlay {
   background:
-    linear-gradient(90deg, rgba(4, 31, 23, 0.9) 0%, rgba(4, 31, 23, 0.73) 52%, rgba(4, 31, 23, 0.54) 100%),
-    linear-gradient(180deg, rgba(4, 31, 23, 0.12), rgba(4, 31, 23, 0.56));
+    linear-gradient(90deg, rgba(4, 31, 23, 0.78) 0%, rgba(4, 31, 23, 0.58) 48%, rgba(4, 31, 23, 0.28) 78%, rgba(4, 31, 23, 0.12) 100%),
+    linear-gradient(180deg, rgba(4, 31, 23, 0.05), rgba(4, 31, 23, 0.3));
   pointer-events: none;
   z-index: 1;
 }
@@ -2613,6 +2614,11 @@ h1 {
     min-height: 0;
   }
 
+  .hero-figure figcaption {
+    font-size: 0.76rem;
+    white-space: normal;
+  }
+
   .video-control {
     bottom: 1rem;
     right: 1rem;
@@ -2673,8 +2679,8 @@ h1 {
 
   .home-contact-video-overlay {
     background:
-      linear-gradient(180deg, rgba(4, 31, 23, 0.82) 0%, rgba(4, 31, 23, 0.66) 58%, rgba(4, 31, 23, 0.76) 100%),
-      linear-gradient(90deg, rgba(4, 31, 23, 0.72), rgba(4, 31, 23, 0.45));
+      linear-gradient(180deg, rgba(4, 31, 23, 0.68) 0%, rgba(4, 31, 23, 0.5) 58%, rgba(4, 31, 23, 0.62) 100%),
+      linear-gradient(90deg, rgba(4, 31, 23, 0.58), rgba(4, 31, 23, 0.22));
   }
 
   .home-contact-video-caption {
