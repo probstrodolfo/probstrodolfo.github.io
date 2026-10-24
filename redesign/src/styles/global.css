@@ -489,12 +489,45 @@ h1 {
 }
 
 .home-contact {
+  align-items: center;
   background: var(--forest);
   color: var(--paper-bright);
   display: grid;
   gap: 3rem;
   grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
+  isolation: isolate;
+  min-height: clamp(42rem, 56.25vw, 58rem);
+  overflow: hidden;
   padding: clamp(5rem, 9vw, 9rem) clamp(2rem, 8vw, 9rem);
+  position: relative;
+}
+
+.home-contact-video,
+.home-contact-video-overlay {
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.home-contact-video {
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.home-contact-video-overlay {
+  background:
+    linear-gradient(90deg, rgba(4, 31, 23, 0.9) 0%, rgba(4, 31, 23, 0.73) 52%, rgba(4, 31, 23, 0.54) 100%),
+    linear-gradient(180deg, rgba(4, 31, 23, 0.12), rgba(4, 31, 23, 0.56));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.home-contact > .section-label,
+.home-contact__content {
+  position: relative;
+  z-index: 2;
 }
 
 .home-contact .section-label {
@@ -506,7 +539,7 @@ h1 {
   max-width: 15ch;
 }
 
-.home-contact > div > p {
+.home-contact__content > p {
   color: #cad6cf;
   font-size: clamp(1rem, 1.4vw, 1.22rem);
   margin: 2rem 0 2.5rem;
@@ -523,35 +556,22 @@ h1 {
   background: #e3b64f;
 }
 
-.home-video-section {
-  background: var(--forest);
-  padding: 0 clamp(1rem, 8vw, 9rem) clamp(5rem, 9vw, 9rem);
-}
-
-.home-video-figure {
-  margin: 0 auto;
-  max-width: 92rem;
-}
-
-.home-video-frame {
-  aspect-ratio: 16 / 9;
-  background: var(--forest-deep);
-  overflow: hidden;
-  position: relative;
-}
-
-.home-video-frame video {
-  display: block;
-  height: 100%;
-  object-fit: contain;
-  width: 100%;
-}
-
-.home-video-figure figcaption {
+.home-contact-video-caption {
+  bottom: 1.45rem;
   color: #cad6cf;
   font-size: 0.88rem;
+  left: clamp(2rem, 8vw, 9rem);
   line-height: 1.5;
-  margin-top: 0.9rem;
+  margin: 0;
+  position: absolute;
+  right: 12rem;
+  z-index: 2;
+}
+
+.home-contact .video-control {
+  bottom: 1.1rem;
+  right: clamp(2rem, 8vw, 9rem);
+  z-index: 3;
 }
 
 .site-footer {
@@ -2640,6 +2660,32 @@ h1 {
   .growing-lab {
     gap: 1.4rem;
     grid-template-columns: 1fr;
+  }
+
+  .home-contact {
+    min-height: 48rem;
+    padding-bottom: 7rem;
+  }
+
+  .home-contact-video {
+    object-position: 58% center;
+  }
+
+  .home-contact-video-overlay {
+    background:
+      linear-gradient(180deg, rgba(4, 31, 23, 0.82) 0%, rgba(4, 31, 23, 0.66) 58%, rgba(4, 31, 23, 0.76) 100%),
+      linear-gradient(90deg, rgba(4, 31, 23, 0.72), rgba(4, 31, 23, 0.45));
+  }
+
+  .home-contact-video-caption {
+    bottom: 1.2rem;
+    left: 2rem;
+    right: 9rem;
+  }
+
+  .home-contact .video-control {
+    bottom: 1rem;
+    right: 1rem;
   }
 
   .site-footer__primary {

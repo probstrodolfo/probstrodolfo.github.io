@@ -2,16 +2,23 @@
 interface Props {
   text: string;
   smallCaps?: boolean;
+  scientificNames?: string[];
 }
 
-const { text, smallCaps = false } = Astro.props;
-const parts = String(text).split(/(Myrmelachista)/gi);
+const { text, smallCaps = false, scientificNames = [] } = Astro.props;
+const names = [...new Set(["Myrmelachista", ...scientificNames])]
+  .filter(Boolean)
+  .sort((a, b) => b.length - a.length);
+const escapedNames = names.map((name) => name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+const namePattern = new RegExp(`(${escapedNames.join("|")})`, "gi");
+const nameLookup = new Set(names.map((name) => name.toLowerCase()));
+const parts = String(text).split(namePattern);
 ---
 
 {
   parts.map((part) =>
-    /^Myrmelachista$/i.test(part) ? (
-      <em class:list={["taxon-name", { "taxon-name--small-caps": smallCaps }]}>Myrmelachista</em>
+    nameLookup.has(part.toLowerCase()) ? (
+      <em class:list={["taxon-name", { "taxon-name--small-caps": smallCaps }]}>{part}</em>
     ) : (
       part
     )

@@ -92,7 +92,7 @@ Homepage wording and links remain together in `src/content/pages/home.md`. The m
 - `researchThemes` for the three compact research gateways.
 - `peopleGateway` for the standalone **Meet the lab** button.
 - `contact` for the closing invitation and **Contact us** button.
-- `videoFeature` for the full, uncropped ant video beneath the contact section.
+- `videoFeature` for the ant video behind the contact section, including its caption.
 
 The hero photograph can be switched off without deleting it:
 
@@ -101,12 +101,15 @@ image:
   show: false
 ```
 
-The closing video has its own independent visibility control:
+The contact-background video has its own independent visibility control:
 
 ```yaml
 videoFeature:
   show: false
 ```
+
+The names listed under `scientificNames` in that block are italicized automatically in the video
+caption. Keep the full scientific names there when revising the caption.
 
 The three research cards each have a `link` whose `href` points to the corresponding section of the
 Research page. Preserve the section name after `#` when editing those links.

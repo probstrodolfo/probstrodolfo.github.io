@@ -100,6 +100,9 @@ videoFeature:
   show: true
   src: /images/homepage-ants.mp4
   poster: /images/myrmelachista-hero.jpeg
-  alt: Myrmelachista ants moving across the stem of their host plant.
-  caption: Myrmelachista ants moving across the stem of a host plant.
+  alt: Myrmelachista flavoguarea ants moving across a Guarea tafae-malekui stem in Costa Rica.
+  caption: Myrmelachista flavoguarea moving across its plant friend, Guarea tafae-malekui, in Costa Rica.
+  scientificNames:
+    - Myrmelachista flavoguarea
+    - Guarea tafae-malekui
 ---

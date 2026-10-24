@@ -119,26 +119,12 @@ const heroHasMedia = hero.image?.show;
 
     {
       contact.show && (
-        <section class="home-contact">
-          <p class="section-label">{contact.label}</p>
-          <div>
-            <h2>{contact.title}</h2>
-            <p>{contact.body}</p>
-            <a class="button button--primary" href={contact.link.href}>
-              {contact.link.label}<span aria-hidden="true">→</span>
-            </a>
-          </div>
-        </section>
-      )
-    }
-
-    {
-      videoFeature?.show && (
-        <section class="home-video-section" aria-label="Ants on their host plant">
-          <figure class="home-video-figure">
-            <div class="home-video-frame">
+        <section class:list={["home-contact", { "home-contact--with-video": videoFeature?.show }]}>
+          {videoFeature?.show && (
+            <>
               <video
-                data-feature-video
+                class="home-contact-video"
+                data-contact-video
                 src={videoFeature.src}
                 poster={videoFeature.poster}
                 muted
@@ -146,24 +132,42 @@ const heroHasMedia = hero.image?.show;
                 playsinline
                 preload="metadata"
                 aria-label={videoFeature.alt}
-                aria-describedby="home-video-caption"
+                aria-describedby="home-contact-video-caption"
               />
+              <div class="home-contact-video-overlay" aria-hidden="true"></div>
+            </>
+          )}
+
+          <p class="section-label">{contact.label}</p>
+          <div class="home-contact__content">
+            <h2>{contact.title}</h2>
+            <p>{contact.body}</p>
+            <a class="button button--primary" href={contact.link.href}>
+              {contact.link.label}<span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          {videoFeature?.show && (
+            <>
+              <p class="home-contact-video-caption" id="home-contact-video-caption">
+                <ScientificText
+                  text={videoFeature.caption}
+                  scientificNames={videoFeature.scientificNames}
+                />
+              </p>
               <button class="video-control" type="button" data-video-control aria-label="Play ant video">
                 <span aria-hidden="true" data-video-control-icon>▶</span>
                 <span data-video-control-label>Play video</span>
               </button>
-            </div>
-            <figcaption id="home-video-caption">
-              <ScientificText text={videoFeature.caption} />
-            </figcaption>
-          </figure>
+            </>
+          )}
         </section>
       )
     }
   </main>
 
   <script>
-    const video = document.querySelector("[data-feature-video]");
+    const video = document.querySelector("[data-contact-video]");
     const control = document.querySelector("[data-video-control]");
     const controlLabel = document.querySelector("[data-video-control-label]");
     const controlIcon = document.querySelector("[data-video-control-icon]");
