@@ -19,7 +19,6 @@ researchOverview:
   show: true
   label: What we study
   question: When evolution faces similar challenges, does it arrive at the same solution?
-  title: Ants are our window into evolution.
   body: >-
     Across tropical forests, museum collections, phylogenomics, and ecological datasets, we use ant
     lineages - especially repeated origins of plant specialization - as natural experiments for
@@ -28,7 +27,6 @@ researchThemes:
   show: true
   items:
     - show: true
-      number: '01'
       slug: ant-plant-symbioses
       title: Ant-plant symbioses & convergent evolution
       question: Why do intimate partnerships evolve again and again?
@@ -44,7 +42,6 @@ researchThemes:
         alt: A Myrmelachista worker moving across the leaf of its host plant.
         objectPosition: 50% 45%
     - show: true
-      number: '02'
       slug: systematics-evolutionary-history
       title: Ant systematics & evolutionary history
       question: How does history shape the diversity we see today?
@@ -60,7 +57,6 @@ researchThemes:
         alt: A group of Myrmelachista workers at openings in a green host-plant stem.
         objectPosition: 50% 45%
     - show: true
-      number: '03'
       slug: diversity-environmental-change
       title: Ant diversity in a changing world
       question: How do communities respond to environmental change?

@@ -157,9 +157,9 @@ main:focus {
 }
 
 .hero-copy {
-  align-content: center;
+  align-content: start;
   display: grid;
-  padding: clamp(4.5rem, 8vw, 8.5rem) clamp(2rem, 7vw, 8rem) clamp(3rem, 6vw, 6rem) clamp(2rem, 6vw, 7rem);
+  padding: clamp(3.5rem, 5vw, 5rem) clamp(2rem, 7vw, 8rem) clamp(3rem, 6vw, 6rem) clamp(2rem, 6vw, 7rem);
 }
 
 .eyebrow,
@@ -340,16 +340,11 @@ h1 {
   padding-left: clamp(1.5rem, 3vw, 3rem);
 }
 
-.research-overview__context h3 {
-  font-size: clamp(2rem, 3vw, 3.2rem);
-  line-height: 1.02;
-  max-width: 13ch;
-}
-
 .research-overview__context p {
   color: #cad6cf;
-  font-size: clamp(1rem, 1.25vw, 1.17rem);
-  margin: 1.35rem 0 0;
+  font-size: clamp(1.05rem, 1.35vw, 1.28rem);
+  line-height: 1.62;
+  margin: 0;
   max-width: 38rem;
 }
 
@@ -359,8 +354,10 @@ h1 {
 }
 
 .theme-grid {
+  align-items: stretch;
   display: grid;
   gap: clamp(1.4rem, 2.6vw, 2.8rem);
+  grid-auto-rows: 1fr;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
@@ -369,14 +366,9 @@ h1 {
   border: 1px solid var(--line);
   display: flex;
   flex-direction: column;
+  height: 100%;
   min-width: 0;
-  transition: border-color 180ms ease, transform 180ms ease;
-}
-
-.theme-card:hover,
-.theme-card:focus-within {
-  border-color: rgba(16, 39, 31, 0.42);
-  transform: translateY(-4px);
+  overflow: hidden;
 }
 
 .theme-figure {
@@ -423,14 +415,7 @@ h1 {
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: clamp(1.5rem, 2.2vw, 2.1rem);
-}
-
-.theme-number {
-  color: var(--gold-text);
-  font-family: var(--serif);
-  font-size: 1rem;
-  margin: 0 0 1.15rem;
+  padding: clamp(1.35rem, 2vw, 1.85rem);
 }
 
 .theme-question {
@@ -2549,8 +2534,9 @@ h1 {
     padding-right: clamp(2rem, 5vw, 4rem);
   }
 
-  .theme-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .research-themes {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .research-program,
@@ -2648,10 +2634,6 @@ h1 {
 
   .theme-copy {
     padding: 1.7rem;
-  }
-
-  .theme-number {
-    margin-bottom: 1.5rem;
   }
 
   .page-masthead,
@@ -2918,8 +2900,4 @@ h1 {
     transition-duration: 0.01ms !important;
   }
 
-  .theme-card:hover,
-  .theme-card:focus-within {
-    transform: none;
-  }
 }

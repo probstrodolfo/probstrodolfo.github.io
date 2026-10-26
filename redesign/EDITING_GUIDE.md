@@ -103,8 +103,8 @@ featured: true
 Homepage wording and links remain together in `src/content/pages/home.md`. The major blocks are:
 
 - `hero` for the welcome message, main statement, button, and still photograph.
-- `researchOverview` for the combined dark **What we study** section: its central question,
-  supporting title, and paragraph.
+- `researchOverview` for the combined dark **What we study** section: its central question and
+  supporting paragraph.
 - `researchThemes` for the three compact research gateways.
 - `peopleGateway` for the **Meet the lab** button shown in the closing video section.
 - `contact` for the closing invitation and **Contact us** button.
