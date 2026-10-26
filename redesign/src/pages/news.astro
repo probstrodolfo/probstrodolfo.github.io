@@ -1,6 +1,7 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
+import InlineMarkdown from "../components/InlineMarkdown.astro";
 import { getCollection, getEntry } from "astro:content";
 
 const [newsEntry, itemEntries] = await Promise.all([
@@ -28,8 +29,8 @@ const archiveItems = visibleItems.filter((item) => !item.featured);
     <section class="page-masthead news-masthead">
       <p class="section-label">{masthead.label}</p>
       <div>
-        <h1>{masthead.title}</h1>
-        <p>{masthead.introduction}</p>
+        <h1><InlineMarkdown text={masthead.title} /></h1>
+        <p><InlineMarkdown text={masthead.introduction} /></p>
       </div>
     </section>
 
@@ -37,8 +38,8 @@ const archiveItems = visibleItems.filter((item) => !item.featured);
       <section class="news-current">
         <p class="section-label">{current.label}</p>
         <div>
-          <h2>{current.title}</h2>
-          <p>{current.body}</p>
+          <h2><InlineMarkdown text={current.title} /></h2>
+          <p><InlineMarkdown text={current.body} /></p>
           <a class="button button--text" href={current.link.href}>
             {current.link.label}<span aria-hidden="true">→</span>
           </a>
@@ -53,13 +54,13 @@ const archiveItems = visibleItems.filter((item) => !item.featured);
             {item.image.show && (
               <figure>
                 <img src={item.image.src} alt={item.image.alt} style={`object-position: ${item.image.objectPosition}`} />
-                <figcaption>{item.image.caption}</figcaption>
+                <figcaption><InlineMarkdown text={item.image.caption} /></figcaption>
               </figure>
             )}
             <div>
               <p class="news-meta"><span>{item.date}</span><span>{item.category}</span></p>
-              <h2>{item.title}</h2>
-              <p>{item.summary}</p>
+              <h2><InlineMarkdown text={item.title} /></h2>
+              <p><InlineMarkdown text={item.summary} /></p>
             </div>
           </article>
         ))}
@@ -71,8 +72,8 @@ const archiveItems = visibleItems.filter((item) => !item.featured);
         <header>
           <p class="section-label">{archive.label}</p>
           <div>
-            <h2 id="news-archive-title">{archive.title}</h2>
-            <p>{archive.introduction}</p>
+            <h2 id="news-archive-title"><InlineMarkdown text={archive.title} /></h2>
+            <p><InlineMarkdown text={archive.introduction} /></p>
           </div>
         </header>
 
@@ -82,13 +83,13 @@ const archiveItems = visibleItems.filter((item) => !item.featured);
               {item.image.show && (
                 <figure>
                   <img src={item.image.src} alt={item.image.alt} loading="lazy" style={`object-position: ${item.image.objectPosition}`} />
-                  <figcaption>{item.image.caption}</figcaption>
+                  <figcaption><InlineMarkdown text={item.image.caption} /></figcaption>
                 </figure>
               )}
               <div class="news-card-copy">
                 <p class="news-meta"><span>{item.date}</span><span>{item.category}</span></p>
-                <h3>{item.title}</h3>
-                <p>{item.summary}</p>
+                <h3><InlineMarkdown text={item.title} /></h3>
+                <p><InlineMarkdown text={item.summary} /></p>
               </div>
             </article>
           ))}

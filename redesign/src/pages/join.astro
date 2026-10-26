@@ -1,6 +1,7 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
+import InlineMarkdown from "../components/InlineMarkdown.astro";
 import { getEntry } from "astro:content";
 
 const joinEntry = await getEntry("pages", "join");
@@ -19,8 +20,8 @@ const { masthead, availability, culture, pathways, firstMessage, contact } = joi
     <section class="page-masthead join-masthead">
       <p class="section-label">{masthead.label}</p>
       <div>
-        <h1>{masthead.title}</h1>
-        <p>{masthead.introduction}</p>
+        <h1><InlineMarkdown text={masthead.title} /></h1>
+        <p><InlineMarkdown text={masthead.introduction} /></p>
       </div>
     </section>
 
@@ -29,8 +30,8 @@ const { masthead, availability, culture, pathways, firstMessage, contact } = joi
         <aside class="availability-note" aria-labelledby="availability-title">
           <p class="availability-label"><span aria-hidden="true" />{availability.label}</p>
           <div>
-            <h2 id="availability-title">{availability.title}</h2>
-            <p>{availability.body}</p>
+            <h2 id="availability-title"><InlineMarkdown text={availability.title} /></h2>
+            <p><InlineMarkdown text={availability.body} /></p>
           </div>
         </aside>
       )
@@ -45,18 +46,18 @@ const { masthead, availability, culture, pathways, firstMessage, contact } = joi
             loading="lazy"
             style={`object-position: ${culture.image.objectPosition}`}
           />
-          <figcaption>{culture.image.caption}</figcaption>
+          <figcaption><InlineMarkdown text={culture.image.caption} /></figcaption>
         </figure>
       )}
 
       <div class="culture-copy">
         <p class="section-label">{culture.label}</p>
-        <h2 id="culture-title">{culture.title}</h2>
+        <h2 id="culture-title"><InlineMarkdown text={culture.title} /></h2>
         <div class="culture-paragraphs">
-          {culture.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+          {culture.paragraphs.map((paragraph) => <p><InlineMarkdown text={paragraph} /></p>)}
         </div>
         <ul class="culture-values" aria-label="Lab values">
-          {culture.values.map((value) => <li>{value}</li>)}
+          {culture.values.map((value) => <li><InlineMarkdown text={value} /></li>)}
         </ul>
       </div>
     </section>
@@ -65,8 +66,8 @@ const { masthead, availability, culture, pathways, firstMessage, contact } = joi
       <header>
         <p class="section-label">{pathways.label}</p>
         <div>
-          <h2 id="pathways-title">{pathways.title}</h2>
-          <p>{pathways.introduction}</p>
+          <h2 id="pathways-title"><InlineMarkdown text={pathways.title} /></h2>
+          <p><InlineMarkdown text={pathways.introduction} /></p>
         </div>
       </header>
 
@@ -75,13 +76,13 @@ const { masthead, availability, culture, pathways, firstMessage, contact } = joi
           <article class="pathway-card">
             <p class="pathway-number">{pathway.number}</p>
             <div class="pathway-copy">
-              <h3>{pathway.title}</h3>
-              <p>{pathway.body}</p>
+              <h3><InlineMarkdown text={pathway.title} /></h3>
+              <p><InlineMarkdown text={pathway.body} /></p>
             </div>
             <div class="pathway-details">
               <p>What to include</p>
               <ul>
-                {pathway.details.map((detail) => <li>{detail}</li>)}
+                {pathway.details.map((detail) => <li><InlineMarkdown text={detail} /></li>)}
               </ul>
               {pathway.links.length > 0 && (
                 <nav aria-label={`${pathway.title} links`}>
@@ -102,8 +103,8 @@ const { masthead, availability, culture, pathways, firstMessage, contact } = joi
       <header>
         <p class="section-label">{firstMessage.label}</p>
         <div>
-          <h2 id="first-message-title">{firstMessage.title}</h2>
-          <p>{firstMessage.introduction}</p>
+          <h2 id="first-message-title"><InlineMarkdown text={firstMessage.title} /></h2>
+          <p><InlineMarkdown text={firstMessage.introduction} /></p>
         </div>
       </header>
 
@@ -111,8 +112,8 @@ const { masthead, availability, culture, pathways, firstMessage, contact } = joi
         {firstMessage.items.map((item, index) => (
           <article>
             <p>{String(index + 1).padStart(2, "0")}</p>
-            <h3>{item.title}</h3>
-            <span>{item.description}</span>
+            <h3><InlineMarkdown text={item.title} /></h3>
+            <span><InlineMarkdown text={item.description} /></span>
           </article>
         ))}
       </div>
@@ -121,8 +122,8 @@ const { masthead, availability, culture, pathways, firstMessage, contact } = joi
     <section class="join-contact" id="contact">
       <p class="section-label">{contact.label}</p>
       <div>
-        <h2>{contact.title}</h2>
-        <p>{contact.body}</p>
+        <h2><InlineMarkdown text={contact.title} /></h2>
+        <p><InlineMarkdown text={contact.body} /></p>
         <a class="button button--primary" href={`mailto:${contact.email}`}>
           {contact.buttonLabel}<span aria-hidden="true">→</span>
         </a>

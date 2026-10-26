@@ -1,6 +1,7 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
+import InlineMarkdown from "../components/InlineMarkdown.astro";
 import { getCollection, getEntry } from "astro:content";
 
 const [publicationsEntry, publicationEntries, manuscriptEntries] = await Promise.all([
@@ -37,8 +38,8 @@ const formatAuthors = (authors: string) =>
     <section class="page-masthead publications-masthead">
       <p class="section-label">{masthead.label}</p>
       <div>
-        <h1>{masthead.title}</h1>
-        <p>{masthead.introduction}</p>
+        <h1><InlineMarkdown text={masthead.title} /></h1>
+        <p><InlineMarkdown text={masthead.introduction} /></p>
         <a class="publication-scholar-link" href={masthead.scholarLink.href} target="_blank" rel="noreferrer">
           {masthead.scholarLink.label}<span aria-hidden="true">↗</span>
         </a>
@@ -51,8 +52,8 @@ const formatAuthors = (authors: string) =>
           <header>
             <p class="section-label">{selected.label}</p>
             <div>
-              <h2 id="selected-publications-title">{selected.title}</h2>
-              <p>{selected.introduction}</p>
+              <h2 id="selected-publications-title"><InlineMarkdown text={selected.title} /></h2>
+              <p><InlineMarkdown text={selected.introduction} /></p>
             </div>
           </header>
 
@@ -64,13 +65,13 @@ const formatAuthors = (authors: string) =>
                   <span>{publication.year}</span>
                 </div>
                 <p class="publication-type">{publication.type}</p>
-                <h3 set:html={publication.titleHtml} />
+                <h3><InlineMarkdown text={publication.title} /></h3>
                 <p class="selected-publication-venue">
                   {publication.venue}
                   {publication.details && <span> · {publication.details}</span>}
                 </p>
                 {publication.href && (
-                  <a href={publication.href} target="_blank" rel="noreferrer" aria-label={`Read ${publication.titleHtml.replace(/<[^>]+>/g, "")}`}>
+                  <a href={publication.href} target="_blank" rel="noreferrer" aria-label={`Read ${publication.title.replaceAll("*", "")}`}>
                     Read publication<span aria-hidden="true">↗</span>
                   </a>
                 )}
@@ -85,8 +86,8 @@ const formatAuthors = (authors: string) =>
       <header>
         <p class="section-label">{completeRecord.label}</p>
         <div>
-          <h2 id="publication-record-title">{completeRecord.title}</h2>
-          <p>{completeRecord.introduction}</p>
+          <h2 id="publication-record-title"><InlineMarkdown text={completeRecord.title} /></h2>
+          <p><InlineMarkdown text={completeRecord.introduction} /></p>
         </div>
       </header>
 
@@ -101,13 +102,13 @@ const formatAuthors = (authors: string) =>
 
               <div class="publication-citation">
                 <p class="publication-entry-type">{publication.type}</p>
-                <h3 set:html={publication.titleHtml} />
+                <h3><InlineMarkdown text={publication.title} /></h3>
                 <p class="publication-authors" set:html={formatAuthors(publication.authors)} />
                 <p class="publication-venue">
                   <em>{publication.venue}</em>
                   {publication.details && <span>, {publication.details}</span>}
                 </p>
-                {publication.note && <p class="publication-note">{publication.note}</p>}
+                {publication.note && <p class="publication-note"><InlineMarkdown text={publication.note} /></p>}
               </div>
 
               <div class="publication-action">
@@ -131,8 +132,8 @@ const formatAuthors = (authors: string) =>
           <header>
             <p class="section-label">{inPreparation.label}</p>
             <div>
-              <h2 id="manuscript-title">{inPreparation.title}</h2>
-              <p>{inPreparation.introduction}</p>
+              <h2 id="manuscript-title"><InlineMarkdown text={inPreparation.title} /></h2>
+              <p><InlineMarkdown text={inPreparation.introduction} /></p>
             </div>
           </header>
 
@@ -140,10 +141,10 @@ const formatAuthors = (authors: string) =>
             {inPreparation.items.filter((item) => item.show).map((item, index) => (
               <article>
                 <p class="manuscript-number">{String(index + 1).padStart(2, "0")}</p>
-                <h3 set:html={item.titleHtml} />
+                <h3><InlineMarkdown text={item.title} /></h3>
                 <p class="publication-authors" set:html={formatAuthors(item.authors)} />
                 <p class="manuscript-target">Planned for <em>{item.target}</em></p>
-                {"note" in item && item.note && <p class="publication-note">{item.note}</p>}
+                {"note" in item && item.note && <p class="publication-note"><InlineMarkdown text={item.note} /></p>}
               </article>
             ))}
           </div>

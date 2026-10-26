@@ -1,7 +1,7 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
-import ScientificText from "../components/ScientificText.astro";
+import InlineMarkdown from "../components/InlineMarkdown.astro";
 import { getEntry } from "astro:content";
 
 const [siteEntry, homeEntry] = await Promise.all([
@@ -25,8 +25,8 @@ const heroHasMedia = hero.image?.show;
     <section class:list={["hero", { "hero--without-image": !heroHasMedia }]}>
       <div class="hero-copy">
         <p class="eyebrow hero-welcome">{hero.eyebrow}</p>
-        <h1>{hero.title}</h1>
-        <p class="hero-summary">{hero.summary}</p>
+        <h1><InlineMarkdown text={hero.title} /></h1>
+        <p class="hero-summary"><InlineMarkdown text={hero.summary} /></p>
 
         <div class="hero-actions">
           <a class="button button--primary" href={hero.primaryLink.href}>
@@ -45,7 +45,7 @@ const heroHasMedia = hero.image?.show;
             style={`object-position: ${hero.image.objectPosition}`}
           />
           <figcaption id="hero-media-caption">
-            <ScientificText text={hero.image.caption} />
+            <InlineMarkdown text={hero.image.caption} />
           </figcaption>
         </figure>
       )}
@@ -56,8 +56,8 @@ const heroHasMedia = hero.image?.show;
         <section class="central-question" id="central-question">
           <p class="section-label">{openingQuestion.label}</p>
           <div class="question-copy">
-            <h2>{openingQuestion.title}</h2>
-            <p>{openingQuestion.body}</p>
+            <h2><InlineMarkdown text={openingQuestion.title} /></h2>
+            <p><InlineMarkdown text={openingQuestion.body} /></p>
           </div>
         </section>
       )
@@ -69,8 +69,8 @@ const heroHasMedia = hero.image?.show;
           <header class="research-intro">
             <p class="section-label">{researchThemes.label}</p>
             <div>
-              <h2>{researchThemes.title}</h2>
-              <p>{researchThemes.introduction}</p>
+              <h2><InlineMarkdown text={researchThemes.title} /></h2>
+              <p><InlineMarkdown text={researchThemes.introduction} /></p>
             </div>
           </header>
 
@@ -87,15 +87,15 @@ const heroHasMedia = hero.image?.show;
                         loading="lazy"
                         style={`object-position: ${theme.image.objectPosition}`}
                       />
-                      <figcaption><ScientificText text={theme.image.caption} smallCaps={true} /></figcaption>
+                      <figcaption><InlineMarkdown text={theme.image.caption} smallCaps={true} /></figcaption>
                     </figure>
                   )}
 
                   <div class="theme-copy">
                     <p class="theme-number" aria-hidden="true">{theme.number}</p>
-                    <p class="theme-question">{theme.question}</p>
-                    <h3>{theme.title}</h3>
-                    <p class="theme-summary"><ScientificText text={theme.summary} /></p>
+                    <p class="theme-question"><InlineMarkdown text={theme.question} /></p>
+                    <h3><InlineMarkdown text={theme.title} /></h3>
+                    <p class="theme-summary"><InlineMarkdown text={theme.summary} /></p>
                     <a class="theme-link" href={theme.link.href}>
                       {theme.link.label}<span aria-hidden="true">→</span>
                     </a>
@@ -130,8 +130,8 @@ const heroHasMedia = hero.image?.show;
 
           <p class="section-label">{contact.label}</p>
           <div class="home-contact__content">
-            <h2>{contact.title}</h2>
-            <p>{contact.body}</p>
+            <h2><InlineMarkdown text={contact.title} /></h2>
+            <p><InlineMarkdown text={contact.body} /></p>
             <div class="home-contact__actions">
               <a class="button button--primary" href={contact.link.href}>
                 {contact.link.label}<span aria-hidden="true">→</span>
@@ -147,10 +147,7 @@ const heroHasMedia = hero.image?.show;
           {videoFeature?.show && (
             <>
               <p class="home-contact-video-caption" id="home-contact-video-caption">
-                <ScientificText
-                  text={videoFeature.caption}
-                  scientificNames={videoFeature.scientificNames}
-                />
+                <InlineMarkdown text={videoFeature.caption} />
               </p>
               <button class="video-control" type="button" data-video-control aria-label="Play ant video">
                 <span aria-hidden="true" data-video-control-icon>▶</span>

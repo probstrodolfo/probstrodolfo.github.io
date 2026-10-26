@@ -13,7 +13,7 @@ hero:
     show: true
     src: /images/myrmelachista-hero.jpeg
     alt: Myrmelachista ants moving across the stem of their host plant.
-    caption: Myrmelachista ants evolved specialized associations with understory Lauraceae.
+    caption: '*Myrmelachista* ants evolved specialized associations with understory Lauraceae.'
     objectPosition: 50% 46%
 openingQuestion:
   show: true
@@ -36,7 +36,7 @@ researchThemes:
       title: Ant-plant symbioses & convergent evolution
       question: Why do intimate partnerships evolve again and again?
       summary: >-
-        We use repeated origins of plant specialization in Myrmelachista to test when evolution
+        We use repeated origins of plant specialization in *Myrmelachista* to test when evolution
         produces similar solutions.
       link:
         label: Explore this research
@@ -45,7 +45,7 @@ researchThemes:
         show: true
         src: /images/ant-plant-worker.jpeg
         alt: A Myrmelachista worker moving across the leaf of its host plant.
-        caption: Myrmelachista worker on a Lauraceae host plant
+        caption: '*Myrmelachista* worker on a Lauraceae host plant'
         objectPosition: 50% 45%
     - show: true
       number: '02'
@@ -62,7 +62,7 @@ researchThemes:
         show: true
         src: /images/myrmelachista-workers.jpeg
         alt: A group of Myrmelachista workers at openings in a green host-plant stem.
-        caption: Myrmelachista workers at their host-plant nest entrance
+        caption: '*Myrmelachista* workers at their host-plant nest entrance'
         objectPosition: 50% 45%
     - show: true
       number: '03'
@@ -101,8 +101,5 @@ videoFeature:
   src: /images/homepage-ants.mp4
   poster: /images/myrmelachista-hero.jpeg
   alt: Myrmelachista flavoguarea ants moving across a Guarea tafae-malekui stem in Costa Rica.
-  caption: Myrmelachista flavoguarea moving across its plant friend, Guarea tafae-malekui, in Costa Rica.
-  scientificNames:
-    - Myrmelachista flavoguarea
-    - Guarea tafae-malekui
+  caption: '*Myrmelachista flavoguarea* moving across its plant friend, *Guarea tafae-malekui*, in Costa Rica.'
 ---

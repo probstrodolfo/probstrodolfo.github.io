@@ -6,7 +6,7 @@ type: Journal article
 authors: >-
   Espino, S., Watkins, M., Probst, R. S., Chase, K., Imperial, J., Koch, T. L., Robinson, S. D.,
   Salcedo, P. F., Taylor, D., Gajewiak, J., Yandell, M., Safavi-Hemami, H., & Olivera, B. M.
-titleHtml: >-
+title: >-
   χ-Conotoxins are an evolutionary innovation in mollusk-hunting cone snails as a counter-adaptation
   to prey defense.
 venue: Molecular Biology and Evolution

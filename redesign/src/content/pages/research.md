@@ -9,7 +9,7 @@ masthead:
     show: true
     src: /images/ant-forager.jpeg
     alt: A Myrmelachista ant foraging on the leaf of its host plant.
-    caption: Myrmelachista foraging on its host plant
+    caption: '*Myrmelachista* foraging on its host plant'
     objectPosition: 50% 48%
 centralQuestion:
   label: The question connecting our work
@@ -20,12 +20,12 @@ centralQuestion:
       similar outcomes. We ask when independent ant lineages follow parallel paths - and when their
       distinct histories lead them elsewhere.
     - >-
-      Repeated origins of plant specialization in Myrmelachista give us unusually well-controlled
+      Repeated origins of plant specialization in *Myrmelachista* give us unusually well-controlled
       natural comparisons. Closely related lineages have independently adopted different nesting
       strategies, allowing us to test the genomic, morphological, and ecological basis of
       convergence.
 strategies:
-  label: Replicated transitions in Myrmelachista
+  label: Replicated transitions in *Myrmelachista*
   items:
     - number: '01'
       title: Opportunistic nesting

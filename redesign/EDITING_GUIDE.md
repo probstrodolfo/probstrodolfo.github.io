@@ -4,7 +4,7 @@ The website's words, links, visibility controls, and image settings are stored i
 
 ## The safe editing rule
 
-Always confirm that GitHub shows the branch `probst-lab-redesign` before editing. Do not edit `master`. I made so that branch still powers our current public website.
+Always confirm that GitHub shows the branch `probst-lab-redesign` before editing. Do not edit `master`, which still powers the current public website.
 
 For a normal text change:
 
@@ -65,6 +65,21 @@ If text contains a colon and GitHub reports a YAML error, surround the complete 
 title: "Ants and evolution: questions across scales"
 ```
 
+Use ordinary Markdown asterisks for italics, including scientific names:
+
+```yaml
+summary: We study *Myrmelachista* evolution.
+```
+
+For a full species name, place both words inside the same pair:
+
+```yaml
+caption: '*Myrmelachista flavoguarea* on *Guarea tafae-malekui*.'
+```
+
+When an italicized word begins the value, keep quotation marks around the complete value as in the
+caption example above. In an indented `>-` paragraph, quotation marks are not necessary.
+
 ## Showing and hiding content
 
 Most optional content has a visibility control:
@@ -90,7 +105,7 @@ Homepage wording and links remain together in `src/content/pages/home.md`. The m
 - `hero` for the welcome message, main statement, button, and still photograph.
 - `openingQuestion` for the dark central-question section.
 - `researchThemes` for the three compact research gateways.
-- `peopleGateway` for the standalone **Meet the lab** button.
+- `peopleGateway` for the **Meet the lab** button shown in the closing video section.
 - `contact` for the closing invitation and **Contact us** button.
 - `videoFeature` for the ant video behind the contact section, including its caption.
 
@@ -108,8 +123,8 @@ videoFeature:
   show: false
 ```
 
-The names listed under `scientificNames` in that block are italicized automatically in the video
-caption. Keep the full scientific names there when revising the caption.
+Scientific names in the video caption use the same Markdown asterisks as other editable text. There
+is no separate scientific-name list to maintain.
 
 The three research cards each have a `link` whose `href` points to the corresponding section of the
 Research page. Preserve the section name after `#` when editing those links.
@@ -174,19 +189,19 @@ For web performance, use JPEG or WebP for photographs. Avoid uploading the full-
 
 ## Publications and scientific names
 
-In ordinary homepage, People, and Research text, the site automatically italicizes
-`Myrmelachista`. Captions displayed in capitals use italic small caps, with the initial **M** slightly
-larger than the remaining letters.
+Scientific names use the same visible Markdown notation throughout editable prose, biographies,
+captions, research text, publication titles, and manuscript titles:
+
+```yaml
+title: The evolution of *Myrmelachista*
+```
+
+Captions displayed in capitals retain their specialized typographic treatment automatically.
 
 Each publication has one file in `src/content/publications/`. Its `order` determines its position in the complete list. Set `show: false` to retain a record without displaying it.
 
-Titles currently use small HTML tags for italicized scientific names:
-
-```yaml
-titleHtml: The evolution of <em>Myrmelachista</em>
-```
-
-Leave the `<em>` and `</em>` tags around scientific names.
+Publication titles use the regular `title` field. Place asterisks around every genus or binomial that
+should be italicized; no HTML tags are needed.
 
 The IDs listed under `selected.publicationIds` in `src/content/pages/publications.md` control the four highlighted papers and their order.
 

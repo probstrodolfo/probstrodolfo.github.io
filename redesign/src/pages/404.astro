@@ -1,6 +1,7 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
+import InlineMarkdown from "../components/InlineMarkdown.astro";
 import { getEntry } from "astro:content";
 
 const notFoundEntry = await getEntry("pages", "not-found");
@@ -19,8 +20,8 @@ const { code, label, title, body, primaryLink, secondaryLink, image } = notFound
     <section class="not-found-copy">
       <p class="not-found-code" aria-hidden="true">{code}</p>
       <p class="section-label">{label}</p>
-      <h1>{title}</h1>
-      <p class="not-found-summary">{body}</p>
+      <h1><InlineMarkdown text={title} /></h1>
+      <p class="not-found-summary"><InlineMarkdown text={body} /></p>
 
       <nav class="hero-actions" aria-label="Page not found options">
         <a class="button button--primary" href={primaryLink.href}>
@@ -38,7 +39,7 @@ const { code, label, title, body, primaryLink, secondaryLink, image } = notFound
         alt={image.alt}
         style={`object-position: ${image.objectPosition}`}
       />
-      <figcaption>{image.caption}</figcaption>
+      <figcaption><InlineMarkdown text={image.caption} /></figcaption>
     </figure>
   </main>
 </SiteLayout>

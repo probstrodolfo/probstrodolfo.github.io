@@ -181,11 +181,11 @@ main:focus {
   text-transform: none;
 }
 
-.taxon-name {
+.inline-emphasis {
   font-style: italic;
 }
 
-.taxon-name--small-caps {
+.inline-emphasis--small-caps {
   font-variant-caps: small-caps;
   letter-spacing: 0.035em;
   text-transform: none;

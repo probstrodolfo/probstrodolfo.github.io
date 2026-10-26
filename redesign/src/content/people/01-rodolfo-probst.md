@@ -15,7 +15,7 @@ biography:
   - >-
     Rodolfo is an evolutionary biologist and myrmecologist interested in how historical contingency
     and ecological opportunity shape biodiversity. His research centers on ants—especially
-    Myrmelachista—and uses repeated origins of ant–plant specialization as natural experiments in
+    *Myrmelachista*—and uses repeated origins of ant–plant specialization as natural experiments in
     convergent evolution.
   - >-
     He combines field biology, natural history collections, morphology, phylogenomics, functional

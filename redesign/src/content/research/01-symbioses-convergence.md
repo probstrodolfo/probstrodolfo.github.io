@@ -6,7 +6,7 @@ title: Ant–plant symbioses & convergent evolution
 question: Do independent lineages solve specialization in similar ways?
 paragraphs:
   - >-
-    Our central system is Myrmelachista, a Neotropical ant lineage containing repeated origins of
+    Our central system is *Myrmelachista*, a Neotropical ant lineage containing repeated origins of
     intimate associations with understory plants. These evolutionary replicates let us compare
     specialists with closely related opportunists while minimizing the deep phylogenetic differences
     that complicate broad comparisons.

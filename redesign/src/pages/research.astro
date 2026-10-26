@@ -1,7 +1,7 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
-import ScientificText from "../components/ScientificText.astro";
+import InlineMarkdown from "../components/InlineMarkdown.astro";
 import { getCollection, getEntry } from "astro:content";
 
 const [researchEntry, programEntries] = await Promise.all([
@@ -26,8 +26,8 @@ programs.items = programEntries
     <section class="page-masthead research-masthead">
       <p class="section-label">{masthead.label}</p>
       <div>
-        <h1>{masthead.title}</h1>
-        <p>{masthead.introduction}</p>
+        <h1><InlineMarkdown text={masthead.title} /></h1>
+        <p><InlineMarkdown text={masthead.introduction} /></p>
       </div>
     </section>
 
@@ -39,7 +39,7 @@ programs.items = programEntries
             alt={masthead.image.alt}
             style={`object-position: ${masthead.image.objectPosition}`}
           />
-          <figcaption><ScientificText text={masthead.image.caption} smallCaps={true} /></figcaption>
+          <figcaption><InlineMarkdown text={masthead.image.caption} smallCaps={true} /></figcaption>
         </figure>
       )
     }
@@ -47,22 +47,22 @@ programs.items = programEntries
     <section class="research-question">
       <p class="section-label">{centralQuestion.label}</p>
       <div>
-        <h2>{centralQuestion.title}</h2>
+        <h2><InlineMarkdown text={centralQuestion.title} /></h2>
         <div class="research-question-copy">
-          {centralQuestion.paragraphs.map((paragraph) => <p><ScientificText text={paragraph} /></p>)}
+          {centralQuestion.paragraphs.map((paragraph) => <p><InlineMarkdown text={paragraph} /></p>)}
         </div>
       </div>
     </section>
 
     <section class="strategy-section" aria-labelledby="strategy-title">
-      <h2 id="strategy-title"><ScientificText text={strategies.label} smallCaps={true} /></h2>
+      <h2 id="strategy-title"><InlineMarkdown text={strategies.label} smallCaps={true} /></h2>
       <div class="strategy-grid">
         {
           strategies.items.map((strategy) => (
             <article>
               <p>{strategy.number}</p>
-              <h3>{strategy.title}</h3>
-              <span>{strategy.description}</span>
+              <h3><InlineMarkdown text={strategy.title} /></h3>
+              <span><InlineMarkdown text={strategy.description} /></span>
             </article>
           ))
         }
@@ -72,7 +72,7 @@ programs.items = programEntries
     <section class="program-section" aria-labelledby="program-title">
       <header class="program-intro">
         <p class="section-label">{programs.label}</p>
-        <h2 id="program-title">{programs.title}</h2>
+        <h2 id="program-title"><InlineMarkdown text={programs.title} /></h2>
       </header>
 
       <div class="program-list">
@@ -87,16 +87,16 @@ programs.items = programEntries
                     loading="lazy"
                     style={`object-position: ${program.image.objectPosition}`}
                   />
-                  <figcaption><ScientificText text={program.image.caption} smallCaps={true} /></figcaption>
+                  <figcaption><InlineMarkdown text={program.image.caption} smallCaps={true} /></figcaption>
                 </figure>
               )}
 
               <div class="program-copy">
                 <p class="program-number">{program.number}</p>
-                <p class="program-question">{program.question}</p>
-                <h3>{program.title}</h3>
+                <p class="program-question"><InlineMarkdown text={program.question} /></p>
+                <h3><InlineMarkdown text={program.title} /></h3>
                 <div class="program-description">
-                  {program.paragraphs.map((paragraph) => <p><ScientificText text={paragraph} /></p>)}
+                  {program.paragraphs.map((paragraph) => <p><InlineMarkdown text={paragraph} /></p>)}
                 </div>
 
                 <ul class="approach-list" aria-label={`${program.title} approaches`}>
@@ -107,7 +107,7 @@ programs.items = programEntries
                   <nav class="research-links" aria-label={`${program.title} related work`}>
                     {program.links.map((link) => (
                       <a href={link.href} target="_blank" rel="noreferrer">
-                        {link.label}<span aria-hidden="true">↗</span>
+                        <InlineMarkdown text={link.label} /><span aria-hidden="true">↗</span>
                       </a>
                     ))}
                   </nav>
@@ -123,8 +123,8 @@ programs.items = programEntries
       <header>
         <p class="section-label">{methods.label}</p>
         <div>
-          <h2 id="methods-title">{methods.title}</h2>
-          <p>{methods.introduction}</p>
+          <h2 id="methods-title"><InlineMarkdown text={methods.title} /></h2>
+          <p><InlineMarkdown text={methods.introduction} /></p>
         </div>
       </header>
 
@@ -133,8 +133,8 @@ programs.items = programEntries
           methods.items.map((method, index) => (
             <article>
               <p>{String(index + 1).padStart(2, "0")}</p>
-              <h3>{method.title}</h3>
-              <span>{method.description}</span>
+              <h3><InlineMarkdown text={method.title} /></h3>
+              <span><InlineMarkdown text={method.description} /></span>
             </article>
           ))
         }
@@ -145,8 +145,8 @@ programs.items = programEntries
       <header>
         <p class="section-label">{collaborations.label}</p>
         <div>
-          <h2 id="collaboration-title">{collaborations.title}</h2>
-          <p>{collaborations.introduction}</p>
+          <h2 id="collaboration-title"><InlineMarkdown text={collaborations.title} /></h2>
+          <p><InlineMarkdown text={collaborations.introduction} /></p>
         </div>
       </header>
 
@@ -154,8 +154,8 @@ programs.items = programEntries
         {
           collaborations.items.map((item) => (
             <article>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
+              <h3><InlineMarkdown text={item.title} /></h3>
+              <p><InlineMarkdown text={item.description} /></p>
             </article>
           ))
         }

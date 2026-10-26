@@ -12,7 +12,7 @@ paragraphs:
     fossil evidence.
   - >-
     Across living and extinct lineages, we examine how morphology, geographic history, and
-    ecological transitions interact. Current systems include Myrmelachista, the dirt ants Basiceros,
+    ecological transitions interact. Current systems include *Myrmelachista*, the dirt ants *Basiceros*,
     and broad phylogenomic sampling of Neotropical ant communities.
 approaches:
   - Taxonomy
@@ -26,6 +26,6 @@ image:
   caption: Natural history provides the context for phylogenomics
   objectPosition: 50% 45%
 links:
-  - label: A fossil-informed history of Basiceros · Proceedings B (2025)
+  - label: A fossil-informed history of *Basiceros* · Proceedings B (2025)
     href: https://doi.org/10.1098/rspb.2024.2171
 ---

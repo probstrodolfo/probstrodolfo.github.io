@@ -1,0 +1,21 @@
+---
+interface Props {
+  text: string | number;
+  smallCaps?: boolean;
+}
+
+const { text, smallCaps = false } = Astro.props;
+const parts = String(text ?? "").split(/(\*[^*\n]+\*)/g);
+---
+
+{
+  parts.map((part) =>
+    part.startsWith("*") && part.endsWith("*") ? (
+      <em class:list={["inline-emphasis", { "inline-emphasis--small-caps": smallCaps }]}>
+        {part.slice(1, -1)}
+      </em>
+    ) : (
+      part
+    )
+  )
+}

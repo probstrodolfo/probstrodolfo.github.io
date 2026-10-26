@@ -1,7 +1,7 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
-import ScientificText from "../components/ScientificText.astro";
+import InlineMarkdown from "../components/InlineMarkdown.astro";
 import { getCollection, getEntry } from "astro:content";
 
 const [peopleEntry, memberEntries] = await Promise.all([
@@ -30,8 +30,8 @@ graduateStudents.members = graduateMembers;
     <section class="page-masthead">
       <p class="section-label">{masthead.label}</p>
       <div>
-        <h1>{masthead.title}</h1>
-        <p>{masthead.introduction}</p>
+        <h1><InlineMarkdown text={masthead.title} /></h1>
+        <p><InlineMarkdown text={masthead.introduction} /></p>
       </div>
     </section>
 
@@ -58,7 +58,7 @@ graduateStudents.members = graduateMembers;
         </p>
 
         <div class="pi-biography">
-          {principalInvestigator.biography.map((paragraph) => <p><ScientificText text={paragraph} /></p>)}
+          {principalInvestigator.biography.map((paragraph) => <p><InlineMarkdown text={paragraph} /></p>)}
         </div>
 
         <ul class="interest-list" aria-label="Research interests">
@@ -81,8 +81,8 @@ graduateStudents.members = graduateMembers;
       <header class="student-intro">
         <p class="section-label">{graduateStudents.label}</p>
         <div>
-          <h2 id="graduate-students-title">{graduateStudents.title}</h2>
-          <p>{graduateStudents.introduction}</p>
+          <h2 id="graduate-students-title"><InlineMarkdown text={graduateStudents.title} /></h2>
+          <p><InlineMarkdown text={graduateStudents.introduction} /></p>
         </div>
       </header>
 
@@ -109,7 +109,7 @@ graduateStudents.members = graduateMembers;
               <div class="member-copy">
                 <p class="member-role">{member.role}</p>
                 <h3>{member.name}</h3>
-                <p class="member-biography">{member.biography}</p>
+                <p class="member-biography"><InlineMarkdown text={member.biography} /></p>
 
                 <ul class="interest-list member-interests" aria-label={`${member.name} research interests`}>
                   {member.interests.map((interest) => <li>{interest}</li>)}
@@ -134,8 +134,8 @@ graduateStudents.members = graduateMembers;
     <section class="growing-lab">
       <p class="section-label">{growingLab.label}</p>
       <div>
-        <h2>{growingLab.title}</h2>
-        <p>{growingLab.body}</p>
+        <h2><InlineMarkdown text={growingLab.title} /></h2>
+        <p><InlineMarkdown text={growingLab.body} /></p>
         <a class="button button--primary" href={growingLab.link.href}>
           {growingLab.link.label}<span aria-hidden="true">→</span>
         </a>
