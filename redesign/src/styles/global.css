@@ -390,7 +390,7 @@ h1 {
 }
 
 .theme-figure {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   margin: 0;
   overflow: hidden;
   position: relative;
@@ -438,23 +438,20 @@ h1 {
 
 .theme-question {
   color: var(--moss);
-  font-size: 0.78rem;
+  font-family: var(--sans);
+  font-size: clamp(0.92rem, 1.05vw, 1.08rem);
   font-weight: 750;
-  letter-spacing: 0.08em;
-  margin: 0 0 0.85rem;
+  letter-spacing: 0.055em;
+  line-height: 1.38;
+  margin: 0;
+  max-width: 27ch;
   text-transform: uppercase;
-}
-
-.theme-card h3 {
-  font-size: clamp(2rem, 2.8vw, 3.25rem);
-  line-height: 1.02;
-  max-width: 14ch;
 }
 
 .theme-summary {
   color: var(--ink-soft);
   font-size: 1rem;
-  margin: 1.1rem 0 0;
+  margin: 1rem 0 0;
 }
 
 .theme-link {
@@ -477,12 +474,12 @@ h1 {
   background: var(--forest);
   color: var(--paper-bright);
   display: grid;
-  gap: 3rem;
-  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
+  gap: clamp(2rem, 4vw, 5rem);
+  grid-template-columns: minmax(7rem, 0.3fr) minmax(0, 2.7fr);
   isolation: isolate;
-  min-height: clamp(36rem, 48vw, 46rem);
+  min-height: clamp(30rem, 36vw, 34rem);
   overflow: hidden;
-  padding: clamp(4rem, 6vw, 6rem) clamp(2rem, 8vw, 9rem);
+  padding: clamp(3rem, 4vw, 4rem) clamp(2rem, 8vw, 9rem);
   position: relative;
 }
 
@@ -519,15 +516,16 @@ h1 {
 }
 
 .home-contact h2 {
-  font-size: clamp(3rem, 5.8vw, 6.3rem);
-  max-width: 15ch;
+  font-size: clamp(2.8rem, 4.7vw, 5.3rem);
+  max-width: 22ch;
+  text-wrap: balance;
 }
 
 .home-contact__content > p {
   color: #cad6cf;
   font-size: clamp(1rem, 1.4vw, 1.22rem);
-  margin: 2rem 0 2.5rem;
-  max-width: 45rem;
+  margin: 1.35rem 0 1.8rem;
+  max-width: 60rem;
 }
 
 .home-contact__actions {

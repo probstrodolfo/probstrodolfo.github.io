@@ -28,7 +28,6 @@ researchThemes:
   items:
     - show: true
       slug: ant-plant-symbioses
-      title: Ant-plant symbioses & convergent evolution
       question: Why do intimate partnerships evolve again and again?
       summary: >-
         We use repeated origins of plant specialization in *Myrmelachista* to test when evolution
@@ -43,7 +42,6 @@ researchThemes:
         objectPosition: 50% 45%
     - show: true
       slug: systematics-evolutionary-history
-      title: Ant systematics & evolutionary history
       question: How does history shape the diversity we see today?
       summary: >-
         We integrate taxonomy, morphology, fossils, natural history, and phylogenomics to
@@ -58,7 +56,6 @@ researchThemes:
         objectPosition: 50% 45%
     - show: true
       slug: diversity-environmental-change
-      title: Ant diversity in a changing world
       question: How do communities respond to environmental change?
       summary: >-
         We combine functional traits, community data, field surveys, and portable sequencing to
