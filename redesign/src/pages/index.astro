@@ -108,16 +108,6 @@ const heroHasMedia = hero.image?.show;
     }
 
     {
-      peopleGateway.show && (
-        <section class="people-gateway" aria-label="Meet the Probst Lab">
-          <a class="button button--primary" href={peopleGateway.link.href}>
-            {peopleGateway.link.label}<span aria-hidden="true">→</span>
-          </a>
-        </section>
-      )
-    }
-
-    {
       contact.show && (
         <section class:list={["home-contact", { "home-contact--with-video": videoFeature?.show }]}>
           {videoFeature?.show && (
@@ -142,9 +132,16 @@ const heroHasMedia = hero.image?.show;
           <div class="home-contact__content">
             <h2>{contact.title}</h2>
             <p>{contact.body}</p>
-            <a class="button button--primary" href={contact.link.href}>
-              {contact.link.label}<span aria-hidden="true">→</span>
-            </a>
+            <div class="home-contact__actions">
+              <a class="button button--primary" href={contact.link.href}>
+                {contact.link.label}<span aria-hidden="true">→</span>
+              </a>
+              {peopleGateway.show && (
+                <a class="button button--outline" href={peopleGateway.link.href}>
+                  {peopleGateway.link.label}<span aria-hidden="true">→</span>
+                </a>
+              )}
+            </div>
           </div>
 
           {videoFeature?.show && (

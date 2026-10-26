@@ -476,19 +476,6 @@ h1 {
   margin-left: 0.55rem;
 }
 
-.people-gateway {
-  background: var(--paper-bright);
-  border-top: 1px solid var(--line);
-  display: flex;
-  justify-content: center;
-  padding: 0 clamp(2rem, 7vw, 8rem) clamp(5rem, 9vw, 9rem);
-}
-
-.people-gateway .button {
-  font-size: 1rem;
-  padding: 1.15rem 1.5rem;
-}
-
 .home-contact {
   align-items: center;
   background: var(--forest);
@@ -547,6 +534,13 @@ h1 {
   max-width: 45rem;
 }
 
+.home-contact__actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
 .home-contact .button--primary {
   background: var(--gold);
   color: var(--forest-deep);
@@ -555,6 +549,20 @@ h1 {
 .home-contact .button--primary:hover,
 .home-contact .button--primary:focus-visible {
   background: #e3b64f;
+}
+
+.home-contact .button--outline {
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  color: var(--paper-bright);
+  padding: calc(1rem - 1px) calc(1.25rem - 1px);
+  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.home-contact .button--outline:hover,
+.home-contact .button--outline:focus-visible {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--paper-bright);
+  transform: translateY(-2px);
 }
 
 .home-contact-video-caption {
