@@ -15,20 +15,17 @@ hero:
     alt: Myrmelachista ants moving across the stem of their host plant.
     caption: '*Myrmelachista* ants evolved specialized associations with understory Lauraceae.'
     objectPosition: 50% 46%
-openingQuestion:
+researchOverview:
   show: true
-  label: A question at the center of our work
-  title: When evolution faces similar challenges, does it arrive at the same solution?
+  label: What we study
+  question: When evolution faces similar challenges, does it arrive at the same solution?
+  title: Ants are our window into evolution.
   body: >-
-    We use ants - especially repeated origins of plant specialization - as natural experiments for
+    Across tropical forests, museum collections, phylogenomics, and ecological datasets, we use ant
+    lineages - especially repeated origins of plant specialization - as natural experiments for
     testing how history, ecology, and environment shape evolutionary outcomes.
 researchThemes:
   show: true
-  label: What we study
-  title: Ants are our window into evolution.
-  introduction: >-
-    Across tropical forests, museum collections, phylogenomics, and ecological datasets, we ask how ant
-    lineages diversify, adapt, and repeatedly form specialized relationships.
   items:
     - show: true
       number: '01'

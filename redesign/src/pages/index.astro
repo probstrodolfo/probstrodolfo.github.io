@@ -11,7 +11,7 @@ const [siteEntry, homeEntry] = await Promise.all([
 if (!siteEntry) throw new Error("Missing src/content/settings/site.md");
 if (!homeEntry) throw new Error("Missing src/content/pages/home.md");
 const { identity } = siteEntry.data as any;
-const { hero, openingQuestion, researchThemes, peopleGateway, contact, videoFeature } = homeEntry.data as any;
+const { hero, researchOverview, researchThemes, peopleGateway, contact, videoFeature } = homeEntry.data as any;
 const heroHasMedia = hero.image?.show;
 ---
 
@@ -52,12 +52,15 @@ const heroHasMedia = hero.image?.show;
     </section>
 
     {
-      openingQuestion.show && (
-        <section class="central-question" id="central-question">
-          <p class="section-label">{openingQuestion.label}</p>
-          <div class="question-copy">
-            <h2><InlineMarkdown text={openingQuestion.title} /></h2>
-            <p><InlineMarkdown text={openingQuestion.body} /></p>
+      researchOverview.show && (
+        <section class="research-overview" id="research-overview">
+          <p class="section-label">{researchOverview.label}</p>
+          <div class="research-overview__question">
+            <h2><InlineMarkdown text={researchOverview.question} /></h2>
+          </div>
+          <div class="research-overview__context">
+            <h3><InlineMarkdown text={researchOverview.title} /></h3>
+            <p><InlineMarkdown text={researchOverview.body} /></p>
           </div>
         </section>
       )
@@ -66,14 +69,6 @@ const heroHasMedia = hero.image?.show;
     {
       researchThemes.show && (
         <section class="research-themes" id="research-themes">
-          <header class="research-intro">
-            <p class="section-label">{researchThemes.label}</p>
-            <div>
-              <h2><InlineMarkdown text={researchThemes.title} /></h2>
-              <p><InlineMarkdown text={researchThemes.introduction} /></p>
-            </div>
-          </header>
-
           <div class="theme-grid">
             {researchThemes.items
               .filter((theme) => theme.show)
@@ -87,7 +82,9 @@ const heroHasMedia = hero.image?.show;
                         loading="lazy"
                         style={`object-position: ${theme.image.objectPosition}`}
                       />
-                      <figcaption><InlineMarkdown text={theme.image.caption} smallCaps={true} /></figcaption>
+                      {theme.image.caption && (
+                        <figcaption><InlineMarkdown text={theme.image.caption} smallCaps={true} /></figcaption>
+                      )}
                     </figure>
                   )}
 
