@@ -71,8 +71,13 @@ const heroHasMedia = hero.image?.show;
           <div class="theme-grid">
             {researchThemes.items
               .filter((theme) => theme.show)
-              .map((theme) => (
-                <article class:list={["theme-card", { "theme-card--without-image": !theme.image.show }]} id={theme.slug}>
+              .map((theme, index) => (
+                <article
+                  class:list={["theme-card", { "theme-card--without-image": !theme.image.show }]}
+                  id={theme.slug}
+                  data-theme-card
+                  style={`--reveal-delay: ${index * 90}ms`}
+                >
                   {theme.image.show && (
                     <figure class="theme-figure">
                       <img
@@ -199,6 +204,32 @@ const heroHasMedia = hero.image?.show;
       video.addEventListener("play", updateControl);
       video.addEventListener("pause", updateControl);
       updateControl();
+    }
+
+    const themeCards = document.querySelectorAll<HTMLElement>("[data-theme-card]");
+
+    if (themeCards.length > 0) {
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      if (reducedMotion || !("IntersectionObserver" in window)) {
+        themeCards.forEach((card) => card.classList.add("is-visible"));
+      } else {
+        document.documentElement.classList.add("theme-reveal-ready");
+
+        const cardObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                cardObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { rootMargin: "0px 0px 5% 0px", threshold: 0.01 },
+        );
+
+        themeCards.forEach((card) => cardObserver.observe(card));
+      }
     }
   </script>
 </SiteLayout>
