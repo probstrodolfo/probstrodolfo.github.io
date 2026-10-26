@@ -45,7 +45,6 @@ researchThemes:
         show: true
         src: /images/ant-plant-worker.jpeg
         alt: A Myrmelachista worker moving across the leaf of its host plant.
-        caption: '*Myrmelachista* worker on a Lauraceae host plant'
         objectPosition: 50% 45%
     - show: true
       number: '02'
@@ -62,7 +61,6 @@ researchThemes:
         show: true
         src: /images/myrmelachista-workers.jpeg
         alt: A group of Myrmelachista workers at openings in a green host-plant stem.
-        caption: '*Myrmelachista* workers at their host-plant nest entrance'
         objectPosition: 50% 45%
     - show: true
       number: '03'
@@ -79,7 +77,6 @@ researchThemes:
         show: true
         src: /images/costa-rica-fieldwork.jpg
         alt: A researcher collecting ants from an understory plant in a tropical forest.
-        caption: Collecting ants in Costa Rica
         objectPosition: 57% 50%
 peopleGateway:
   show: true
