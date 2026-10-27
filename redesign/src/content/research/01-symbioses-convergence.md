@@ -1,6 +1,5 @@
 ---
 order: 1
-number: '01'
 slug: symbioses-convergence
 title: Ant–plant symbioses & convergent evolution
 question: Do independent lineages solve specialization in similar ways?
@@ -15,11 +14,6 @@ paragraphs:
     test whether independent specialists share changes in gene families, genomic architecture, or
     gene expression. The goal is to understand both the predictability of specialization and the
     historical constraints that make each transition distinctive.
-approaches:
-  - Field biology
-  - Comparative genomics
-  - Transcriptomics
-  - Natural history
 image:
   show: true
   src: /images/ant-plant-worker.jpeg

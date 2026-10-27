@@ -963,11 +963,11 @@ h1 {
 
 .research-masthead {
   background: var(--paper);
-  column-gap: clamp(3rem, 5vw, 6rem);
+  column-gap: clamp(3rem, 5vw, 5.5rem);
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(23rem, 0.92fr);
-  padding: clamp(2.5rem, 3.5vw, 3.5rem) clamp(2rem, 5vw, 5rem) clamp(3rem, 4vw, 4rem);
-  row-gap: clamp(1.5rem, 2vw, 2rem);
+  grid-template-columns: minmax(0, 1.15fr) minmax(23rem, 0.85fr);
+  padding: clamp(2.25rem, 3vw, 3rem) clamp(2rem, 5vw, 5rem) clamp(2.75rem, 3.5vw, 3.5rem);
+  row-gap: clamp(1.25rem, 1.75vw, 1.75rem);
 }
 
 .research-masthead > .section-label {
@@ -975,44 +975,22 @@ h1 {
   margin-bottom: 0;
 }
 
-.research-masthead__lead h1 {
-  font-size: clamp(3.4rem, 5.2vw, 6.2rem);
+.research-masthead > h1 {
+  font-size: clamp(3.4rem, 4.9vw, 5.7rem);
   max-width: 17ch;
 }
 
-.research-masthead__lead > p {
-  color: var(--ink-soft);
-  font-size: clamp(1.02rem, 1.25vw, 1.18rem);
-  line-height: 1.62;
-  margin: 1.5rem 0 0;
-  max-width: 45rem;
-}
-
-.research-masthead__question {
-  border-left: 1px solid var(--line);
-  padding-left: clamp(2rem, 3vw, 3.5rem);
-}
-
-.research-masthead__question .section-label {
-  margin-bottom: 1rem;
-}
-
-.research-masthead__question h2 {
-  font-size: clamp(2.4rem, 3.6vw, 4.2rem);
-  text-wrap: balance;
-}
-
-.research-masthead__question-copy {
+.research-masthead__copy {
   color: var(--ink-soft);
   display: grid;
-  font-size: clamp(0.98rem, 1.15vw, 1.1rem);
-  gap: 0.85rem;
-  line-height: 1.58;
-  margin-top: 1.3rem;
+  font-size: clamp(1.02rem, 1.2vw, 1.16rem);
+  gap: 1rem;
+  line-height: 1.62;
   max-width: 42rem;
+  padding-top: 0.25rem;
 }
 
-.research-masthead__question-copy p {
+.research-masthead__copy p {
   margin: 0;
 }
 
@@ -1067,15 +1045,15 @@ h1 {
 }
 
 .program-section {
-  padding: 0 clamp(2rem, 5vw, 5rem) clamp(3.5rem, 6vw, 6rem);
+  padding: 0 clamp(2rem, 5vw, 5rem);
 }
 
 .program-intro {
   align-items: center;
   display: grid;
-  gap: clamp(2rem, 4vw, 5rem);
+  gap: clamp(2rem, 3.5vw, 4rem);
   grid-template-columns: minmax(9rem, 0.35fr) minmax(0, 2.65fr);
-  padding: clamp(2rem, 3vw, 3rem) 0;
+  padding: clamp(1.5rem, 2.2vw, 2.25rem) 0;
 }
 
 .program-intro .section-label {
@@ -1083,7 +1061,7 @@ h1 {
 }
 
 .program-intro h2 {
-  font-size: clamp(2.4rem, 3.8vw, 4.4rem);
+  font-size: clamp(2.2rem, 3.25vw, 3.7rem);
   max-width: none;
 }
 
@@ -1095,9 +1073,9 @@ h1 {
   align-items: center;
   border-bottom: 1px solid var(--line);
   display: grid;
-  gap: clamp(2.5rem, 5vw, 6rem);
+  gap: clamp(2.25rem, 4vw, 4.5rem);
   grid-template-columns: minmax(20rem, 0.9fr) minmax(0, 1.1fr);
-  padding: clamp(3rem, 5vw, 5rem) 0;
+  padding: clamp(2.25rem, 3.5vw, 3.5rem) 0;
 }
 
 .research-program:nth-child(even) {
@@ -1114,9 +1092,8 @@ h1 {
 }
 
 .program-figure {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 3;
   margin: 0;
-  max-height: 48rem;
   overflow: hidden;
   position: relative;
 }
@@ -1140,30 +1117,24 @@ h1 {
   transform: scale(1.02);
 }
 
-.program-number {
-  color: var(--gold-text);
-  font-family: var(--serif);
-  margin: 0 0 2rem;
-}
-
 .program-question {
   color: var(--moss);
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.1em;
-  margin: 0 0 1rem;
+  margin: 0 0 0.75rem;
   text-transform: uppercase;
 }
 
 .program-copy h3 {
-  font-size: clamp(2.6rem, 4.6vw, 5rem);
-  line-height: 1;
-  max-width: 13ch;
+  font-size: clamp(2.2rem, 3.25vw, 3.7rem);
+  line-height: 1.03;
+  max-width: 18ch;
 }
 
 .program-description {
   color: var(--ink-soft);
-  margin-top: 1.8rem;
+  margin-top: 1.3rem;
   max-width: 47rem;
 }
 
@@ -1175,26 +1146,8 @@ h1 {
   margin-top: 1.1rem;
 }
 
-.approach-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-  list-style: none;
-  margin: 2rem 0 0;
-  padding: 0;
-}
-
-.approach-list li {
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  color: var(--ink-soft);
-  font-size: 0.76rem;
-  font-weight: 650;
-  padding: 0.48rem 0.78rem;
-}
-
 .research-links {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .research-links a {
@@ -1213,25 +1166,30 @@ h1 {
 }
 
 .collaboration-section > header {
+  align-items: start;
   display: grid;
-  gap: 3rem;
-  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
-  margin-bottom: clamp(3.5rem, 7vw, 7rem);
+  gap: clamp(2rem, 3.5vw, 4rem);
+  grid-template-columns: minmax(9rem, 0.35fr) minmax(0, 2.65fr);
+  margin-bottom: clamp(1.75rem, 2.5vw, 2.5rem);
+}
+
+.collaboration-section .section-label {
+  margin-bottom: 0;
 }
 
 .collaboration-section h2 {
-  font-size: clamp(3rem, 6vw, 6.5rem);
+  font-size: clamp(2.2rem, 3.25vw, 3.7rem);
 }
 
 .collaboration-section header > div > p {
   color: var(--ink-soft);
-  font-size: clamp(1rem, 1.4vw, 1.2rem);
-  margin: 1.8rem 0 0;
-  max-width: 48rem;
+  font-size: clamp(1rem, 1.2vw, 1.12rem);
+  margin: 1rem 0 0;
+  max-width: 52rem;
 }
 
 .collaboration-section {
-  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+  padding: clamp(2.5rem, 3.5vw, 3.5rem) clamp(2rem, 5vw, 5rem) clamp(3rem, 4vw, 4rem);
 }
 
 .collaboration-grid {
@@ -1241,7 +1199,7 @@ h1 {
 }
 
 .collaboration-grid article {
-  padding: 2rem clamp(1.2rem, 2.4vw, 2.5rem) 0 0;
+  padding: 1.5rem clamp(1.2rem, 2.4vw, 2.5rem) 0 0;
 }
 
 .collaboration-grid article + article {
@@ -1250,7 +1208,7 @@ h1 {
 }
 
 .collaboration-grid h3 {
-  font-size: clamp(1.8rem, 2.7vw, 3rem);
+  font-size: clamp(1.65rem, 2.2vw, 2.45rem);
   line-height: 1.05;
 }
 
@@ -2515,13 +2473,6 @@ h1 {
     grid-column: auto;
   }
 
-  .research-masthead__question {
-    border-left: 0;
-    border-top: 1px solid var(--line);
-    padding-left: 0;
-    padding-top: 2rem;
-  }
-
   .research-program,
   .research-program:nth-child(even) {
     gap: 3.5rem;
@@ -2628,14 +2579,6 @@ h1 {
 
   .research-masthead > .section-label {
     grid-column: auto;
-  }
-
-  .research-masthead__question {
-    border-left: 0;
-    border-top: 1px solid var(--line);
-    margin-top: 0.4rem;
-    padding-left: 0;
-    padding-top: 2rem;
   }
 
   .page-masthead,

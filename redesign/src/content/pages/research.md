@@ -2,28 +2,20 @@
 masthead:
   label: Research
   title: Ants reveal how history, ecology, and opportunity build biodiversity.
-  introduction: >-
-    We combine natural history, systematics, phylogenomics, morphology, and field ecology to
-    understand how ant lineages diversify, adapt, and repeatedly evolve specialized relationships.
+  paragraphs:
+    - >-
+      We combine natural history, systematics, phylogenomics, morphology, and field ecology to
+      understand how ant lineages diversify, adapt, and repeatedly evolve specialized relationships.
+    - >-
+      Evolution is shaped by history, but similar ecological challenges can produce strikingly
+      similar outcomes. We ask when independent ant lineages follow parallel paths - and when their
+      distinct histories lead them elsewhere.
   image:
     show: true
     src: /images/ant-forager.jpeg
     alt: A Myrmelachista worker foraging on a leaf of its host plant.
     caption: '*Myrmelachista* worker foraging on leaf of its host plant, understory Lauraceae.'
     objectPosition: 50% 48%
-centralQuestion:
-  label: The question connecting our work
-  title: Contingency or predictability?
-  paragraphs:
-    - >-
-      Evolution is shaped by history, but similar ecological challenges can produce strikingly
-      similar outcomes. We ask when independent ant lineages follow parallel paths - and when their
-      distinct histories lead them elsewhere.
-    - >-
-      Repeated origins of plant specialization in *Myrmelachista* give us unusually well-controlled
-      natural comparisons. Closely related lineages have independently adopted different nesting
-      strategies, allowing us to test the genomic, morphological, and ecological basis of
-      convergence.
 collaborations:
   label: Collaborative extensions
   title: Methods that travel beyond ants

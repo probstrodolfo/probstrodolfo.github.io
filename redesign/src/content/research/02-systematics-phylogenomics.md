@@ -1,6 +1,5 @@
 ---
 order: 2
-number: '02'
 slug: systematics-phylogenomics
 title: Systematics, phylogenomics & deep history
 question: How does evolutionary history shape the diversity we see today?
@@ -14,11 +13,6 @@ paragraphs:
     Across living and extinct lineages, we examine how morphology, geographic history, and
     ecological transitions interact. Current systems include *Myrmelachista*, the dirt ants *Basiceros*,
     and broad phylogenomic sampling of Neotropical ant communities.
-approaches:
-  - Taxonomy
-  - Phylogenomics
-  - Morphology
-  - Fossils & biogeography
 image:
   show: true
   src: /images/myrmelachista-workers.jpeg
