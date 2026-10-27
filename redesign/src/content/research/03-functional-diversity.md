@@ -18,5 +18,7 @@ image:
   alt: A researcher collecting ants from an understory plant in a tropical forest.
   caption: Field collections connect traits, communities, and environments
   objectPosition: 57% 50%
-links: []
+links:
+  - label: Sampling local ant diversities · Biotropica (2023)
+    href: https://doi.org/10.1111/btp.13244
 ---

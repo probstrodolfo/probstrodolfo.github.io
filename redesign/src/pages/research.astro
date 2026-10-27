@@ -37,7 +37,7 @@ programs.items = programEntries
           <img
             src={masthead.image.src}
             alt={masthead.image.alt}
-            style={`object-position: ${masthead.image.objectPosition}`}
+            style={`object-position: ${masthead.image.objectPosition}; transform: scale(${masthead.image.zoom ?? 1}); transform-origin: ${masthead.image.objectPosition}`}
           />
           <figcaption><InlineMarkdown text={masthead.image.caption} /></figcaption>
         </figure>
@@ -53,7 +53,11 @@ programs.items = programEntries
       <div class="program-list">
         {
           programs.items.map((program) => (
-            <article class:list={["research-program", { "research-program--without-image": !program.image.show }]} id={program.slug}>
+            <article
+              class:list={["research-program", { "research-program--without-image": !program.image.show }]}
+              id={program.slug}
+              data-research-program
+            >
               {program.image.show && (
                 <figure class="program-figure">
                   <img
@@ -101,13 +105,48 @@ programs.items = programEntries
       <div class="collaboration-grid">
         {
           collaborations.items.map((item) => (
-            <article>
+            <article class="collaboration-card">
+              <figure class="collaboration-image">
+                <img src={item.image.src} alt={item.image.alt} loading="lazy" />
+                {item.image.credit && <figcaption>{item.image.credit}</figcaption>}
+              </figure>
               <h3><InlineMarkdown text={item.title} /></h3>
               <p><InlineMarkdown text={item.description} /></p>
+              <a class="collaboration-link" href={item.link.href} target="_blank" rel="noreferrer">
+                <InlineMarkdown text={item.link.label} /><span aria-hidden="true">↗</span>
+              </a>
             </article>
           ))
         }
       </div>
     </section>
   </main>
+
+  <script>
+    const researchPrograms = document.querySelectorAll<HTMLElement>("[data-research-program]");
+
+    if (researchPrograms.length > 0) {
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      if (reducedMotion || !("IntersectionObserver" in window)) {
+        researchPrograms.forEach((program) => program.classList.add("is-visible"));
+      } else {
+        document.documentElement.classList.add("program-reveal-ready");
+
+        const programObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                programObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { rootMargin: "0px 0px -8% 0px", threshold: 0.08 },
+        );
+
+        researchPrograms.forEach((program) => programObserver.observe(program));
+      }
+    }
+  </script>
 </SiteLayout>
