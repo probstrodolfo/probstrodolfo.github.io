@@ -8,8 +8,8 @@ masthead:
   image:
     show: true
     src: /images/ant-forager.jpeg
-    alt: A Myrmelachista ant foraging on the leaf of its host plant.
-    caption: '*Myrmelachista* foraging on its host plant'
+    alt: A Myrmelachista worker foraging on a leaf of its host plant.
+    caption: '*Myrmelachista* worker foraging on leaf of its host plant, understory Lauraceae.'
     objectPosition: 50% 48%
 centralQuestion:
   label: The question connecting our work
@@ -24,41 +24,6 @@ centralQuestion:
       natural comparisons. Closely related lineages have independently adopted different nesting
       strategies, allowing us to test the genomic, morphological, and ecological basis of
       convergence.
-strategies:
-  label: Replicated transitions in *Myrmelachista*
-  items:
-    - number: '01'
-      title: Opportunistic nesting
-      description: >-
-        Colonies occupy preexisting cavities in plants without depending on one specialized host
-        relationship.
-    - number: '02'
-      title: Facultative association
-      description: >-
-        Species associate closely with plants while retaining greater ecological flexibility in
-        where and how they nest.
-    - number: '03'
-      title: Obligate specialization
-      description: Colonies form persistent, highly specialized associations with particular host plants.
-methods:
-  label: How we work
-  title: Evidence across scales
-  introduction: >-
-    Our questions move between organisms, collections, communities, and genomes. We choose methods
-    for the biological problem rather than treating any one method as the destination.
-  items:
-    - title: Field biology
-      description: Collecting colonies, hosts, ecological observations, and environmental context.
-    - title: Natural history collections
-      description: Connecting new data to specimens, names, places, and deep historical records.
-    - title: Morphology & taxonomy
-      description: Documenting variation and building stable, testable species hypotheses.
-    - title: Phylogenomics
-      description: Reconstructing evolutionary relationships across species and communities.
-    - title: Genomes & transcriptomes
-      description: Testing for parallel genomic and expression changes during specialization.
-    - title: Traits & biodiversity data
-      description: Linking organismal form to community structure and environmental change.
 collaborations:
   label: Collaborative extensions
   title: Methods that travel beyond ants

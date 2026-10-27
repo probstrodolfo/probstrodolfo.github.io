@@ -10,7 +10,7 @@ const [researchEntry, programEntries] = await Promise.all([
 ]);
 if (!researchEntry) throw new Error("Missing src/content/pages/research.md");
 const researchContent = researchEntry.data as any;
-const { masthead, centralQuestion, strategies, programs, methods, collaborations } = researchContent;
+const { masthead, centralQuestion, programs, collaborations } = researchContent;
 programs.items = programEntries
   .map((entry) => entry.data as any)
   .sort((a, b) => a.order - b.order);
@@ -23,11 +23,19 @@ programs.items = programEntries
   <SiteHeader variant="internal" />
 
   <main id="main-content" class="research-page" tabindex="-1">
-    <section class="page-masthead research-masthead">
+    <section class="research-masthead">
       <p class="section-label">{masthead.label}</p>
-      <div>
+      <div class="research-masthead__lead">
         <h1><InlineMarkdown text={masthead.title} /></h1>
         <p><InlineMarkdown text={masthead.introduction} /></p>
+      </div>
+
+      <div class="research-masthead__question">
+        <p class="section-label">{centralQuestion.label}</p>
+        <h2><InlineMarkdown text={centralQuestion.title} /></h2>
+        <div class="research-masthead__question-copy">
+          {centralQuestion.paragraphs.map((paragraph) => <p><InlineMarkdown text={paragraph} /></p>)}
+        </div>
       </div>
     </section>
 
@@ -39,35 +47,10 @@ programs.items = programEntries
             alt={masthead.image.alt}
             style={`object-position: ${masthead.image.objectPosition}`}
           />
-          <figcaption><InlineMarkdown text={masthead.image.caption} smallCaps={true} /></figcaption>
+          <figcaption><InlineMarkdown text={masthead.image.caption} /></figcaption>
         </figure>
       )
     }
-
-    <section class="research-question">
-      <p class="section-label">{centralQuestion.label}</p>
-      <div>
-        <h2><InlineMarkdown text={centralQuestion.title} /></h2>
-        <div class="research-question-copy">
-          {centralQuestion.paragraphs.map((paragraph) => <p><InlineMarkdown text={paragraph} /></p>)}
-        </div>
-      </div>
-    </section>
-
-    <section class="strategy-section" aria-labelledby="strategy-title">
-      <h2 id="strategy-title"><InlineMarkdown text={strategies.label} smallCaps={true} /></h2>
-      <div class="strategy-grid">
-        {
-          strategies.items.map((strategy) => (
-            <article>
-              <p>{strategy.number}</p>
-              <h3><InlineMarkdown text={strategy.title} /></h3>
-              <span><InlineMarkdown text={strategy.description} /></span>
-            </article>
-          ))
-        }
-      </div>
-    </section>
 
     <section class="program-section" aria-labelledby="program-title">
       <header class="program-intro">
@@ -113,28 +96,6 @@ programs.items = programEntries
                   </nav>
                 )}
               </div>
-            </article>
-          ))
-        }
-      </div>
-    </section>
-
-    <section class="methods-section" aria-labelledby="methods-title">
-      <header>
-        <p class="section-label">{methods.label}</p>
-        <div>
-          <h2 id="methods-title"><InlineMarkdown text={methods.title} /></h2>
-          <p><InlineMarkdown text={methods.introduction} /></p>
-        </div>
-      </header>
-
-      <div class="method-grid">
-        {
-          methods.items.map((method, index) => (
-            <article>
-              <p>{String(index + 1).padStart(2, "0")}</p>
-              <h3><InlineMarkdown text={method.title} /></h3>
-              <span><InlineMarkdown text={method.description} /></span>
             </article>
           ))
         }
