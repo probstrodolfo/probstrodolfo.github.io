@@ -30,9 +30,14 @@ collaborations:
         Nanopore barcoding and metabarcoding for rapid species discovery, identification, and
         biodiversity surveys.
       image:
-        src: /images/collaboration-nanopore.jpg
-        alt: Honeybee hives used to collect pollen for nanopore metabarcoding.
-        credit: 'Wiese et al. (2026), CC BY 4.0'
+        src: /images/paper-nanopore-figure.jpg
+        alt: Figure showing honeybee hives, a pollen trap, and the pollen-collection schedule used in the nanopore metabarcoding study.
+        source: 'Figure 1 · Wiese et al. (2026)'
+        credit: >-
+          Figure 1 from Wiese et al. (2026), resized for display.
+        license:
+          label: CC BY 4.0
+          href: https://creativecommons.org/licenses/by/4.0/
       link:
         label: Honeybee foraging through nanopore metabarcoding · PLOS ONE (2026)
         href: https://doi.org/10.1371/journal.pone.0343810
@@ -41,9 +46,15 @@ collaborations:
         Integrating morphology, morphometrics, and molecular data in birds and other
         difficult-to-identify lineages.
       image:
-        src: /images/collaboration-empidonax.jpg
-        alt: A Hammond's flycatcher perched on a branch.
-        credit: 'Photo: Francesco Veronesi, CC BY-SA 2.0'
+        src: /images/paper-empidonax-figure.jpg
+        alt: Figure panels showing an Empidonax flycatcher in profile, its spread wing, and its frontal plumage.
+        source: 'Figure 1B-D · Buxton et al. (2026)'
+        credit: >-
+          Figure 1B-D from Buxton et al. (2026), cropped and resized for display.
+          Photographs by Kyle Kittelberger.
+        license:
+          label: CC BY 4.0
+          href: https://creativecommons.org/licenses/by/4.0/
       link:
         label: Catching flycatchers · Ornithology (2026)
         href: https://doi.org/10.1093/ornithology/ukag003
@@ -52,8 +63,14 @@ collaborations:
         Comparative work on cone snail diversification, prey specialization, and the evolution of
         venom components.
       image:
-        src: /images/collaboration-cone-snails.jpg
-        alt: Cone snail shells arranged around a phylogenetic tree.
+        src: /images/paper-cone-snail-figure.jpg
+        alt: Evolutionary tree of cone snails surrounded by representative shells from worm-, fish-, and mollusk-hunting lineages.
+        source: 'Figure 1 · Espino et al. (2024)'
+        credit: >-
+          Figure 1 from Espino et al. (2024), cropped and resized for display.
+        license:
+          label: CC BY-NC 4.0
+          href: https://creativecommons.org/licenses/by-nc/4.0/
       link:
         label: χ-Conotoxins and prey defense · Molecular Biology and Evolution (2024)
         href: https://academic.oup.com/mbe/article/41/11/msae226/7848657

@@ -107,8 +107,15 @@ programs.items = programEntries
           collaborations.items.map((item) => (
             <article class="collaboration-card">
               <figure class="collaboration-image">
-                <img src={item.image.src} alt={item.image.alt} loading="lazy" />
-                {item.image.credit && <figcaption>{item.image.credit}</figcaption>}
+                <a
+                  href={item.link.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Open paper: ${item.link.label}`}
+                >
+                  <img src={item.image.src} alt={item.image.alt} loading="lazy" />
+                </a>
+                <figcaption><InlineMarkdown text={item.image.source} /></figcaption>
               </figure>
               <h3><InlineMarkdown text={item.title} /></h3>
               <p><InlineMarkdown text={item.description} /></p>
@@ -119,6 +126,22 @@ programs.items = programEntries
           ))
         }
       </div>
+
+      <details class="figure-credits">
+        <summary>Figure credits</summary>
+        <div>
+          {
+            collaborations.items.map((item) => (
+              <p>
+                <InlineMarkdown text={item.image.credit} />{" "}
+                <a href={item.image.license.href} target="_blank" rel="noreferrer">
+                  {item.image.license.label}
+                </a>
+              </p>
+            ))
+          }
+        </div>
+      </details>
     </section>
   </main>
 
