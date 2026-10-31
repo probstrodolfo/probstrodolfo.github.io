@@ -206,6 +206,21 @@ should be italicized; no HTML tags are needed.
 
 The IDs listed under `selected.publicationIds` in `src/content/pages/publications.md` control the four highlighted papers and their order.
 
+Optional media, podcast, data, or student-profile links can be added to the relevant publication
+file beneath its article link:
+
+```yaml
+href: https://doi.org/10.xxxx/example
+links:
+  - label: Research feature
+    href: https://example.org/feature
+  - label: Podcast
+    href: https://example.org/podcast
+```
+
+Add or remove complete two-line `label` and `href` pairs. These extra links appear beside the
+article link in the publication list.
+
 ## What not to edit for ordinary updates
 
 Routine content changes should not require editing:

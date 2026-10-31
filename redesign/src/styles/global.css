@@ -1400,23 +1400,25 @@ h1 {
 }
 
 .publications-masthead {
-  min-height: 42rem;
+  background: var(--paper);
+  padding: clamp(2.25rem, 3vw, 3rem) clamp(2rem, 5vw, 5rem) clamp(2.6rem, 3.5vw, 3.5rem);
 }
 
-.publication-scholar-link {
-  border-bottom: 1px solid var(--ink);
-  display: inline-flex;
-  font-size: 0.84rem;
-  font-weight: 750;
-  gap: 0.6rem;
-  margin-top: 2.3rem;
-  padding-bottom: 0.25rem;
-  text-decoration: none;
+.publications-masthead .section-label {
+  margin-bottom: clamp(1rem, 1.4vw, 1.4rem);
 }
 
-.publication-scholar-link span,
-.publication-action a span {
-  color: var(--gold-text);
+.publications-masthead h1 {
+  font-size: clamp(3.35rem, 4.45vw, 5.35rem);
+  max-width: none;
+}
+
+.publications-masthead > p:last-child {
+  color: var(--ink-soft);
+  font-size: clamp(1.06rem, 1.32vw, 1.28rem);
+  line-height: 1.58;
+  margin: clamp(1.4rem, 2vw, 2rem) 0 0;
+  max-width: 67rem;
 }
 
 .selected-publication-card > a span {
@@ -1426,16 +1428,16 @@ h1 {
 .selected-publications {
   background: var(--forest-deep);
   color: var(--paper-bright);
-  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+  padding: clamp(3.5rem, 5vw, 5.5rem) clamp(2rem, 5vw, 5rem);
 }
 
 .selected-publications > header,
 .publication-record > header,
 .manuscript-section > header {
   display: grid;
-  gap: 3rem;
-  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
-  margin-bottom: clamp(3.5rem, 7vw, 7rem);
+  gap: 1rem clamp(2rem, 4vw, 4rem);
+  grid-template-columns: minmax(10rem, 0.35fr) minmax(0, 1fr);
+  margin-bottom: clamp(2rem, 3vw, 3rem);
 }
 
 .selected-publications .section-label {
@@ -1445,8 +1447,8 @@ h1 {
 .selected-publications h2,
 .publication-record h2,
 .manuscript-section h2 {
-  font-size: clamp(3rem, 6vw, 6.5rem);
-  max-width: 13ch;
+  font-size: clamp(2.8rem, 4vw, 4.6rem);
+  max-width: none;
 }
 
 .selected-publications header > div > p,
@@ -1454,8 +1456,8 @@ h1 {
 .manuscript-section header > div > p {
   color: var(--ink-soft);
   font-size: clamp(1rem, 1.4vw, 1.2rem);
-  margin: 1.8rem 0 0;
-  max-width: 48rem;
+  margin: 1rem 0 0;
+  max-width: 58rem;
 }
 
 .selected-publications header > div > p {
@@ -1466,7 +1468,7 @@ h1 {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .selected-publication-card {
@@ -1474,8 +1476,8 @@ h1 {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: column;
-  min-height: 31rem;
-  padding: clamp(1.7rem, 3.5vw, 3.6rem);
+  min-height: 19rem;
+  padding: clamp(1.35rem, 1.8vw, 1.8rem);
 }
 
 .selected-publication-meta {
@@ -1485,26 +1487,26 @@ h1 {
   justify-content: space-between;
 }
 
-.publication-type,
-.publication-entry-type {
+.publication-type {
   color: var(--gold);
   font-size: 0.69rem;
   font-weight: 800;
   letter-spacing: 0.14em;
-  margin: clamp(3rem, 6vw, 5.5rem) 0 1rem;
+  margin: clamp(1.35rem, 2vw, 2rem) 0 0.65rem;
   text-transform: uppercase;
 }
 
 .selected-publication-card h3 {
-  font-size: clamp(2rem, 3.2vw, 3.5rem);
-  line-height: 1.05;
-  max-width: 18ch;
+  font-size: clamp(1.45rem, 1.9vw, 2.1rem);
+  line-height: 1.1;
+  max-width: none;
 }
 
 .selected-publication-venue {
   color: #cad6cf;
-  margin: 1.5rem 0 0;
-  max-width: 34rem;
+  font-size: 0.87rem;
+  margin: 0.85rem 0 0;
+  max-width: none;
 }
 
 .selected-publication-card > a {
@@ -1515,12 +1517,12 @@ h1 {
   font-weight: 750;
   gap: 0.6rem;
   margin-top: auto;
-  padding-top: 2.2rem;
+  padding-top: 1.2rem;
   text-decoration: none;
 }
 
 .publication-record {
-  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+  padding: clamp(3.5rem, 5vw, 5.5rem) clamp(2rem, 5vw, 5rem);
 }
 
 .publication-list {
@@ -1530,9 +1532,9 @@ h1 {
 .publication-entry {
   border-bottom: 1px solid var(--line);
   display: grid;
-  gap: clamp(1.5rem, 4vw, 4.5rem);
-  grid-template-columns: minmax(5rem, 0.25fr) minmax(0, 1.65fr) minmax(8rem, 0.35fr);
-  padding: clamp(2.2rem, 4vw, 4rem) 0;
+  gap: clamp(1.2rem, 2.5vw, 2.8rem);
+  grid-template-columns: 4.8rem minmax(0, 1fr) minmax(10rem, 0.42fr);
+  padding: clamp(1.25rem, 1.8vw, 1.8rem) 0;
 }
 
 .publication-year {
@@ -1558,22 +1560,17 @@ h1 {
   text-transform: uppercase;
 }
 
-.publication-entry-type {
-  color: var(--moss);
-  margin: 0 0 0.8rem;
-}
-
 .publication-citation h3 {
-  font-size: clamp(1.65rem, 2.4vw, 2.7rem);
-  line-height: 1.1;
-  max-width: 31ch;
+  font-size: clamp(1.3rem, 1.75vw, 1.8rem);
+  line-height: 1.16;
+  max-width: none;
 }
 
 .publication-authors {
   color: var(--ink-soft);
-  font-size: 0.91rem;
-  margin: 1.15rem 0 0;
-  max-width: 56rem;
+  font-size: 0.84rem;
+  margin: 0.65rem 0 0;
+  max-width: none;
 }
 
 .publication-authors strong {
@@ -1582,22 +1579,24 @@ h1 {
 
 .publication-venue {
   color: var(--ink-soft);
-  font-size: 0.9rem;
-  margin: 0.45rem 0 0;
+  font-size: 0.84rem;
+  margin: 0.25rem 0 0;
 }
 
 .publication-note {
   color: var(--moss);
-  font-size: 0.72rem;
+  font-size: 0.66rem;
   font-weight: 750;
   letter-spacing: 0.04em;
-  margin: 0.7rem 0 0;
+  margin: 0.55rem 0 0;
   text-transform: uppercase;
 }
 
 .publication-action {
   align-items: flex-start;
   display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1rem;
   justify-content: flex-end;
 }
 
@@ -1614,6 +1613,10 @@ h1 {
   gap: 0.5rem;
   padding-bottom: 0.2rem;
   text-decoration: none;
+}
+
+.publication-action a span {
+  color: var(--gold-text);
 }
 
 .publication-action > span {
@@ -2694,6 +2697,10 @@ h1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .selected-publication-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .member-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2931,7 +2938,7 @@ h1 {
   }
 
   .selected-publication-card {
-    min-height: 27rem;
+    min-height: 18rem;
   }
 
   .publication-entry {

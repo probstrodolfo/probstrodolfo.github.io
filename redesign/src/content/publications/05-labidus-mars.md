@@ -10,5 +10,8 @@ title: >-
 venue: Insect Systematics and Diversity
 href: https://doi.org/10.1093/isd/ixaf016
 note: Undergraduate-led research
+links:
+  - label: Student profile
+    href: https://attheu.utah.edu/students/humans-of-the-u-megan-duval/
 show: true
 ---

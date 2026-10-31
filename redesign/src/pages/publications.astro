@@ -35,15 +35,10 @@ const formatAuthors = (authors: string) =>
   <SiteHeader variant="internal" />
 
   <main id="main-content" class="publications-page" tabindex="-1">
-    <section class="page-masthead publications-masthead">
+    <section class="publications-masthead">
       <p class="section-label">{masthead.label}</p>
-      <div>
-        <h1><InlineMarkdown text={masthead.title} /></h1>
-        <p><InlineMarkdown text={masthead.introduction} /></p>
-        <a class="publication-scholar-link" href={masthead.scholarLink.href} target="_blank" rel="noreferrer">
-          {masthead.scholarLink.label}<span aria-hidden="true">↗</span>
-        </a>
-      </div>
+      <h1><InlineMarkdown text={masthead.title} /></h1>
+      <p><InlineMarkdown text={masthead.introduction} /></p>
     </section>
 
     {
@@ -87,7 +82,7 @@ const formatAuthors = (authors: string) =>
         <p class="section-label">{completeRecord.label}</p>
         <div>
           <h2 id="publication-record-title"><InlineMarkdown text={completeRecord.title} /></h2>
-          <p><InlineMarkdown text={completeRecord.introduction} /></p>
+          {completeRecord.introduction && <p><InlineMarkdown text={completeRecord.introduction} /></p>}
         </div>
       </header>
 
@@ -101,7 +96,6 @@ const formatAuthors = (authors: string) =>
               </div>
 
               <div class="publication-citation">
-                <p class="publication-entry-type">{publication.type}</p>
                 <h3><InlineMarkdown text={publication.title} /></h3>
                 <p class="publication-authors" set:html={formatAuthors(publication.authors)} />
                 <p class="publication-venue">
@@ -111,15 +105,19 @@ const formatAuthors = (authors: string) =>
                 {publication.note && <p class="publication-note"><InlineMarkdown text={publication.note} /></p>}
               </div>
 
-              <div class="publication-action">
-                {publication.href ? (
+              <nav class="publication-action" aria-label={`Links for ${publication.title.replaceAll("*", "")}`}>
+                {publication.href && (
                   <a href={publication.href} target="_blank" rel="noreferrer">
-                    DOI / article<span aria-hidden="true">↗</span>
+                    Article<span aria-hidden="true">↗</span>
                   </a>
-                ) : (
-                  <span>Link forthcoming</span>
                 )}
-              </div>
+                {publication.links?.map((link) => (
+                  <a href={link.href} target="_blank" rel="noreferrer">
+                    {link.label}<span aria-hidden="true">↗</span>
+                  </a>
+                ))}
+                {!publication.href && !publication.links?.length && <span>Link forthcoming</span>}
+              </nav>
             </article>
           ))
         }
