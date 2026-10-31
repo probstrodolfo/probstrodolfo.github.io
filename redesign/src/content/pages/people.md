@@ -3,17 +3,19 @@ masthead:
   label: People
   title: A lab built around curiosity, natural history, and collaboration.
   introduction: >-
-    The Probst Lab is a growing group of researchers using ants to explore evolution, biodiversity,
-    and symbiosis.
+    We are a growing group of researchers using ants to explore evolution, biodiversity, and
+    symbioses.
+labPhoto:
+  show: false
+  src: /images/probst-lab-first-gathering.jpg
+  alt: Members of the Probst Lab at their first lab gathering at UC Davis.
+  caption: The Probst Lab at its first gathering at UC Davis.
+  objectPosition: 50% 50%
 growingLab:
-  label: The group
-  title: The lab is growing at UC Davis.
-  body: >-
-    Future students, postdoctoral researchers, undergraduates, and collaborators will be added as
-    they join the group. Each profile will foreground the questions they are asking and the research
-    they make their own.
+  label: Our group
+  title: Our lab is growing at UC Davis.
   link:
-    label: Learn about joining the lab
+    label: Learn about joining our lab
     href: /join/
 graduateStudents:
   label: Graduate researchers

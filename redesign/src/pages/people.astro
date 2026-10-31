@@ -16,7 +16,7 @@ if (!principalInvestigator) throw new Error("Missing principal-investigator prof
 const graduateMembers = members
   .filter((member) => member.group === "graduate-student")
   .sort((a, b) => a.order - b.order);
-const { masthead, graduateStudents, growingLab } = pageContent;
+const { masthead, labPhoto, graduateStudents, growingLab } = pageContent;
 graduateStudents.members = graduateMembers;
 ---
 
@@ -27,13 +27,26 @@ graduateStudents.members = graduateMembers;
   <SiteHeader variant="internal" />
 
   <main id="main-content" class="people-page" tabindex="-1">
-    <section class="page-masthead">
+    <section class="people-masthead">
       <p class="section-label">{masthead.label}</p>
-      <div>
-        <h1><InlineMarkdown text={masthead.title} /></h1>
-        <p><InlineMarkdown text={masthead.introduction} /></p>
-      </div>
+      <h1><InlineMarkdown text={masthead.title} /></h1>
+      <p><InlineMarkdown text={masthead.introduction} /></p>
     </section>
+
+    {
+      labPhoto?.show && (
+        <section class="lab-gathering" aria-label="Probst Lab gathering">
+          <figure>
+            <img
+              src={labPhoto.src}
+              alt={labPhoto.alt}
+              style={`object-position: ${labPhoto.objectPosition}`}
+            />
+            <figcaption><InlineMarkdown text={labPhoto.caption} /></figcaption>
+          </figure>
+        </section>
+      )
+    }
 
     <section class="pi-profile" aria-labelledby="pi-name">
       {
@@ -135,7 +148,7 @@ graduateStudents.members = graduateMembers;
       <p class="section-label">{growingLab.label}</p>
       <div>
         <h2><InlineMarkdown text={growingLab.title} /></h2>
-        <p><InlineMarkdown text={growingLab.body} /></p>
+        {growingLab.body && <p><InlineMarkdown text={growingLab.body} /></p>}
         <a class="button button--primary" href={growingLab.link.href}>
           {growingLab.link.label}<span aria-hidden="true">→</span>
         </a>

@@ -5,9 +5,9 @@ name: Melquisedeque Campos
 initials: MC
 role: PhD Student
 biography: >-
-  Melqui is interested in the taxonomy, systematics, and nesting behaviors of Hymenoptera (wasps, bees, and ants) 
-  and other insects native to Amazonian ecosystems. His research focuses on the evolution of social wasps—such in
-  the genus *Mischocyttarus*.
+  Melqui is interested in the taxonomy, systematics, and nesting behaviors of Hymenoptera (wasps, bees, and ants)
+  and other insects native to Amazonian ecosystems. His research focuses on the evolution of social wasps, such as
+  those in the genus *Mischocyttarus*.
 interests:
   - Wasp taxonomy
   - Systematics

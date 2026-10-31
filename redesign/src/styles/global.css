@@ -656,6 +656,68 @@ h1 {
   background: var(--paper-bright);
 }
 
+.people-masthead {
+  background: var(--paper);
+  padding: clamp(2.25rem, 3vw, 3rem) clamp(2rem, 5vw, 5rem) clamp(2.6rem, 3.5vw, 3.5rem);
+}
+
+.people-masthead .section-label {
+  margin-bottom: clamp(1rem, 1.4vw, 1.4rem);
+}
+
+.people-masthead h1 {
+  font-size: clamp(3.35rem, 4.45vw, 5.35rem);
+  max-width: none;
+}
+
+.people-masthead > p:last-child {
+  color: var(--ink-soft);
+  font-size: clamp(1.06rem, 1.32vw, 1.28rem);
+  line-height: 1.58;
+  margin: clamp(1.4rem, 2vw, 2rem) 0 0;
+  max-width: 58rem;
+}
+
+.lab-gathering {
+  background: var(--paper-bright);
+  padding: clamp(1.5rem, 2.5vw, 2.5rem) clamp(2rem, 5vw, 5rem) 0;
+}
+
+.lab-gathering figure {
+  aspect-ratio: 16 / 6;
+  margin: 0;
+  max-height: 31rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.lab-gathering figure::after {
+  background: linear-gradient(180deg, transparent 58%, rgba(4, 31, 23, 0.68));
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.lab-gathering img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.lab-gathering figcaption {
+  bottom: 1.35rem;
+  color: white;
+  font-size: 0.74rem;
+  font-weight: 750;
+  left: 1.5rem;
+  letter-spacing: 0.06em;
+  position: absolute;
+  right: 1.5rem;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
 .page-masthead {
   background: var(--paper);
   display: grid;
@@ -683,9 +745,9 @@ h1 {
 
 .pi-profile {
   display: grid;
-  gap: clamp(3rem, 7vw, 8rem);
-  grid-template-columns: minmax(18rem, 0.8fr) minmax(0, 1.2fr);
-  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+  gap: clamp(2.5rem, 4.5vw, 5rem);
+  grid-template-columns: minmax(15rem, 19rem) minmax(0, 1fr);
+  padding: clamp(3.5rem, 5vw, 5.5rem) clamp(2rem, 5vw, 5rem);
 }
 
 .pi-portrait {
@@ -693,10 +755,8 @@ h1 {
   aspect-ratio: 4 / 5;
   background: var(--forest-deep);
   margin: 0;
-  max-width: 37rem;
+  max-width: 19rem;
   overflow: hidden;
-  position: sticky;
-  top: 2rem;
 }
 
 .pi-portrait img {
@@ -708,7 +768,7 @@ h1 {
 
 .pi-copy {
   align-self: center;
-  max-width: 48rem;
+  max-width: none;
 }
 
 .profile-label {
@@ -721,7 +781,7 @@ h1 {
 }
 
 .pi-copy h2 {
-  font-size: clamp(3.2rem, 6vw, 6.5rem);
+  font-size: clamp(2.8rem, 4vw, 4.6rem);
 }
 
 .pi-role {
@@ -743,11 +803,14 @@ h1 {
 
 .pi-biography {
   color: var(--ink-soft);
+  column-gap: clamp(1.5rem, 3vw, 3rem);
+  columns: 2 18rem;
   font-size: clamp(1rem, 1.3vw, 1.18rem);
-  margin-top: 2.3rem;
+  margin-top: 1.8rem;
 }
 
 .pi-biography p {
+  break-inside: avoid;
   margin: 0;
 }
 
@@ -795,31 +858,31 @@ h1 {
 
 .student-section {
   background: var(--paper);
-  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+  padding: clamp(3.5rem, 5vw, 5.5rem) clamp(2rem, 5vw, 5rem);
 }
 
 .student-intro {
   display: grid;
-  gap: 3rem;
-  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
-  margin-bottom: clamp(3.5rem, 7vw, 7rem);
+  gap: 1rem clamp(2rem, 4vw, 4rem);
+  grid-template-columns: minmax(10rem, 0.35fr) minmax(0, 1fr);
+  margin-bottom: clamp(2rem, 3vw, 3rem);
 }
 
 .student-intro h2 {
-  font-size: clamp(3rem, 5.5vw, 6rem);
+  font-size: clamp(2.8rem, 4vw, 4.6rem);
 }
 
 .student-intro > div > p {
   color: var(--ink-soft);
   font-size: clamp(1rem, 1.4vw, 1.2rem);
-  margin: 1.8rem 0 0;
-  max-width: 47rem;
+  margin: 1rem 0 0;
+  max-width: 54rem;
 }
 
 .member-grid {
   display: grid;
-  gap: clamp(1.5rem, 3vw, 3.5rem);
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.2rem, 2vw, 2rem);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .member-card {
@@ -830,7 +893,7 @@ h1 {
 }
 
 .member-visual {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 2;
   margin: 0;
   overflow: hidden;
 }
@@ -875,7 +938,7 @@ h1 {
 .member-placeholder span {
   color: var(--gold);
   font-family: var(--serif);
-  font-size: clamp(4rem, 9vw, 8rem);
+  font-size: clamp(3.5rem, 6vw, 6rem);
   letter-spacing: -0.05em;
   line-height: 1;
 }
@@ -891,7 +954,7 @@ h1 {
 }
 
 .member-copy {
-  padding: clamp(1.8rem, 3vw, 3rem);
+  padding: clamp(1.35rem, 2vw, 2rem);
 }
 
 .member-role {
@@ -904,18 +967,18 @@ h1 {
 }
 
 .member-copy h3 {
-  font-size: clamp(2.4rem, 4vw, 4.2rem);
+  font-size: clamp(2rem, 2.8vw, 3rem);
   line-height: 1;
 }
 
 .member-biography {
   color: var(--ink-soft);
-  font-size: 1rem;
-  margin: 1.5rem 0 0;
+  font-size: 0.95rem;
+  margin: 1.15rem 0 0;
 }
 
 .member-interests {
-  margin-top: 1.8rem;
+  margin-top: 1.35rem;
 }
 
 .member-links {
@@ -926,9 +989,9 @@ h1 {
   background: var(--forest-deep);
   color: var(--paper-bright);
   display: grid;
-  gap: 3rem;
-  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
-  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+  gap: 1.5rem clamp(2rem, 4vw, 4rem);
+  grid-template-columns: minmax(10rem, 0.35fr) minmax(0, 1fr);
+  padding: clamp(3.25rem, 4.5vw, 4.5rem) clamp(2rem, 5vw, 5rem);
 }
 
 .growing-lab .section-label {
@@ -936,8 +999,8 @@ h1 {
 }
 
 .growing-lab h2 {
-  font-size: clamp(3rem, 6vw, 6.5rem);
-  max-width: 13ch;
+  font-size: clamp(2.8rem, 4.6vw, 5rem);
+  max-width: none;
 }
 
 .growing-lab > div > p {
@@ -950,6 +1013,7 @@ h1 {
 .growing-lab .button--primary {
   background: var(--gold);
   color: var(--forest-deep);
+  margin-top: 1.75rem;
 }
 
 .growing-lab .button--primary:hover,
@@ -2629,6 +2693,10 @@ h1 {
   .news-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .member-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 760px) {
@@ -2650,6 +2718,14 @@ h1 {
 
   h1 {
     font-size: clamp(3.25rem, 15vw, 5rem);
+  }
+
+  .people-masthead h1 {
+    font-size: clamp(3rem, 12vw, 4.2rem);
+  }
+
+  .lab-gathering figure {
+    aspect-ratio: 4 / 3;
   }
 
   .hero-figure {
@@ -2792,9 +2868,7 @@ h1 {
   }
 
   .pi-portrait {
-    max-width: none;
-    position: relative;
-    top: auto;
+    max-width: 19rem;
   }
 
   .member-grid {
