@@ -1986,14 +1986,33 @@ h1 {
 }
 
 .teaching-masthead {
-  min-height: 42rem;
+  background: var(--paper);
+  padding: clamp(2.25rem, 3vw, 3rem) clamp(2rem, 5vw, 5rem) clamp(2.6rem, 3.5vw, 3.5rem);
+}
+
+.teaching-masthead .section-label {
+  margin-bottom: clamp(1rem, 1.4vw, 1.4rem);
+}
+
+.teaching-masthead h1 {
+  font-size: clamp(3.35rem, 4.45vw, 5.35rem);
+  max-width: none;
+}
+
+.teaching-masthead > p:last-child {
+  color: var(--ink-soft);
+  font-size: clamp(1.06rem, 1.32vw, 1.28rem);
+  line-height: 1.58;
+  margin: clamp(1.4rem, 2vw, 2rem) 0 0;
+  max-width: 67rem;
 }
 
 .teaching-hero-figure {
-  aspect-ratio: 16 / 6;
+  aspect-ratio: 16 / 5;
   background: var(--forest-deep);
   margin: 0;
-  min-height: 28rem;
+  max-height: 28rem;
+  min-height: 20rem;
   overflow: hidden;
   position: relative;
 }
@@ -2034,34 +2053,39 @@ h1 {
 .teaching-approach {
   background: var(--forest-deep);
   color: var(--paper-bright);
-  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+  padding: clamp(3.5rem, 5vw, 5.5rem) clamp(2rem, 5vw, 5rem);
 }
 
 .teaching-approach > header,
 .current-teaching > header,
 .teaching-history > header {
   display: grid;
-  gap: 3rem;
-  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
-  margin-bottom: clamp(3.5rem, 7vw, 7rem);
+  gap: 1rem clamp(2rem, 4vw, 4rem);
+  grid-template-columns: minmax(10rem, 0.35fr) minmax(0, 1fr);
+  margin-bottom: clamp(2rem, 3vw, 3rem);
 }
 
 .teaching-approach .section-label {
   color: #b7c8a5;
 }
 
+.teaching-approach--without-cycle > header {
+  margin-bottom: 0;
+}
+
 .teaching-approach h2,
 .current-teaching h2,
 .teaching-history h2 {
-  font-size: clamp(3rem, 6vw, 6.5rem);
-  max-width: 14ch;
+  font-size: clamp(2.8rem, 4vw, 4.6rem);
+  max-width: none;
 }
 
 .teaching-approach-copy {
   color: #cad6cf;
-  font-size: clamp(1rem, 1.35vw, 1.18rem);
-  margin-top: 2rem;
-  max-width: 52rem;
+  font-size: clamp(1rem, 1.25vw, 1.14rem);
+  line-height: 1.6;
+  margin-top: 1rem;
+  max-width: 66rem;
 }
 
 .teaching-approach-copy p {
@@ -2104,15 +2128,15 @@ h1 {
 }
 
 .current-teaching {
-  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+  padding: clamp(3.5rem, 5vw, 5.5rem) clamp(2rem, 5vw, 5rem);
 }
 
 .current-teaching header > div > p,
 .teaching-history header > div > p {
   color: var(--ink-soft);
-  font-size: clamp(1rem, 1.4vw, 1.2rem);
-  margin: 1.8rem 0 0;
-  max-width: 49rem;
+  font-size: clamp(1rem, 1.25vw, 1.14rem);
+  margin: 1rem 0 0;
+  max-width: 66rem;
 }
 
 .course-grid {
@@ -2127,8 +2151,8 @@ h1 {
   border-right: 1px solid var(--line);
   display: flex;
   flex-direction: column;
-  min-height: 36rem;
-  padding: clamp(2rem, 4vw, 4.2rem);
+  min-height: 0;
+  padding: clamp(1.8rem, 2.8vw, 2.8rem);
 }
 
 .course-heading {
@@ -2153,15 +2177,15 @@ h1 {
 }
 
 .course-card h3 {
-  font-size: clamp(2.5rem, 4.5vw, 4.8rem);
+  font-size: clamp(2.2rem, 3.2vw, 3.4rem);
   line-height: 1;
-  margin-top: clamp(3rem, 6vw, 6rem);
-  max-width: 11ch;
+  margin-top: clamp(1.7rem, 2.5vw, 2.5rem);
+  max-width: 16ch;
 }
 
 .course-summary {
   color: var(--ink-soft);
-  margin: 1.8rem 0 0;
+  margin: 1rem 0 0;
   max-width: 40rem;
 }
 
@@ -2225,11 +2249,11 @@ h1 {
 }
 
 .outreach-section {
-  align-items: center;
+  align-items: start;
   display: grid;
-  gap: clamp(3rem, 7vw, 8rem);
-  grid-template-columns: minmax(18rem, 0.85fr) minmax(0, 1.15fr);
-  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+  gap: clamp(2.5rem, 5vw, 5rem);
+  grid-template-columns: minmax(18rem, 0.8fr) minmax(0, 1.2fr);
+  padding: clamp(3.5rem, 5vw, 5.5rem) clamp(2rem, 5vw, 5rem);
 }
 
 .outreach-section--without-image {
@@ -2238,44 +2262,35 @@ h1 {
 
 .outreach-figure,
 .communication-figure {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 3;
   margin: 0;
-  max-height: 52rem;
+  max-height: 34rem;
   overflow: hidden;
   position: relative;
 }
 
 .outreach-copy h2,
 .communication-copy h2 {
-  font-size: clamp(3rem, 5.7vw, 6rem);
-  max-width: 12ch;
+  font-size: clamp(2.8rem, 4vw, 4.6rem);
+  max-width: 14ch;
 }
 
 .outreach-introduction,
 .communication-copy > p:last-child {
   color: var(--ink-soft);
-  font-size: clamp(1rem, 1.3vw, 1.17rem);
-  margin: 2rem 0 0;
+  font-size: clamp(1rem, 1.2vw, 1.12rem);
+  margin: 1rem 0 0;
   max-width: 48rem;
 }
 
 .outreach-list {
   border-top: 1px solid var(--line);
-  margin-top: 2.8rem;
+  margin-top: 1.8rem;
 }
 
 .outreach-list article {
   border-bottom: 1px solid var(--line);
-  display: grid;
-  gap: 1.3rem;
-  grid-template-columns: 2.5rem 1fr;
-  padding: 1.5rem 0;
-}
-
-.outreach-list article > p {
-  color: var(--gold-text);
-  font-family: var(--serif);
-  margin: 0;
+  padding: 1.1rem 0;
 }
 
 .outreach-list h3 {
@@ -2290,7 +2305,7 @@ h1 {
   color: var(--ink-soft);
   display: block;
   font-size: 0.91rem;
-  margin-top: 0.45rem;
+  margin-top: 0.35rem;
 }
 
 .science-communication {
@@ -2314,9 +2329,9 @@ h1 {
   background: var(--forest);
   color: var(--paper-bright);
   display: grid;
-  gap: 3rem;
-  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
-  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+  gap: 1rem clamp(2rem, 4vw, 4rem);
+  grid-template-columns: minmax(10rem, 0.35fr) minmax(0, 1fr);
+  padding: clamp(3.5rem, 5vw, 5.5rem) clamp(2rem, 5vw, 5rem);
 }
 
 .teaching-invitation .section-label {
@@ -2324,15 +2339,15 @@ h1 {
 }
 
 .teaching-invitation h2 {
-  font-size: clamp(3rem, 6vw, 6.5rem);
-  max-width: 13ch;
+  font-size: clamp(2.8rem, 4vw, 4.6rem);
+  max-width: none;
 }
 
 .teaching-invitation > div > p {
   color: #cad6cf;
-  font-size: clamp(1rem, 1.4vw, 1.2rem);
-  margin: 2rem 0 2.5rem;
-  max-width: 48rem;
+  font-size: clamp(1rem, 1.2vw, 1.12rem);
+  margin: 1rem 0 1.8rem;
+  max-width: 60rem;
 }
 
 .teaching-invitation .button--primary {
@@ -2880,7 +2895,7 @@ h1 {
   }
 
   .course-card {
-    min-height: 32rem;
+    min-height: auto;
   }
 
   .teaching-history-list article {

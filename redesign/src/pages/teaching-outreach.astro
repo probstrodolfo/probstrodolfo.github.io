@@ -17,12 +17,10 @@ const { masthead, approach, currentTeaching, selectedTeaching, outreach, communi
   <SiteHeader variant="internal" />
 
   <main id="main-content" class="teaching-page" tabindex="-1">
-    <section class="page-masthead teaching-masthead">
+    <section class="teaching-masthead">
       <p class="section-label">{masthead.label}</p>
-      <div>
-        <h1><InlineMarkdown text={masthead.title} /></h1>
-        <p><InlineMarkdown text={masthead.introduction} /></p>
-      </div>
+      <h1><InlineMarkdown text={masthead.title} /></h1>
+      <p><InlineMarkdown text={masthead.introduction} /></p>
     </section>
 
     {masthead.image.show && (
@@ -36,7 +34,7 @@ const { masthead, approach, currentTeaching, selectedTeaching, outreach, communi
       </figure>
     )}
 
-    <section class="teaching-approach" aria-labelledby="teaching-approach-title">
+    <section class:list={["teaching-approach", { "teaching-approach--without-cycle": !approach.showCycle }]} aria-labelledby="teaching-approach-title">
       <header>
         <p class="section-label">{approach.label}</p>
         <div>
@@ -47,15 +45,17 @@ const { masthead, approach, currentTeaching, selectedTeaching, outreach, communi
         </div>
       </header>
 
-      <div class="learning-cycle">
-        {approach.cycle.map((stage) => (
-          <article>
-            <p>{stage.number}</p>
-            <h3><InlineMarkdown text={stage.title} /></h3>
-            <span><InlineMarkdown text={stage.description} /></span>
-          </article>
-        ))}
-      </div>
+      {approach.showCycle && (
+        <div class="learning-cycle">
+          {approach.cycle.map((stage) => (
+            <article>
+              <p>{stage.number}</p>
+              <h3><InlineMarkdown text={stage.title} /></h3>
+              <span><InlineMarkdown text={stage.description} /></span>
+            </article>
+          ))}
+        </div>
+      )}
     </section>
 
     <section class="current-teaching" aria-labelledby="current-teaching-title">
@@ -76,9 +76,11 @@ const { masthead, approach, currentTeaching, selectedTeaching, outreach, communi
             </div>
             <h3><InlineMarkdown text={course.title} /></h3>
             <p class="course-summary"><InlineMarkdown text={course.summary} /></p>
-            <ul aria-label={`${course.title} topics`}>
-              {course.topics.map((topic) => <li>{topic}</li>)}
-            </ul>
+            {currentTeaching.showTopics && (
+              <ul aria-label={`${course.title} topics`}>
+                {course.topics.map((topic) => <li>{topic}</li>)}
+              </ul>
+            )}
           </article>
         ))}
       </div>
@@ -127,38 +129,37 @@ const { masthead, approach, currentTeaching, selectedTeaching, outreach, communi
         <h2 id="outreach-title"><InlineMarkdown text={outreach.title} /></h2>
         <p class="outreach-introduction"><InlineMarkdown text={outreach.introduction} /></p>
         <div class="outreach-list">
-          {outreach.items.filter((item) => item.show).map((item, index) => (
+          {outreach.items.filter((item) => item.show).map((item) => (
             <article>
-              <p>{String(index + 1).padStart(2, "0")}</p>
-              <div>
-                <h3><InlineMarkdown text={item.title} /></h3>
-                <span><InlineMarkdown text={item.description} /></span>
-              </div>
+              <h3><InlineMarkdown text={item.title} /></h3>
+              <span><InlineMarkdown text={item.description} /></span>
             </article>
           ))}
         </div>
       </div>
     </section>
 
-    <section class:list={["science-communication", { "science-communication--without-image": !communication.image.show }]} aria-labelledby="communication-title">
-      <div class="communication-copy">
-        <p class="section-label">{communication.label}</p>
-        <h2 id="communication-title"><InlineMarkdown text={communication.title} /></h2>
-        <p><InlineMarkdown text={communication.body} /></p>
-      </div>
+    {communication.show && (
+      <section class:list={["science-communication", { "science-communication--without-image": !communication.image.show }]} aria-labelledby="communication-title">
+        <div class="communication-copy">
+          <p class="section-label">{communication.label}</p>
+          <h2 id="communication-title"><InlineMarkdown text={communication.title} /></h2>
+          <p><InlineMarkdown text={communication.body} /></p>
+        </div>
 
-      {communication.image.show && (
-        <figure class="communication-figure">
-          <img
-            src={communication.image.src}
-            alt={communication.image.alt}
-            loading="lazy"
-            style={`object-position: ${communication.image.objectPosition}`}
-          />
-          <figcaption><InlineMarkdown text={communication.image.caption} /></figcaption>
-        </figure>
-      )}
-    </section>
+        {communication.image.show && (
+          <figure class="communication-figure">
+            <img
+              src={communication.image.src}
+              alt={communication.image.alt}
+              loading="lazy"
+              style={`object-position: ${communication.image.objectPosition}`}
+            />
+            <figcaption><InlineMarkdown text={communication.image.caption} /></figcaption>
+          </figure>
+        )}
+      </section>
+    )}
 
     {invitation.show && (
       <section class="teaching-invitation">

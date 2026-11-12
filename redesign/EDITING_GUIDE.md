@@ -213,6 +213,26 @@ links:
 Add or remove complete two-line `label` and `href` pairs. These extra links appear beside the
 article link in the publication list.
 
+## Editing Teaching & Outreach
+
+The wording, courses, outreach items, images, and contact invitation are all in
+`src/content/pages/teaching-outreach.md`.
+
+Several longer elements are retained but hidden in the simplified version:
+
+```yaml
+showCycle: false
+showTopics: false
+selectedTeaching:
+  show: false
+communication:
+  show: false
+```
+
+Change an appropriate value to `true` if you later want to restore the teaching cycle, course topic
+tags, selected teaching history, or separate science-communication section. Individual outreach
+items also have their own `show` setting.
+
 ## What not to edit for ordinary updates
 
 Routine content changes should not require editing:

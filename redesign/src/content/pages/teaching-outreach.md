@@ -3,9 +3,8 @@ masthead:
   label: Teaching & outreach
   title: Learning begins with close observation.
   introduction: >-
-    Ants and other insects make abstract ideas tangible. We use them to connect evolution,
-    biodiversity, organismal biology, genomics, and the practice of asking better scientific
-    questions.
+    We use ants and other insects to connect organismal biology, evolution, biodiversity, and the
+    practice of doing science.
   image:
     show: true
     src: /images/rodolfo-fieldwork.jpg
@@ -14,18 +13,13 @@ masthead:
     objectPosition: 55% 48%
 approach:
   label: Teaching approach
-  title: Science is something students do - not simply something they receive.
+  title: Students learn science by doing it.
   paragraphs:
     - >-
-      Teaching in the Probst Lab combines conceptual foundations with hands-on investigation.
-      Students examine organisms, work with specimens and data, evaluate evidence, and explain what
-      their results mean. Natural history provides the starting point; modern tools such as
-      phylogenetics, bioinformatics, and nanopore sequencing extend what students can ask.
-    - >-
-      We aim to build classrooms in which curiosity is taken seriously, expectations are clear, and
-      students with different backgrounds can develop scientific confidence. The goal is not only to
-      learn entomology or evolutionary biology, but to practice the habits of observation,
-      reasoning, collaboration, and communication that make science possible.
+      Teaching in the Probst Lab combines close observation with hands-on investigation. Students
+      work with organisms, specimens, data, and molecular tools to ask biological questions,
+      evaluate evidence, and explain what their results mean.
+  showCycle: false
   cycle:
     - number: '01'
       title: Observe
@@ -43,16 +37,16 @@ currentTeaching:
   label: At UC Davis
   title: Current teaching
   introduction: >-
-    Current courses bring together insect form and function, diversity, field observation,
-    collections, scientific data, and molecular approaches.
+    ENT 100 and ENT 100L connect foundational entomology with observation, collections, data, and
+    molecular tools.
+  showTopics: false
   courses:
     - code: ENT 100
       title: General Entomology
       term: Fall 2026 · Lecture
       summary: >-
-        An organism-centered exploration of insect structure, physiology, development, evolution,
-        ecology, and diversity. Lectures connect foundational concepts with living examples,
-        research case studies, and questions students can reason through together.
+        An organism-centered course connecting insect structure, physiology, development,
+        evolution, ecology, and diversity.
       topics:
         - Insect form & function
         - Evolution & diversity
@@ -63,9 +57,8 @@ currentTeaching:
       title: General Entomology Laboratory
       term: Fall 2026 · Laboratory
       summary: >-
-        A hands-on course built around specimen observation, collection, identification, curation,
-        and research-quality data. Students connect morphology and natural history with DNA
-        barcoding and the responsibilities of documenting biodiversity.
+        A hands-on course in specimen observation, collection, identification, curation,
+        biodiversity data, and DNA barcoding.
       topics:
         - Specimen-based learning
         - Identification & curation
@@ -73,7 +66,7 @@ currentTeaching:
         - DNA barcoding
       show: true
 selectedTeaching:
-  show: true
+  show: false
   label: Selected experience
   title: Courses across organisms, methods, and places.
   introduction: >-
@@ -120,38 +113,37 @@ outreach:
   label: Public science
   title: Insects open doors to curiosity.
   introduction: >-
-    Outreach is an extension of the lab's scientific work: an opportunity to share the wonder of
-    insects, make research tools accessible, and invite more people into the process of discovery.
+    Through public events, workshops, field teaching, and research mentoring, we make insect
+    biodiversity and evolutionary biology approachable.
   image:
     show: true
-    src: /images/rodolfo-field-mentoring.jpg
-    alt: >-
-      Rodolfo Probst working with a student as they examine an understory plant during field
-      teaching in Costa Rica.
-    caption: Field-based teaching and observation in Costa Rica
-    objectPosition: 50% 58%
+    src: /images/student-science-communication.jpg
+    alt: Alex Rich explaining his research to visitors at Research on Capitol Hill in Utah.
+    caption: Alex Rich sharing his research with visitors at Research on Capitol Hill
+    objectPosition: 50% 48%
   items:
-    - title: Public entomology events
+    - title: Public events & talks
       description: >-
-        Hands-on activities, talks, and exhibits invite visitors of all ages to observe arthropods
-        closely and explore their ecological roles.
+        Hands-on activities and talks invite audiences to observe insects closely and explore their
+        ecological roles.
       show: true
-    - title: DNA barcoding & genomics workshops
+    - title: DNA barcoding & genomics
       description: >-
-        Accessible workshops introduce molecular tools—from DNA barcoding to portable nanopore
-        sequencing—through authentic biological questions.
+        Workshops use authentic biological questions to introduce molecular tools and portable
+        sequencing.
       show: true
     - title: Community science
       description: >-
         Collaborative projects connect participants with biodiversity documentation, insect
         conservation, and the ecosystems around them.
-      show: true
-    - title: Talks beyond the university
+      show: false
+    - title: Student science communication
       description: >-
-        Presentations in museums, community organizations, schools, and nontraditional learning
-        spaces make evolutionary biology available to broader audiences.
+        Students develop their scientific voice through posters, talks, demonstrations, and
+        conversations around specimens.
       show: true
 communication:
+  show: false
   label: Mentorship in practice
   title: Research becomes more powerful when students can explain it.
   body: >-
@@ -168,10 +160,10 @@ communication:
 invitation:
   show: true
   label: Connect
-  title: Planning an insect, evolution, or biodiversity event?
+  title: Interested in teaching or outreach with us?
   body: >-
-    We welcome conversations with educators, museums, community groups, and colleagues interested in
-    public programs, classroom visits, workshops, or collaborative teaching.
+    We welcome conversations about public programs, classroom visits, workshops, and collaborative
+    teaching.
   email: rsprobst@ucdavis.edu
   buttonLabel: Start a conversation
 ---
