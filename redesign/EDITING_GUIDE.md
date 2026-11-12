@@ -37,7 +37,8 @@ Git records every version. A mistaken edit can be inspected or reversed later.
 
 Files whose names begin with `01-`, `02-`, and so forth are displayed according to their `order` field. The numerical filename prefix also keeps the GitHub folder easy to browse.
 
-The News tab remains in the site navigation, but its current announcement and all individual stories are presently switched off with `show: false`. You can edit them normally and publish a story by changing the top-level `show` near the beginning of that story's file to `true`. The separate `show` nested under `image` controls only its photograph.
+The News page is a simple newest-first list. Each visible update has one file in
+`src/content/news/`. Change its top-level `show` value to `false` to hide it without deleting it.
 
 ## Editing text safely
 
@@ -89,14 +90,6 @@ show: true
 ```
 
 Change it to `false` to hide that item without deleting it. Use lowercase `true` and `false` without quotation marks.
-
-News stories also have:
-
-```yaml
-featured: true
-```
-
-`true` places the story in the large featured area. `false` places it in the regular News grid.
 
 ## Editing the homepage
 
@@ -150,20 +143,19 @@ To add another interest, add another indented line beginning with `-`. To add a 
 
 ## Adding a News story
 
-Copy one of the files in `src/content/news/`, rename it using the next numerical prefix, and edit:
+Copy the newest file in `src/content/news/`, rename it using the next numerical prefix, and edit:
 
 ```yaml
-order: 8
+order: 6
 id: short-unique-name
 show: true
-featured: false
-date: October 2026
-category: Fieldwork
+date: December 2026
 title: A short descriptive headline
 summary: A concise description of what happened and why it matters.
 ```
 
-The `id` should contain lowercase letters, numbers, and hyphens only.
+The `id` should contain lowercase letters, numbers, and hyphens only. Give each new update the next
+higher `order` number so it appears at the top of the list.
 
 ## Replacing photographs
 

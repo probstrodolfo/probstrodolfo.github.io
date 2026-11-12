@@ -12,11 +12,9 @@ if (!newsEntry) throw new Error("Missing src/content/pages/news.md");
 const newsContent = newsEntry.data as any;
 const newsItems = itemEntries
   .map((entry) => entry.data as any)
-  .sort((a, b) => a.order - b.order);
-const { masthead, current, archive } = newsContent;
+  .sort((a, b) => b.order - a.order);
+const { masthead } = newsContent;
 const visibleItems = newsItems.filter((item) => item.show);
-const featuredItems = visibleItems.filter((item) => item.featured);
-const archiveItems = visibleItems.filter((item) => !item.featured);
 ---
 
 <SiteLayout
@@ -26,74 +24,23 @@ const archiveItems = visibleItems.filter((item) => !item.featured);
   <SiteHeader variant="internal" />
 
   <main id="main-content" class="news-page" tabindex="-1">
-    <section class="page-masthead news-masthead">
+    <section class="news-masthead">
       <p class="section-label">{masthead.label}</p>
-      <div>
-        <h1><InlineMarkdown text={masthead.title} /></h1>
-        <p><InlineMarkdown text={masthead.introduction} /></p>
-      </div>
+      <h1><InlineMarkdown text={masthead.title} /></h1>
+      <p><InlineMarkdown text={masthead.introduction} /></p>
     </section>
 
-    {current.show && (
-      <section class="news-current">
-        <p class="section-label">{current.label}</p>
-        <div>
-          <h2><InlineMarkdown text={current.title} /></h2>
-          <p><InlineMarkdown text={current.body} /></p>
-          <a class="button button--text" href={current.link.href}>
-            {current.link.label}<span aria-hidden="true">→</span>
-          </a>
-        </div>
-      </section>
-    )}
-
-    {featuredItems.length > 0 && (
-      <section class="news-featured" aria-label="Featured earlier highlights">
-        {featuredItems.map((item) => (
-          <article class:list={["news-feature-card", { "news-feature-card--without-image": !item.image.show }]}>
-            {item.image.show && (
-              <figure>
-                <img src={item.image.src} alt={item.image.alt} style={`object-position: ${item.image.objectPosition}`} />
-                <figcaption><InlineMarkdown text={item.image.caption} /></figcaption>
-              </figure>
-            )}
+    {visibleItems.length > 0 && (
+      <section class="news-list" aria-label="Probst Lab news">
+        {visibleItems.map((item) => (
+          <article class="news-list-item">
+            <p class="news-list-date">{item.date}</p>
             <div>
-              <p class="news-meta"><span>{item.date}</span><span>{item.category}</span></p>
               <h2><InlineMarkdown text={item.title} /></h2>
               <p><InlineMarkdown text={item.summary} /></p>
             </div>
           </article>
         ))}
-      </section>
-    )}
-
-    {archive.show && archiveItems.length > 0 && (
-      <section class="news-archive" aria-labelledby="news-archive-title">
-        <header>
-          <p class="section-label">{archive.label}</p>
-          <div>
-            <h2 id="news-archive-title"><InlineMarkdown text={archive.title} /></h2>
-            <p><InlineMarkdown text={archive.introduction} /></p>
-          </div>
-        </header>
-
-        <div class="news-grid">
-          {archiveItems.map((item) => (
-            <article class="news-card">
-              {item.image.show && (
-                <figure>
-                  <img src={item.image.src} alt={item.image.alt} loading="lazy" style={`object-position: ${item.image.objectPosition}`} />
-                  <figcaption><InlineMarkdown text={item.image.caption} /></figcaption>
-                </figure>
-              )}
-              <div class="news-card-copy">
-                <p class="news-meta"><span>{item.date}</span><span>{item.category}</span></p>
-                <h3><InlineMarkdown text={item.title} /></h3>
-                <p><InlineMarkdown text={item.summary} /></p>
-              </div>
-            </article>
-          ))}
-        </div>
       </section>
     )}
   </main>
