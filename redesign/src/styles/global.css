@@ -1893,6 +1893,7 @@ h1 {
   color: var(--ink-soft);
   padding: 0.8rem 0 0.8rem 1.5rem;
   position: relative;
+  text-wrap: pretty;
 }
 
 .pathway-details li::before {
@@ -1973,28 +1974,40 @@ h1 {
   display: grid;
   gap: 1rem clamp(2rem, 4vw, 4rem);
   grid-template-columns: minmax(10rem, 0.35fr) minmax(0, 1fr);
-  padding: clamp(3.5rem, 5vw, 5.5rem) clamp(2rem, 5vw, 5rem);
+  padding: clamp(2.6rem, 3.5vw, 3.8rem) clamp(2rem, 5vw, 5rem);
 }
 
 .join-contact .section-label {
   color: #b7c8a5;
 }
 
+.join-contact > div {
+  align-items: start;
+  display: grid;
+  gap: 1rem clamp(2rem, 4vw, 4.5rem);
+  grid-template-columns: minmax(18rem, 0.9fr) minmax(22rem, 1.1fr);
+}
+
 .join-contact h2 {
   font-size: clamp(2.8rem, 4vw, 4.6rem);
+  grid-column: 1;
+  grid-row: 1 / span 2;
   max-width: 17ch;
 }
 
 .join-contact > div > p {
   color: #cad6cf;
   font-size: clamp(1rem, 1.2vw, 1.12rem);
-  margin: 1rem 0 1.8rem;
+  grid-column: 2;
+  margin: 0 0 1.2rem;
   max-width: 66rem;
 }
 
 .join-contact .button--primary {
   background: var(--gold);
   color: var(--forest-deep);
+  grid-column: 2;
+  justify-self: start;
 }
 
 .join-contact .button--primary:hover,
@@ -2735,6 +2748,21 @@ h1 {
   .home-contact {
     min-height: 48rem;
     padding-bottom: 7rem;
+  }
+
+  .join-contact > div {
+    display: block;
+  }
+
+  .join-contact h2,
+  .join-contact > div > p,
+  .join-contact .button--primary {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .join-contact > div > p {
+    margin: 1rem 0 1.5rem;
   }
 
   .home-contact-video {

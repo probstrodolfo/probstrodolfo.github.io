@@ -56,7 +56,7 @@ pathways:
         - Contact the lab well before the relevant application deadline.
         - Include a CV and a concise description of your research interests.
         - Explain which questions or parts of the lab's work genuinely interest you.
-        - Admission is handled through the appropriate UC Davis graduate program.
+        - Apply through the appropriate UC Davis graduate program.
       links: []
     - number: '02'
       title: Undergraduate researchers
@@ -76,7 +76,7 @@ pathways:
         Researchers interested in fellowships or complementary projects are encouraged to get in
         touch early. Funded positions will be advertised when available.
       details:
-        - Describe the question you want to pursue and how it extends the lab's work.
+        - Describe your proposed question and how it extends the lab's research.
         - Include your CV, publication record, and approximate timeline.
         - Mention fellowships or funding mechanisms you are considering.
         - Funded positions will be advertised explicitly when available.
@@ -87,7 +87,7 @@ pathways:
         We welcome collaborations and research visits built around a clear question, complementary
         expertise, and shared goals.
       details:
-        - Introduce the scientific question and why collaboration would help answer it.
+        - Introduce the scientific question and explain why collaboration would help.
         - Identify relevant samples, data, methods, or expertise.
         - Suggest a realistic first step or conversation.
         - International and cross-disciplinary connections are especially welcome.
