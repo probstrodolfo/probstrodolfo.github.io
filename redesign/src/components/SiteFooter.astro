@@ -6,9 +6,10 @@ if (!siteEntry) throw new Error("Missing src/content/settings/site.md");
 const { identity, navigation } = siteEntry.data as any;
 const visibleNavigation = navigation.filter((item) => item.show !== false);
 const year = new Date().getFullYear();
+const isHomePage = Astro.url.pathname === "/";
 ---
 
-<footer class="site-footer">
+<footer class:list={["site-footer", { "site-footer--compact": isHomePage }]}>
   <div class="site-footer__primary">
     <div class="site-footer__identity">
       <a href="/" aria-label="Probst Lab home">{identity.name}</a>

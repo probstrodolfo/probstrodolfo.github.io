@@ -652,6 +652,50 @@ h1 {
   padding-top: 1.5rem;
 }
 
+.site-footer--compact {
+  padding: 1.25rem clamp(2rem, 5vw, 5rem) 0.9rem;
+}
+
+.site-footer--compact .site-footer__primary {
+  align-items: center;
+  gap: 1rem clamp(2rem, 4vw, 4rem);
+  grid-template-columns: minmax(18rem, 0.8fr) minmax(0, 1.2fr);
+}
+
+.site-footer--compact .site-footer__identity > a {
+  font-size: clamp(1.7rem, 2.2vw, 2.35rem);
+}
+
+.site-footer--compact .site-footer__identity p {
+  font-size: 0.65rem;
+  margin-top: 0.45rem;
+}
+
+.site-footer--compact .site-footer__identity > span {
+  font-size: 0.88rem;
+  margin-top: 0.45rem;
+}
+
+.site-footer--compact .site-footer__navigation {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem clamp(0.9rem, 1.5vw, 1.4rem);
+  justify-content: flex-end;
+}
+
+.site-footer--compact .site-footer__navigation a {
+  border-bottom: 0;
+  font-size: 0.72rem;
+  padding: 0.2rem 0;
+}
+
+.site-footer--compact .site-footer__bottom {
+  font-size: 0.65rem;
+  margin-top: 0.8rem;
+  padding-top: 0.65rem;
+}
+
 .people-page {
   background: var(--paper-bright);
 }
@@ -2797,6 +2841,26 @@ h1 {
   .site-footer__bottom {
     display: grid;
     justify-content: initial;
+  }
+
+  .site-footer--compact {
+    padding: 1.25rem 2rem 1rem;
+  }
+
+  .site-footer--compact .site-footer__primary {
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer--compact .site-footer__navigation {
+    display: flex;
+    gap: 0.35rem 1rem;
+    justify-content: flex-start;
+  }
+
+  .site-footer--compact .site-footer__bottom {
+    display: flex;
+    margin-top: 0.9rem;
   }
 
   .news-list-item {
