@@ -3,30 +3,29 @@ masthead:
   label: Join the lab
   title: Bring your questions. Build the science with us.
   introduction: >-
-    The Probst Lab welcomes people who are curious about ants, evolution, biodiversity, natural
-    history, and the many ways those subjects intersect.
+    The Probst Lab welcomes people curious about ants, evolution, biodiversity, natural history,
+    and the questions that connect them.
 availability:
   show: true
   label: Current status
   title: The lab is growing.
   body: >-
-    Specific funded openings will be posted here when available. General inquiries from prospective
-    students, postdoctoral researchers, and collaborators are welcome at any time, although
+    Specific funded openings will be posted here. General inquiries are welcome, although
     opportunities depend on project fit, mentoring capacity, and funding.
-culture:
-  label: How we work
-  title: Curiosity, ownership, and generous collaboration.
+inclusion:
+  label: Justice, equity, diversity & inclusion
+  title: Science is stronger when more people can participate.
   paragraphs:
     - >-
-      Mentorship in the Probst Lab is built around helping researchers develop their own questions,
-      gain confidence with unfamiliar methods, and take meaningful ownership of their work. Projects
-      may begin with an ant specimen, a field observation, a phylogenetic pattern, or a dataset—but
-      they should grow into questions that matter to the person pursuing them.
+      The Probst Lab is committed to justice, equity, diversity, and inclusion in research,
+      teaching, and mentorship. We aim to create a place where people from different backgrounds—and
+      especially those historically excluded from STEM—are valued, supported, and able to
+      participate fully.
     - >-
-      We value careful natural history, clear expectations, constructive feedback, and open
-      communication. We also recognize that scientists arrive through different paths and with
-      different kinds of experience. Our goal is to create an environment in which people can learn
-      ambitiously, ask for help, and contribute their distinct perspectives.
+      That commitment includes accessible research experiences, clear expectations, thoughtful
+      mentorship, outreach beyond the university, and opportunities for students to develop
+      confidence, ownership, and a scientific voice.
+  showValues: false
   values:
     - Questions before techniques
     - Independence with support
@@ -36,23 +35,23 @@ culture:
     - Clear scientific communication
   image:
     show: true
-    src: /images/costa-rica-fieldwork.jpg
-    alt: A researcher examining an understory plant during tropical fieldwork in Costa Rica.
-    caption: Fieldwork in Costa Rica
-    objectPosition: 57% 50%
+    src: /images/rodolfo-field-mentoring.jpg
+    alt: Rodolfo Probst and a student examining an understory plant during field teaching in Costa Rica.
+    caption: Field-based teaching and observation in Costa Rica
+    objectPosition: 50% 58%
 pathways:
-  label: Ways to join
-  title: Different stages, shared curiosity.
+  label: Opportunities
+  title: Ways to join the lab.
   introduction: >-
-    There is no single route into the lab. The most useful first message explains what you hope to
-    learn, what questions interest you, and why this group might be a good intellectual fit.
+    There is no single route into the group. The main possibilities are summarized below.
+  showNumbers: false
+  showDetails: false
   items:
     - number: '01'
       title: Graduate students
       body: >-
-        Prospective graduate students should be excited to develop an independent research direction
-        connected to the lab's broader interests in ant evolution, symbiosis, systematics,
-        biodiversity, or environmental change.
+        Prospective students should be interested in developing an independent project connected to
+        ant evolution, symbiosis, systematics, biodiversity, or environmental change.
       details:
         - Contact the lab well before the relevant application deadline.
         - Include a CV and a concise description of your research interests.
@@ -62,9 +61,9 @@ pathways:
     - number: '02'
       title: Undergraduate researchers
       body: >-
-        Undergraduates may contribute to specimen-based taxonomy, imaging, biodiversity data, field
-        or laboratory work, genomics, and bioinformatics. Projects depend on available mentoring and
-        on finding a scope that supports real learning and meaningful contribution.
+        Undergraduates may contribute to taxonomy, imaging, collections, biodiversity data,
+        laboratory work, genomics, or bioinformatics. Previous research experience is not always
+        required.
       details:
         - Tell us what draws you to insects, evolution, or biodiversity.
         - Share your weekly availability and the timeframe you have in mind.
@@ -74,9 +73,8 @@ pathways:
     - number: '03'
       title: Postdoctoral researchers
       body: >-
-        Researchers interested in developing fellowship proposals or complementary projects are
-        encouraged to get in touch early. Strong fits may connect ant biology with comparative
-        genomics, functional traits, collections, field ecology, or new analytical approaches.
+        Researchers interested in fellowships or complementary projects are encouraged to get in
+        touch early. Funded positions will be advertised when available.
       details:
         - Describe the question you want to pursue and how it extends the lab's work.
         - Include your CV, publication record, and approximate timeline.
@@ -86,9 +84,8 @@ pathways:
     - number: '04'
       title: Collaborators & visitors
       body: >-
-        We welcome collaborations that bring together complementary organisms, collections, field
-        systems, data, or methods. The best collaborations begin with a clear scientific question
-        and an open conversation about shared goals and contributions.
+        We welcome collaborations and research visits built around a clear question, complementary
+        expertise, and shared goals.
       details:
         - Introduce the scientific question and why collaboration would help answer it.
         - Identify relevant samples, data, methods, or expertise.
@@ -96,6 +93,7 @@ pathways:
         - International and cross-disciplinary connections are especially welcome.
       links: []
 firstMessage:
+  show: false
   label: Before you write
   title: Help us understand the fit.
   introduction: >-
@@ -120,10 +118,10 @@ firstMessage:
         funding deadlines.
 contact:
   label: Start a conversation
-  title: Interested in ants - and in the questions they help us ask?
+  title: Interested in ants—and in the questions they help us ask?
   body: >-
-    Send a concise introduction along with your CV or résumé. If there is not an immediate opening,
-    a thoughtful message can still begin a useful scientific conversation.
+    Email Rodolfo with a short introduction, the questions or organisms that interest you, the kind
+    of opportunity you are seeking, your timing, and a CV or résumé.
   email: rsprobst@ucdavis.edu
   buttonLabel: Email Rodolfo
 ---

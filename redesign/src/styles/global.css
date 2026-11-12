@@ -1665,7 +1665,25 @@ h1 {
 }
 
 .join-masthead {
-  min-height: 42rem;
+  background: var(--paper);
+  padding: clamp(2.25rem, 3vw, 3rem) clamp(2rem, 5vw, 5rem) clamp(2.6rem, 3.5vw, 3.5rem);
+}
+
+.join-masthead .section-label {
+  margin-bottom: clamp(1rem, 1.4vw, 1.4rem);
+}
+
+.join-masthead h1 {
+  font-size: clamp(3.35rem, 4.45vw, 5.35rem);
+  max-width: none;
+}
+
+.join-masthead > p:last-child {
+  color: var(--ink-soft);
+  font-size: clamp(1.06rem, 1.32vw, 1.28rem);
+  line-height: 1.58;
+  margin: clamp(1.4rem, 2vw, 2rem) 0 0;
+  max-width: 67rem;
 }
 
 .availability-note {
@@ -1673,9 +1691,9 @@ h1 {
   background: var(--forest);
   color: var(--paper-bright);
   display: grid;
-  gap: 3rem;
-  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
-  padding: clamp(3.5rem, 6vw, 6rem) clamp(2rem, 8vw, 9rem);
+  gap: 1rem clamp(2rem, 4vw, 4rem);
+  grid-template-columns: minmax(10rem, 0.35fr) minmax(0, 1fr);
+  padding: clamp(2.5rem, 3.5vw, 3.5rem) clamp(2rem, 5vw, 5rem);
 }
 
 .availability-label {
@@ -1699,37 +1717,37 @@ h1 {
 }
 
 .availability-note h2 {
-  font-size: clamp(2.5rem, 4.5vw, 5rem);
+  font-size: clamp(2.2rem, 3.2vw, 3.4rem);
 }
 
 .availability-note > div > p {
   color: #cad6cf;
-  font-size: clamp(1rem, 1.35vw, 1.2rem);
-  margin: 1.5rem 0 0;
-  max-width: 54rem;
+  font-size: clamp(1rem, 1.2vw, 1.12rem);
+  margin: 0.75rem 0 0;
+  max-width: 66rem;
 }
 
-.lab-culture {
-  align-items: center;
+.inclusive-science {
+  align-items: start;
   display: grid;
-  gap: clamp(3rem, 7vw, 8rem);
-  grid-template-columns: minmax(18rem, 0.85fr) minmax(0, 1.15fr);
-  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+  gap: clamp(2.5rem, 5vw, 5rem);
+  grid-template-columns: minmax(18rem, 0.8fr) minmax(0, 1.2fr);
+  padding: clamp(3.5rem, 5vw, 5.5rem) clamp(2rem, 5vw, 5rem);
 }
 
-.lab-culture--without-image {
+.inclusive-science--without-image {
   grid-template-columns: 1fr;
 }
 
-.culture-figure {
-  aspect-ratio: 4 / 5;
+.inclusion-figure {
+  aspect-ratio: 4 / 3;
   margin: 0;
-  max-height: 52rem;
+  max-height: 32rem;
   overflow: hidden;
   position: relative;
 }
 
-.culture-figure::after {
+.inclusion-figure::after {
   background: linear-gradient(180deg, transparent 58%, rgba(5, 25, 17, 0.52));
   content: "";
   inset: 0;
@@ -1737,13 +1755,13 @@ h1 {
   position: absolute;
 }
 
-.culture-figure img {
+.inclusion-figure img {
   height: 100%;
   object-fit: cover;
   width: 100%;
 }
 
-.culture-figure figcaption {
+.inclusion-figure figcaption {
   bottom: 1.4rem;
   color: white;
   font-size: 0.7rem;
@@ -1756,37 +1774,38 @@ h1 {
   z-index: 1;
 }
 
-.culture-copy h2 {
-  font-size: clamp(3rem, 5.7vw, 6rem);
-  max-width: 13ch;
+.inclusion-copy h2 {
+  font-size: clamp(2.8rem, 4vw, 4.6rem);
+  max-width: 16ch;
 }
 
-.culture-paragraphs {
+.inclusion-paragraphs {
   color: var(--ink-soft);
-  font-size: clamp(1rem, 1.3vw, 1.17rem);
-  margin-top: 2rem;
-  max-width: 50rem;
+  font-size: clamp(1rem, 1.2vw, 1.12rem);
+  line-height: 1.6;
+  margin-top: 1.2rem;
+  max-width: 60rem;
 }
 
-.culture-paragraphs p {
+.inclusion-paragraphs p {
   margin: 0;
 }
 
-.culture-paragraphs p + p {
-  margin-top: 1.2rem;
+.inclusion-paragraphs p + p {
+  margin-top: 0.9rem;
 }
 
-.culture-values {
+.inclusion-values {
   border-left: 1px solid var(--line);
   border-top: 1px solid var(--line);
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   list-style: none;
-  margin: 2.8rem 0 0;
+  margin: 1.8rem 0 0;
   padding: 0;
 }
 
-.culture-values li {
+.inclusion-values li {
   border-bottom: 1px solid var(--line);
   border-right: 1px solid var(--line);
   font-size: 0.76rem;
@@ -1797,59 +1816,61 @@ h1 {
 
 .join-pathways {
   background: var(--paper);
-  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+  padding: clamp(3.5rem, 5vw, 5.5rem) clamp(2rem, 5vw, 5rem);
 }
 
 .join-pathways > header,
 .first-message > header {
   display: grid;
-  gap: 3rem;
-  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
-  margin-bottom: clamp(3.5rem, 7vw, 7rem);
+  gap: 1rem clamp(2rem, 4vw, 4rem);
+  grid-template-columns: minmax(10rem, 0.35fr) minmax(0, 1fr);
+  margin-bottom: clamp(2rem, 3vw, 3rem);
 }
 
 .join-pathways h2,
 .first-message h2 {
-  font-size: clamp(3rem, 6vw, 6.5rem);
-  max-width: 13ch;
+  font-size: clamp(2.8rem, 4vw, 4.6rem);
+  max-width: none;
 }
 
 .join-pathways header > div > p,
 .first-message header > div > p {
   color: var(--ink-soft);
-  font-size: clamp(1rem, 1.4vw, 1.2rem);
-  margin: 1.8rem 0 0;
-  max-width: 48rem;
+  font-size: clamp(1rem, 1.2vw, 1.12rem);
+  margin: 1rem 0 0;
+  max-width: 66rem;
 }
 
 .pathway-list {
+  border-left: 1px solid var(--line);
   border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .pathway-card {
   border-bottom: 1px solid var(--line);
-  display: grid;
-  gap: clamp(1.5rem, 4vw, 5rem);
-  grid-template-columns: minmax(3rem, 0.18fr) minmax(15rem, 0.82fr) minmax(18rem, 1fr);
-  padding: clamp(3rem, 6vw, 6rem) 0;
+  border-right: 1px solid var(--line);
+  display: block;
+  padding: clamp(1.8rem, 2.8vw, 2.8rem);
 }
 
 .pathway-number {
   color: var(--gold-text);
   font-family: var(--serif);
-  margin: 0;
+  margin: 0 0 1rem;
 }
 
 .pathway-copy h3 {
-  font-size: clamp(2.4rem, 4vw, 4.4rem);
+  font-size: clamp(2.1rem, 3vw, 3.2rem);
   line-height: 1;
-  max-width: 10ch;
+  max-width: 18ch;
 }
 
 .pathway-copy > p {
   color: var(--ink-soft);
-  margin: 1.6rem 0 0;
-  max-width: 38rem;
+  margin: 1rem 0 0;
+  max-width: 46rem;
 }
 
 .pathway-details > p {
@@ -1857,7 +1878,7 @@ h1 {
   font-size: 0.69rem;
   font-weight: 800;
   letter-spacing: 0.14em;
-  margin: 0 0 1.2rem;
+  margin: 1.5rem 0 1rem;
   text-transform: uppercase;
 }
 
@@ -1904,7 +1925,7 @@ h1 {
 .first-message {
   background: var(--forest-deep);
   color: var(--paper-bright);
-  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+  padding: clamp(3.5rem, 5vw, 5.5rem) clamp(2rem, 5vw, 5rem);
 }
 
 .first-message .section-label {
@@ -1925,7 +1946,7 @@ h1 {
 .message-grid article {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
-  min-height: 20rem;
+  min-height: 16rem;
   padding: clamp(1.4rem, 2.5vw, 2.5rem);
 }
 
@@ -1950,9 +1971,9 @@ h1 {
   background: var(--forest);
   color: var(--paper-bright);
   display: grid;
-  gap: 3rem;
-  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 2fr);
-  padding: clamp(5rem, 10vw, 10rem) clamp(2rem, 8vw, 9rem);
+  gap: 1rem clamp(2rem, 4vw, 4rem);
+  grid-template-columns: minmax(10rem, 0.35fr) minmax(0, 1fr);
+  padding: clamp(3.5rem, 5vw, 5.5rem) clamp(2rem, 5vw, 5rem);
 }
 
 .join-contact .section-label {
@@ -1960,15 +1981,15 @@ h1 {
 }
 
 .join-contact h2 {
-  font-size: clamp(3rem, 6vw, 6.5rem);
-  max-width: 13ch;
+  font-size: clamp(2.8rem, 4vw, 4.6rem);
+  max-width: 17ch;
 }
 
 .join-contact > div > p {
   color: #cad6cf;
-  font-size: clamp(1rem, 1.4vw, 1.2rem);
-  margin: 2rem 0 2.5rem;
-  max-width: 48rem;
+  font-size: clamp(1rem, 1.2vw, 1.12rem);
+  margin: 1rem 0 1.8rem;
+  max-width: 66rem;
 }
 
 .join-contact .button--primary {
@@ -2589,10 +2610,6 @@ h1 {
     justify-content: flex-start;
   }
 
-  .pathway-card {
-    grid-template-columns: 3rem minmax(15rem, 0.9fr) minmax(16rem, 1.1fr);
-  }
-
   .message-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2858,16 +2875,16 @@ h1 {
     min-height: auto;
   }
 
-  .lab-culture,
-  .pathway-card {
+  .inclusive-science,
+  .pathway-list {
     grid-template-columns: 1fr;
   }
 
-  .culture-figure {
+  .inclusion-figure {
     aspect-ratio: 4 / 3;
   }
 
-  .culture-values,
+  .inclusion-values,
   .message-grid {
     grid-template-columns: 1fr;
   }

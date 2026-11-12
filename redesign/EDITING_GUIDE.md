@@ -233,6 +233,31 @@ Change an appropriate value to `true` if you later want to restore the teaching 
 tags, selected teaching history, or separate science-communication section. Individual outreach
 items also have their own `show` setting.
 
+## Editing Join the Lab
+
+The complete page is controlled by `src/content/pages/join.md`. Its main visible blocks are:
+
+- `masthead` for the opening statement.
+- `availability` for the current-status notice.
+- `inclusion` for the lab's justice, equity, diversity, and inclusion commitment.
+- `pathways` for graduate, undergraduate, postdoctoral, collaborator, and visitor information.
+- `contact` for the closing email invitation.
+
+Longer supporting details remain available but are hidden in the simplified version:
+
+```yaml
+inclusion:
+  showValues: false
+pathways:
+  showNumbers: false
+  showDetails: false
+firstMessage:
+  show: false
+```
+
+The key guidance from **Help us understand the fit** is now condensed into `contact.body`. Change the
+appropriate visibility value to `true` only if you want to restore one of the longer elements.
+
 ## What not to edit for ordinary updates
 
 Routine content changes should not require editing:

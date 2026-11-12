@@ -7,7 +7,7 @@ import { getEntry } from "astro:content";
 const joinEntry = await getEntry("pages", "join");
 if (!joinEntry) throw new Error("Missing src/content/pages/join.md");
 const joinContent = joinEntry.data as any;
-const { masthead, availability, culture, pathways, firstMessage, contact } = joinContent;
+const { masthead, availability, inclusion, pathways, firstMessage, contact } = joinContent;
 ---
 
 <SiteLayout
@@ -17,12 +17,10 @@ const { masthead, availability, culture, pathways, firstMessage, contact } = joi
   <SiteHeader variant="internal" />
 
   <main id="main-content" class="join-page" tabindex="-1">
-    <section class="page-masthead join-masthead">
+    <section class="join-masthead">
       <p class="section-label">{masthead.label}</p>
-      <div>
-        <h1><InlineMarkdown text={masthead.title} /></h1>
-        <p><InlineMarkdown text={masthead.introduction} /></p>
-      </div>
+      <h1><InlineMarkdown text={masthead.title} /></h1>
+      <p><InlineMarkdown text={masthead.introduction} /></p>
     </section>
 
     {
@@ -37,28 +35,30 @@ const { masthead, availability, culture, pathways, firstMessage, contact } = joi
       )
     }
 
-    <section class:list={["lab-culture", { "lab-culture--without-image": !culture.image.show }]} aria-labelledby="culture-title">
-      {culture.image.show && (
-        <figure class="culture-figure">
+    <section class:list={["inclusive-science", { "inclusive-science--without-image": !inclusion.image.show }]} aria-labelledby="inclusion-title">
+      {inclusion.image.show && (
+        <figure class="inclusion-figure">
           <img
-            src={culture.image.src}
-            alt={culture.image.alt}
+            src={inclusion.image.src}
+            alt={inclusion.image.alt}
             loading="lazy"
-            style={`object-position: ${culture.image.objectPosition}`}
+            style={`object-position: ${inclusion.image.objectPosition}`}
           />
-          <figcaption><InlineMarkdown text={culture.image.caption} /></figcaption>
+          <figcaption><InlineMarkdown text={inclusion.image.caption} /></figcaption>
         </figure>
       )}
 
-      <div class="culture-copy">
-        <p class="section-label">{culture.label}</p>
-        <h2 id="culture-title"><InlineMarkdown text={culture.title} /></h2>
-        <div class="culture-paragraphs">
-          {culture.paragraphs.map((paragraph) => <p><InlineMarkdown text={paragraph} /></p>)}
+      <div class="inclusion-copy">
+        <p class="section-label">{inclusion.label}</p>
+        <h2 id="inclusion-title"><InlineMarkdown text={inclusion.title} /></h2>
+        <div class="inclusion-paragraphs">
+          {inclusion.paragraphs.map((paragraph) => <p><InlineMarkdown text={paragraph} /></p>)}
         </div>
-        <ul class="culture-values" aria-label="Lab values">
-          {culture.values.map((value) => <li><InlineMarkdown text={value} /></li>)}
-        </ul>
+        {inclusion.showValues && (
+          <ul class="inclusion-values" aria-label="Lab values">
+            {inclusion.values.map((value) => <li><InlineMarkdown text={value} /></li>)}
+          </ul>
+        )}
       </div>
     </section>
 
@@ -74,50 +74,54 @@ const { masthead, availability, culture, pathways, firstMessage, contact } = joi
       <div class="pathway-list">
         {pathways.items.map((pathway) => (
           <article class="pathway-card">
-            <p class="pathway-number">{pathway.number}</p>
+            {pathways.showNumbers && <p class="pathway-number">{pathway.number}</p>}
             <div class="pathway-copy">
               <h3><InlineMarkdown text={pathway.title} /></h3>
               <p><InlineMarkdown text={pathway.body} /></p>
             </div>
-            <div class="pathway-details">
-              <p>What to include</p>
-              <ul>
-                {pathway.details.map((detail) => <li><InlineMarkdown text={detail} /></li>)}
-              </ul>
-              {pathway.links.length > 0 && (
-                <nav aria-label={`${pathway.title} links`}>
-                  {pathway.links.map((link) => (
-                    <a href={link.href} target="_blank" rel="noreferrer">
-                      {link.label}<span aria-hidden="true">↗</span>
-                    </a>
-                  ))}
-                </nav>
-              )}
-            </div>
+            {pathways.showDetails && (
+              <div class="pathway-details">
+                <p>What to include</p>
+                <ul>
+                  {pathway.details.map((detail) => <li><InlineMarkdown text={detail} /></li>)}
+                </ul>
+                {pathway.links.length > 0 && (
+                  <nav aria-label={`${pathway.title} links`}>
+                    {pathway.links.map((link) => (
+                      <a href={link.href} target="_blank" rel="noreferrer">
+                        {link.label}<span aria-hidden="true">↗</span>
+                      </a>
+                    ))}
+                  </nav>
+                )}
+              </div>
+            )}
           </article>
         ))}
       </div>
     </section>
 
-    <section class="first-message" aria-labelledby="first-message-title">
-      <header>
-        <p class="section-label">{firstMessage.label}</p>
-        <div>
-          <h2 id="first-message-title"><InlineMarkdown text={firstMessage.title} /></h2>
-          <p><InlineMarkdown text={firstMessage.introduction} /></p>
+    {firstMessage.show && (
+      <section class="first-message" aria-labelledby="first-message-title">
+        <header>
+          <p class="section-label">{firstMessage.label}</p>
+          <div>
+            <h2 id="first-message-title"><InlineMarkdown text={firstMessage.title} /></h2>
+            <p><InlineMarkdown text={firstMessage.introduction} /></p>
+          </div>
+        </header>
+
+        <div class="message-grid">
+          {firstMessage.items.map((item, index) => (
+            <article>
+              <p>{String(index + 1).padStart(2, "0")}</p>
+              <h3><InlineMarkdown text={item.title} /></h3>
+              <span><InlineMarkdown text={item.description} /></span>
+            </article>
+          ))}
         </div>
-      </header>
-
-      <div class="message-grid">
-        {firstMessage.items.map((item, index) => (
-          <article>
-            <p>{String(index + 1).padStart(2, "0")}</p>
-            <h3><InlineMarkdown text={item.title} /></h3>
-            <span><InlineMarkdown text={item.description} /></span>
-          </article>
-        ))}
-      </div>
-    </section>
+      </section>
+    )}
 
     <section class="join-contact" id="contact">
       <p class="section-label">{contact.label}</p>
