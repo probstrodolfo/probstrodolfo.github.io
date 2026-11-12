@@ -4,7 +4,7 @@ masthead:
   title: Bring your questions. Build the science with us.
   introduction: >-
     The Probst Lab welcomes people curious about ants, evolution, biodiversity, natural history,
-    and the questions that connect them.
+    and how they connect.
 availability:
   show: true
   label: Current status
@@ -45,7 +45,7 @@ pathways:
   introduction: >-
     There is no single route into the group. The main possibilities are summarized below.
   showNumbers: false
-  showDetails: false
+  showDetails: true
   items:
     - number: '01'
       title: Graduate students

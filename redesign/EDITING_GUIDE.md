@@ -243,20 +243,28 @@ The complete page is controlled by `src/content/pages/join.md`. Its main visible
 - `pathways` for graduate, undergraduate, postdoctoral, collaborator, and visitor information.
 - `contact` for the closing email invitation.
 
-Longer supporting details remain available but are hidden in the simplified version:
+The category-specific **What to include** guidance is visible beneath each opportunity. You can
+hide or restore it with:
+
+```yaml
+pathways:
+  showDetails: true
+```
+
+The remaining longer elements are retained but hidden in the simplified version:
 
 ```yaml
 inclusion:
   showValues: false
 pathways:
   showNumbers: false
-  showDetails: false
 firstMessage:
   show: false
 ```
 
 The key guidance from **Help us understand the fit** is now condensed into `contact.body`. Change the
-appropriate visibility value to `true` only if you want to restore one of the longer elements.
+appropriate visibility value to `true` if you want to restore one of the longer elements, or change
+`showDetails` to `false` if you want to hide the category-specific guidance again.
 
 ## What not to edit for ordinary updates
 
