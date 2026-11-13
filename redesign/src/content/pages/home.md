@@ -77,9 +77,9 @@ contact:
   show: true
   label: Get in touch
   title: Interested in joining the lab - or just talking ants?
-  body: >-
-    Whether you are a prospective student, a potential collaborator, or simply curious about our
-    work, we would be glad to hear from you.
+  body: |-
+    Whether you are a prospective student, a potential collaborator, or simply curious about our work,
+    we would be glad to hear from you.
   link:
     label: Contact us
     href: /join/#contact

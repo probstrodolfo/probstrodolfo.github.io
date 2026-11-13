@@ -526,6 +526,7 @@ h1 {
   font-size: clamp(1rem, 1.4vw, 1.22rem);
   margin: 1.35rem 0 1.8rem;
   max-width: 60rem;
+  white-space: pre-line;
 }
 
 .home-contact__actions {
