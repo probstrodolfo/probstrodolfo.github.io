@@ -79,11 +79,8 @@ const formatAuthors = (authors: string) =>
 
     <section class="publication-record" aria-labelledby="publication-record-title">
       <header>
-        <p class="section-label">{completeRecord.label}</p>
-        <div>
-          <h2 id="publication-record-title"><InlineMarkdown text={completeRecord.title} /></h2>
-          {completeRecord.introduction && <p><InlineMarkdown text={completeRecord.introduction} /></p>}
-        </div>
+        <h2 id="publication-record-title"><InlineMarkdown text={completeRecord.title} /></h2>
+        {completeRecord.introduction && <p><InlineMarkdown text={completeRecord.introduction} /></p>}
       </header>
 
       <div class="publication-list">

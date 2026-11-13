@@ -18,8 +18,7 @@ selected:
     - ant-ecomorphology
     - basiceros-revision
 completeRecord:
-  label: Publications
-  title: Complete list
+  title: Publications
 inPreparation:
   show: false
   label: In development

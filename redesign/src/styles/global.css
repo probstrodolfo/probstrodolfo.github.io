@@ -1306,6 +1306,7 @@ h1 {
 }
 
 .collaboration-section {
+  min-height: calc(100svh - 10rem);
   padding: clamp(2.5rem, 3.5vw, 3.5rem) clamp(2rem, 5vw, 5rem) clamp(3rem, 4vw, 4rem);
 }
 
@@ -1473,7 +1474,7 @@ h1 {
 .selected-publications {
   background: var(--forest-deep);
   color: var(--paper-bright);
-  padding: clamp(3.5rem, 5vw, 5.5rem) clamp(2rem, 5vw, 5rem);
+  padding: clamp(2.75rem, 4vw, 4rem) clamp(2rem, 5vw, 5rem);
 }
 
 .selected-publications > header,
@@ -1509,6 +1510,10 @@ h1 {
   color: #cad6cf;
 }
 
+.selected-publications > header {
+  margin-bottom: clamp(1.5rem, 2vw, 2rem);
+}
+
 .selected-publication-grid {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -1521,7 +1526,7 @@ h1 {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: column;
-  min-height: 19rem;
+  min-height: 17rem;
   padding: clamp(1.35rem, 1.8vw, 1.8rem);
 }
 
@@ -1567,7 +1572,23 @@ h1 {
 }
 
 .publication-record {
-  padding: clamp(3.5rem, 5vw, 5.5rem) clamp(2rem, 5vw, 5rem);
+  padding: clamp(2.5rem, 3.5vw, 3.5rem) clamp(2rem, 5vw, 5rem);
+}
+
+.publication-record > header {
+  display: block;
+  margin-bottom: clamp(1.35rem, 2vw, 2rem);
+}
+
+.publication-record h2 {
+  font-size: clamp(2.6rem, 3.5vw, 3.8rem);
+}
+
+.publication-record > header > p {
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  margin: 0.75rem 0 0;
+  max-width: 58rem;
 }
 
 .publication-list {
@@ -1578,8 +1599,8 @@ h1 {
   border-bottom: 1px solid var(--line);
   display: grid;
   gap: clamp(1.2rem, 2.5vw, 2.8rem);
-  grid-template-columns: 4.8rem minmax(0, 1fr) minmax(10rem, 0.42fr);
-  padding: clamp(1.25rem, 1.8vw, 1.8rem) 0;
+  grid-template-columns: 4.8rem minmax(0, 1fr) auto;
+  padding: clamp(1rem, 1.35vw, 1.35rem) 0;
 }
 
 .publication-year {
