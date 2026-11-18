@@ -999,14 +999,16 @@ h1 {
   background: var(--forest-deep);
   color: var(--paper-bright);
   display: grid;
-  gap: clamp(2rem, 5vw, 5rem);
-  grid-template-columns: minmax(0, 1fr) minmax(19rem, 0.62fr);
-  padding: clamp(2.5rem, 3.5vw, 3.5rem) clamp(2rem, 5vw, 5rem);
+  gap: clamp(2rem, 3vw, 3.5rem);
+  grid-template-columns: minmax(8rem, 0.25fr) minmax(28rem, 1fr) minmax(22rem, 0.7fr);
+  padding: clamp(2.25rem, 3vw, 3rem) clamp(2rem, 5vw, 5rem);
 }
 
 .growing-lab .section-label {
+  align-self: start;
   color: #b7c8a5;
-  margin-bottom: clamp(1rem, 1.4vw, 1.4rem);
+  margin: 0;
+  padding-top: 0.55rem;
 }
 
 .growing-lab h2 {
@@ -1037,7 +1039,7 @@ h1 {
   justify-items: end;
   justify-self: end;
   margin: 0;
-  max-width: 30rem;
+  max-width: 32rem;
 }
 
 .lab-gathering img {
