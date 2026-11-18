@@ -1,5 +1,6 @@
 ---
 order: 1
+show: true
 group: principal-investigator
 label: Principal investigator
 name: Rodolfo S. Probst

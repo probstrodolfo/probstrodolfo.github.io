@@ -8,6 +8,7 @@ interface Props {
   image?: string;
   imageAlt?: string;
   noindex?: boolean;
+  canonicalPath?: string;
 }
 
 const {
@@ -16,10 +17,11 @@ const {
   image = "/images/myrmelachista-hero.jpeg",
   imageAlt = "Myrmelachista ants moving across the stem of their host plant.",
   noindex = false,
+  canonicalPath,
 } = Astro.props;
 
 const siteURL = Astro.site ?? Astro.url;
-const canonicalURL = new URL(Astro.url.pathname, siteURL);
+const canonicalURL = new URL(canonicalPath ?? Astro.url.pathname, siteURL);
 const socialImageURL = new URL(image, siteURL);
 ---
 

@@ -31,6 +31,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+p {
+  text-wrap: pretty;
+}
+
 a {
   color: inherit;
 }
@@ -199,12 +203,12 @@ h3 {
   letter-spacing: -0.035em;
   line-height: 0.98;
   margin: 0;
+  text-wrap: balance;
 }
 
 h1 {
   font-size: clamp(3.4rem, 4.9vw, 5.7rem);
   max-width: 17ch;
-  text-wrap: balance;
 }
 
 .hero-summary {
@@ -729,9 +733,9 @@ h1 {
 }
 
 .lab-gathering figure {
-  aspect-ratio: 16 / 6;
+  aspect-ratio: 16 / 7;
   margin: 0;
-  max-height: 31rem;
+  max-height: 34rem;
   overflow: hidden;
   position: relative;
 }

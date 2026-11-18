@@ -1,5 +1,6 @@
 ---
 order: 2
+show: true
 group: graduate-student
 name: Luke Doyle
 initials: LD

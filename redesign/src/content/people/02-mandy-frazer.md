@@ -1,5 +1,6 @@
 ---
 order: 1
+show: true
 group: graduate-student
 name: Mandy Frazer
 initials: MF

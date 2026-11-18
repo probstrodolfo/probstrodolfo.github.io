@@ -6,6 +6,7 @@ type: Review
 authors: Oberski, J., Griebenow, Z., Camacho, G. P., Boudinot, B. E., Probst, R. S., et al.
 title: 'Ant systematics: Past, present, and future.'
 venue: Insect Systematics and Diversity
+details: '9(4): 11'
 href: https://doi.org/10.1093/isd/ixaf025
 show: true
 ---

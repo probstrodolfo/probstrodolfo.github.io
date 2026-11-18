@@ -8,6 +8,7 @@ title: >-
   A fossil-informed pattern of body size increase and local extinction in *Basiceros* dirt
   ants (Hymenoptera: Formicidae).
 venue: 'Proceedings of the Royal Society B: Biological Sciences'
+details: '292(2045): 20242171'
 href: https://doi.org/10.1098/rspb.2024.2171
 links:
   - label: Research feature

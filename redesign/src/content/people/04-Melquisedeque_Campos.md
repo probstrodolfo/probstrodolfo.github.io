@@ -1,5 +1,6 @@
 ---
 order: 3
+show: true
 group: graduate-student
 name: Melquisedeque Campos
 initials: MC
