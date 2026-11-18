@@ -141,29 +141,23 @@ const memberSections = memberSectionSettings
     }
 
     <section class="growing-lab">
-      <p class="section-label">{growingLab.label}</p>
-      <div>
+      <div class="growing-lab__copy">
+        <p class="section-label">{growingLab.label}</p>
         <h2><InlineMarkdown text={growingLab.title} /></h2>
         {growingLab.body && <p><InlineMarkdown text={growingLab.body} /></p>}
         <a class="button button--primary" href={growingLab.link.href}>
           {growingLab.link.label}<span aria-hidden="true">→</span>
         </a>
       </div>
-    </section>
 
-    {
-      labPhoto?.show && (
-        <section class="lab-gathering" aria-label="Probst Lab gathering">
-          <figure>
-            <img
-              src={labPhoto.src}
-              alt={labPhoto.alt}
-              style={`object-position: ${labPhoto.objectPosition}`}
-            />
+      {
+        labPhoto?.show && (
+          <figure class="lab-gathering">
+            <img src={labPhoto.src} alt={labPhoto.alt} loading="lazy" />
             <figcaption><InlineMarkdown text={labPhoto.caption} /></figcaption>
           </figure>
-        </section>
-      )
-    }
+        )
+      }
+    </section>
   </main>
 </SiteLayout>

@@ -727,46 +727,6 @@ h1 {
   max-width: 58rem;
 }
 
-.lab-gathering {
-  background: var(--paper-bright);
-  padding: clamp(2rem, 3vw, 3rem) clamp(2rem, 5vw, 5rem);
-}
-
-.lab-gathering figure {
-  aspect-ratio: 16 / 10;
-  margin: 0 auto;
-  max-width: 64rem;
-  overflow: hidden;
-  position: relative;
-}
-
-.lab-gathering figure::after {
-  background: linear-gradient(180deg, transparent 58%, rgba(4, 31, 23, 0.68));
-  content: "";
-  inset: 0;
-  pointer-events: none;
-  position: absolute;
-}
-
-.lab-gathering img {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-}
-
-.lab-gathering figcaption {
-  bottom: 1.35rem;
-  color: white;
-  font-size: 0.74rem;
-  font-weight: 750;
-  left: 1.5rem;
-  letter-spacing: 0.06em;
-  position: absolute;
-  right: 1.5rem;
-  text-transform: uppercase;
-  z-index: 1;
-}
-
 .page-masthead {
   background: var(--paper);
   display: grid;
@@ -1035,16 +995,18 @@ h1 {
 }
 
 .growing-lab {
+  align-items: center;
   background: var(--forest-deep);
   color: var(--paper-bright);
   display: grid;
-  gap: 1.5rem clamp(2rem, 4vw, 4rem);
-  grid-template-columns: minmax(10rem, 0.35fr) minmax(0, 1fr);
-  padding: clamp(3.25rem, 4.5vw, 4.5rem) clamp(2rem, 5vw, 5rem);
+  gap: clamp(2rem, 5vw, 5rem);
+  grid-template-columns: minmax(0, 1fr) minmax(19rem, 0.62fr);
+  padding: clamp(2.5rem, 3.5vw, 3.5rem) clamp(2rem, 5vw, 5rem);
 }
 
 .growing-lab .section-label {
   color: #b7c8a5;
+  margin-bottom: clamp(1rem, 1.4vw, 1.4rem);
 }
 
 .growing-lab h2 {
@@ -1068,6 +1030,32 @@ h1 {
 .growing-lab .button--primary:hover,
 .growing-lab .button--primary:focus-visible {
   background: #e3b64f;
+}
+
+.lab-gathering {
+  display: grid;
+  justify-items: end;
+  justify-self: end;
+  margin: 0;
+  max-width: 30rem;
+}
+
+.lab-gathering img {
+  display: block;
+  height: auto;
+  max-height: min(62vh, 36rem);
+  max-width: 100%;
+  width: auto;
+}
+
+.lab-gathering figcaption {
+  color: #b7c8a5;
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  margin-top: 0.7rem;
+  text-align: right;
+  text-transform: uppercase;
 }
 
 .research-page {
@@ -2739,8 +2727,21 @@ h1 {
     font-size: clamp(3rem, 12vw, 4.2rem);
   }
 
-  .lab-gathering figure {
-    aspect-ratio: 4 / 3;
+  .lab-gathering {
+    justify-items: center;
+    justify-self: center;
+    max-width: 26rem;
+    width: 100%;
+  }
+
+  .lab-gathering img {
+    margin: 0 auto;
+    max-height: none;
+    width: 100%;
+  }
+
+  .lab-gathering figcaption {
+    text-align: center;
   }
 
   .hero-figure {
