@@ -729,13 +729,13 @@ h1 {
 
 .lab-gathering {
   background: var(--paper-bright);
-  padding: clamp(1.5rem, 2.5vw, 2.5rem) clamp(2rem, 5vw, 5rem) 0;
+  padding: clamp(2rem, 3vw, 3rem) clamp(2rem, 5vw, 5rem);
 }
 
 .lab-gathering figure {
-  aspect-ratio: 16 / 7;
-  margin: 0;
-  max-height: 34rem;
+  aspect-ratio: 16 / 10;
+  margin: 0 auto;
+  max-width: 64rem;
   overflow: hidden;
   position: relative;
 }

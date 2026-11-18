@@ -39,21 +39,6 @@ const memberSections = memberSectionSettings
       <p><InlineMarkdown text={masthead.introduction} /></p>
     </section>
 
-    {
-      labPhoto?.show && (
-        <section class="lab-gathering" aria-label="Probst Lab gathering">
-          <figure>
-            <img
-              src={labPhoto.src}
-              alt={labPhoto.alt}
-              style={`object-position: ${labPhoto.objectPosition}`}
-            />
-            <figcaption><InlineMarkdown text={labPhoto.caption} /></figcaption>
-          </figure>
-        </section>
-      )
-    }
-
     <section class="pi-profile" aria-labelledby="pi-name">
       {
         principalInvestigator.image.show && (
@@ -165,5 +150,20 @@ const memberSections = memberSectionSettings
         </a>
       </div>
     </section>
+
+    {
+      labPhoto?.show && (
+        <section class="lab-gathering" aria-label="Probst Lab gathering">
+          <figure>
+            <img
+              src={labPhoto.src}
+              alt={labPhoto.alt}
+              style={`object-position: ${labPhoto.objectPosition}`}
+            />
+            <figcaption><InlineMarkdown text={labPhoto.caption} /></figcaption>
+          </figure>
+        </section>
+      )
+    }
   </main>
 </SiteLayout>
