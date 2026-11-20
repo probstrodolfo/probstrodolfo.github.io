@@ -1015,10 +1015,17 @@ h1 {
 }
 
 .growing-lab h2 {
-  font-size: clamp(3.6rem, 5vw, 6rem);
+  font-size: clamp(3.2rem, 4vw, 5rem);
   letter-spacing: -0.045em;
-  line-height: 1.04;
-  max-width: 64rem;
+  line-height: 1.06;
+  max-width: none;
+  white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+  .growing-lab h2 {
+    white-space: normal;
+  }
 }
 
 .growing-lab > div > p {

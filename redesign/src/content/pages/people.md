@@ -13,7 +13,7 @@ labPhoto:
   objectPosition: 50% 70%
 growingLab:
   label: Our group
-  title: Our lab is growing at UC Davis.
+  title: Our lab is growing at UC Davis
   link:
     label: Learn about joining our lab
     href: /join/
