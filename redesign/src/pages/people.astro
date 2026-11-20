@@ -141,8 +141,8 @@ const memberSections = memberSectionSettings
     }
 
     <section class="growing-lab">
-      <p class="section-label">{growingLab.label}</p>
       <div class="growing-lab__copy">
+        <p class="section-label">{growingLab.label}</p>
         <h2><InlineMarkdown text={growingLab.title} /></h2>
         {growingLab.body && <p><InlineMarkdown text={growingLab.body} /></p>}
         <a class="button button--primary" href={growingLab.link.href}>
