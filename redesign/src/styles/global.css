@@ -50,6 +50,19 @@ main:focus {
   outline: none;
 }
 
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .skip-link {
   background: var(--paper-bright);
   color: var(--ink);
@@ -152,7 +165,7 @@ main:focus {
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 56fr) minmax(24rem, 44fr);
-  min-height: 100svh;
+  min-height: clamp(40rem, 78svh, 46rem);
   padding-top: 6rem;
 }
 
@@ -161,9 +174,13 @@ main:focus {
 }
 
 .hero-copy {
-  align-content: start;
+  align-content: center;
   display: grid;
-  padding: clamp(3.5rem, 5vw, 5rem) clamp(2rem, 7vw, 8rem) clamp(3rem, 6vw, 6rem) clamp(2rem, 6vw, 7rem);
+  padding: clamp(2.5rem, 4vw, 4rem) clamp(2rem, 4vw, 4.5rem) clamp(2.5rem, 4vw, 4rem) clamp(2rem, 5vw, 6rem);
+}
+
+.hero-copy h1 {
+  max-width: 100%;
 }
 
 .eyebrow,
@@ -216,7 +233,7 @@ h1 {
   font-size: clamp(1.05rem, 1.35vw, 1.28rem);
   line-height: 1.62;
   margin: 2.2rem 0 0;
-  max-width: 38rem;
+  max-width: 46rem;
 }
 
 .hero-actions {
@@ -257,7 +274,7 @@ h1 {
 
 .hero-figure {
   margin: 0;
-  min-height: calc(100svh - 6rem);
+  min-height: clamp(34rem, calc(78svh - 6rem), 40rem);
   overflow: hidden;
   position: relative;
 }
@@ -703,28 +720,6 @@ h1 {
 
 .people-page {
   background: var(--paper-bright);
-}
-
-.people-masthead {
-  background: var(--paper);
-  padding: clamp(2.25rem, 3vw, 3rem) clamp(2rem, 5vw, 5rem) clamp(2.6rem, 3.5vw, 3.5rem);
-}
-
-.people-masthead .section-label {
-  margin-bottom: clamp(1rem, 1.4vw, 1.4rem);
-}
-
-.people-masthead h1 {
-  font-size: clamp(3.35rem, 4.45vw, 5.35rem);
-  max-width: none;
-}
-
-.people-masthead > p:last-child {
-  color: var(--ink-soft);
-  font-size: clamp(1.06rem, 1.32vw, 1.28rem);
-  line-height: 1.58;
-  margin: clamp(1.4rem, 2vw, 2rem) 0 0;
-  max-width: 58rem;
 }
 
 .page-masthead {
@@ -2729,17 +2724,13 @@ h1 {
   }
 
   .hero-copy {
-    min-height: calc(100svh - 5.4rem);
+    min-height: auto;
     padding-bottom: 3rem;
     padding-top: 4rem;
   }
 
   h1 {
     font-size: clamp(3.25rem, 15vw, 5rem);
-  }
-
-  .people-masthead h1 {
-    font-size: clamp(3rem, 12vw, 4.2rem);
   }
 
   .lab-gathering {

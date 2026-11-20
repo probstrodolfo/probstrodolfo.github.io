@@ -15,7 +15,7 @@ const members = memberEntries
   .filter((member) => member.show !== false);
 const principalInvestigator = members.find((member) => member.group === "principal-investigator");
 if (!principalInvestigator) throw new Error("Missing principal-investigator profile in src/content/people/");
-const { masthead, labPhoto, memberSections: memberSectionSettings, growingLab } = pageContent;
+const { labPhoto, memberSections: memberSectionSettings, growingLab } = pageContent;
 const memberSections = memberSectionSettings
   .map((section) => ({
     ...section,
@@ -33,11 +33,7 @@ const memberSections = memberSectionSettings
   <SiteHeader variant="internal" />
 
   <main id="main-content" class="people-page" tabindex="-1">
-    <section class="people-masthead">
-      <p class="section-label">{masthead.label}</p>
-      <h1><InlineMarkdown text={masthead.title} /></h1>
-      <p><InlineMarkdown text={masthead.introduction} /></p>
-    </section>
+    <h1 class="visually-hidden">People</h1>
 
     <section class="pi-profile" aria-labelledby="pi-name">
       {
