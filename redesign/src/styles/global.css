@@ -995,25 +995,40 @@ h1 {
 }
 
 .growing-lab {
-  align-items: center;
+  align-items: stretch;
   background: var(--forest-deep);
   color: var(--paper-bright);
   display: grid;
-  gap: clamp(2rem, 3vw, 3.5rem);
-  grid-template-columns: minmax(8rem, 0.25fr) minmax(28rem, 1fr) minmax(22rem, 0.7fr);
-  padding: clamp(2.25rem, 3vw, 3rem) clamp(2rem, 5vw, 5rem);
+  column-gap: clamp(3rem, 5vw, 6rem);
+  grid-template-areas:
+    "label photo"
+    "copy photo";
+  grid-template-columns: minmax(0, 1fr) minmax(24rem, auto);
+  grid-template-rows: auto 1fr;
+  padding: clamp(1.6rem, 2vw, 2rem) clamp(2rem, 3vw, 3.5rem);
+  row-gap: 0;
 }
 
 .growing-lab .section-label {
   align-self: start;
   color: #b7c8a5;
+  grid-area: label;
   margin: 0;
   padding-top: 0.55rem;
 }
 
+.growing-lab__copy {
+  align-self: center;
+  grid-area: copy;
+  max-width: 67rem;
+  padding: clamp(2.5rem, 5vh, 4.5rem) clamp(0rem, 3.5vw, 4rem) clamp(2.25rem, 4vh, 3.75rem);
+}
+
 .growing-lab h2 {
-  font-size: clamp(2.8rem, 4.6vw, 5rem);
-  max-width: none;
+  font-size: clamp(4rem, 6.1vw, 7.25rem);
+  letter-spacing: -0.055em;
+  line-height: 0.92;
+  max-width: 61rem;
 }
 
 .growing-lab > div > p {
@@ -1026,7 +1041,7 @@ h1 {
 .growing-lab .button--primary {
   background: var(--gold);
   color: var(--forest-deep);
-  margin-top: 1.75rem;
+  margin-top: clamp(2rem, 3vw, 3.25rem);
 }
 
 .growing-lab .button--primary:hover,
@@ -1035,11 +1050,13 @@ h1 {
 }
 
 .lab-gathering {
+  align-self: center;
   display: grid;
+  grid-area: photo;
   justify-items: end;
   justify-self: end;
   margin: 0;
-  max-width: 32rem;
+  max-width: 34rem;
 }
 
 .lab-gathering img {
@@ -2815,7 +2832,16 @@ h1 {
   .teaching-invitation,
   .growing-lab {
     gap: 1.4rem;
+    grid-template-areas:
+      "label"
+      "copy"
+      "photo";
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .growing-lab__copy {
+    padding: 1.5rem 0 1rem;
   }
 
   .home-contact {
