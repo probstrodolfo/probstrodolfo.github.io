@@ -1,14 +1,15 @@
 ---
 order: 3
 show: true
-group: graduate-student
+group: visiting-researcher
 name: Melquisedeque Campos
 initials: MC
-role: PhD Student
+role: Visiting PhD Researcher
 biography: >-
-  Melqui is interested in the taxonomy, systematics, and nesting behaviors of Hymenoptera (wasps, bees, and ants)
-  and other insects native to Amazonian ecosystems. His research focuses on the evolution of social wasps, such as
-  those in the genus *Mischocyttarus*.
+  Melqui is a visiting PhD researcher whose doctoral work is co-advised by Rodolfo. He is interested
+  in the taxonomy, systematics, and nesting behaviors of Hymenoptera (wasps, bees, and ants) and
+  other insects native to Amazonian ecosystems. During his stay with the Probst Lab through June
+  2027, he is focusing on the evolution of social wasps in the genus *Mischocyttarus*.
 interests:
   - Wasp taxonomy
   - Systematics

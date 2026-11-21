@@ -13,7 +13,7 @@ if (!publicationsEntry) throw new Error("Missing src/content/pages/publications.
 const publicationsContent = publicationsEntry.data as any;
 const publications = publicationEntries
   .map((entry) => entry.data as any)
-  .sort((a, b) => a.order - b.order);
+  .sort((a, b) => Number(b.year) - Number(a.year) || a.order - b.order);
 const manuscripts = manuscriptEntries
   .map((entry) => entry.data as any)
   .sort((a, b) => a.order - b.order);

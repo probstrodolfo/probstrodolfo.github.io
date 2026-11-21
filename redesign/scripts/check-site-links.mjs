@@ -5,6 +5,7 @@ const root = resolve("dist");
 const localOrigin = "https://probst-lab.local";
 const publicOrigin = "https://probstrodolfo.github.io";
 const internalOrigins = new Set([localOrigin, publicOrigin]);
+const externalSameOriginPaths = new Set(["/CV/"]);
 
 if (!existsSync(root)) {
   console.error("Missing dist/. Run npm run build before checking links.");
@@ -55,6 +56,11 @@ for (const file of htmlFiles) {
     }
 
     if (!internalOrigins.has(target.origin)) {
+      externalLinks.add(target.href);
+      continue;
+    }
+
+    if (target.origin === publicOrigin && externalSameOriginPaths.has(target.pathname)) {
       externalLinks.add(target.href);
       continue;
     }

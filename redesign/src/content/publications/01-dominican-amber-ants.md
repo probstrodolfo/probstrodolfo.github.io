@@ -2,7 +2,7 @@
 order: 1
 id: dominican-amber-ants
 year: 2026
-status: Published
+status: Just published
 type: Monograph
 authors: >-
   Fiorentino, G., Ladino, N., Mera-Rodríguez, D., Cubillos, D., Cavalcanti, J. P., Probst, R. S.,

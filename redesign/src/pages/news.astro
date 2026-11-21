@@ -33,12 +33,30 @@ const visibleItems = newsItems.filter((item) => item.show);
     {visibleItems.length > 0 && (
       <section class="news-list" aria-label="Probst Lab news">
         {visibleItems.map((item) => (
-          <article class="news-list-item">
+          <article class:list={["news-list-item", { "news-list-item--with-image": item.image?.show }]}>
             <p class="news-list-date">{item.date}</p>
-            <div>
+            <div class="news-list-copy">
               <h2><InlineMarkdown text={item.title} /></h2>
               <p><InlineMarkdown text={item.summary} /></p>
+              {item.link && (
+                <a class="news-list-link" href={item.link.href} target="_blank" rel="noreferrer">
+                  {item.link.label}<span aria-hidden="true">↗</span>
+                </a>
+              )}
             </div>
+            {item.image?.show && (
+              <figure class="news-list-image">
+                <a href={item.link?.href ?? item.image.src} target="_blank" rel="noreferrer">
+                  <img
+                    src={item.image.src}
+                    alt={item.image.alt}
+                    loading="lazy"
+                    style={`object-position: ${item.image.objectPosition}`}
+                  />
+                </a>
+                <figcaption><InlineMarkdown text={item.image.caption} /></figcaption>
+              </figure>
+            )}
           </article>
         ))}
       </section>

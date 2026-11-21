@@ -35,4 +35,6 @@ links:
     href: https://orcid.org/0000-0002-5885-5701
   - label: GitHub
     href: https://github.com/probstrodolfo
+  - label: CV
+    href: https://probstrodolfo.github.io/CV/
 ---
