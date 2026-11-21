@@ -36,5 +36,5 @@ links:
   - label: GitHub
     href: https://github.com/probstrodolfo
   - label: CV
-    href: /CV/
+    href: /files/rodolfo-probst-cv.pdf
 ---
